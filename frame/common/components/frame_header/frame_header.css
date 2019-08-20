@@ -1,0 +1,200 @@
+.frame-header-bg {
+  width: 100%;
+  /* padding: 5px; */
+  height: 100%;
+}
+
+.frame-header-bg-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: default;
+  background-repeat: no-repeat;
+}
+
+.frame-header-search input {
+  float: left;
+  width: 200px;
+  height: 32px;
+  outline: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 8px;
+}
+
+.frame-header-search span {
+  float: left;
+  padding: 8px;
+  margin-top: -1px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.frame-header-bg1 {
+  background: #BED9F3;
+  padding-bottom: 4px;
+  min-height: 60px;
+}
+
+.frame-header-child-loc1 {
+  height: 100%;
+  width: 30%;
+}
+
+.meau-type2 .frame-header-child-loc1 {
+  width: 200px;
+}
+
+.meau-type2.simple-meau .frame-header-child-loc1 {
+  width: 60px;
+}
+
+.frame-header-child-loc1-1 {
+  min-width: 152px;
+  left: 39%;
+}
+
+.frame-header-child-loc2 {
+  right: 8%;
+  height: 100%;
+}
+
+.frame-header-child-loc2>ul {
+  float: right;
+}
+
+.frame-header-child-loc2>ul>li {
+  float: left;
+  width: 85px;
+  margin: 0;
+}
+
+.frame-header-child-loc2>ul>li>a {
+  padding: 0;
+}
+
+.frame-header-child-loc2 li .frame-menu-item-title,
+.frame-header-child-loc2 li .frame-menu-item-title a,
+.frame-header-child-loc2 li .frame-menu-item-title:focus,
+.frame-header-child-loc2 li .frame-menu-item-title:hover {
+  font-weight: 700;
+  font-size: 14px;
+  color: #E4E4E4;
+  text-decoration: none;
+}
+
+.frame-header-child-loc2 li.active .frame-menu-item-title,
+.frame-header-child-loc2 li.active .frame-menu-item-title a,
+.frame-header-child-loc2 li.active .frame-menu-item-title:focus,
+.frame-header-child-loc2 li.active .frame-menu-item-title:hover {
+  color: #ffffff;
+}
+
+.frame-header-child-loc2 li.active .frame-menu-item-bg {
+  border-bottom: 2px solid #FFF;
+}
+
+.frame-header-child-loc3 {
+  width: 8%;
+  right: 0;
+}
+
+.frame-header-menu-container a:link,
+a:visited {
+  color: #6697C4;
+  text-decoration: none;
+}
+
+.frame-header-menu-container a:hover {
+  color: #E4E7EA;
+}
+
+.frame-header-menu-container a.abtn {
+  position: absolute;
+  top: 0;
+  display: block;
+  height: 45px;
+  width: 6px;
+  overflow: hidden;
+  text-indent: -20000px;
+  background: url("../../../../img/arrow3.gif") 0 center no-repeat;
+}
+
+.frame-header-menu-container a.aleft {
+  left: 0;
+}
+
+.frame-header-menu-container a.agrayleft {
+  background-position: -12px center;
+}
+
+.frame-header-menu-container a.aright {
+  right: 0;
+  background-position: -6px center;
+}
+
+.frame-header-menu-container a.agrayright {
+  cursor: default;
+  background-position: -18px center;
+}
+
+.frame-header-menu-container {
+  width: 301px;
+  position: relative;
+  top: 4px;
+}
+
+.frame-header-menu-container li {
+  float: left;
+}
+
+.frame-header-menu-container .frame-header-menu-scrollcontainer {
+  width: 268px;
+  height: 43px;
+  overflow: hidden;
+  position: relative;
+  left: 8px;
+}
+
+.frame-header-menu-container .frame-header-menu-scrollcontainer ul {
+  position: absolute;
+  padding-left: 0;
+  width: 20000px;
+}
+
+.frame-header-search {
+  float: left;
+  margin-top: 8px;
+}
+
+.frame-header-search div {
+  float: left;
+}
+
+.frame-header-bg .toggle-vertical-meau-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  top: 50%;
+  left: 420px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: -15px;
+  z-index: 105;
+  color: #6697C4;
+  background-image: url('../../../../img/frame_header/meau_0.png');
+  transition: left 0.2s;
+}
+
+.meau-type2 .frame-header-bg .toggle-vertical-meau-btn {
+  left: 200px;
+}
+
+.vertical-meau-empty .frame-header-bg .toggle-vertical-meau-btn {
+  visibility: hidden;
+}
+
+.simple-meau.meau-type2 .frame-header-bg .toggle-vertical-meau-btn {
+  left: 60px;
+}

@@ -1,0 +1,14 @@
+
+<div class="nav-container absolute {{if _isOpenMeau 'show'}}" style={{_navContainerStyle}} onmousewheel={{action "_scrollMeau"}} >
+    {{#each dataSource as |item index|}}
+        {{#if item.isShow}}
+            <div class="nav-item  {{if item._active 'active-item'}}" {{action 'clickMenuItem' item}} title={{item.title}} >
+                <img class="nav-item-img" src={{item.imgSrc}} alt={{item.title}}>
+                <span class="nav-item-text">{{item.title}}</span>
+            </div>
+        {{/if}}
+    {{/each}}
+</div>
+<div class="nav-btn-container {{if showToggleBtn 'active'}}"  onmouseenter={{action "_showToggleBtn"}} onmouseleave={{action "_hideToggleBtn"}} >
+    <div class="nav-toggle-btn {{if _isOpenMeau 'open'}}" {{action '_toggleMeauStatus' }}></div>
+</div>

@@ -1,0 +1,382 @@
+{
+    "tab": [
+        {
+            "color": "#00f",
+            "text": "敌方",
+            "tabID": "tab_0",
+			"data": [
+				{
+					"id": "01010100",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/00100.png"
+				},
+				{
+					"id": "01010200",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/00200.png"
+				},
+				{
+					"id": "01010900",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/00900.png"
+				},
+				{
+					"id": "01011000",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/01000.png"
+				},
+				{
+					"id": "01011100",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/01100.png"
+				},
+				{
+					"id": "01011200",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/01200.png"
+				},
+				{
+					"id": "01011300",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/01300.png"
+				},
+				{
+					"id": "01011400",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/01400.png"
+				},
+				{
+					"id": "01011500",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/01500.png"
+				},
+				{
+					"id": "01012200",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/02200.png"
+				},
+				{
+					"id": "01012300",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/02300.png"
+				},
+				{
+					"id": "01012400",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/02400.png"
+				},
+				{
+					"id": "01020103",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/02803.png"
+				},
+				{
+					"id": "02020500",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/04400.png"
+				},
+				{
+					"id": "02020501",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/04401.png"
+				},
+				{
+					"id": "03022400",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/24900.png"
+				},
+				{
+					"id": "04010100",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/28500.png"
+				},
+				{
+					"id": "07010503",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/38003.png"
+				},
+				{
+					"id": "07010802",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/38302.png"
+				},
+				{
+					"id": "07010800",
+					"creator": "GV.JBPoint",
+					"description": "",
+					"type":"point",
+					"image": "./mark/militaryMarkConfig/38300.png"
+				},
+				{
+					"id": "03010107_1",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03010107_1@msbl_RegularLine1@防空兵行军纵队.png"
+				},
+				{
+					"id": "03010108",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03010108@msbl_RegularLine1@地地导弹部队行军纵队.png"
+				},
+				{
+					"id": "03010108_1",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03010108_1@msbl_RegularLine1@地地导弹部队行军纵队.png"
+				},
+				{
+					"id": "03010200",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03010200@msbl_RegularLine1@铁路输送.png"
+				},
+				{
+					"id": "03010201",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03010201@msbl_RegularLine1@公路输送.png"
+				},
+				{
+					"id": "03010202",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03010202@msbl_RegularLine1@水路输送.png"
+				},
+				{
+					"id": "03010203",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03010203@msbl_RegularLine1@空中输送.png"
+				},
+				{
+					"id": "03010204",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03010204@msbl_RegularLine1@直升机空中输送.png"
+				},
+				{
+					"id": "03010300",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03010300@msbl_RegularLine1@部队行动控制线.png"
+				},
+				{
+					"id": "03010301",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03010301@msbl_RegularLine1@调整线.png"
+				},
+				{
+					"id": "03010302",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03010302@msbl_RegularLine1@冲击出发线.png"
+				},
+				{
+					"id": "03010303",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03010303@msbl_RegularLine1@出发线.png"
+				},
+				{
+					"id": "03010304",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03010304@msbl_RegularLine1@协调线.png"
+				},
+				{
+					"id": "03010600",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03010600@msbl_RegularLine1@地面机动技术侦察.png"
+				},
+				{
+					"id": "03010700",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03010700@msbl_RegularLine1@侦察搜索.png"
+				},
+				{
+					"id": "03022200",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03022200@msbl_RegularLine1@核突击安全线.png"
+				},
+				{
+					"id": "03030301",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03030301@msbl_RegularLine1@不标示突破地段的作战行动.png"
+				},
+				{
+					"id": "03030500",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03030500@msbl_RegularLine1@联合搜救.png"
+				},
+				{
+					"id": "03030501",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03030501@msbl_RegularLine1@直升机搜救.png"
+				},
+				{
+					"id": "03031600",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03031600@msbl_RegularLine1@封控线.png"
+				},
+				{
+					"id": "03031601",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03031601@msbl_RegularLine1@实兵警戒线.png"
+				},
+				{
+					"id": "03031602",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03031602@msbl_RegularLine1@车辆巡逻线.png"
+				},
+				{
+					"id": "03031603",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03031603@msbl_RegularLine1@摩托车巡逻线.png"
+				},
+				{
+					"id": "03031700",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03031700@msbl_RegularLine1@当前任务线.png"
+				},
+				{
+					"id": "03032100",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03032100@msbl_RegularLine1@短波无线电通信干扰站.png"
+				},
+				{
+					"id": "03032101",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03032101@msbl_RegularLine1@电子侦察行动.png"
+				},
+				{
+					"id": "04010600",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/04010600@msbl_RegularLine1@堑壕.png"
+				},
+				{
+					"id": "04010603",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/04010603@msbl_RegularLine1@要点.png"
+				},
+
+
+				{
+					"id": "singleArrow1",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"singleArrow",
+					"image": "./mark/militaryMarkConfig/singleArrow1@msbl_singleArrow@固定尾宽进攻.png"
+				},
+				{
+					"id": "singleArrow2",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"singleArrow",
+					"image": "./mark/militaryMarkConfig/singleArrow2@msbl_singleArrow@非固定尾宽进攻.png"
+				},
+				{
+					"id": "03030300",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"singleArrow",
+					"image": "./mark/militaryMarkConfig/03030300@msbl_singleArrow@进攻方向.png"
+				}
+			]
+		},
+	{
+		"color": "#f00",
+		"text": "我方",
+		"tabID": "tab_1",
+		"data": [
+				{
+					"id": "03010104_1",
+					"creator": "GV.JBLine",
+					"description": "",
+					"type":"RegularLine1",
+					"image": "./mark/militaryMarkConfig/03010104_1@plotsbl_RegularLine1.png"
+				}]
+	}]
+}

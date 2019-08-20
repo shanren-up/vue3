@@ -1,0 +1,21 @@
+<div class="process-manager-detail">
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active" {{action 'tabCLick' '2'}}>
+            <a href="#flowChart{{tabId}}" data-toggle="tab">流程图</a>
+        </li>
+        {{#if showMsg}}
+        <li role="presentation" {{action 'tabCLick' '1'}}>
+            <a href="#taskInfo{{tabId}}" data-toggle="tab">任务信息</a>
+        </li>
+        {{/if}}
+    </ul>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="flowChart{{tabId}}">
+            {{jsplumb-figure name='flowChart' dbClickAction='dbClickAction' startModuleAction='startModuleAction' showStatus=true showProcess=true showStart=showStart chartHeight=chartHeight dataSource=dataSource2}}
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="taskInfo{{tabId}}">
+            {{comp-table name='tabskInfo'  dataSource=dataSource  tableConfig=tableConfig columns=columns  eventConfig=eventConfig}}
+        </div>
+
+    </div>
+</div>

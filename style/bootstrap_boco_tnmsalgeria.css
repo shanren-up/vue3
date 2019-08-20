@@ -1,0 +1,160 @@
+@import url(../lib/bootstrap/dist/css/bootstrap.min.css);
+@import url("./add_bootstrap_boco_default.css");
+
+/****************************************  01:基础颜色 ****************************************/
+.color-boco-bg { /*bg:background:背景色*/
+    background-color: #E7E7E7 !important;
+}
+
+.color-boco-mod { /*mod:module:叠加色*/
+    background-color: #FFFFFF !important;
+}
+
+.color-boco-header { /*眉头色*/
+    background-color: #4990e2 !important;
+}
+
+.color-boco-logo { /*logo背景色*/
+    background-color: #247FE8 !important;
+}
+
+/****************************************  02:按钮 ****************************************/
+/*  按钮类型1(积极意义按钮：positive)*/
+.btn-boco-pos {
+    text-align: center !important;
+    min-width: 60px !important;
+    height: 30px !important;
+    background-color: #5499E4 !important;
+    border: none !important;
+    border-radius: 5px !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.btn-boco-pos:hover {
+    background-color: #227BDD !important;
+}
+
+.btn-boco-pos:active {
+    background-color: #227BDD !important;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+/*  按钮类型2(消极意义按钮：negative)：删除、关闭、取消、清除、重置...   */
+.btn-boco-neg {
+    cursor: pointer !important;
+    text-align: center !important;
+    min-width: 60px !important;
+    height: 30px !important;
+    background-color: #2FBdBd !important;
+    border: none !important;
+    border-radius: 5px !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.btn-boco-neg:hover {
+    background-color: #29A3A3 !important;
+}
+
+.btn-boco-neg:active {
+    background-color: #29A3A3 !important;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+/*  按钮类型3(列表操作按钮)*/
+.btn-boco-operator {
+    cursor: pointer !important;
+    width: 110px !important;
+    height: 30px !important;
+    text-align: center !important;
+    color: #848484 !important;
+    background-color: #FFFFFF !important;
+    border: 1px solid #DCDCDC !important;
+    border-radius: 5px !important;
+    box-sizing: border-box !important;
+}
+
+div.btn-boco-operator {
+    line-height: 30px !important;
+}
+
+.btn-boco-operator:hover {
+    background-color: #92CDFA !important;
+    color: #FFFFFF !important;
+}
+
+.btn-boco-operator:active {
+    background-color: #92CDFA !important;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+/*  按钮类型4(禁用按钮)   */
+.btn-boco-pos[disabled],
+.btn-boco-neg[disabled],
+.btn-boco-operator[disabled] {
+    cursor: not-allowed !important;
+    background-color: #D7D7D7 !important;
+    border: none !important;
+    color: #000000 !important;
+}
+
+/****************************************  03:查询条件名称  ****************************************/
+.cond-boco-text {
+    font-family: "微软雅黑" !important;
+    font-size: 12px !important;
+    color: #333333 !important;
+    font-weight: bold !important;
+    text-align: right !important;
+    width: 80px;
+}
+
+/****************************************  04:输入框&&文本框&&下拉框  ****************************************/
+.input-boco-text, /*输入框*/
+.select-boco-text { /*下拉框 && bootstrap multiple select*/
+    font-family: "微软雅黑" !important;
+    font-size: 12px !important;
+    color: #333333 !important;
+    height: 30px !important;
+    border: 1px solid #D2D2D2 !important;
+    border-radius: 5px !important;
+}
+
+.textarea-boco-text { /*文本框*/
+    font-family: "微软雅黑" !important;
+    font-size: 12px !important;
+    color: #333333 !important;
+    border: 1px solid #D2D2D2 !important;
+    border-radius: 5px !important;
+}
+
+/****************************************  05:单选框&多选框  ****************************************/
+/*
+<div>
+    <input type="radio" class="input-boco-radio">
+    <span>1</span>
+</div>
+*/
+input.input-boco-radio + span,
+input.input-boco-checkbox + span {
+    color: #CCCCCC !important;
+}
+
+input.input-boco-radio:checked + span,
+input.input-boco-checkbox:checked + span {
+    color: #41B3EF !important;
+}
+
+/****************************************  04:表格 ****************************************/
+
+.bs-table-container table tbody tr:hover,
+.bs-table-container table tbody tr.selected,
+.bs-table-container table tbody tr.selected td {
+    background-color: #D7D7D7 !important;
+}
+
+.bs-table-container table tbody tr td {
+    border-top: 1px dotted rgba(255, 255, 255, 0.3) !important;
+}
+
+/****************************************  06:弹框 ****************************************/
+
+/****************************************  06:分页 ****************************************/

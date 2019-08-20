@@ -1,0 +1,155 @@
+.process-flow-edit-view-new{
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.process-flow-edit-view-new .west{
+    width:18%;
+    min-width: 180px;
+    float:left;
+    height: 100%;
+    /* overflow-y: auto; */
+    background: rgb(34,34,34);
+    color: rgb(191,194,201);
+}
+.process-flow-edit-view-new .east{
+    float:left;
+    height: 100%;
+    width: 82%;
+}
+.process-flow-edit-view-new .east .head{
+    height:50px;
+    line-height: 50px;
+    padding-left: 20px;
+    border-bottom: 1px solid rgb(193, 198, 198);
+}
+.process-flow-edit-view-new .east .body{
+    height:calc(100% - 50px);
+}
+.process-flow-edit-view-new .east .body .left{
+    width: 77%;
+    float:left;
+    height: 100%;
+}
+.process-flow-edit-view-new .east .body .right{
+    width: 23%;
+    float:left;
+    height: 100%;
+    border-left: 1px solid rgb(193, 198, 198);
+    padding-right: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.process-flow-edit-view-new .west ul{
+    padding:0;
+}
+.process-flow-edit-view-new .west-head{
+    height: 40px;
+    width: 50%;
+    font-size: 16px;
+    line-height: 50px;
+    border-bottom: 1px solid rgb(0,154,154);
+    border-top: 1px solid rgb(0,154,154);
+    text-align: center;
+    /* margin: 0; */
+}
+.process-flow-edit-view-new .west-head a{
+    color: rgb(0,154,154) !important;
+}
+.process-flow-edit-view-new .west-head a{
+    line-height: 30px;
+    height: 40px;
+}
+.process-flow-edit-view-new .modules-title-s{
+    font-size:16px;
+    padding-left: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.process-flow-edit-view-new .modules-title{
+    font-size:16px;
+    padding-left: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.process-flow-edit-view-new .modules-item{
+    font-size: 14px;
+    padding-left: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.process-flow-edit-view-new .west .nav .active a{
+    background: rgb(0,154,154);
+    color:  #fff !important;
+}
+.process-flow-edit-view-new .modules-item-img{
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+}
+.process-flow-edit-view-new .flow-item{
+    height:40px;
+    padding: 10px;
+}
+.process-flow-edit-view-new .flow-item .flow-item-del{
+    width: 15px;
+    height: 16px;
+    cursor: pointer;
+}
+.process-flow-edit-view-new .flow-item .flow-item-title{
+    width:calc(100% - 20px);
+    height: 20px;
+    line-height: 20px;
+    padding-left: 10px;
+    font-size: 14px;
+    float: left;
+    cursor: pointer;
+}
+.process-flow-edit-view-new .head-title{
+    height:20px;
+    font-size:16px;
+    float: left;
+}
+.process-flow-edit-view-new .head-title img{
+    width:21px;
+    height:21px;
+    margin-right: 10px;
+}
+.process-flow-edit-view-new .head button{
+    margin:0 30px;
+    width: 70px;
+    color:#000;
+    font-size:16px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    text-align: right;
+    padding-right: 8px;
+    height: 30px;
+    line-height: 5px;
+}
+.process-flow-edit-view-new .head .head-new{
+    background-image: url("./../../img/addFlow.png");
+}
+.process-flow-edit-view-new .head .head-save{
+    background-image: url("./../../img/saveFlow.png");
+}
+.process-flow-edit-view-new .head .head-align{
+    background-image: url("./../../img/duiqi.png");
+}
+.process-flow-edit-view-new .head span{
+    font-size: 16px;
+    margin-left: 80px;
+}
+.process-flow-edit-view-new .right .right-title{
+    /* float:left; */
+    height:30px;
+    font-size:16px;
+    color: rgb(51,51,51);
+}
+.modules {
+    height: calc(100% - 89px);
+    overflow-y:scroll;
+}
+.toola{
+    height: 770px;
+}

@@ -1,0 +1,19 @@
+.comp-multi-timepicker {
+    width: 100%;
+    position: relative;
+    padding-top: 2em;
+}
+
+.comp-multi-timepicker .bar-bg {
+    position: absolute;
+    /* left: 10%; */
+    width: 100%;
+    background-color: #ddd;
+    height: 25px;
+}
+
+.comp-multi-timepicker .coordinate{
+    position: absolute;
+    /* margin-left: -0.3em; */
+    top: -1.5em;
+}

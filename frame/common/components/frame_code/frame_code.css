@@ -1,0 +1,18 @@
+.frame-code {
+    background-color: #24579A;
+    width: 100%;
+    float:left;
+}
+
+.frame-code-ltjk {
+    background-color: white;
+}
+
+.frame-code-imp {
+    background-color: white;
+}
+
+.frame-code > div {
+    float:left;
+    width: 15px;
+}

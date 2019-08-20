@@ -1,0 +1,347 @@
+﻿{
+    "DllPluginUrl": {
+	"BasePlugin": "BasePlugin//BasePlugin",
+        "AnalysePlugin": "AnalysePlugin//AnalysePlugin",
+         "DynTargetPlugin": "DynTargetPlugin//DynTargetPlugin",
+        "ElectromagneticPlugin": "ElectromagneticPlugin//ElectromagneticPlugin",
+        "MilitaryMarkPlugin": "MilitaryMarkPlugin//MilitaryMarkPlugin",
+        "SkyAndCloudPlugin": "SkyAndCloudPlugin//SkyAndCloudPlugin",
+        "SearchPlugin": "SearchPlugin//SearchPlugin",
+        "WeatherScene": "WeatherScene//WeatherScene",
+        "SatellitePlugin": "SatellitePlugin//SatellitePlugin",
+        "ItemSelectPlugin":"ItemSelectPlugin//ItemSelectPlugin",
+		"TiltPhotographytPlugin":"TiltPhotographytPlugin//TiltPhotographytPlugin"
+    },
+    "Register": {
+        "GeoVIS::BasePlugin::DrawCurveTool": {
+            "name": "CurveTool",
+            "cn_zh": "标绘曲线工具",
+            "commands": {
+                "post": [],
+                "listen": [{ "name": "locationChange", "cn_zh": "位置更新"}]
+            }
+        },
+        "GeoVIS::BasePlugin::TimeWidget": {
+            "name": "TimeWidget",
+            "cn_zh": "时序影像",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::BasePlugin::GVInfoBar": {
+            "name": "InfoBar",
+            "cn_zh": "信息条",
+            "commands": {
+                "post": [],
+                "listen": [{ "name": "locationChange", "cn_zh": "位置更新"}]
+            }
+        },
+        "GeoVIS::BasePlugin::FrameStatInfo": {
+            "name": "FrameState",
+            "cn_zh": "帧率状态信息",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::BasePlugin::DistanceMeasure": {
+            "name": "DistanceMeasure",
+            "cn_zh": "距离测量",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::BasePlugin::AzimuthMeasureTool": {
+            "name": "AzimuthMeasureTool",
+            "cn_zh": "方位角",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+         "GeoVIS::BasePlugin::AreaMeasure": {
+            "name": "AreaMeasure",
+            "cn_zh": "面积测量",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::BasePlugin::RectAngleTool": {
+            "name": "RectAngleTool",
+            "cn_zh": "态势分析",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::BasePlugin::DrawIconTool":{
+            "name": "DrawIconTool",
+            "cn_zh": "图标标绘",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::BasePlugin::DrawConeTool":{
+            "name": "DrawConeTool",
+            "cn_zh": "椎体标绘",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+		"GeoVIS::BasePlugin::DrawModelTool":{
+            "name": "DrawModelTool",
+            "cn_zh": "模型标绘",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::BasePlugin::DrawCurveTool":{
+            "name": "DrawSplineTool",
+            "cn_zh": "样条曲线",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::SkyAndCloudPlugin::SkyAndCloudWidget": {
+            "name": "SkyAndCloud",
+            "cn_zh": "天空特效",
+            "commands": {
+                "post": [{ "name": "time", "cn_zh": "光照时间"},
+                         { "name": "isLight", "cn_zh": "是否显示光照"}],
+                "listen": []
+            }
+        },
+        "GeoVIS::SkyAndCloudPlugin::OceanWidget": {
+            "name": "Ocean",
+            "cn_zh": "海水特效",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::SkyAndCloudPlugin::ExplosionEffectWidget":{
+        	"name": "Explosion",
+            "cn_zh": "爆炸效果",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::SkyAndCloudPlugin::FireEffectWidget":{
+        	"name": "Fire",
+            "cn_zh": "火效果",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::SkyAndCloudPlugin::SmokeEffectWidget":{
+        	"name": "Smoke",
+            "cn_zh": "烟效果",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+         "GeoVIS::SkyAndCloudPlugin::RainEffectWidget":{
+        	"name": "Rain",
+            "cn_zh": "雨效果",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+		"GeoVIS::SatellitePlugin::SatelliteWidget":{
+					"name": "SatelliteWidget",
+			"cn_zh": "卫星",
+			"commands": {
+				"post": [],
+                "listen": []
+			}
+		},
+        "GeoVIS::GVAnalysePlugin::GetJSonTool":{
+            "name": "GetJSonTool",
+            "cn_zh": "刨面分析",
+            "commands": {
+                "post": [],
+                "listen": [{"name": "sendJSon", "cn_zh": "刨面数据"}]
+            }
+        },
+        "GeoVIS::BasePlugin::InterVisibleTool": {
+            "name": "InterVisibleTool",
+            "cn_zh": "通视分析",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::BasePlugin::WaterAnalyseTool": {
+            "name": "WaterAnalyseTool",
+            "cn_zh": "淹没分析",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::GVDynTargetPlugin::DynTargetMessage":{
+            "name": "DynTarget",
+            "cn_zh": "态势",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::GVDynTargetPlugin::TargetCreateTool":{
+            "name": "DynTargetCreate",
+            "cn_zh": "态势编辑",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::GVDynTargetPlugin::RouteEditTool":{
+            "name": "RouteEdit",
+            "cn_zh": "航路编辑",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::GVDynTargetPlugin::MoveObjectTool":{
+            "name": "MoveEdit",
+            "cn_zh": "航路编辑",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::GVElecPlugin::ElecPluginMessage":{
+            "name": "Electric",
+            "cn_zh": "电磁",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::GVElecPlugin::WidgetHFDY":{
+            "name": "WidgetHFDY",
+            "cn_zh": "电磁HFDY",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::MilitaryMarkPlugin::GVMilitaryMarkTool":{
+            "name": "MilitaryMark",
+            "cn_zh": "军标",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::BasePlugin::GVDynTargetWidget":{
+            "name": "DynTargetBubble",
+            "cn_zh": "态势信息面板",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::BasePlugin::GridWidget":{
+            "name": "Gridwidget",
+            "cn_zh": "格网",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::BasePlugin::GraticuleWidget":{
+            "name": "GraticuleWidget",
+            "cn_zh": "经纬网",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+        "GeoVIS::BasePlugin::SkyWidget":{
+            "name": "Skywidget",
+            "cn_zh": "大气",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+         "GeoVIS::WeatherScene::WeatherWidget":{
+            "name": "weather",
+            "cn_zh": "气象编辑",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+         "GeoVIS::WeatherScene::OceanCurrentWidget":{
+            "name": "oceancurrent",
+            "cn_zh": "海流",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+         "GeoVIS::WeatherScene::LandingWidget":{
+            "name": "landing",
+            "cn_zh": "云图",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+         "GeoVIS::WeatherScene::WeatherForeastWidget":{
+            "name": "WeatherForeastWidget",
+            "cn_zh": "天气",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+         "GeoVIS::WeatherScene::WindFieldWidget":{
+            "name": "WindFieldWidget",
+            "cn_zh": "风场",
+            "commands": {
+                "post": [],
+                "listen": []
+            }
+        },
+		"GeoVIS::SearchPlugin::SearchWidget": {
+			"name": "searchWidget",
+			"cn_zh": "地名",
+			"commands": {
+				"post": [],
+                "listen": []
+			}
+		},
+		"GeoVIS::ItemSelectPlugin::ItemSelectTool": {
+		"name": "itemSelect",
+		"cn_zh": "编辑工具",
+		"commands": {
+			"post": [],
+			"listen": []
+			}
+		},		 
+		"GeoVIS::TiltPhotographyPlugin::TiltPhotographyWidget": {
+			"name": "tiltphotographyWidget",
+			"cn_zh": "倾斜摄影",
+			"commands": {
+				"post": [],
+                "listen": []
+			}
+		}
+    }
+}
+

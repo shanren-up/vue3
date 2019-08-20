@@ -1,0 +1,271 @@
+<div class="comp-flow-param">
+    <div class="panel-group" id="accordion">
+    {{#each flowModules as |module index| }}
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion"
+                           href="#module{{index}}">
+                            {{module.name}}
+                        </a>
+                    </h4>
+                </div>
+                <div id="module{{index}}" class="panel-collapse collapse in param-body">
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse"
+                                       href="#moduleBase{{index}}">
+                                         基础参数
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="moduleBase{{index}}" class="panel-collapse collapse in form-horizontal param-body">
+                                 {{#each module.Userproperty.InputParameter.Configuration as |param index2|}}
+                                    {{#compare param.paramtype '1'}}
+                                        {{#compare param.type 'select'}}
+                                            <div class="form-group">
+                                                <label for="moduleBase{{index}}{{param.name}}{{index2}}" class="col-sm-4 control-label">{{param.title}}</label>
+                                                <div class="col-sm-8">
+                                                    <select value="{{param.value}}" class="form-control" onchange={{action 'paramSelectChange' index index2  }}  id="moduleBase{{index}}{{param.name}}{{index2}}">
+                                                        {{#each param.tempValue as |tempVal|}}
+                                                            {{#each-in tempVal as |name value|}}
+                                                                {{#compare param.value value}}
+                                                                    <option type="number" selected value="{{value}}" >
+                                                                        {{name}}
+                                                                    </option>
+                                                                {{/compare}}
+                                                                {{#unequal param.value value}}
+                                                                    <option type="number"  value="{{value}}" >
+                                                                        {{name}}
+                                                                    </option>
+                                                                {{/unequal}}
+                                                            {{/each-in}}
+                                                        {{/each}}
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        {{/compare}}
+                                        {{#compare param.type 'string'}}
+                                            <div class="form-group">
+                                                <label  class="col-sm-4 control-label">{{param.title}}</label>
+                                                <div class="col-sm-8">
+                                                    {{input type="text" class="form-control" value=param.value }}
+                                                </div>
+                                            </div>
+                                        {{/compare}}
+                                        {{#compare param.type 'url'}}
+                                            <div class="form-group">
+                                                <label  class="col-sm-4 control-label">{{param.title}}</label>
+                                                <div class="col-sm-8">
+                                                    <!--<input type="text" class="form-control" value="{{param.value}}" id="{{param.name}}{{index2}}">-->
+                                                    {{input type="text" class="form-control" value=param.value }}
+                                                </div>
+                                            </div>
+                                        {{/compare}}
+                                        {{#compare param.type 'int'}}
+                                            <div class="form-group">
+                                                <label  class="col-sm-4 control-label">{{param.title}}</label>
+                                                <div class="col-sm-8">
+                                                    {{input type="number" class="form-control"  step=1 min=param.range.min max=param.range.max value=param.value }}
+                                                </div>
+                                            </div>
+                                        {{/compare}}
+                                        {{#compare param.type 'float'}}
+                                            <div class="form-group">
+                                                <label  class="col-sm-4 control-label">{{param.title}}</label>
+                                                <div class="col-sm-8">
+                                                    {{input type="number" class="form-control"  step=0.01 min=param.range.min max=param.range.max value=param.value }}
+                                                </div>
+                                            </div>
+                                        {{/compare}}
+                                    {{/compare}}
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" >
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse"
+                                       href="#moduleHigh{{index}}">
+                                        高级参数
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="moduleHigh{{index}}" class="panel-collapse collapse out form-horizontal param-body">
+                                {{#each module.Userproperty.InputParameter.Configuration as |param index2|}}
+                                {{#compare param.paramtype '0'}}
+                                {{#compare param.type 'select'}}
+                                <div class="form-group">
+                                    <label for="moduleBase{{index}}{{param.name}}{{index2}}" class="col-sm-4 control-label">{{param.title}}</label>
+                                    <div class="col-sm-8">
+                                        <select value="{{param.value}}" class="form-control" onchange={{action 'paramSelectChange' index index2  }}  id="moduleBase{{index}}{{param.name}}{{index2}}">
+                                        {{#each param.tempValue as |tempVal|}}
+                                        {{#each-in tempVal as |name value|}}
+                                        {{#compare param.value value}}
+                                        <option type="number" selected value="{{value}}" >
+                                            {{name}}
+                                        </option>
+                                        {{/compare}}
+                                        {{#unequal param.value value}}
+                                        <option type="number"  value="{{value}}" >
+                                            {{name}}
+                                        </option>
+                                        {{/unequal}}
+                                        {{/each-in}}
+                                        {{/each}}
+                                        </select>
+                                    </div>
+                                </div>
+                                {{/compare}}
+                                {{#compare param.type 'string'}}
+                                <div class="form-group">
+                                    <label  class="col-sm-4 control-label">{{param.title}}</label>
+                                    <div class="col-sm-8">
+                                        {{input type="text" class="form-control" value=param.value }}
+                                    </div>
+                                </div>
+                                {{/compare}}
+                                {{#compare param.type 'url'}}
+                                <div class="form-group">
+                                    {{#compare param.title '先验DEM'}}
+                                        <label  class="col-sm-4 control-label">{{param.title}}</label>
+                                        <div class="col-sm-7 param-input-div">
+                                            <!--<input type="text" class="form-control" value="{{param.value}}" id="{{param.name}}{{index2}}">-->
+                                            {{input type="text" class="form-control" value=param.value }}
+                                        </div>
+                                        <button class="param-folder col-sm-1" {{action 'selectFolder' index index2}}>...</button>
+                                    {{/compare}}
+                                    {{#unequal param.title '先验DEM'}}
+                                        <label  class="col-sm-4 control-label">{{param.title}}</label>
+                                        <div class="col-sm-8">
+                                            <!--<input type="text" class="form-control" value="{{param.value}}" id="{{param.name}}{{index2}}">-->
+                                            {{input type="text" class="form-control" value=param.value }}
+                                        </div>
+										<button class="param-folder col-sm-1" {{action 'selectFolder' index index2}}>...</button>
+                                    {{/unequal}}
+                                </div>
+                                {{/compare}}
+                                {{#compare param.type 'int'}}
+                                <div class="form-group">
+                                    <label  class="col-sm-4 control-label">{{param.title}}</label>
+                                    <div class="col-sm-8">
+                                        {{input type="number" class="form-control"  step=1 min=param.range.min max=param.range.max value=param.value }}
+                                    </div>
+                                </div>
+                                {{/compare}}
+                                {{#compare param.type 'float'}}
+                                <div class="form-group">
+                                    <label  class="col-sm-4 control-label">{{param.title}}</label>
+                                    <div class="col-sm-8">
+                                        {{input type="number" class="form-control"  step=0.01 min=param.range.min max=param.range.max value=param.value }}
+                                    </div>
+                                </div>
+                                {{/compare}}
+								{{#compare param.type 'date'}}
+								<div class="form-group">
+								    <label  class="col-sm-4 control-label">{{param.title}}</label>
+								    <div class="col-sm-8">
+								        {{input type="date" class="form-control"  value=param.value }}
+								    </div>
+								</div>
+								{{/compare}}
+                                {{/compare}}
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse"
+                                       href="#moduleSys{{index}}">
+                                        系统参数
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="moduleSys{{index}}" class="panel-collapse collapse out form-horizontal param-body">
+                                {{#each module.Systemproperty.SystemConfiguration as |param index3|}}
+                                {{#compare param.type 'select'}}
+                                <div class="form-group">
+                                    <label for="moduleBase{{index}}{{param.name}}{{index3}}" class="col-sm-4 control-label">{{param.title}}</label>
+                                    <div class="col-sm-8">
+                                        <select value="{{param.value}}" class="form-control" onchange={{action 'sysSelectChange' index index3  }}  id="moduleBase{{index}}{{param.name}}{{index3}}">
+                                        {{#each param.tempValue as |tempVal|}}
+                                        {{#each-in tempVal as |name value|}}
+                                        {{#compare param.value value}}
+                                        <option type="number" selected value="{{value}}" >
+                                            {{name}}
+                                        </option>
+                                        {{/compare}}
+                                        {{#unequal param.value value}}
+                                        <option type="number"  value="{{value}}" >
+                                            {{name}}
+                                        </option>
+                                        {{/unequal}}
+                                        {{/each-in}}
+                                        {{/each}}
+                                        </select>
+                                    </div>
+                                </div>
+                                {{/compare}}
+                                {{#compare param.type 'string'}}
+                                <div class="form-group">
+                                    <label  class="col-sm-4 control-label">{{param.title}}</label>
+                                    <div class="col-sm-8">
+                                        {{input type="text" class="form-control" value=param.value}}
+                                    </div>
+                                </div>
+                                {{/compare}}
+                                {{#compare param.type 'url'}}
+                                <div class="form-group">
+                                    <label  class="col-sm-4 control-label">{{param.title}}</label>
+                                    <div class="col-sm-8">
+                                        <!--<input type="text" class="form-control" value="{{param.value}}" id="{{param.name}}{{index2}}">-->
+                                        {{input type="text" class="form-control" value=param.value }}
+                                    </div>
+                                </div>
+                                {{/compare}}
+                                {{#compare param.type 'int'}}
+                                <div class="form-group">
+                                    <label  class="col-sm-4 control-label">{{param.title}}</label>
+                                    <div class="col-sm-8">
+                                        {{input type="number" class="form-control"  step=1 min=param.range.min max=param.range.max value=param.value }}
+                                    </div>
+                                </div>
+                                {{/compare}}
+                                {{#compare param.type 'float'}}
+                                <div class="form-group">
+                                    <label  class="col-sm-4 control-label">{{param.title}}</label>
+                                    <div class="col-sm-8">
+                                        {{input type="number" class="form-control"  step=0.01 min=param.range.min max=param.range.max value=param.value }}
+                                    </div>
+                                </div>
+                                {{/compare}}
+								{{#compare param.type 'date'}}
+								<div class="form-group">
+								    <label  class="col-sm-4 control-label">{{param.title}}</label>
+								    <div class="col-sm-8">
+								        {{input type="date" class="form-control"  value=param.value }}
+								    </div>
+								</div>
+								{{/compare}}
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    {{/each}}
+    </div>
+    {{#if showBtn}}
+    <div class="dialog-footer">
+        <button class="btn-info" {{action 'confirmParam'}}>确定</button>
+        <button class="btn-info" {{action 'cancleParam'}}>取消</button>
+    </div>
+    {{/if}}
+</div>

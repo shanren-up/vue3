@@ -1,0 +1,146 @@
+.comp-create-task{
+    width:1200px;
+    height: 650px;
+    padding: 10px;
+}
+.create-task-body{
+    height:100%;
+}
+.comp-create-task ul li a{
+    padding:10px 10px;
+    color:#009999;
+    font-size: 14px;
+}
+
+.comp-create-task .create-task-footer{
+    height:50px;
+    padding: 0 30px 0 900px;
+}
+.comp-create-task .create-task-footer .button-pre{
+    height: 35px;
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+.comp-create-task .create-task-footer .button-next{
+    height: 35px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    font-size:  14px;
+}
+.comp-create-task .tab-content{
+    height: 520px;
+    padding-left: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.comp-create-task-size{
+    width: 1200px;
+    height: 600px;
+}
+.comp-create-task-body{
+    padding: 0 !important;
+}
+.comp-create-task-header{
+    line-height: 35px;
+    height: 35px;
+    padding: 0px 5px;
+    background-color: #CCC;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+}
+.comp-create-task .directory-select{
+    width: 60px;
+    border: none;
+    height: 30px;
+}
+.comp-create-task .project-slip{
+    width: 30px;
+    float: left;
+    height: 31px;
+    line-height: 31px;
+    font-size: 16px;
+}
+.comp-create-task #inputText7{
+    width: 136px;
+}
+.comp-create-task .no-click{
+    background-color: #e1e1e1;
+    cursor: not-allowed;
+    color: #fff;
+}
+.comp-create-task .task-data{
+    overflow-x: scroll;
+}
+.comp-create-task .task-data-list{
+    padding: 5px 20px;
+    height: 30px;
+    width: auto;
+}
+/*.comp-create-task .task-data-list>div{*/
+    /*width: 30px;*/
+    /*height: 30px;*/
+    /*float:left;*/
+    /*margin-right: 1px;*/
+    /*background: url("./../../img/file_explore/icon.png");*/
+    /*background-size:  cover;*/
+/*}*/
+.comp-create-task .task-data-num{
+    width: 30px;
+}
+.comp-create-task .task-data-cosname{
+    width: 450px;
+    overflow: hidden;
+}
+.comp-create-task .task-data-flowtype{
+    width:100px;
+}
+.comp-create-task .task-data-costype{
+    width:100px;
+}
+.comp-create-task .task-data-rpc{
+    width: 450px;
+    overflow: hidden;
+}
+.comp-create-task .task-data-xml{
+    width: 450px;
+    overflow: hidden;
+}
+.comp-create-task .task-data-list>div{
+    height: 30px;
+    float:left;
+    text-align: center;
+}
+.comp-create-task .task-data-list-title>div{
+    height: 30px;
+    float:left;
+}
+.comp-create-task .task-data-list a{
+    display: block;
+    text-align: left;
+    max-width:  700px;
+    overflow:hidden;
+    word-break:keep-all;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    height: 30px;
+    line-height: 30px;
+}
+.comp-create-task .task-data-list a:hover{
+    text-decoration: none;
+    cursor: default;
+}
+.comp-create-task .task-data-list-checkbox{
+    width: 15px;
+    height: 15px;
+    float: left;
+    /* margin-top: 8px; */
+    margin-right: 5px;
+}
+.comp-create-task .content-hidden{
+    display: none;
+}

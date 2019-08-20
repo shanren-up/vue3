@@ -1,0 +1,87 @@
+.frame-login {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.frame-login table {
+    width: 400px;
+    table-layout: fixed;
+}
+
+.frame-login table > tr > td:nth-child(1) {
+    width: 83px;
+}
+
+.frame-login table > tr {
+    height: 45px;
+}
+
+.frame-login table > tr > td:nth-child(2) {
+    width: 159px;
+}
+
+.frame-login table > tr > td:nth-child(3) {
+    width: 100%;
+    text-align: left;
+}
+
+.frame-login .btn-login {
+    margin-left: 19px;
+    height: 33px;
+    line-height: 31px;
+    cursor: pointer;
+}
+
+.frame-login .btn-login-butlersys {
+    margin-left: 19px;
+    display: inline-block;
+    height: 33px;
+    line-height: 31px;
+    cursor: pointer;
+}
+
+.frame-login .btn-register-butlersys {
+    margin-left: 50px;
+    display: inline-block;
+    height: 33px;
+    line-height: 31px;
+    cursor: pointer;
+}
+
+.frame-login .login-location {
+    left: 60%;
+    top: 43%;
+}
+
+.frame-login .login-location-ltjk {
+    margin: -99px 0 0 -200px;
+    top: 55%;
+    left: 58%;
+}
+
+.frame-login .background {
+    height: 100%;
+    width: 100%;
+}
+
+.frame-login input {
+    border: 0 solid;
+    color: black;
+}
+
+.frame-login .error {
+    color: red;
+}
+
+.frame-login .check-code {
+    width: 75px;
+    float: left;
+    overflow: hidden;
+}
+
+.frame-login .verify-code {
+    margin-left: 16px;
+    float: left;
+    width: 62px;
+}

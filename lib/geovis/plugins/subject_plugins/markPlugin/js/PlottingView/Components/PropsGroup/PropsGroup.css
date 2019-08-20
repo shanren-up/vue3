@@ -1,0 +1,57 @@
+.propsTitle {
+    width: 100%;
+    height: 28px;
+}
+
+.propsShow {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAYAAABr5z2BAAAAv0lEQVQ4T5WRMQ4BQRhG39eQ0CgUakdQ0TiBApE4Ag2XcAQVJ5AICr1GwyEcQEGjUv2yMjZr7a6dqWaS73/zvRmZ2RoYAA/8Vhk4yMzqwMVvNkw3FGzNbAisPCFTSfM3wEH2QCcn5CSpFWSjgBJwB4o5IDVJ1y+Aa9EDtn8AY0mLTyZskFPlLKkZvSAJkKUSVk9t4FS6wC6mMpK0jOv9NIiobIC+Ox8ltZPeJgtQAJ5uqCrp5gVwKhOgImmW9jMvj0M68zn8k1wAAAAASUVORK5CYII=);
+    background-color: transparent;
+    background-position: center;
+    background-size: 12px 6px;
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 8px;
+    outline: none;
+    border: none;
+    margin: 10px 8px;
+    float: left;
+    -webkit-transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+}
+
+.turndown {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.turnright {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.listshow {
+    transform: translate(0, 0);
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transition: visibility 0s 0.2s, opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.listhide {
+    transform: translate(0, 0);
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    transition: visibility 0s 0.2s, opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.propsShow:hover {
+    cursor: pointer;
+}
+
+.propsTitle > span {
+    font-size: 15px;
+    line-height: 28px;
+    margin-left: 4px;
+    font-family: '微软雅黑';
+}

@@ -1,0 +1,73 @@
+define(
+    [
+        'app',
+        'text!./bhz_comp_XXX.html',
+        'comp_modal', //引用弹出框组件
+        'css!./bhz_comp_XXX.css',
+        './bhz_comp_XXX_modal_header/bhz_comp_XXX_modal_header',
+        './bhz_comp_XXX_modal_content/bhz_comp_XXX_modal_content'
+    ],
+
+    function(app, template, modal) {
+
+        "use strict";
+
+        app.BhzCompXXXComponent = Ember.Component.extend({
+            layout: Ember.ExtendHelper.compileEx(template),
+            templateName: 'bhz-comp-XXX',
+            init: function() {
+                this._super();
+            },
+            actions: {            
+                //1.弹出模态框
+                showModal: function() {
+                    modal.popup({
+                        targetObject : this, //父对象，支持弹出多层
+                        isDefaultStyle : false, //是否默认样式  
+                        sizeClass : 'bhz-comp-XXX-modal-size', //弹出框大小:large、small，或自定义整体样式
+                        headerClass : 'bhz-comp-XXX-modal-header' , //自定义头部样式,
+                        bodyClass : 'bhz-comp-XXX-modal-body' , //自定义内容样式
+                        footerClass : 'bhz-comp-XXX-modal-footer' , //自定义底部样式                      
+                        hasHeader : true, //是否有头部，默认true
+                        headerText: '标题', //头部标题名称
+                        headerComponentName : 'bhz-comp-XXX-modal-header', //头部组件  
+                        contentComponentName : 'bhz-comp-XXX-modal-content', //内容组件
+                        parameters ： null, //内容传递参数
+                        hasFooter : true, //是否有底部，默认false
+                        confirmText: '关闭', //底部按钮名称       
+                        enforceModality : true
+                        close : function(){
+                            //获取传递参数
+                            var param = this.parameters;
+                        }
+                    });                    
+                },
+                //2.在指定元素(popoverElement)下方弹出非模态框
+                showPopover: function() {
+                    modal.popup({
+                        targetObject: this,
+                        popoverElement: this.$('.bhz-ab-comp-matrix-img'), //指定元素
+                        placement: 'bottom', //弹出方位：bottom、top、top-right、top-left、bottom-right、bottom-left、left、right
+                        hasHeader: true, //是否包含默认头部
+                        hasMax: false, //头部是否包含“最大化”按钮
+                        hasPhoto: false, //头部是否包含“截图”按钮
+                        headerText: '区域选择',
+                        sizeClass: 'bhz-ab-comp-matrix-setting-size',
+                        contentComponentName: 'bhz-ab-comp-matrix-setting',
+                        hasFooter: false, //是否包含默认底部
+                        backdrop: false, //非模态框
+                        enforceModality: true,
+                        close: function() {
+                            alert("close");
+                        },
+                        confirm: function() {
+                            alert("confirm");
+                        },
+                        cancel: function() {
+                            alert("cancel");
+                        }
+                    });
+                }
+            }
+        });
+    });

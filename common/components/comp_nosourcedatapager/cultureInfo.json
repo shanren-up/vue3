@@ -1,0 +1,94 @@
+{
+    "comp_nosourcedatapager_zg ": {
+        "en": "In total ",
+        "zh": "总共 "
+    },
+    "comp_nosourcedatapager_xsd ": {
+        "en": "Show ",
+        "zh": "显示第 "
+    },
+    "comp_nosourcedatapager_xsd": {
+        "en": " show",
+        "zh": "显示"
+    },
+    "comp_nosourcedatapager_g": {
+        "en": "total",
+        "zh": "共"
+    },
+    "comp_nosourcedatapager_tjl": {
+        "en": "records",
+        "zh": "条记录"
+    },
+    "comp_nosourcedatapager_my": {
+        "en": "pre page",
+        "zh": "每页"
+    },
+    "comp_nosourcedatapager_t g": {
+        "en": "records total",
+        "zh": "条 共"
+    },
+    "comp_nosourcedatapager_srdysdyzys。": {
+        "en": "The number of pages entered is greater than the total number of pages.",
+        "zh": "输入的页数大于总页数。"
+    },
+    "comp_nosourcedatapager_zd": {
+        "en": "Go to",
+        "zh": "转到"
+    },
+    "comp_nosourcedatapager_tzd": {
+        "en": "jump to",
+        "zh": "跳转到"
+    },
+    "comp_nosourcedatapager_mytsbxszzs。": {
+        "en": "The number of pages per page must be a positive integer.",
+        "zh": "每页条数必须是正整数。"
+    },
+    "comp_nosourcedatapager_dd ": {
+        "en": "to ",
+        "zh": "到第 "
+    },
+    "comp_nosourcedatapager_srdysdyzys": {
+        "en": "The number of pages entered is greater than the total number of pages",
+        "zh": "输入的页数大于总页数"
+    },
+    "comp_nosourcedatapager_qd": {
+        "en": "OK",
+        "zh": "确定"
+    },
+    "comp_nosourcedatapager_t": {
+        "en": "records",
+        "zh": "条"
+    },
+    "comp_nosourcedatapager_mytsbxszzs": {
+        "en": "The number of pages per page must be a positive integer",
+        "zh": "每页条数必须是正整数"
+    },
+    "comp_nosourcedatapager_y": {
+        "en": "page",
+        "zh": "页"
+    },
+    "comp_nosourcedatapager_dqy": {
+        "en": "current page",
+        "zh": "当前页"
+    },
+    "comp_nosourcedatapager_myxs": {
+        "en": "every page shows",
+        "zh": "每页显示"
+    },
+    "comp_nosourcedatapager_item_show": {
+        "en": "Showing ",
+        "zh": "显示"
+    },
+    "comp_nosourcedatapager_item_to": {
+        "en": " to ",
+        "zh": "到"
+    },
+    "comp_nosourcedatapager_item_of": {
+        "en": " of ",
+        "zh": "总共"
+    },
+    "comp_nosourcedatapager_item_rows": {
+        "en": " rows ",
+        "zh": "行"
+    }
+}

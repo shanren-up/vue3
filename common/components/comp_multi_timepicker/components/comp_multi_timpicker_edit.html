@@ -1,0 +1,27 @@
+<div class="comp-multi-timepicker-edit">
+    <!-- <select class="form-control input-sm">
+        <option value="">{{ oloc 'comp_multi_timpicker_edit_ds' }}</option>
+    </select> -->
+    <div class="section" role="section">
+        <label>
+            {{ oloc 'comp_multi_timpicker_edit_kssj' }}：
+            {{input class="form-control input-sm" type=number value=leftHour}}
+            ：
+            {{input class="form-control input-sm" type=number value=leftMinutes}}
+            ：
+            {{input class="form-control input-sm" type=number value=leftSeconds}}
+        </label>
+        <label>
+            {{ oloc 'comp_multi_timpicker_edit_jssj' }}：
+            {{input class="form-control input-sm" type=number value=rightHour}}
+            ：
+            {{input class="form-control input-sm" type=number value=rightMinutes}}
+            ：
+            {{input class="form-control input-sm" type=number value=rightSeconds}}
+        </label>
+    </div>
+    <div class="footer" role="fotter">
+        <button class="btn btn-sm btn-primary" {{action "onCancel"}}>{{ oloc 'comp_multi_timpicker_edit_qx' }}</button>
+        <button class="btn btn-sm btn-primary" {{action "onConfirm"}}>{{ oloc 'comp_multi_timpicker_edit_bc' }}</button>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+.comp-modal .frame-version-size {
+  /* background-color: #4990E2; */
+  /* color: #333; */
+  height: 560px;
+}
+
+.frame-version .title-img.frame-header-bg-img-TNMS_Algeria {
+  background-image: url("../../../../img/logo/tnmsalgeria.png");
+  margin: 10px auto;
+}
+
+.frame-version-modal-header,
+.frame-version-releasenote-modal-header,
+.frame-historic-version-header {
+  color: #FFF;
+  background-color: #4990E2;
+}
+
+.frame-version-modal-header .comp-modal-header-close,
+.frame-version-releasenote-modal-header .comp-modal-header-close,
+.frame-historic-version-header .comp-modal-header-close {
+  width: 18px;
+  position: relative;
+  top: 0;
+}
+
+.frame-version-modal-header img:hover,
+.frame-version-releasenote-modal-header img:hover,
+.frame-historic-version-header img:hover {
+  opacity: 1;
+  transition: .1s linear;
+}
+
+.frame-version-modal-header img,
+.frame-version-releasenote-modal-header img,
+.frame-historic-version-header img {
+  opacity: 1;
+  cursor: pointer;
+}

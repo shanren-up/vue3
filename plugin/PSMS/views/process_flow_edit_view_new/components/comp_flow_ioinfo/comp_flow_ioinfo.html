@@ -1,0 +1,42 @@
+<div class="comp-flow-ioinfo form-horizontal">
+    <div class="param-body">
+        <div class="param-box output-box">
+            <table>
+                <tr>
+                    <td class="param-td1">名称</td> <td class="param-td2">标识</td> <td class="param-td3">类型</td> <td class="param-td4">操作</td>
+                </tr>
+                {{#each sourceData as |item|}}
+                    <tr draggable="true" ondragstart={{action 'drag'}} ondrop={{action 'drop' 'sourceData'}} ondragover={{action 'allowDrop'}}>
+                        <td>{{item.title}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.type}}</td>
+                        <td></td>
+                        <!--<td>  <button  class="button-next btn-warning" onclick={{action "confirmAction" item}}>删除</button></td>-->
+                    </tr>
+                {{/each}}
+            </table>
+        </div>
+        <div class="param-arrow"></div>
+        <div class="param-box input-box">
+            <table>
+                <tr>
+                    <td class="param-td1">名称</td> <td class="param-td2">标识</td> <td class="param-td3">类型</td> <td class="param-td4">操作</td>
+                </tr>
+                {{#each targetData as |item|}}
+                <tr draggable="true" ondragstart={{action 'drag'}} ondrop={{action 'drop' 'targetData'}} ondragover={{action 'allowDrop'}}>
+                <td>{{item.title}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.type}}</td>
+                <td></td>
+                <!--<td>  <button  class="button-next btn-warning" onclick={{action "confirmAction" item}}>删除</button></td>-->
+                </tr>
+                {{/each}}
+            </table>
+        </div>
+    </div>
+
+    <div class="param-foot">
+        <button  class="button-next btn-info" onclick={{action "confirmAction"}}>确定</button>
+        <button  class="button-next btn-info" onclick={{action "cancelAction"}}>取消</button>
+    </div>
+</div>

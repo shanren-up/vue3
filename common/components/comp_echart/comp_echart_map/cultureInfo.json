@@ -1,0 +1,386 @@
+{
+    "comp_echart_map_yt": {
+        "en": "yantai",
+        "zh": "烟台"
+    },
+    "comp_echart_map_yq": {
+        "en": "yangquan",
+        "zh": "阳泉"
+    },
+    "comp_echart_map_qhd": {
+        "en": "qinhuangdao",
+        "zh": "秦皇岛"
+    },
+    "comp_echart_map_yz": {
+        "en": "yangzhou",
+        "zh": "扬州"
+    },
+    "comp_echart_map_yx": {
+        "en": "yuxi",
+        "zh": "玉溪"
+    },
+    "comp_echart_map_lz": {
+        "en": "liuzhou",
+        "zh": "柳州"
+    },
+    "comp_echart_map_ly": {
+        "en": "linyi",
+        "zh": "临沂"
+    },
+    "comp_echart_map_lw": {
+        "en": "laiwu",
+        "zh": "莱芜"
+    },
+    "comp_echart_map_hs": {
+        "en": "hengshui",
+        "zh": "衡水"
+    },
+    "comp_echart_map_yc": {
+        "en": "yinchuan",
+        "zh": "银川"
+    },
+    "comp_echart_map_dl": {
+        "en": "dalian",
+        "zh": "大连"
+    },
+    "comp_echart_map_ya": {
+        "en": "yanan",
+        "zh": "延安"
+    },
+    "comp_echart_map_ls": {
+        "en": "lasa",
+        "zh": "拉萨"
+    },
+    "comp_echart_map_qg": {
+        "en": "quanguo",
+        "zh": "全国"
+    },
+    "comp_echart_map_dz": {
+        "en": "dezhou",
+        "zh": "德州"
+    },
+    "comp_echart_map_dy": {
+        "en": "dongying",
+        "zh": "东营"
+    },
+    "comp_echart_map_qd": {
+        "en": "qingdao",
+        "zh": "青岛"
+    },
+    "comp_echart_map_hz": {
+        "en": "heze",
+        "zh": "菏泽"
+    },
+    "comp_echart_map_yk": {
+        "en": "yingkou",
+        "zh": "营口"
+    },
+    "comp_echart_map_hy": {
+        "en": "heyuan",
+        "zh": "河源"
+    },
+    "comp_echart_map_dt": {
+        "en": "datong",
+        "zh": "大同"
+    },
+    "comp_echart_map_jh": {
+        "en": "jinhua",
+        "zh": "金华"
+    },
+    "comp_echart_map_nj": {
+        "en": "nanjing",
+        "zh": "南京"
+    },
+    "comp_echart_map_zs": {
+        "en": "zhangsha",
+        "zh": "长沙"
+    },
+    "comp_echart_map_zq": {
+        "en": "zhongqing",
+        "zh": "重庆"
+    },
+    "comp_echart_map_bh": {
+        "en": "beihai",
+        "zh": "北海"
+    },
+    "comp_echart_map_nt": {
+        "en": "nantong",
+        "zh": "南通"
+    },
+    "comp_echart_map_jn": {
+        "en": "jining",
+        "zh": "济宁"
+    },
+    "comp_echart_map_jm": {
+        "en": "jiangmen",
+        "zh": "江门"
+    },
+    "comp_echart_map_bd": {
+        "en": "baoding",
+        "zh": "保定"
+    },
+    "comp_echart_map_zz": {
+        "en": "zhengzhou",
+        "zh": "郑州"
+    },
+    "comp_echart_map_nn": {
+        "en": "nanning",
+        "zh": "南宁"
+    },
+    "comp_echart_map_zh": {
+        "en": "zhuhai",
+        "zh": "珠海"
+    },
+    "comp_echart_map_zc": {
+        "en": "zhangchun",
+        "zh": "长春"
+    },
+    "comp_echart_map_qz": {
+        "en": "quzhou",
+        "zh": "衢州"
+    },
+    "comp_echart_map_gz Top10": {
+        "en": "guangzhou Top10",
+        "zh": "广州 Top10"
+    },
+    "comp_echart_map_zb": {
+        "en": "zibo",
+        "zh": "淄博"
+    },
+    "comp_echart_map_qy": {
+        "en": "qingyuan",
+        "zh": "清远"
+    },
+    "comp_echart_map_nc": {
+        "en": "nanchang",
+        "zh": "南昌"
+    },
+    "comp_echart_map_nb": {
+        "en": "ningbo",
+        "zh": "宁波"
+    },
+    "comp_echart_map_zjk": {
+        "en": "zhangjiakou",
+        "zh": "张家口"
+    },
+    "comp_echart_map_zj": {
+        "en": "zhenjiang",
+        "zh": "镇江"
+    },
+    "comp_echart_map_sq": {
+        "en": "suqian",
+        "zh": "宿迁"
+    },
+    "comp_echart_map_sm": {
+        "en": "shamen",
+        "zh": "厦门"
+    },
+    "comp_echart_map_bz": {
+        "en": "binzhou",
+        "zh": "滨州"
+    },
+    "comp_echart_map_wn": {
+        "en": "weinan",
+        "zh": "渭南"
+    },
+    "comp_echart_map_sy": {
+        "en": "shenyang",
+        "zh": "沈阳"
+    },
+    "comp_echart_map_sx": {
+        "en": "shaoxing",
+        "zh": "绍兴"
+    },
+    "comp_echart_map_wz": {
+        "en": "wenzhou",
+        "zh": "温州"
+    },
+    "comp_echart_map_km": {
+        "en": "kunming",
+        "zh": "昆明"
+    },
+    "comp_echart_map_cd": {
+        "en": "chengdou",
+        "zh": "成都"
+    },
+    "comp_echart_map_st": {
+        "en": "shantou",
+        "zh": "汕头"
+    },
+    "comp_echart_map_wx": {
+        "en": "wuxi",
+        "zh": "无锡"
+    },
+    "comp_echart_map_jx": {
+        "en": "jiaxing",
+        "zh": "嘉兴"
+    },
+    "comp_echart_map_fs": {
+        "en": "foshan",
+        "zh": "佛山"
+    },
+    "comp_echart_map_hhht": {
+        "en": "huhehaote",
+        "zh": "呼和浩特"
+    },
+    "comp_echart_map_bj": {
+        "en": "beijing",
+        "zh": "北京"
+    },
+    "comp_echart_map_rz": {
+        "en": "rizhao",
+        "zh": "日照"
+    },
+    "comp_echart_map_hld": {
+        "en": "huludao",
+        "zh": "葫芦岛"
+    },
+    "comp_echart_map_sh": {
+        "en": "shanghai",
+        "zh": "上海"
+    },
+    "comp_echart_map_fz": {
+        "en": "fuzhou",
+        "zh": "福州"
+    },
+    "comp_echart_map_sg": {
+        "en": "shaoguan",
+        "zh": "韶关"
+    },
+    "comp_echart_map_bt": {
+        "en": "baotou",
+        "zh": "包头"
+    },
+    "comp_echart_map_wh": {
+        "en": "wuhan",
+        "zh": "武汉"
+    },
+    "comp_echart_map_wf": {
+        "en": "weifang",
+        "zh": "潍坊"
+    },
+    "comp_echart_map_hf": {
+        "en": "hefei",
+        "zh": "合肥"
+    },
+    "comp_echart_map_xt": {
+        "en": "xingtai",
+        "zh": "邢台"
+    },
+    "comp_echart_map_hd": {
+        "en": "handan",
+        "zh": "邯郸"
+    },
+    "comp_echart_map_lf": {
+        "en": "langfang",
+        "zh": "廊坊"
+    },
+    "comp_echart_map_pj": {
+        "en": "panjin",
+        "zh": "盘锦"
+    },
+    "comp_echart_map_ha": {
+        "en": "huaian",
+        "zh": "淮安"
+    },
+    "comp_echart_map_cz": {
+        "en": "changzhou",
+        "zh": "常州"
+    },
+    "comp_echart_map_lc": {
+        "en": "liaocheng",
+        "zh": "聊城"
+    },
+    "comp_echart_map_eeds": {
+        "en": "eerduosi",
+        "zh": "鄂尔多斯"
+    },
+    "comp_echart_map_tz": {
+        "en": "taizhou",
+        "zh": "泰州"
+    },
+    "comp_echart_map_ty": {
+        "en": "taiyuan",
+        "zh": "太原"
+    },
+    "comp_echart_map_wlmq": {
+        "en": "wulumuqi",
+        "zh": "乌鲁木齐"
+    },
+    "comp_echart_map_hk": {
+        "en": "haikou",
+        "zh": "海口"
+    },
+    "comp_echart_map_dg": {
+        "en": "dongguan",
+        "zh": "东莞"
+    },
+    "comp_echart_map_xz": {
+        "en": "xuzhou",
+        "zh": "徐州"
+    },
+    "comp_echart_map_xy": {
+        "en": "xianyang",
+        "zh": "咸阳"
+    },
+    "comp_echart_map_dd": {
+        "en": "dandong",
+        "zh": "丹东"
+    },
+    "comp_echart_map_ts": {
+        "en": "tangshan",
+        "zh": "唐山"
+    },
+    "comp_echart_map_ta": {
+        "en": "taian",
+        "zh": "泰安"
+    },
+    "comp_echart_map_heb": {
+        "en": "haerbin",
+        "zh": "哈尔滨"
+    },
+    "comp_echart_map_xa": {
+        "en": "xian",
+        "zh": "西安"
+    },
+    "comp_echart_map_sjz": {
+        "en": "shijiazhuang",
+        "zh": "石家庄"
+    },
+    "comp_echart_map_sh Top10": {
+        "en": "shanghai Top10",
+        "zh": "上海 Top10"
+    },
+    "comp_echart_map_sz": {
+        "en": "suzhou",
+        "zh": "苏州"
+    },
+    "comp_echart_map_xn": {
+        "en": "xining",
+        "zh": "西宁"
+    },
+    "comp_echart_map_tj": {
+        "en": "tianjin",
+        "zh": "天津"
+    },
+    "comp_echart_map_bj Top10": {
+        "en": "beijing Top10",
+        "zh": "北京 Top10"
+    },
+    "comp_echart_map_gz": {
+        "en": "guangzhou",
+        "zh": "广州"
+    },
+    "comp_echart_map_gy": {
+        "en": "guiyang",
+        "zh": "贵阳"
+    },
+    "comp_echart_map_lyg": {
+        "en": "lianyungang",
+        "zh": "连云港"
+    },
+    "comp_echart_map_tc": {
+        "en": "tongchuan",
+        "zh": "铜川"
+    }
+}

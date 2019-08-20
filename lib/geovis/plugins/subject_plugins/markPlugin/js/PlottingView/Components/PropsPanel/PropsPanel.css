@@ -1,0 +1,11 @@
+.propsContainer {
+    margin: 8px 4px;
+    height: 100%;
+    max-height: 412px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.propsContainer::-webkit-scrollbar {
+    width: 0px;
+}

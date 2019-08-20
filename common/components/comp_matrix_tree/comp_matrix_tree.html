@@ -1,0 +1,19 @@
+<div  class="matrix-root-container" style={{matrixWidthStyle}}>
+    {{#each itemsSource as |parentItem|}}
+        {{comp-matrix-tree-item 
+            level=0
+            itemsSource=parentItem 
+            matrixCellWidth=matrixCellWidth 
+            matrixCellHeight=matrixCellHeight 
+            matrixWidth=matrixWidth 
+            matrixItemParentStyle=matrixItemParentStyle
+            matrixCellContainerStyle=matrixCellContainerStyle
+            toggleOpenStyle=toggleOpenStyle
+            toggleCloseStyle=toggleCloseStyle
+            matrixItemStyle=matrixItemStyle
+            itemClick='matrixItemClick'	
+            filterAlarmSeverityId=filterAlarmSeverityId
+            itemDoubleClick='matrixItemDoubleClick'
+         }}
+    {{/each}}
+</div>

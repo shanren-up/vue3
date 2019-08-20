@@ -1,0 +1,13 @@
+<div>
+    <br><br>
+    default:
+    {{comp-timelinepicker width=800 lineColor='blue' pointerColor='#840aff' activeColor='yellow' onStateChange=(action 'rangtestosc' 1) }} {{rangtest1}}
+    <br><br>
+    12hourSystem:
+    {{comp-timelinepicker width=600 hourSystem=12 onStateChange=(action 'rangtestosc' 2) }} {{rangtest2}}
+    <br><br>
+    <div style="position:fixed;right:0;bottom:50px;">
+        2017.5 days:
+        {{comp-timelinepicker width=1200 isDay=true year=2017 month=5 onStateChange=(action 'rangtestosc' 3) }} {{rangtest3}}
+    </div>
+</div>

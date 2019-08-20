@@ -1,0 +1,29 @@
+  th [class$="icon-arrow-right"] {
+    background-image: url(img/glyphicons-halflings-white.png);
+  }
+
+  th [class$="icon-arrow-left"] {
+    background-image: url(img/glyphicons-halflings-white.png);
+  }
+
+  th:hover [class$="icon-arrow-right"] {
+    background-image: url(img/glyphicons-halflings.png);
+  }
+
+  th:hover [class$="icon-arrow-left"] {
+    background-image: url(img/glyphicons-halflings.png);
+  }
+
+  .datetimepicker {
+    color: white;
+  }
+
+  .datetimepicker table tr td.day:hover,
+  .datetimepicker table tr td span:hover {
+    color: #000;
+  }
+
+  .datetimepicker thead tr:first-child th:hover,
+  .datetimepicker tfoot th:hover {
+    color: #000;
+  }

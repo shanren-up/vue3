@@ -1,0 +1,49 @@
+<div class="comp-flow-baseinfo form-horizontal">
+    <div class="form-group">
+        <label  class="col-sm-3 control-label">名称</label>
+        <div class="col-sm-9">
+            {{input type="text" class="form-control" placeholder="名称" value=baseInfo.name}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label  class="col-sm-3 control-label">历史模板</label>
+        <div class="col-sm-9">
+            <select class="select-flow-base" onchange={{action 'getFlow'}} >
+            <option value="-1">请选择历史模板...</option>
+            {{#each hisFlowData as |data index|}}
+            <option  value="{{index}}">{{data.flowname}}</option>
+            {{/each}}
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label  class="col-sm-3 control-label">类型</label>
+        <div class="col-sm-9">
+            <select class="select-flow-base"  onchange={{action 'getProcessType'}}>
+                {{#each processTypeData as |data|}}
+                    <option value="{{data.id}}">{{data.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label  class="col-sm-3 control-label">子类型</label>
+        <div class="col-sm-9">
+            <select class="select-flow-base"  onchange={{action 'getflowType'}} >
+                {{#each flowTypeData as |data|}}
+                    <option value="{{data.id}}">{{data.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label  class="col-sm-3 control-label">描述</label>
+        <div class="col-sm-9">
+            {{textarea class="textarea-desc" placeholder="描述" value=baseInfo.desc}}
+        </div>
+    </div>
+    <div class="foot-btn">
+        <button  class="button-next btn-info" onclick={{action "confirmAction"}}>确定</button>
+        <button  class="button-next btn-info" onclick={{action "cancelAction"}}>取消</button>
+    </div>
+</div>

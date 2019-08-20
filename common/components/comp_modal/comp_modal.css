@@ -1,0 +1,88 @@
+.comp-modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  outline: 0;
+}
+
+.comp-modal-container {
+  margin-left: auto;
+  margin-right: auto;
+  top: 60px;
+}
+
+.comp-modal-max {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*.comp-modal-header {
+    font-family: "å¾®è½¯é›…é»‘";
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+    height: 39px;
+    background-color: #eee;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}*/
+
+
+/*.comp-modal-header img {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.comp-modal-header img:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: .1s linear;
+}
+
+.comp-modal-header-close{
+    float:right;
+    margin-left:2px;
+}
+
+.comp-modal-header-max{
+    float:right;
+    margin-left:2px;
+    margin-right:2px;
+}
+
+.comp-modal-header-photo{
+    float:right;
+    margin-right:2px;
+}*/
+
+.comp-modal-body {
+  overflow: auto;
+  height: calc(100% - 40px);
+  position: relative;
+}
+
+.comp-modal-body .layout--body {
+  margin-top: 30px;
+}
+
+.comp-modal-body>.ember-view {
+  width: 100%;
+  position: relative;
+}
+
+.comp-modal-footer {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  background-color: #eee;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}

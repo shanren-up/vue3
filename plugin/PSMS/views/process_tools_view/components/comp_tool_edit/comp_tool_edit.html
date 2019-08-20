@@ -1,0 +1,16 @@
+<div class="comp-tool-edit">
+    <div class="panel-content">
+        <div class="info-item">
+            <span>工具名：</span>
+            <input disabled type="text" value={{toolData.modulename}} />
+        </div>
+        <div class="info-item">
+            <span>权重：</span>
+            <input class="info-item-url"  id="toolWeight" type="number" step="1" min="1" max="100" value={{toolData.weight}}>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <button {{action 'confirmToolInfo'}}>确定</button>
+        <button {{action 'cancelToolInfo'}}>取消</button>
+    </div>
+</div>

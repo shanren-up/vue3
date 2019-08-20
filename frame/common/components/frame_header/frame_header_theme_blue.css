@@ -1,0 +1,25 @@
+.frame-header-bg {
+    background-image: url(../../../../img/background/blueStyle_bg.png);
+    background-size: cover;
+    border-bottom: 5px solid #BED9F3;
+}
+
+.frame-header-bg-img-butlersys {
+    background-image: url(../../../../img/logo/butlersys_default.png);
+    background-size: contain;
+}
+
+.frame-header-child-loc2 li.active .frame-menu-item-bg,
+.frame-header-child-loc2 li.active .frame-menu-item-bg:hover,
+.frame-header-child-loc2 li.active .frame-menu-item-bg:focus {
+    background: #97C1EC;
+}
+
+.frame-header-search input,
+.frame-header-search span {
+    border: 1px solid lightblue;
+}
+
+.frame-header-search span {
+    border-left: none;
+}

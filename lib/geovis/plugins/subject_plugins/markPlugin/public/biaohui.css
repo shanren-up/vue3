@@ -1,0 +1,476 @@
+body {
+  background: url(b7050f60a2d3fc40bb1f1b91a582ede3.png); }
+
+.markPanel {
+  font-family: "Microsoft YaHei", Helvetica, Tahoma, Arial, "Heiti SC", "WenQuanYi Micro Hei";
+  position: absolute;
+  width: 400px;
+  height: 980px;
+  border: 1px solid #0B446E;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  right: 80px;
+  top: 25px; }
+  .markPanel * {
+    box-sizing: content-box; }
+  .markPanel .close {
+    display: block;
+    position: absolute;
+    background-image: url(83e712ec2180e2118a72d3813168e72e.png);
+    width: 15px;
+    height: 15px;
+    right: 7px;
+    top: 10px;
+    cursor: pointer; }
+  .markPanel .delete {
+    display: block;
+    position: absolute;
+    background-image: url(1660fb29c3cd0871e5f2b506dba66803.png);
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    right: 7px;
+    top: 8px;
+    cursor: pointer; }
+  .markPanel .head {
+    margin-top: 8px;
+    width: 90%;
+    height: 25px;
+    border-left: 6px solid #24CBFF;
+    text-indent: 15px; }
+  .markPanel .tabs {
+    margin: 10px auto;
+    width: 70%;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid #0879B4; }
+    .markPanel .tabs .tab {
+      margin: 0;
+      display: inline-block;
+      width: 50%;
+      box-sizing: border-box;
+      padding: 8px 9px;
+      text-align: center; }
+      .markPanel .tabs .tab:hover {
+        background-color: #0879B4; }
+      .markPanel .tabs .tab:nth-child(1) {
+        border-right: 1px solid #0879B4; }
+  .markPanel .tabContent .toolsPanel {
+    display: none; }
+    .markPanel .tabContent .toolsPanel.actived {
+      display: block; }
+    .markPanel .tabContent .toolsPanel > div {
+      margin: 0 4px; }
+    .markPanel .tabContent .toolsPanel .menu_switch {
+      box-sizing: content-box;
+      display: block;
+      position: absolute;
+      width: 21px;
+      height: 21px;
+      cursor: pointer;
+      top: 0;
+      right: 0;
+      padding: 4px; }
+      .markPanel .tabContent .toolsPanel .menu_switch u {
+        box-sizing: content-box;
+        background-image: url(d879c65374bd3b34def5a742b5ded020.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        display: block;
+        bottom: 0; }
+    .markPanel .tabContent .toolsPanel .title {
+      background-color: #282828;
+      padding: 4px 8px;
+      position: relative; }
+      .markPanel .tabContent .toolsPanel .title.dropdown .menu_panel {
+        display: block; }
+      .markPanel .tabContent .toolsPanel .title.dropdown .menu_switch {
+        background-color: #414141; }
+      .markPanel .tabContent .toolsPanel .title .menu_panel {
+        display: none;
+        position: absolute;
+        top: 30px;
+        right: 0; }
+        .markPanel .tabContent .toolsPanel .title .menu_panel ul {
+          margin: 0;
+          padding: 0; }
+          .markPanel .tabContent .toolsPanel .title .menu_panel ul li {
+            display: block;
+            background-color: #434343;
+            border: 1px solid #1179C6;
+            border-top: none;
+            padding: 4px 80px;
+            margin: 0;
+            cursor: pointer; }
+            .markPanel .tabContent .toolsPanel .title .menu_panel ul li:hover {
+              background-color: #565656; }
+            .markPanel .tabContent .toolsPanel .title .menu_panel ul li:first-child {
+              border-top: 1px solid #1179C6; }
+    .markPanel .tabContent .toolsPanel .markRepo.mil .milMark {
+      display: block; }
+    .markPanel .tabContent .toolsPanel .milMark {
+      display: none;
+      border: 1px solid #000;
+      background-color: #282828;
+      height: 32px;
+      width: 100%;
+      margin-top: 7px; }
+      .markPanel .tabContent .toolsPanel .milMark span {
+        box-sizing: border-box;
+        margin: 2px 5px;
+        display: inline-block;
+        width: 55px;
+        height: 27px;
+        border: 1px solid #fff;
+        text-align: center;
+        cursor: pointer; }
+      .markPanel .tabContent .toolsPanel .milMark span:first-child {
+        margin-left: 65px; }
+      .markPanel .tabContent .toolsPanel .milMark .enemy {
+        border-color: blue; }
+        .markPanel .tabContent .toolsPanel .milMark .enemy.actived, .markPanel .tabContent .toolsPanel .milMark .enemy:hover {
+          background-color: blue;
+          border-color: white; }
+      .markPanel .tabContent .toolsPanel .milMark .our {
+        border-color: red; }
+        .markPanel .tabContent .toolsPanel .milMark .our.actived, .markPanel .tabContent .toolsPanel .milMark .our:hover {
+          background-color: red;
+          border-color: white; }
+      .markPanel .tabContent .toolsPanel .milMark .neutral {
+        border-color: yellow; }
+        .markPanel .tabContent .toolsPanel .milMark .neutral.actived, .markPanel .tabContent .toolsPanel .milMark .neutral:hover {
+          background-color: yellow;
+          border-color: white; }
+      .markPanel .tabContent .toolsPanel .milMark .unknown {
+        border-color: green; }
+        .markPanel .tabContent .toolsPanel .milMark .unknown.actived, .markPanel .tabContent .toolsPanel .milMark .unknown:hover {
+          background-color: green;
+          border-color: white; }
+    .markPanel .tabContent .toolsPanel > div:hover .title {
+      background-color: #565656; }
+    .markPanel .tabContent .toolsPanel ul {
+      margin: 0;
+      padding: 4px;
+      list-style: none; }
+      .markPanel .tabContent .toolsPanel ul li {
+        display: inline-block;
+        margin: 0 3px 8px;
+        padding: 1px; }
+    .markPanel .tabContent .toolsPanel .tools li {
+      padding: 4px;
+      margin-top: 3px;
+      cursor: pointer; }
+      .markPanel .tabContent .toolsPanel .tools li span {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: contain; }
+      .markPanel .tabContent .toolsPanel .tools li:hover, .markPanel .tabContent .toolsPanel .tools li.actived {
+        border: 1px solid white;
+        padding: 3px; }
+    .markPanel .tabContent .toolsPanel .propPanel {
+      margin: 0;
+      border-top: 1px solid #0B446E;
+      overflow-y: scroll;
+      height: 350px; }
+      .markPanel .tabContent .toolsPanel .propPanel .title {
+        background-color: transparent !important; }
+      .markPanel .tabContent .toolsPanel .propPanel .subPanel {
+        padding: 8px; }
+        .markPanel .tabContent .toolsPanel .propPanel .subPanel .subTitle {
+          position: relative;
+          text-indent: 15px; }
+          .markPanel .tabContent .toolsPanel .propPanel .subPanel .subTitle::before {
+            content: "+";
+            width: 0;
+            height: 0;
+            color: transparent;
+            position: absolute;
+            margin-left: -15px;
+            bottom: 7px;
+            border-top: 5px solid #FDFDFD;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent; }
+        .markPanel .tabContent .toolsPanel .propPanel .subPanel ul {
+          padding-right: 0;
+          background-color: #282828;
+          padding: 0;
+          margin: 4px; }
+          .markPanel .tabContent .toolsPanel .propPanel .subPanel ul li {
+            margin: 0;
+            padding: 2px;
+            border-bottom: 2px solid #0F0F0F;
+            width: 100%; }
+            .markPanel .tabContent .toolsPanel .propPanel .subPanel ul li:last-child {
+              border-bottom: none; }
+            .markPanel .tabContent .toolsPanel .propPanel .subPanel ul li span {
+              display: inline-block;
+              padding: 0 4px; }
+            .markPanel .tabContent .toolsPanel .propPanel .subPanel ul li .prop_label {
+              width: 110px;
+              min-height: 35px;
+              line-height: 35px;
+              border-right: 1px solid #0F0F0F; }
+            .markPanel .tabContent .toolsPanel .propPanel .subPanel ul li .value {
+              margin-left: 5px;
+              padding: 0; }
+          .markPanel .tabContent .toolsPanel .propPanel .subPanel ul li.switch .value {
+            width: 18px;
+            height: 18px;
+            color: transparent;
+            border: 1px solid #757575;
+            background-color: #282828;
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer; }
+          .markPanel .tabContent .toolsPanel .propPanel .subPanel ul li.switch .value.checked {
+            background-image: url(4a8ef528cab8a1cde83804d6d9d1e241.png); }
+          .markPanel .tabContent .toolsPanel .propPanel .subPanel ul li.text .value input[type="text"] {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            color: white;
+            min-width: 36px;
+            max-width: 175px;
+            font-size: 19px; }
+          .markPanel .tabContent .toolsPanel .propPanel .subPanel ul li.color .value {
+            width: 40px;
+            height: 25px;
+            color: transparent;
+            background-color: red;
+            cursor: pointer;
+            vertical-align: top;
+            margin-top: 6px; }
+			.markPanel .tabContent .toolsPanel .propPanel .subPanel ul li.select .value select{
+				width:180px;
+			}
+          .markPanel .tabContent .toolsPanel .propPanel .subPanel ul li.select .value option {
+            appearance: none;
+            background-color: #282828;
+            height: 34px; }
+      .markPanel .tabContent .toolsPanel .propPanel .subPanel.collapsed .subTitle::before {
+        bottom: 5px;
+        left: 20px;
+        border-top: 5px solid transparent;
+        border-left: 5px solid #FDFDFD;
+        border-bottom: 5px solid transparent; }
+      .markPanel .tabContent .toolsPanel .propPanel .subPanel.collapsed ul {
+        display: none; }
+  .markPanel .tabContent .layerPanel {
+    display: none; }
+    .markPanel .tabContent .layerPanel.actived {
+      display: block; }
+    .markPanel .tabContent .layerPanel .lamenu {
+      background-color: #282828;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 32px;
+      height: 32px; }
+      .markPanel .tabContent .layerPanel .lamenu .icon {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        bottom: 2px; }
+      .markPanel .tabContent .layerPanel .lamenu .labtn:hover, .markPanel .tabContent .layerPanel .lamenu .labtn.actived {
+        background-color: #222222;
+        border: 1px solid #424242;
+        padding: 4px; }
+      .markPanel .tabContent .layerPanel .lamenu .labtn {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        padding: 5px;
+        box-sizing: content-box;
+        margin: 1.5px 1px;
+        position: relative; }
+        .markPanel .tabContent .layerPanel .lamenu .labtn.new .icon {
+          background-image: url(e403efee616a7b97ae4fa8df8a599241.png);
+          left: 3px; }
+        .markPanel .tabContent .layerPanel .lamenu .labtn.save .icon {
+          background-image: url(bbdf9f1da7235466887053e60a2d52d4.png); }
+        .markPanel .tabContent .layerPanel .lamenu .labtn.export .icon {
+          background-image: url(79173ebc64c042d52d574c4c7eded20b.png); }
+        .markPanel .tabContent .layerPanel .lamenu .labtn.import .icon {
+          background-image: url(941ff940567d788b655f4c73d047bed6.png); }
+        .markPanel .tabContent .layerPanel .lamenu .labtn.sync .icon {
+          background-image: url(7c8eebebca66888af17ff62edaf3d9ea.png); }
+        .markPanel .tabContent .layerPanel .lamenu .labtn.turn .icon {
+          background-color: #505; }
+        .markPanel .tabContent .layerPanel .lamenu .labtn:first-child {
+          margin-left: 15px; }
+      .markPanel .tabContent .layerPanel .lamenu .laoption {
+        display: inline-block;
+        height: 22px;
+        line-height: 32px;
+        padding: 5px;
+        position: relative; }
+        .markPanel .tabContent .layerPanel .lamenu .laoption .icon {
+          background-image: url(7ad38c4e5f4c42ea1824a6fbb375218c.png);
+          width: 15px;
+          height: 15px; }
+        .markPanel .tabContent .layerPanel .lamenu .laoption.working .icon {
+          background-image: url(401edd99db8c7cd4e8e5b832452c05b4.png); }
+        .markPanel .tabContent .layerPanel .lamenu .laoption span {
+          display: inline-block;
+          position: absolute;
+          min-width: 100px;
+          vertical-align: top;
+          top: 0;
+          margin-left: 8px; }
+
+.mark_popwindow {
+  top: 240px;
+  left: 25%;
+  color: white;
+  border: 1px solid #26A5CC;
+  background-color: rgba(30, 30, 30, 0.8);
+  position: absolute;
+  z-index: 99;
+  min-width: 400px;
+  display: none; }
+  .mark_popwindow.open {
+    display: block; }
+  .mark_popwindow .title {
+    margin: 9px 0 0 12px; }
+  .mark_popwindow .mark_main {
+    margin-top: 10px;
+    padding: 2px; }
+    .mark_popwindow .mark_main .inputgroup {
+      margin: 0 10px; }
+      .mark_popwindow .mark_main .inputgroup .popwin_label {
+        display: inline-block; }
+      .mark_popwindow .mark_main .inputgroup input[type="text"] {
+        display: inline-block;
+        margin-left: 15px;
+        background-color: #535353;
+        border: none;
+        outline: none;
+        height: 24px;
+        width: 300px;
+        color: white;
+        text-indent: 20px; }
+    .mark_popwindow .mark_main .thead {
+      background-color: #565656;
+      line-height: 25px;
+      height: 25px;
+      font-size: 15px; }
+      .mark_popwindow .mark_main .thead span {
+        display: inline-block;
+        padding: 0 5px; }
+        .mark_popwindow .mark_main .thead span:first-child {
+          margin-left: 15px; }
+      .mark_popwindow .mark_main .thead .name {
+        width: 210px; }
+      .mark_popwindow .mark_main .thead .date {
+        width: 150px; }
+      .mark_popwindow .mark_main .thead .type {
+        width: 100px; }
+      .mark_popwindow .mark_main .thead .size {
+        width: 70px; }
+    .mark_popwindow .mark_main .tbody {
+      min-height: 300px; }
+      .mark_popwindow .mark_main .tbody ul {
+        margin: 0;
+        padding-top: 12px;
+        padding-left: 0; }
+        .mark_popwindow .mark_main .tbody ul li {
+          padding-left: 8px;
+          list-style: none;
+          position: relative;
+          margin: 0 20px 0 10px;
+          padding-top: 2px;
+          padding-bottom: 2px; }
+          .mark_popwindow .mark_main .tbody ul li:hover, .mark_popwindow .mark_main .tbody ul li.actived {
+            background-color: #484747; }
+          .mark_popwindow .mark_main .tbody ul li .icon {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            background-image: url(0b4dec4dd255544643f046dc15c1c7d6.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            bottom: -4px; }
+          .mark_popwindow .mark_main .tbody ul li span {
+            display: inline-block;
+            vertical-align: top;
+            line-height: 30px;
+            height: 30px; }
+          .mark_popwindow .mark_main .tbody ul li .name {
+            width: 190px; }
+          .mark_popwindow .mark_main .tbody ul li .date {
+            width: 170px; }
+          .mark_popwindow .mark_main .tbody ul li .type {
+            width: 100px; }
+          .mark_popwindow .mark_main .tbody ul li .size {
+            width: 70px; }
+    .mark_popwindow .mark_main .scrollbar {
+      margin-left: 10px;
+      margin-right: 5px;
+      float: right;
+      height: 230px;
+      background-color: transparent;
+      overflow-y: scroll;
+      margin-bottom: 15px; }
+      .mark_popwindow .mark_main .scrollbar .force-overflow {
+        min-height: 400px; }
+      .mark_popwindow .mark_main .scrollbar::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #255778; }
+      .mark_popwindow .mark_main .scrollbar::-webkit-scrollbar-track {
+        border-radius: 10px; }
+      .mark_popwindow .mark_main .scrollbar::-webkit-scrollbar {
+        background: transparent;
+        width: 8px; }
+  .mark_popwindow .close {
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url(83e712ec2180e2118a72d3813168e72e.png);
+    right: 10px;
+    top: 5px;
+    cursor: pointer; }
+  .mark_popwindow button {
+    background-color: #494B4C;
+    outline: none;
+    border: none;
+    float: right;
+    padding: 3px 13px;
+    color: white;
+    margin: 20px 10px 10px 0;
+    cursor: pointer;
+    width: auto;
+    height: auto; }
+  .mark_popwindow button:last-child {
+    background-color: #26A5CC; }
+
+#colorSelect {
+z-index:2000;
+  display: none;
+  background-color: #ddd;
+  position: absolute; }
+
+#colorSelect * {
+  box-sizing: content-box; }
+
+#colorSelect ul {
+  width: 145px;
+  margin: 0;
+  padding: 2px;
+  font-size: 0; }
+
+#colorSelect ul li {
+  display: inline-block;
+  margin: 2px;
+  width: 25px;
+  height: 25px;
+  color: transparent; }

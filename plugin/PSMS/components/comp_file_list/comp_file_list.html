@@ -1,0 +1,23 @@
+<div class="comp-file-list">
+    <div class="dialog-header">
+        {{input type="text" value=pathValue key-up='search'}}
+        <button class="btn-info" {{action 'backToParent'}}>上一级</button>
+    </div>
+    <div class="dialog-content">
+        {{#if showList}}
+            {{#each dataSource as |data|}}
+            <div class="path-item-list">
+                <img src="{{data.src}}" {{action 'itemAction' data}} ondblclick={{action 'itemPreview' data}}  />
+                <a href="javascript:;" title="{{data.name}}" ondblclick={{action 'itemPreview' data}} {{action 'itemAction' data}}>{{data.name}}</a>
+            </div>
+            {{/each}}
+        {{else}}
+            {{#each dataSource as |data|}}
+            <div class="path-item">
+                <img src="{{data.src}}" {{action 'itemAction' data}} />
+                <a href="javascript:;" title="{{data.name}}" {{action 'itemAction' data}}>{{data.name}}</a>
+            </div>
+            {{/each}}
+        {{/if}}
+    </div>
+</div>

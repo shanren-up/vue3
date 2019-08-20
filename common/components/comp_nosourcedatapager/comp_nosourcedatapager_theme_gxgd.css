@@ -1,0 +1,41 @@
+.comp-nosourcedatapager .pagination>li>a {
+  height: 30px;
+  /* width: 30px; */
+  padding: 6px 11px;
+  margin: 0px 5px;
+  font-size: 12px;
+  color: #333333;
+  border-radius: 0px !important;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.comp-nosourcedatapager .pagination-detail {
+  color: white;
+}
+
+.comp-nosourcedatapager .pagination>li:first-child>a,
+.comp-nosourcedatapager .pagination>li:last-child>a {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #CCC;
+}
+
+.comp-nosourcedatapager .pagination>.active>a,
+.comp-nosourcedatapager .pagination>.active>a:focus,
+.comp-nosourcedatapager .pagination>.active>a:hover,
+.comp-nosourcedatapager .pagination>.active>span,
+.comp-nosourcedatapager .pagination>.active>span:focus,
+.comp-nosourcedatapager .pagination>.active>span:hover {
+  color: white;
+  background-color: #62A2CC;
+}
+
+.fixed-table-pagination .pagination-detail .dropdown-toggle,
+.fixed-table-pagination .pagination-detail .dropdown-toggle:hover,
+.fixed-table-pagination .pagination-detail .open .dropdown-toggle {
+  padding: 6.5px 2.5px;
+  background-color: #1296DB;
+  border-color: rgba(45, 85, 118, 0.3);
+  color: #FFF;
+}

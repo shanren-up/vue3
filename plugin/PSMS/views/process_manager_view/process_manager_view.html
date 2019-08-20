@@ -1,0 +1,24 @@
+<div class="process-manager-view">
+    <div class="manager-header">
+        <span>全部流程</span>
+    </div>
+    <div class="manager-content">
+        <div class="content-operator">
+            <span>状态：</span>
+            <button class="btn-info" {{action 'searchTask' 'ALL'}}>全部</button>
+            <button class="btn-success" {{action 'searchTask' 'SUCCESSED'}}>成功</button>
+            <button class="btn-danger" {{action 'searchTask' 'FAILED'}}>失败</button>
+            <button class="btn-info" {{action 'searchTask' 'RUNNING'}}>运行</button>
+        </div>
+        <div class="content-table" id="managerTable">
+            {{comp-table name='processTable' dataSource=dataSource  tableConfig=tableConfig columns=columns  eventConfig=eventConfig}}
+        </div>
+        <div class="content-slider">
+            <span class="{{if isShowDetail '' 'hidden'}}">流程信息</span>
+            <span class="slider-icon {{sliderClass}}" {{action 'sliderClick'}}></span>
+        </div>
+        <div class="content-process {{if isShowDetail '' 'hidden'}}">
+            {{comp-process-detail name='processDetailView' curProcess=currentProcess startModuleAction = 'startModuleAction' dbClickAction = 'dbClickAction'}}
+        </div>
+    </div>
+</div>

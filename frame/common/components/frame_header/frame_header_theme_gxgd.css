@@ -1,0 +1,9 @@
+.frame-header-mini {
+  color: #ffffff !important;
+  font-weight: 100;
+  font-family: "Microsoft YaHei";
+}
+
+.toggle-vertical-meau-btn {
+  background-image: url(../../../../img/frame_header/meau_0.png);
+}

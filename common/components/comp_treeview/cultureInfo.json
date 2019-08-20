@@ -1,0 +1,18 @@
+{
+    "comp_treeview_sc": {
+        "en": "Delete",
+        "zh": "删除"
+    },
+    "comp_treeview_xj": {
+        "en": "New",
+        "zh": "新建"
+    },
+    "comp_treeview_sj xyloadedzx": {
+        "en": "shijian xianyuloadedzhixing",
+        "zh": "事件 先于loaded执行"
+    },
+    "comp_treeview_bj": {
+        "en": "Edit",
+        "zh": "编辑"
+    }
+}

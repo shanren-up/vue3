@@ -1,0 +1,36 @@
+.comp-nosourcedatapager .current-page {
+  width: 30px;
+  padding: 5px;
+}
+
+.comp-nosourcedatapager .line-height {
+  /* line-height: 35px; */
+  padding-top: 4px;
+}
+
+.comp-nosourcedatapager .pagination.line-height {
+  position: relative;
+  top: -3px;
+}
+
+.comp-nosourcedatapager .pagination button {
+  height: 30px;
+}
+
+.comp-nosourcedatapager .pagination-detail,
+.comp-nosourcedatapager div.pagination {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.comp-nosourcedatapager .comp-nosourcedatapager div.pagination .pagination {
+  margin: 0;
+}
+
+.comp-nosourcedatapager .simple-button {
+  padding: 6px 3px;
+}
+
+.comp-nosourcedatapager .open>.dropdown-menu {
+  display: block !important;
+}

@@ -1,0 +1,17 @@
+<div class="process-tools-view">
+    <div class="tools-create">
+        <div class="tools-create-title">工具查看</div>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input multiple class="tools-create-file" id="file1" type="file" value="选择文件">
+            <!--<button onclick={{action "doUpload"}}>上传</button>-->
+            <input class="sub-button" type="button" value="上传" onclick={{action "doUpload"}} />
+        </form>
+    </div>
+    <div class="tools-search">
+        {{comp-table name='toolsInfo' tableConfig=tableConfig columns=columns dataSource=dataSource  eventConfig=eventConfig}}
+    </div>
+	<div class="">
+		<input class="sub-button" type="button" value="批量删除" onclick={{action "_handleTrashTools"}} />
+	</div>
+    {{comp-loading name='frameloading'}}
+</div>

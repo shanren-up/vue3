@@ -1,0 +1,57 @@
+.matrix-root-container {
+}
+
+.matrix-container {
+    float: left;
+}
+
+.matrix-child {
+    float: left;
+}
+
+.matrix-parent {
+    float: left;
+}
+
+.matrix-item-child {
+    color: #333;
+    /*background: -webkit-gradient(linear, 0 0, 0 100%, from(#66CC33), to(#63D42A));
+    background-color: #21DC42;*/
+    border-radius: 6px;
+    margin: 1px;
+    padding: 0px 1.5px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+.matrix-item-child:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.matrix-item-child-toggle-open {
+    background-color: #40a4d6;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../../img/matrix_open.png");
+}
+
+.matrix-item-child-toggle-close {
+    background-color: #40a4d6;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../../img/matrix_close.png");
+}
+
+.matrix-item-parent {
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#C3E3EA), to(#CFE4E9));
+    background-color: #FF9719;
+    border-radius: 6px;
+    margin: 1px;
+    text-align: center;
+    vertical-align: middle;
+}

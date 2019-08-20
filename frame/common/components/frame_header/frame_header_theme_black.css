@@ -1,0 +1,79 @@
+.frame-header-bg {
+  background: #2D486B;
+  border-bottom: 5px solid #253A58;
+}
+
+.frame-header-bg-img-bhz {
+  width: 500px;
+  background-image: url("../../../../img/logo/bhz_zhanshi.png");
+  background-repeat: no-repeat;
+}
+
+.frame-header-bg-img-jzxn {
+  background-image: url("../../../../img/logo/jzxn_zhanshi.png");
+}
+
+.frame-header-bg-img-trq {
+  background-image: url("../../../../img/logo/trq_zhanshi.jpg");
+}
+
+.frame-header-bg-img-btj {
+  background-image: url("../../../../img/logo/btj_zhanshi.png");
+}
+
+.frame-header-bg-img-imp {
+  background-image: url("../../../../img/logo/imp_zhanshi.png");
+}
+
+.frame-header-bg-img-jxcpm {
+  background-image: url("../../../../img/logo/jxcpm_zhanshi.png");
+}
+
+.frame-header-bg-img-ltjk {
+  background-image: url("../../../../img/logo/ltjk_default.png");
+  background-size: contain;
+}
+.frame-header-bg-img-jzxn {
+  background-image: url("../../../../img/logo/jzxn_zhanshi.png");
+}
+
+.frame-header-child-loc2 li.active .frame-menu-item-bg,
+.frame-header-child-loc2 li.active .frame-menu-item-bg:focus,
+.frame-header-child-loc2 li.active .frame-menu-item-bg:hover {
+  background: #2361ae;
+}
+
+.frame-header-search input {
+  color: white;
+}
+
+.frame-header-search input,
+.frame-header-search span {
+  border: 1px solid #032040;
+  background-color: #254775;
+}
+
+.frame-header-search span {
+  border-left: none;
+}
+
+.frame-header-bg .toggle-vertical-meau-btn {
+  color: #FFF;
+  background-image: url('../../../../img/frame_header/meau_0.png');
+}
+
+.frame-header-menu-container a.aleft {
+  background-position: -12px center;
+}
+
+.frame-header-menu-container a.agrayleft {
+  background-position: 0px center;
+}
+
+.frame-header-menu-container a.aright {
+  background-position: -18px center;
+}
+
+.frame-header-menu-container a.agrayright {
+  background-position: -6px center;
+}

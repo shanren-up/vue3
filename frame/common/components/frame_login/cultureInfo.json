@@ -1,0 +1,58 @@
+{
+    "frame_login_srmmbnwk": {
+        "en": "The input password can not be empty",
+        "zh": "输入密码不能为空"
+    },
+    "frame_login_yhm": {
+        "en": "use name",
+        "zh": "账　号"
+    },
+    "frame_login_z c": {
+        "en": "To register",
+        "zh": "注 册"
+    },
+    "frame_login_srmmbnwk！": {
+        "en": "The input password can not be empty!",
+        "zh": "输入密码不能为空！"
+    },
+    "frame_login_sryzmbzq": {
+        "en": "The input verification code is incorrect",
+        "zh": "输入验证码不正确"
+    },
+    "frame_login_sryhmbnwk": {
+        "en": "The input user name can not be empty",
+        "zh": "输入账号不能为空"
+    },
+    "frame_login_sryzmbnwk！": {
+        "en": "Enter the verification code can not be empty!",
+        "zh": "输入验证码不能为空！"
+    },
+    "frame_login_m": {
+        "en": "password",
+        "zh": "密　码"
+    },
+    "frame_login_code": {
+        "en": "code",
+        "zh": "验证码"
+    },
+    "frame_login_sryzmbzq！": {
+        "en": "The input verification code is incorrect!",
+        "zh": "输入验证码不正确！"
+    },
+    "frame_login_sryhmbnwk！": {
+        "en": "The input user name can not be empty!",
+        "zh": "输入账号不能为空！"
+    },
+    "frame_login_d l": {
+        "en": "log in",
+        "zh": "登 录"
+    },
+    "frame_login_yzm": {
+        "en": "Verification code",
+        "zh": "验证码"
+    },
+    "frame_login_sryzmbnwk": {
+        "en": "Enter the verification code can not be empty",
+        "zh": "输入验证码不能为空"
+    }
+}

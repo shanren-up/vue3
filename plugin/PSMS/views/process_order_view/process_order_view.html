@@ -1,0 +1,33 @@
+<div class="process-order-view">
+        <div class="title">订单管理</div>
+        <div class="param-list">
+            <div class="select-flow">模板:</div>
+            <div class="flow-list">
+                <select value="{{flowId}}" class="form-control" onchange={{action 'flowSelectChange'}} >
+                {{#each flows as |flow|}}
+                <option  value="{{flow.id}}" >
+                    {{flow.flowname}}
+                </option>
+                {{/each}}
+                </select>
+            </div>
+            <div class="export-folder">文件路径:</div>
+            <div class="folder-value">
+                <div class="folder-input">{{input type="text" readonly=true class="form-control" id="exportFolder" placeholder="文件路径"  value=folderUrl }}</div>
+                <button class=" btn-info directory-select" {{action "selectFolder" }} > 选择</button>
+                <button class=" btn-info directory-select" {{action "savePath"}} > 保存</button>
+             </div>
+        </div>
+    <div>
+        <div class="search">
+            {{comp-table name='orderInfo' tableConfig=tableConfig columns=columns dataSource=dataSource  eventConfig=eventConfig}}
+        </div>
+        <div class="title">外部任务</div>
+        <div class="content-add">
+            <span class="fa fa-plus" {{action 'addTask'}}>新增外部任务</span>
+        </div>
+        <div class="search">
+            {{comp-table name='taskInfo' tableConfig=tableConfig columns=columns1 dataSource=dataSource1  eventConfig=eventConfig1}}
+        </div>
+    </div>
+</div>

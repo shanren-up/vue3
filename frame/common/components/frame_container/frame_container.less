@@ -1,0 +1,136 @@
+@import (once) "../../../../style/theme.less";
+
+.frame-container-dropup {
+    position: fixed;
+    z-index: 999;
+    left: -3px;
+    bottom: 0;
+}
+.frame-container-boder {
+    height: 100%;
+    width: 100%;
+}
+.frame-container-dropup-button {
+    float: left;
+    width: 16px;
+    height: 26px;
+    background-color: #71a3e0;
+    border: 1px solid #cae2ff;
+}
+
+.frame-container-back {
+    float: left;
+    width: 26px;
+    height: 26px;
+    background-color: #7C9BC0;
+    background-image: url("../../../../img/back_.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px  solid #cae2ff;
+    border-radius: 0px 8px 8px 0px;
+    position: fixed;
+    z-index: 999;
+    left: 37px;
+    bottom: 0;
+}
+
+.frame-container-lgscreen-close {
+    float: left;
+    width: 26px;
+    height: 26px;
+    background-color: #7C9BC0;
+    background-image: url("../../../../img/screen.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px  solid #cae2ff;
+    position: fixed;
+    z-index: 999;
+    left: 12px;
+    bottom: 0;
+}
+
+.frame-container-lgscreen-open {
+    float: left;
+    width: 26px;
+    height: 26px;
+    background-color: #17d6a0;
+    background-image: url("../../../../img/screen.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px  solid #cfd219;
+    position: fixed;
+    z-index: 999;
+    left: 12px;
+    bottom: 0;
+}
+
+.frame-container-nav {
+    list-style: none;
+    overflow: hidden;
+    background:transparent;
+}
+.mine .frame-container-nav > li {
+    position: initial;
+    display: block;
+    
+}
+.frame-container-nav > li {
+    position: relative;
+    display: block;
+    float: left;
+    border: 1px solid #bbb;
+    background-color: #ddd;
+}
+
+.frame-container-nav > li > a {
+    font-size: 10px;
+}
+.frame-container-nav > li > a:hover,
+.frame-container-nav > li > a:focus {
+    text-decoration: none;
+    background-color: #71a3e0;
+    color:#fff;
+}
+.frame-container-nav > li.disabled > a {
+    color: #777;
+    &:hover,a:focus{
+        text-decoration: none;
+        cursor: not-allowed;
+        background-color: transparent;
+    }
+}
+
+.frame-container-nav .open > a{
+    &,&:hover,&:focus{
+        background-color: #eee;
+        border-color: #337ab7;}
+}
+.frame-container-nav .nav-divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+.frame-container-nav > li > a > img {
+    max-width: none;
+}
+.frame-container-nav-tabs {
+    min-width: 110px;
+    float: left;
+    list-style: none;
+    position: initial;
+}
+
+.frame-container-nav-tabs > li {
+    float: left;
+}
+.frame-container-nav-tabs > li > a:hover {
+    border-color: #eee #eee #ddd;
+}
+.frame-container-nav-tabs > li.active > a,
+.frame-container-nav-tabs > li.active > a:hover,
+.frame-container-nav-tabs > li.active > a:focus {
+    color: #fff;
+    cursor: default;
+    background-color: #71a3e0;
+}

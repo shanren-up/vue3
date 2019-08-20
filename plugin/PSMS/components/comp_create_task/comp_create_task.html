@@ -1,0 +1,72 @@
+<div class="comp-create-task">
+    <div class="create-task-body">
+        <ul class="nav nav-pills">
+            <li role="presentation" class={{if showPage 'active' ''}}><a href="#">基础信息</a></li>
+            <li role="presentation" class={{if showData 'active' ''}}><a href="#">原始数据设置</a></li>
+            <li role="presentation" class={{if showParam 'active' ''}}><a href="#">流程模块参数设置</a></li>
+        </ul>
+        <div class={{if showPage 'tab-content task-base form-horizontal' 'tab-content task-base form-horizontal content-hidden' }} >
+                <div class="form-group">
+                    <label for="inputText1" class="col-sm-2 control-label">名称</label>
+                    <div class="col-sm-10">
+                        {{input type="text" class="form-control" id="inputText1" placeholder="任务名称"  value=taskName }}
+                    </div>
+                </div>
+                <!--<div class="form-group">-->
+                    <!--<label for="inputText2" class="col-sm-2 control-label">创建者</label>-->
+                    <!--<div class="col-sm-10">-->
+                        <!--<input type="text" class="form-control" id="inputText2" >-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="form-group">
+                    <label for="inputText3" class="col-sm-2 control-label">描述</label>
+                    <div class="col-sm-10">
+                        {{input type="text" class="form-control" id="inputText3" placeholder="描述信息"  value=taskDes }}
+                    </div>
+                </div>
+                <!--<div class="form-group">-->
+                    <!--<label for="inputText4" class="col-sm-2 control-label">目标坐标系</label>-->
+                    <!--<div class="col-sm-10">-->
+                        <!--<input type="text" class="form-control" id="inputText4" placeholder="目标坐标系">-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="form-group">
+                    <label for="inputText5" class="col-sm-2 control-label">原始影像文件夹</label>
+                    <div class="col-sm-9">
+                        {{input type="text" class="form-control" disabled=true  id="inputText5" placeholder="文件夹名称"  value=orignalUrl }}
+                    </div>
+                    <button class="col-sm-1 btn-info directory-select" {{action "selectDirectory" "orignal"}}>
+                        选择
+                    </button>
+                </div>
+            <div class="form-group">
+                <label for="inputText6" class="col-sm-2 control-label">工程路径</label>
+                <div class="col-sm-7">
+                    {{input type="text" disabled=true class="form-control" id="inputText6" placeholder="工程路径"  value=folderUrl }}
+                </div>
+                <div class="col-sm-2">
+                    <div class="project-slip">/</div>
+                    {{input type="text" class="form-control" id="inputText7" placeholder="新建工程文件夹名称"  value=selectUrl }}
+                </div>
+                <button class="col-sm-1 btn-info directory-select" {{action "selectDirectory" "folder"}}>
+                    选择
+                </button>
+            </div>
+        </div>
+        <div class={{if showData 'tab-content task-data' 'tab-content task-data content-hidden' }} >
+            {{comp-table name='fileInfoView' tableConfig=tableConfig columns=columns dataSource=dataSource  eventConfig=eventConfig}}
+        </div>
+        <div class={{if showParam 'tab-content task-param' 'tab-content task-param content-hidden' }} class="tab-content task-param">
+            {{comp-flow-param  name="paramView" paramData = flowContent}}
+        </div>
+        <div class="create-task-footer">
+            <button disabled = {{if showPage true false}} class={{if showPage 'button-pre  no-click' 'button-pre btn-info '}} onclick={{action "preAction"}}>上一步</button>
+            {{#if showParam}}
+                <button  class="button-next btn-info" onclick={{action "completeAction"}}>完成</button>
+            {{else}}
+                <button  class="button-next btn-info" onclick={{action "nextAction"}}>下一步</button>
+            {{/if}}
+        </div>
+
+    </div>
+</div>

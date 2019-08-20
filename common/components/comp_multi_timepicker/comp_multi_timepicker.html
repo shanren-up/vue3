@@ -1,0 +1,11 @@
+<div class="comp-multi-timepicker">
+    <div class='bar-bg' draggable="true" ondragover={{action "dragOver"}}
+    ondragstart={{action "dragStart"}} ondrag={{action "draging"}} ondragend={{action "dragEnd"}}>
+        {{#each sliderData as |item i|}}
+            {{comp-multi-timepicker-slider dataSource=item index=i itemResizeEnd='itemResizeEnd' itemMoveEnd='itemMoveEnd'}}
+        {{/each}}
+        {{#each _coordinateData as |item|}}
+            <div class="coordinate" style={{item.style}}>{{item.value}} </div>
+        {{/each}}
+    </div>
+</div>

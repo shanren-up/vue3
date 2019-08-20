@@ -1,0 +1,18 @@
+.bootbox-dialog .modal-content {
+  background: #242448;
+}
+
+.comp-msgbox-span {
+  color: #fff;
+}
+
+.comp-msgbox-button,
+.comp-msgbox-button:hover {
+  color: #000;
+}
+
+.comp-msgbox-button-active,
+.comp-msgbox-button-active:hover {
+  color: #FFF;
+  background-color: #7a459c;
+}

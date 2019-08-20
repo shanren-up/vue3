@@ -1,0 +1,8 @@
+.context-menu-item.context-menu-hover {
+    background-color: #34739c;
+}
+
+.context-menu-item {
+    background-color: #2980B9;
+    color: white;
+}

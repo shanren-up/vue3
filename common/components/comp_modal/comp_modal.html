@@ -1,0 +1,19 @@
+<div id="modal"  class="{{modalClass}} {{sizeClass}}" style="{{positionStyle}}">
+     
+    {{#if hasHeader}}
+    <div id="modalHeader" class="{{headerClass}}" draggable="true" ondragstart={{action 'dragstart'}} ondrag={{action 'drag'}}>
+        {{component _headerComponentName hasMax=hasMax  sendParam='sendParam' sendMax='sendMax' hasPhoto=hasPhoto sendPhoto='sendPhoto' sendClose='sendClose' headerText=headerText}}
+    </div>
+    {{/if}}
+
+    <div id="modalBody" class="{{bodyClass}}">
+        {{component _contentComponentName sendMax='sendMax'  sendParam='sendParam' sendPhoto='sendPhoto' sendClose='sendClose' sendConfirm='sendConfirm' sendCancel='sendCancel' content=content parameters=parameters}}
+    </div>
+
+    {{#if hasFooter}}
+    <div id="modalFooter" class="{{footerClass}}">
+        {{component _footerComponentName sendConfirm='sendConfirm' sendCancel='sendCancel' sendParam='sendParam' confirmText=confirmText cancelText=cancelText}}
+    </div>
+    {{/if}}
+
+</div>

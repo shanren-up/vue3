@@ -1,0 +1,22 @@
+<div class="comp-multi-timepicker-slider" draggable="true" ondragstart={{action 'moveStart'}}
+ ondrag={{action "moveDrag"}} ondragend={{action "moveEnd" "left"}} onclick={{action 'showEdit'}} style={{dataSource.sliderStyle}}
+ data-title="{{dataSource.leftTime}} ~ {{dataSource.rightTime}}">
+    <div class="my-popover popover top {{if _isShowTip 'hidden'}}" role="tooltip">
+        <div class="arrow"></div>
+        <div class="popover-content">{{dataSource.leftTime}} ~ {{dataSource.rightTime}}</div>
+    </div>
+    <div class="left-border {{if dataSource._hasLeftColor 'has-color'}}" draggable="true" ondragstart={{action "resizeStart" "left"}}
+     ondrag={{action "resizeDrag" "left"}} ondragend={{action "resizeEnd" "left"}}>
+        <div class="popover top {{if _isShowTip 'show'}}" role="tooltip">
+            <div class="arrow"></div>
+            <div class="popover-content">{{dataSource.leftTime}}</div>
+        </div>
+    </div>
+    <div class="right-border {{if dataSource._hasRightColor 'has-color'}}" draggable="true" ondragstart={{action "resizeStart" "right"}}
+    ondrag={{action "resizeDrag" "right"}}  ondragend={{action "resizeEnd" "right"}}>
+        <div class="popover top {{if _isShowTip 'show'}}" role="tooltip">
+            <div class="arrow"></div>
+            <div class="popover-content">{{dataSource.rightTime}}</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+.frame-dropdown-menu,
+.frame-dropdown-submenu>.dropdown-menu {
+    background-color: #454775;
+}
+
+.frame-dropdown-menu li>a {
+    color: #ffffff;
+}

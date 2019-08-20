@@ -1,0 +1,40 @@
+.frame-header-bg {
+  background-color: #3B94F8;
+  background-size: contain;
+}
+
+.frame-header-bg-img-bocounicnfvo {
+  background: url('../../../../img/logo/lt_nfv0.png') no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+}
+
+.simple-meau .frame-header-bg-img-bocounicnfvo {
+  background: url('../../../../img/logo/lt_nfv0_min.png') no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+}
+
+.frame-header-bg-img-DCAE {
+  background: url('../../../../img/logo/oss4.0.png') no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+}
+
+.simple-meau .frame-header-bg-img-DCAE {
+  background: url('../../../../img/logo/oss4.0.min.png') no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+}
+
+.frame-header-bg-img-O4 {
+  background: url('../../../../img/logo/oss4.0.png') no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+}
+
+.simple-meau .frame-header-bg-img-O4 {
+  background: url('../../../../img/logo/oss4.0.min.png') no-repeat;
+  background-size: 42px;
+  background-position: center;
+}

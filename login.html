@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="renderer" content="webkit"><!--360-->
+        <meta name="force-rendering" content="webkit">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>GEOVIS</title>
+        <link rel="stylesheet" href="style/login.css">
+    </head>
+
+    <body class="body">
+        <div class="main">
+            <div class="login">
+                <table height="100%" width="100%">
+                    <tr>
+                        <td valign="middle">
+                            <form class="login_form" action="index.html" autocomplete="on">
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td class="login_td" colspan="2">
+                                            <img src="img/login_name.png" align="top" /><input id="login_name" type="text" class="login_input" required="required" placeholder="手机号/用户名" align="absmiddle" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="login_td">
+                                            <img src="img/login_pwd.png" align="top" /><input id="login_pwd" type="password" class="login_input" required="required" placeholder="服务密码/密码" />
+                                        </td>
+                                        <td>
+                                            <input id="login_sjm" class="randomCode_button" type="button" value="随机码登录" align="absmiddle" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="login_td" colspan="2">
+                                            <input id="login_yzm" type="text" class="login_input" required="required" placeholder="验证码" maxlength="6" align="absmiddle" />&nbsp;<a id="yzm_a" href="#"><img id="yzm_img" src="lib/auth/randomCode.jsp" alt="点击刷新" align="absmiddle" /></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="login_td" colspan="2">
+                                            <input id="submit_btn" class="login_button" type="submit" value="登 录" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <!--  JavaScript  -->
+        <script src="lib/jquery/dist/jquery.min.js"></script>
+        <script src="lib/auth/AuthorAPI.js"></script>
+        <script type="text/javascript" src="login.js"></script>
+    </body>
+        
+</html>

@@ -1,0 +1,15 @@
+.frame-container-boder {
+  background: #E7E7E7;
+}
+
+.frame-background-img-gdm {
+  background-image: url(../../../../img/u0.png);
+  background-size: 100%;
+}
+
+.frame-background-img-ltjk {
+  /* background-image: url(../../../../img/background/unicom_default.jpg); */
+  background-color: #F2F3F5;
+  background-size: 111%;
+  background-repeat: no-repeat;
+}

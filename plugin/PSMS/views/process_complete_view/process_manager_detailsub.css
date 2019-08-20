@@ -1,0 +1,18 @@
+.process-manager-detail ul{
+    padding-left: 0;
+}
+.process-manager-detail ul li a{
+    color: #555;
+}
+.process-manager-detail .tab-content .info-operator select{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 120px;
+}
+.process-manager-detail .tab-content .info-operator button{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    min-width: 50px;
+    background-color: #fff;
+    color: #000;
+}

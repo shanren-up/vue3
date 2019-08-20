@@ -1,0 +1,346 @@
+.g_toggle_wrap {
+    width: 100%;
+    overflow: auto;
+}
+
+/* .g_toggle_wrap::-webkit-scrollbar {
+    width: 12px;
+    height: 16px;
+    background-color: black;
+}
+
+.g_toggle_wrap::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    background-color: #303030;
+}
+
+.g_toggle_wrap::-webkit-scrollbar-thumb {
+    height: 20px;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+} */
+
+.geovis-sp {
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: #FFFFFF;
+    min-height: 320px;
+    min-width: 500px;
+    border: 1px #23bbe8 solid;
+    padding: 5px;
+    background-color: rgba(16, 16, 16, 0.5)
+    /* opacity: 0.9; */
+}
+
+.geovis-sp .closeSpan {
+    position: absolute;
+    right: -12px;
+    top: -12px;
+	padding: 4px;
+	border: 1px solid #22b9e8; 
+    background: url(./images/closeX.png) no-repeat;   
+	background-size:100% 100%; 
+	background-origin: content-box;
+	width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.geovis-sp .closeSpan:hover {
+    border: 1px solid #CCCCCC;
+}
+
+.geovis-sp .title {
+    line-height: 38px;
+}
+
+.geovis-sp .nav-tabs {
+    border: none;
+}
+
+.geovis-sp table {
+    margin-left: 20px;
+    border: none!important;
+}
+
+/* .geovis-sp table.ts > tr {
+    line-height: 40px;
+}
+
+.geovis-sp table.slope > tr {
+    line-height: 40px;
+}
+
+.geovis-sp table.path > tr {
+    line-height: 40px;
+}
+
+.geovis-sp table.visibleArea > tr {
+    line-height: 40px;
+}
+
+.geovis-sp table.wf > tr {
+    line-height: 40px;
+}
+
+.geovis-sp table.ym > tr {
+    line-height: 40px;
+}
+
+.geovis-sp table.disanalysis > tr {
+    line-height: 40px;
+}
+
+.geovis-sp table.rv > tr {
+    line-height: 40px;
+}
+
+.geovis-sp table.hs > tr {
+    line-height: 40px;
+}
+
+.geovis-sp table.cl > tr {
+    line-height: 40px;
+}
+
+.geovis-sp table.rl > tr {
+    line-height: 40px;
+}
+
+.geovis-sp table.vl > tr {
+    line-height: 40px;
+}
+
+.geovis-sp table.saddleP > tr {
+    line-height: 40px;
+}
+
+.geovis-sp table.moutainP > tr {
+    line-height: 40px;
+} */
+
+.geovis-sp table > tr {
+    line-height: 40px;
+}
+
+.geovis-sp .slope-legend {
+    float: right;
+    margin-right: 20px;
+    border-left: 2px #23bbe8 dashed;
+    padding-left: 20px;
+    height: 260px;
+}
+
+.geovis-sp .slope-legend table {
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+.geovis-sp .btn-toolbar > .btn-group {
+    width: 28px;
+    height: 28px;
+}
+
+.geovis-sp .btn-toolbar > .btn-group.rect {
+    background-image: url("./images/光标.png");
+    background-position:center center;
+}
+
+.geovis-sp .btn-toolbar > .btn-group.rect.active {
+    background-image: url("./images/光标选中.png");
+    background-position:center center;
+}
+
+.geovis-sp .slope-legend tr {
+    line-height: 25px;
+}
+
+.geovis-sp .slope-legend .legend-img {
+    width: 30px;
+    display: block;
+    height: 20px
+}
+
+.geovis-sp .slope-legend .legend-text {
+    padding-left: 15px;
+}
+
+.geovis-sp li > a {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0px;
+}
+
+.geovis-sp li.active > a, .geovis-sp li.active > a:focus, .geovis-sp li.active > a:hover,
+.geovis-sp li > a, .geovis-sp li > a:focus, .geovis-sp li > a:hover {
+    background-color: transparent;
+    border: none !important; 
+}
+
+.geovis-sp li > a.ts {
+    background-image: url("./images/通视分析.png");
+}
+
+.geovis-sp li > a.ts:hover, .geovis-sp li.active > a.ts {
+    background-image: url("./images/通视分析选中.png");
+}
+
+.geovis-sp li > a.pm {
+    background-image: url("./images/剖面分析.png");
+}
+
+.geovis-sp li > a.pm:hover, .geovis-sp li.active > a.pm {
+    background-image: url("./images/剖面分析选中.png");
+}
+
+.geovis-sp li > a.buffer {
+    background-image: url("./images/缓冲区分析.png");
+}
+
+.geovis-sp li > a.buffer:hover, .geovis-sp li.active > a.buffer {
+    background-image: url("./images/缓冲区分析选中.png");
+}
+
+.geovis-sp li > a.path {
+    background-image: url("./images/最短路径.png");
+}
+
+.geovis-sp li > a.path:hover, .geovis-sp li.active > a.path {
+    background-image: url("./images/最短路径选中.png");
+}
+
+.geovis-sp li > a.height {
+    background-image: url("./images/高度分析.png");
+}
+
+.geovis-sp li > a.height:hover, .geovis-sp li.active > a.height {
+    background-image: url("./images/高度分析选中.png");
+}
+
+.geovis-sp li > a.slope {
+    background-image: url("./images/坡度分析.png");
+}
+
+.geovis-sp li > a.slope:hover, .geovis-sp li.active > a.slope {
+    /* width: 38px;
+    height: 38px;
+    background: #332e2e  url("./images/坡度分析.png");
+     border:1px solid #288aa1;  */
+    background-image: url("./images/坡度分析选中.png");
+}
+
+.geovis-sp li > a.visibleArea {
+    background-image: url("./images/可视域分析.png");
+}
+
+.geovis-sp li > a.visibleArea:hover, .geovis-sp li.active > a.visibleArea {
+    background-image: url("./images/可视域分析选中.png");
+}
+
+.geovis-sp li > a.wf {
+    background-image: url("./images/挖方分析.png");
+}
+
+.geovis-sp li > a.wf:hover, .geovis-sp li.active > a.wf {
+    background-image: url("./images/挖方分析选中.png");
+}
+
+.geovis-sp li > a.ym {
+    background-image: url("./images/淹没分析.png");
+}
+
+.geovis-sp li > a.ym:hover, .geovis-sp li.active > a.ym {
+    background-image: url("./images/淹没分析选中.png");
+}
+
+.geovis-sp li > a.disanalysis {
+    background-image: url("./images/空间距离量算.png");
+}
+
+.geovis-sp li > a.disanalysis:hover, .geovis-sp li.active > a.disanalysis {
+    background-image: url("./images/空间距离量算选中.png");
+}
+
+.geovis-sp li > a.rv {
+    background-image: url("./images/栅格矢量化.png");
+}
+
+.geovis-sp li > a.rv:hover, .geovis-sp li.active > a.rv {
+    background-image: url("./images/栅格矢量化选中.png");
+}
+
+.geovis-sp li > a.hs {
+    background-image: url("./images/山体阴影分析.png");
+}
+
+.geovis-sp li > a.hs:hover, .geovis-sp li.active > a.hs {
+    background-image: url("./images/山体阴影分析选中.png");
+}
+
+.geovis-sp li > a.cl {
+    background-image: url("./images/等值线分析.png");
+}
+
+.geovis-sp li > a.cl:hover, .geovis-sp li.active > a.cl {
+    background-image: url("./images/等值线分析选中.png");
+}
+
+.geovis-sp li > a.rl {
+    background-image: url("./images/山脊线提取.png");
+}
+
+.geovis-sp li > a.rl:hover, .geovis-sp li.active > a.rl {
+    background-image: url("./images/山脊线提取选中.png");
+}
+
+.geovis-sp li > a.vl {
+    background-image: url("./images/山谷线提取.png");
+}
+
+.geovis-sp li > a.vl:hover, .geovis-sp li.active > a.vl {
+    background-image: url("./images/山谷线提取选中.png");
+}
+
+.geovis-sp li > a.saddleP {
+    background-image: url("./images/鞍部点提取.png");
+}
+
+.geovis-sp li > a.saddleP:hover, .geovis-sp li.active > a.saddleP {
+    background-image: url("./images/鞍部点提取选中.png");
+}
+
+.geovis-sp li > a.moutainP {
+    background-image: url("./images/山顶点提取.png");
+}
+
+.geovis-sp li > a.moutainP:hover, .geovis-sp li.active > a.moutainP {
+    background-image: url("./images/山顶点提取选中.png");
+}
+
+.geovis-sp .sp-mountain-top-mark {
+    display: block;
+    width: 34px;
+    height: 34px;
+    
+    background-origin: content-box;
+    background-size: 100% 100%;
+    border: 1px solid #AAAAAA;
+    padding: 4px;
+}
+
+.sp-mountain-top-mark-spire {
+    background: url(./images/mountan1.png) no-repeat; 
+}
+
+.sp-mountain-top-mark-dome {
+    background: url(./images/mountan2.png) no-repeat; 
+}
+
+.sp-mountain-top-mark-flat {
+    background: url(./images/mountan3.png) no-repeat; 
+}

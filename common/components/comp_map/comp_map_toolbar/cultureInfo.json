@@ -1,0 +1,46 @@
+{
+    "comp_map_toolbar_cj": {
+        "en": "ceju",
+        "zh": "测距"
+    },
+    "comp_map_toolbar_sx": {
+        "en": "suoxiao",
+        "zh": "缩小"
+    },
+    "comp_map_toolbar_qt": {
+        "en": "quantu",
+        "zh": "全图"
+    },
+    "comp_map_toolbar_tcsz": {
+        "en": "tucengshezhi",
+        "zh": "图层设置"
+    },
+    "comp_map_toolbar_dcdt": {
+        "en": "daochuditu",
+        "zh": "导出地图"
+    },
+    "comp_map_toolbar_bc": {
+        "en": "baocun",
+        "zh": "保存"
+    },
+    "comp_map_toolbar_qc": {
+        "en": "qingchu",
+        "zh": "清除"
+    },
+    "comp_map_toolbar_dctp ": {
+        "en": "daochutupian ",
+        "zh": "导出图片 "
+    },
+    "comp_map_toolbar_fd": {
+        "en": "fangda",
+        "zh": "放大"
+    },
+    "comp_map_toolbar_py": {
+        "en": "pingyi",
+        "zh": "平移"
+    },
+    "comp_map_toolbar_cm": {
+        "en": "cemian",
+        "zh": "测面"
+    }
+}

@@ -1,0 +1,192 @@
+@import url(../lib/bootstrap/dist/css/bootstrap.min.css);
+@import url("./add_bootstrap_boco_zhanshi.css");
+
+/****************************************  01:基础颜色 ****************************************/
+.color-boco-bg { /*bg:background:背景色*/
+    background-color: #1F497A !important;
+}
+
+.color-boco-mod { /*mod:module:叠加色*/
+    background-color: #003062 !important;
+}
+
+.color-boco-header { /*眉头色*/
+    background-color: #00264B !important;
+}
+
+.color-boco-logo { /*logo背景色*/
+    background-color: #4E9AEF !important;
+}
+
+/****************************************  02:按钮 ****************************************/
+/*  按钮类型1(积极意义按钮：positive)：一键展开、一键折叠、新增、保存、全选、查看、确认、选择、查询...   */
+.btn-boco-pos {
+    text-align: center !important;
+    min-width: 60px !important;
+    height: 30px !important;
+    color: #FFFFFF !important;
+    background-color: #5499E4 !important;
+    border: none !important;
+    border-radius: 5px !important;
+}
+
+.btn-boco-pos:hover {
+    background-color: #1F6FC7 !important;
+}
+
+.btn-boco-pos:active {
+    background-color: #1F6FC7 !important;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+/*  按钮类型2(消极意义按钮：negative)：删除、关闭、取消、清除、重置...   */
+.btn-boco-neg {
+    cursor: pointer !important;
+    text-align: center !important;
+    min-width: 60px !important;
+    height: 30px !important;
+    background-color: #666600 !important;
+    border: none !important;
+    border-radius: 5px !important;
+    color: #FFFFFF !important;
+}
+
+.btn-boco-neg:hover {
+    background-color: #555500 !important;
+}
+
+.btn-boco-neg:active {
+    background-color: #555500 !important;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+/*  按钮类型3(列表操作按钮)*/
+.btn-boco-operator {
+    cursor: pointer !important;
+    width: 110px !important;
+    height: 30px !important;
+    text-align: center !important;
+    color: #FFFFFF !important;
+    background-color: transparent !important;
+    border: 1px solid #2D5576 !important;
+    border-radius: 5px !important;
+    box-sizing: border-box !important;
+}
+
+div.btn-boco-operator {
+    line-height: 30px !important;
+}
+
+.btn-boco-operator:hover {
+    background-color: #0D77B7 !important;
+    color: #FFFFFF !important;
+}
+
+.btn-boco-operator:active {
+    background-color: #0D77B7 !important;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+/*  按钮类型4(禁用按钮)   */
+.btn-boco-pos[disabled],
+.btn-boco-neg[disabled],
+.btn-boco-operator[disabled] {
+    cursor: not-allowed !important;
+    background-color: #AEAEAE !important;
+    border: 1px solid #2D5576 !important;
+    color: #FFFFFF !important;
+}
+
+/****************************************  03:查询条件名称  ****************************************/
+.cond-boco-text {
+    font-family: "微软雅黑" !important;
+    font-size: 12px !important;
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+    text-align: right !important;
+    width: 80px;
+}
+
+/****************************************  04:输入框&&文本框&&下拉框  ****************************************/
+.input-boco-text, /*输入框*/
+.select-boco-text { /*下拉框 && bootstrap multiple select*/
+    font-family: "微软雅黑" !important;
+    font-size: 12px !important;
+    color: #CCCCCC !important;
+    height: 30px !important;
+    border: 1px solid rgba(210, 210, 210, 0.3) !important;
+    border-radius: 5px !important;
+    background-color: rgba(23, 77, 119, 0.3) !important;
+}
+
+.textarea-boco-text{ /*文本框*/
+    font-family: "微软雅黑" !important;
+    font-size: 12px !important;
+    color: #CCCCCC !important;
+    border: 1px solid rgba(210, 210, 210, 0.3) !important;
+    border-radius: 5px !important;
+    background-color: rgba(23, 77, 119, 0.3) !important;
+}
+
+.select-boco-text > option { /*下拉框 && bootstrap multiple select*/
+    color: #ffffff;
+    background-color: #ffffff;
+    background-color: rgb(24,31,39);
+}
+
+.select-boco-text + ul.dropdown-menu {
+    background-color: #ffffff;
+}
+
+.select-boco-text + ul.dropdown-menu li a {
+    color: #000;
+}
+
+.select-boco-text + ul.dropdown-menu > li:hover {
+    background-color: #2390FD;
+    color: #ffffff;
+}
+
+.select-boco-text + ul.dropdown-menu > li:first-child:hover {
+    background-color: #ffffff;
+}
+
+/****************************************  05:单选框&多选框  ****************************************/
+/*
+<div>
+    <input type="radio" class="input-boco-radio">
+    <span>1</span>
+</div>
+*/
+input.input-boco-radio + span,
+input.input-boco-checkbox + span {
+    color: #CCCCCC !important;
+}
+
+input.input-boco-radio:checked + span,
+input.input-boco-checkbox:checked + span {
+    color: #41B3EF !important;
+}
+
+/****************************************  04:表格 ****************************************/
+.bs-table-container table tbody tr:nth-child(2n+1) {
+    background-color: rgba(7, 46, 79, 0.3) !important;
+}
+
+.bs-table-container table tbody tr:nth-child(2n) {
+    background-color: rgba(4, 26, 43, 0.3) !important;
+}
+
+.bs-table-container table tbody tr:hover,
+.bs-table-container table tbody tr.selected,
+.bs-table-container table tbody tr.selected td {
+    background-color: #1E5F93 !important;
+}
+
+.bs-table-container table tbody tr td {
+    border-top: 1px dotted rgba(255, 255, 255, 0.3) !important;
+}
+
+/****************************************  06:弹框 ****************************************/
+
+/****************************************  06:分页 ****************************************/

@@ -1,0 +1,12 @@
+.frame-download-tool-size {
+  width: 800px;
+  height: 400px;
+}
+
+.frame-download-tool {
+  margin-top: 20px;
+}
+
+.frame-download-tool .table>tbody>tr>td {
+  vertical-align: middle;
+}

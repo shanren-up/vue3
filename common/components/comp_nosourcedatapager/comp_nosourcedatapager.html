@@ -1,0 +1,84 @@
+{{#if isSimpleModel}}
+<div class="fixed-table-pagination comp-nosourcedatapager">
+    <div class="pull-left pagination-detail">
+        <span class="pagination-info">{{ oloc 'comp_nosourcedatapager_g' }}{{_totalSize}}{{ oloc 'comp_nosourcedatapager_t' }}</span>
+        <span class="page-list">
+            {{ oloc 'comp_nosourcedatapager_my' }}
+            <span class="btn-group dropup">
+                <button type="button" class="btn btn-default dropdown-toggle simple-button" data-toggle="dropdown">
+                    <span class="page-size">{{_pageSize}}</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    {{#each _pageSizeSelect as |data|}}
+                    <li>
+                        <a href="javascript:;" onclick={{action 'pageSizeSelectChange' data }}>{{data}}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </span>{{ oloc 'comp_nosourcedatapager_t' }} {{ oloc 'comp_nosourcedatapager_g' }}{{_totalPageNum}}{{ oloc 'comp_nosourcedatapager_y' }}
+        </span>
+    </div>
+    <div class="pull-right pagination line-height">
+        <span class="page-list">
+            {{ oloc 'comp_nosourcedatapager_zd' }}
+            <span class="btn-group dropup">
+                <input type="text" class="input-sm form-control page-list current-page" value="{{_inputCurPage}}"
+                       oninput={{action 'inputCurPage'}}>
+            </span>{{ oloc 'comp_nosourcedatapager_y' }}
+            <button type="button" class="btn btn-primary input-sm page-list"
+                    onclick={{action 'confirmCurPage'}}>{{ oloc 'comp_nosourcedatapager_qd' }}</button>
+        </span>
+    </div>
+</div>
+{{else}}
+<div class="fixed-table-pagination comp-nosourcedatapager">
+    <div class="pull-left pagination-detail">
+        <span class="pagination-info">
+                {{ oloc 'comp_nosourcedatapager_item_show' }}  {{_startIndex}}{{ oloc 'comp_nosourcedatapager_item_to' }}
+                {{_endIndex}}{{ oloc 'comp_nosourcedatapager_item_of' }}{{_totalSize}} {{ oloc 'comp_nosourcedatapager_item_rows' }}
+        </span>
+        {{#if _isShowPageSizeSelect}}
+        <span class="page-list">
+            {{ oloc 'comp_nosourcedatapager_my' }}{{oloc 'comp_nosourcedatapager_xsd'}}
+            <span class="btn-group dropup">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span class="page-size">{{_pageSize}}</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    {{#each _pageSizeSelect as |data|}}
+                    <li>
+                        <a href="javascript:;" onclick={{action 'pageSizeSelectChange' data }}>{{data}}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </span>{{oloc 'comp_nosourcedatapager_tjl'}}
+        </span>
+        {{/if}}
+    </div>
+    {{#if _isShowPageInput}}
+    <div class="pull-right pagination line-height">
+        <span class="page-list">
+            {{ oloc 'comp_nosourcedatapager_zd' }}
+            <span class="btn-group dropup">
+                <input type="text" class="input-sm form-control page-list current-page" value="{{_inputCurPage}}"
+                       oninput={{action 'inputCurPage'}}>
+            </span> {{ oloc 'comp_nosourcedatapager_y' }}
+            <button type="button" class="btn btn-primary input-sm page-list"
+                    onclick={{action 'confirmCurPage'}}>{{ oloc 'comp_nosourcedatapager_qd' }}</button>
+        </span>
+    </div>
+    {{/if}}
+    <div class="pull-right pagination">
+        <ul class="pagination">
+            <li class="page-number"><a href="javascript:void (0);" onclick={{action 'prePage'}}>‹</a></li>
+            {{#each _pageNum as |data|}}
+            <li class="page-number {{if data.active 'active '}} {{if data.disabled 'disabled'}}" onclick={{action 'setCurPage' data.num}}><a href="javascript:;">{{data.num}}</a></li>
+            {{/each}}
+            <li class="page-number {{if _isLastPageSelect 'active'}}" onclick={{action 'setCurPage' _totalPageNum}}><a href="#">{{_totalPageNum}}</a></li>
+            <li class="page-number"><a href="javascript:void (0);" onclick={{action 'nextPage'}}>›</a></li>
+        </ul>
+    </div>
+</div>
+{{/if}}

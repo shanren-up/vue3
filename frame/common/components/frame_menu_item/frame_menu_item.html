@@ -1,0 +1,25 @@
+ {{#if isLink}}
+<div class="frame-menu-item-bg">
+
+    <div class="frame-menu-item-img">
+        <img src="{{if item.isActive item.imgClickSrc item.imgSrc}}">
+    </div>
+    <div class="frame-menu-item-title" data-toggle="tooltip" data-toggle="tooltip" title={{oloc-meau-name item}}>
+        <a href="{{item.src}}" target="_blank">{{nameAlias}}</a>
+    </div>
+</div>
+{{else}}
+<div data-toggle="tab" class="frame-menu-item-bg" {{action "clickMenuItem" item}} >
+    <div class="frame-menu-item-img">
+        <img src="{{if item.isActive item.imgClickSrc item.imgSrc}}">
+    </div>
+    <div class="frame-menu-item-title" data-toggle="tooltip" title={{oloc-meau-name item}}>
+        {{nameAlias}}
+    </div>
+</div>
+{{/if}}
+{{#if showDropDownMeau}}
+<div style="visibility:collapse">
+    {{frame-dropdown-menu-header childViewMenus=item.childViewMenus clickMenuItem=(action "clickMenuItem") targetId=elementId }} 
+</div>
+{{/if}}

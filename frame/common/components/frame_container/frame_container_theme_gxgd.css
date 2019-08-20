@@ -1,0 +1,54 @@
+@import url(../../../../plugin/imp/style/button/theme-1.css);
+@import url(../../../../plugin/imp/style/input/theme-1.css);
+@import url(../../../../plugin/imp/style/table/theme-1.css);
+.frame-container-boder {
+  background-image: url(../../../../img/background/bg.jpg);
+  background-size: 100% 100%;
+}
+
+.frame-background-img-ltjk {
+  /* background-image: url(../../../../img/background/unicom_zhanshi.jpg); */
+  background-color: #0D2958;
+  background-size: 111%;
+  background-repeat: no-repeat;
+}
+
+.frame-container-dropup:hover .frame-container-dropup-button {
+  bottom: 0;
+}
+
+.frame-container-nav-tabs.frame-container-nav>li a {
+  background-color: #00264b;
+  color: #FFF;
+  padding: 7.5px 20px;
+}
+
+.frame-container-nav-tabs.frame-container-nav>li:hover,
+.frame-container-nav-tabs.frame-container-nav>li:hover a,
+.frame-container-nav-tabs.frame-container-nav>li.active,
+.frame-container-nav-tabs.frame-container-nav>li.active a {
+  background-color: #41B3EF;
+}
+
+.frame-container-nav-tabs.frame-container-nav {
+  left: 26px;
+}
+
+.frame-container-dropup-button {
+  background-color: #00264b;
+  left: -2px;
+  width: 26px;
+  height: 36px;
+}
+
+.frame-container-back {
+  width: 36px;
+  height: 36px;
+  background-color: #00264b;
+  left: 23px;
+}
+
+.frame-container-lgscreen-close {
+  background-color: #00264b;
+  left: 20px;
+}

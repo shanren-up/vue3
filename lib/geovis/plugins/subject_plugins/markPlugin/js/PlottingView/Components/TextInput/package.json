@@ -1,0 +1,10 @@
+{
+    "name": "TextInput",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./TextInput.js",
+    "dependencies": {
+        "react": "^15.5.4",
+        "react-dom": "^15.4.2"
+    }
+}

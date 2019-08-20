@@ -1,0 +1,41 @@
+[class$="icon-arrow-right"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  /* margin-top: 1px; */
+  line-height: 14px;
+  vertical-align: text-top;
+  background: url(img/glyphicons-halflings.png) no-repeat -265px -94px;
+}
+
+[class$="icon-arrow-left"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  /* margin-top: 1px; */
+  line-height: 14px;
+  vertical-align: text-top;
+  background: url(img/glyphicons-halflings.png) no-repeat -240px -94px;
+}
+
+
+/*  深色
+ th:hover [class$="icon-arrow-right"]{
+    background-image:  url(img/glyphicons-halflings.png);
+}
+th:hover [class$="icon-arrow-left"]{
+    background-image: url(img/glyphicons-halflings.png); 
+}
+.datetimepicker {
+    color: white;
+}
+
+.datetimepicker table tr td.day:hover,
+.datetimepicker table tr td span:hover{
+    color: #000;
+}
+
+.datetimepicker thead tr:first-child th:hover, .datetimepicker tfoot th:hover{
+    color: #000;
+} 
+*/

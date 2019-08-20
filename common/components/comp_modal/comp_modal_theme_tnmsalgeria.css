@@ -1,0 +1,9 @@
+.comp-modal-header {
+    color: #FFF;
+    background-color:  #4990E2 ;
+}
+.comp-modal-header img {
+    position:relative;
+    top: 0px;
+    opacity:1;
+}

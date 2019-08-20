@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>透视率</title>
+    <link rel="stylesheet" href="../../libs/reset.css">
+    <style>
+        body{background: black;}
+        /*透视率分析管理器*/
+        label{display: inline-block;}
+        input{width:120px;}
+        .icon{
+            cursor: pointer;
+        }
+        .tslv{
+            width:230px;
+            height:340px;
+            background:#131d39;
+            color:white;
+        }
+        .tslv-title{
+            width:100%;
+            height:25px;
+            border:1px solid #12a9e9;
+            text-align:center;
+            line-height: 25px;
+            font-size:16px;
+        }
+        .delect-icon{
+            display: inline-block;
+            float: right;
+            font-size:16px;
+            padding-right:5px;
+        }
+        .tslv-button{
+            width:100%;
+            height:30px;
+            border:1px solid #12a9e9;
+            border-top-width:0;
+        }
+        .tslv-button button{
+            width:35px;
+            height:20px;
+            border:1px solid white;
+            color:white;
+            padding:0;
+            margin-top:5px;
+            cursor: pointer;
+            font-size:13px;
+        }
+        .tslv-button button:first-child{
+            margin-left:70px;
+            margin-right:14px;
+        }
+        .tslv-content{
+            width:100%;
+            height:150px;
+            border:1px solid #12a9e9;
+            border-top-width:0;
+        }
+        .tslv-content ul li{
+            width:100%;
+            height:25px;
+            background:#2b5e93;
+            line-height: 25px;
+            font-size:13px;
+        }
+        .tslv-position{
+            width:100%;
+            height:120px;
+            color:white;
+            padding-top:10px;
+            border:1px solid #12a9e9;
+            border-top-width:0;
+            font-size:13px;
+        }
+        .tslv label{
+            width:60px;
+            display: inline-block;
+            text-align: center;
+        }        
+        .tslv input{
+            border: 1px solid white;
+            margin-top:5px;
+            color:white;                        
+        }
+        .tslv-position button{
+            width:100px;
+            height:25px;
+            border:1px solid white;
+            background:#00a0e9;
+            padding:0;
+            margin-left:70px;
+            margin-top:10px;
+            color:white;
+            cursor: pointer;
+        }
+        .tslv-desc{
+            width:230px;
+            height:60px;
+            border:1px solid #12a9e9;
+            border-top-width:0;
+            background:#131d39;
+            display: none;
+            font-size:13px;
+        }
+        /*透视率分析管理器   END*/
+    </style>
+</head>
+
+<body>
+    <!--透视率分析管理器-->
+    <div class="tslv">
+        <div class="tslv-title">
+            <span>透视率分析管理器</span>
+            <i class="icon delect-icon">X</i>
+        </div>
+        <div class="tslv-button">
+            <button>清空</button>
+            <button>删除</button>
+        </div>
+        <div class="tslv-content">
+            <ul>
+                <li>空间可视率为0</li>
+            </ul>
+        </div>
+        <div class="tslv-position">
+            <label>经度</label>
+            <input type="" name="" value="64.434232"><br />
+            <label>纬度</label>
+            <input type="" name="" value="46.43532"><br />
+            <label>距离</label>
+            <input type="" name="" value="5"><br />   
+            <button class="tslv-fenxi">分析</button>                   
+        </div>
+        <div class="tslv-desc">
+            <label>透视率</label>
+            <input type="" name="" value="20%"><br />
+            <label>透视面积</label>
+            <input type="" name="" value="5平方米"><br />              
+        </div>        
+    </div>
+    <!--透视率分析管理器  END-->
+    <script>
+        // 透视率分析管理器
+        document.querySelector('.tslv-fenxi').onclick = function(){
+            document.querySelector('.tslv-desc').style.display = "block"
+        }
+        // 透视率分析管理器 END
+    </script>
+</body>
+
+</html>

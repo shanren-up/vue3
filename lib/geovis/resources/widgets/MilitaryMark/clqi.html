@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测量器</title>
+    <link rel="stylesheet" href="../../libs/reset.css">
+    <style>
+        label{display: inline-block;}
+        /*input{width:120px;}*/
+        /*测量结果管理器*/
+        .icon{
+            cursor: pointer;
+        }        
+        .clqi{
+            width:230px;
+            height:340px;
+            border:1px solid #12a9e9;
+            background:#131d39;
+            color:white;
+        }
+        .clqi-title{
+            width:100%;
+            height:25px;
+            border-bottom:1px solid #12a9e9;
+            text-align:center;
+            line-height: 25px;
+            font-size:16px;
+        }
+        .delect-icon{
+            display: inline-block;
+            float: right;
+            font-size:20px;
+            padding-right:5px;
+            font-size:13px;
+        }   
+        .clqi-button{
+            width:100%;
+            height:30px;
+            border-bottom:1px solid #12a9e9;
+            font-size:13px;
+        }
+        .clqi-button button{
+            width:35px;
+            height:20px;
+            border:1px solid white;
+            color:white;
+            padding:0;
+            margin-top:5px;
+            cursor: pointer;
+            margin-right:10px;
+        }
+        .clqi-button button:first-child{
+            margin-left:45px;            
+        } 
+        .clqi-ul{
+            width:100%;
+            height:283px;
+            overflow-y: scroll;
+            font-size:13px;
+        }
+        .clqi-ul::-webkit-scrollbar-track{
+            -webkit-box-shadow:inset 0 0 0.01px #131d39;
+            border-radius: 1px;
+            background-color: #131d39;
+        }
+        .clqi-ul::-webkit-scrollbar{
+            width:5px;
+            /*background-color: #131d39;*/
+        }
+        .clqi-ul::-webkit-scrollbar-thumb{
+            background-color: #12a9e9;            
+        }         
+        .clqi-ul ul li{
+            width:100%;
+            height:25px;
+            background:#2b5e93;
+            line-height: 25px
+        }   
+        .clqi-ul ul li input{
+            margin:0;
+            margin:3px;
+        }      
+        /*测量结果管理器 END*/
+    </style>
+</head>
+
+<body>
+    <!--测量结果管理器-->
+    <div class="clqi">
+        <div class="clqi-title">
+            <span>测量结果管理器</span>
+            <i class="icon delect-icon">X</i>
+        </div>
+        <div class="clqi-button">
+            <button>清空</button>
+            <button>删除</button>
+            <button>设置</button>
+        </div> 
+        <div class="clqi-ul">
+            <ul>
+                <li>
+                    <input type="checkbox" name="dis[]">
+                    <span>距离测量0</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="dis[]">
+                    <span>距离测量0</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="dis[]">
+                    <span>距离测量0</span>
+                </li> 
+                <li>
+                    <input type="checkbox" name="dis[]">
+                    <span>距离测量0</span>
+                </li>   
+                <li>
+                    <input type="checkbox" name="dis[]">
+                    <span>距离测量0</span>
+                </li>   
+                <li>
+                    <input type="checkbox" name="dis[]">
+                    <span>距离测量0</span>
+                </li> 
+                <li>
+                    <input type="checkbox" name="dis[]">
+                    <span>距离测量0</span>
+                </li> 
+                <li>
+                    <input type="checkbox" name="dis[]">
+                    <span>距离测量0</span>
+                </li>   
+                <li>
+                    <input type="checkbox" name="dis[]">
+                    <span>距离测量0</span>
+                </li>   
+                <li>
+                    <input type="checkbox" name="dis[]">
+                    <span>距离测量0</span>
+                </li>                                                                                       
+                <li>
+                    <input type="checkbox" name="dis[]">
+                    <span>距离测量0</span>
+                </li> 
+                <li>
+                    <input type="checkbox" name="dis[]">
+                    <span>距离测量0</span>
+                </li>   
+                <li>
+                    <input type="checkbox" name="dis[]">
+                    <span>距离测量0</span>
+                </li>   
+                <li>
+                    <input type="checkbox" name="dis[]">
+                    <span>距离测量0</span>
+                </li>                  
+            </ul>
+        </div>              
+    </div>
+    <!--测量结果管理器  END-->
+</body>
+
+</html>

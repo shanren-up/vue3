@@ -1,0 +1,103 @@
+.frame-view-container {
+  width: 100%;
+  height: 100%;
+}
+
+.frame-view-child-loc1 {
+  width: 100%;
+  height: 75px;
+}
+
+.frame-view-child-loc2 {
+  width: 100%;
+  height: 25px;
+  top: 50px;
+}
+
+.frame-view-child-loc3 {
+  width: 100%;
+  bottom: 0;
+  /* min-height: 640px; */
+  top: 50px;
+  /* overflow: auto ; */
+}
+
+
+/* vertical-meau start  */
+
+.frame-view-container .has-vertical-meau {
+  left: 200px;
+  width: auto;
+  right: 0;
+  overflow: visible;
+  transition: left .2s;
+}
+
+.frame-view-container.simple-meau .has-vertical-meau {
+  left: 60px;
+}
+
+
+/* verticalmeau 为空时 宽度为0 */
+
+div.frame-view-container.vertical-meau-empty .has-vertical-meau,
+div.frame-view-container.vertical-meau-empty .frame-view-child-loc1 {
+  left: 0px;
+}
+
+.frame-view-child-vertical-meau {
+  width: 200px;
+  bottom: 0;
+  left: 0;
+  /* z-index: 999; */
+  transition: width .2s;
+}
+
+.vertical-meau-empty .frame-view-child-vertical-meau {
+  width: 0px;
+  bottom: 0;
+  left: 0;
+  /* z-index: 999; */
+}
+
+.simple-meau .frame-view-child-vertical-meau {
+  width: 60px;
+  overflow: visible;
+  bottom: 26px;
+  z-index: 999;
+}
+
+.simple-meau.no-footer .frame-view-child-vertical-meau {
+  bottom: 0;
+}
+
+
+/* vertical-meau end  */
+
+
+/* meau-type3 start  */
+
+.frame-view-container.meau-type3 .frame-view-child-loc1 {
+  width: auto;
+  left: 200px;
+  /*     height: 40px; */
+  right: 0;
+  transition: all .2s;
+}
+
+.frame-view-container.meau-type3.simple-meau .frame-view-child-loc1 {
+  left: 60px;
+}
+
+
+/* .frame-view-container.meau-type2 .frame-view-child-loc1{
+    left: 200px;
+    right: 0;
+    width: auto;
+}
+.frame-view-container.simple-meau.meau-type2 .frame-view-child-loc1 {
+    left: 60px;
+} */
+
+
+/* meau-type3 end  */

@@ -1,0 +1,38 @@
+{
+    "frame_default_yhdc": {
+        "en": "User logged out",
+        "zh": "用户登出"
+    },
+    "frame_container_dkst：": {
+        "en": "Open view:",
+        "zh": "打开视图："
+    },
+    "frame_container_cwxx": {
+        "en": "Error message:",
+        "zh": "错误信息："
+    },
+    "frame_container_gbst：": {
+        "en": "Close the view:",
+        "zh": "关闭视图："
+    },
+    "frame_container_xxxx": {
+        "en": "details:",
+        "zh": "详细信息："
+    },
+    "frame_container_cscw，jcstsfybc": {
+        "en": "Parameter error, check whether the view error",
+        "zh": "参数错误，检查视图是否有报错"
+    },
+    "frame_container_fhsyj": {
+        "en": "Back to previous",
+        "zh": "返回上一级"
+    },
+    "frame_container_gbtp": {
+        "en": "Close the screen",
+        "zh": "关闭投屏"
+    },
+    "frame_container_dktp": {
+        "en": "Open the screen",
+        "zh": "打开投屏"
+    }
+}

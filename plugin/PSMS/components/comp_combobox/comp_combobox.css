@@ -1,0 +1,22 @@
+.comp-combobox{
+    width: 380px;
+    border-radius: 3px;
+    height: 30px;
+    border: 1px solid #ccc;
+    color: #000;
+    position: relative;
+}
+.comp-combobox > input{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.comp-combobox .combobox-content{
+    position: absolute;
+    height: 250px;
+    width: 380px;
+    top: 30px;
+    background: #FFF;
+    z-index: 1;
+    border: 1px solid rgb(123,157,212);
+}

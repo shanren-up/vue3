@@ -1,0 +1,8 @@
+<div class="input-append date form_datetime form-group has-feed-back" id='{{datetimepickerId}}' {{action 'timePickerFun'}} style="position: relative;">
+    <input id='{{datetimeInputId}}' type='text' class="form-control input-boco-text" style="height: {{datetimeHeight}}px;font-size: {{fontSize}}px;" value="{{curDate}}" {{action 'timeChangeFun' on='change'}} disabled={{isDisabled}}>
+    <span class="add-on form-control-feedback">
+        <button class="btn btn-default pull-right icon-calendar input-boco-text" type="button" style={{-html-safe (concat "height: " datetimeHeight "px;" "border-radius: 0px 3px 3px 0px;")}} {{action 'timePickerFun'}}>
+            <span class="glyphicon glyphicon-calendar" style="position: relative; top: 50%;left: 50%;margin-left: -6px; margin-top: -6px;"></span> 
+        </button>
+    </span>
+</div>

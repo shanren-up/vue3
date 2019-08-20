@@ -1,0 +1,54 @@
+{
+    "comp_map_msgbox_nh": {
+        "en": "nihao",
+        "zh": "你好"
+    },
+    "comp_map_msgbox_djqran": {
+        "en": "dianjiquerenanniu",
+        "zh": "点击确认按钮"
+    },
+    "comp_map_msgbox_zs": {
+        "en": "zhongshi",
+        "zh": "重试"
+    },
+    "comp_map_msgbox_djzsan!": {
+        "en": "dianjizhongshianniu!",
+        "zh": "点击重试按钮!"
+    },
+    "comp_map_msgbox_qd": {
+        "en": "queding",
+        "zh": "确定"
+    },
+    "comp_map_msgbox_djqxan": {
+        "en": "dianjiquxiaoanniu",
+        "zh": "点击取消按钮"
+    },
+    "comp_map_msgbox_qx": {
+        "en": "quxiao",
+        "zh": "取消"
+    },
+    "comp_map_msgbox_djqdan!": {
+        "en": "dianjiquedinganniu!",
+        "zh": "点击确定按钮!"
+    },
+    "comp_map_msgbox_djzsan": {
+        "en": "dianjizhongshianniu",
+        "zh": "点击重试按钮"
+    },
+    "comp_map_msgbox_nh！": {
+        "en": "nihao！",
+        "zh": "你好！"
+    },
+    "comp_map_msgbox_djqxan!": {
+        "en": "dianjiquxiaoanniu!",
+        "zh": "点击取消按钮!"
+    },
+    "comp_map_msgbox_djqdan": {
+        "en": "dianjiquedinganniu",
+        "zh": "点击确定按钮"
+    },
+    "comp_map_msgbox_djqran!": {
+        "en": "dianjiquerenanniu!",
+        "zh": "点击确认按钮!"
+    }
+}

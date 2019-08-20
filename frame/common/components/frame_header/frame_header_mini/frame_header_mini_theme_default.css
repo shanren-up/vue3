@@ -1,0 +1,29 @@
+.frame-header-mini {
+    /*background-color: #E2EEFA;*/
+    background-color: rgb(37,41,50);
+    color: rgb(34,34,34);
+    overflow: hidden;
+}
+
+.frame-header-mini .user {
+    background-image: url('../../../../../img/frame_header/u12.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.frame-header-mini .quit {
+    background-image: url('../../../../../img/frame_header/u12.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.frame-header-mini .logout {
+    background-image: url('../../../../../img/frame_header/u12.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.frame-header-mini .toggle-vertical-meau-btn {
+    color: #6697C4;
+    background-image: url('../../../../../img/frame_header/meau_1.png');
+}

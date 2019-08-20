@@ -1,0 +1,25 @@
+.comp-multi-timepicker-edit-size {
+    width: 500px;
+    height: 200px;
+}
+
+.comp-multi-timepicker-edit {
+    padding: 10px;
+}
+
+.comp-multi-timepicker-edit .section {
+    padding: 10px 0;
+}
+
+.comp-multi-timepicker-edit .section label {
+    display: block;
+}
+
+.comp-multi-timepicker-edit .section input {
+    display: inline-block;
+    width: 4em;
+}
+
+.comp-multi-timepicker-edit .footer {
+    text-align: center;
+}

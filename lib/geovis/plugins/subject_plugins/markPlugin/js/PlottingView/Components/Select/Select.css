@@ -1,0 +1,23 @@
+.inputContainer {
+    position: relative;
+}
+
+.inputContainer > .select {
+    width: 238px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 1px solid transparent;
+}
+
+.inputContainer option {
+    color: #111;
+    cursor: pointer;
+}
+
+.inputContainer > .select:hover, .inputContainer > .select:focus {
+    border-bottom: 1px solid #7d7d7d;
+}

@@ -1,0 +1,69 @@
+<div class="comp-userinfo">
+    <div class="panel-content">
+        <div class="info-item">
+            <span>用户名称：</span>
+            {{#if isEdit}}
+                {{input type=text disabled="disabled" value=userInfo.username}}
+            {{else}}
+                {{input type=text value=userInfo.username}}
+            {{/if}}
+        </div>
+        <div class="info-item">
+            <span>登录名：</span>
+            {{input type=text value=userInfo.loginname}}
+        </div>
+        <div class="info-item">
+            <span>用户密码：</span>
+            <input type="password" id="passwordValue" value={{userInfo.password}}>
+        </div>
+        <div class="info-item">
+            <span>确认密码：</span>
+            <input type="password" id="passwordValue2" value={{userInfo.password}}>
+        </div>
+        <div class="info-item">
+            <span>电话号码：</span>
+            <input type="tel" id="telValue">
+        </div>
+        <div class="info-item">
+            <span>性别：</span>
+            <select onchange={{action 'sexChange'}}>
+                {{#each sexData as |data|}}
+                    <option value="{{data.name}}" selected={{data.isSelected}}>{{data.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="info-item">
+            <span>电子邮箱：</span>
+            <input type="email" id="emailValue">
+        </div>
+        <div class="info-item">
+            <span>角色：</span>
+            {{#if isEdit }}
+                {{#compare currentUser.roleId 2}}
+                    <select disabled onchange={{action 'userTypeChange'}} style="background-color:rgb(235,235,228)">
+                        {{#each userTypeData as |data|}}
+                        <option value="{{data.id}}" selected={{data.isSelected}}>{{data.rolename}}</option>
+                        {{/each}}
+                    </select>
+                {{/compare}}
+                {{#compare currentUser.roleId 1}}
+                    <select onchange={{action 'userTypeChange'}}>
+                    {{#each userTypeData as |data|}}
+                    <option value="{{data.id}}" selected={{data.isSelected}}>{{data.rolename}}</option>
+                    {{/each}}
+                    </select>
+                {{/compare}}
+            {{else}}
+                <select onchange={{action 'userTypeChange'}}>
+                {{#each userTypeData as |data|}}
+                <option value="{{data.id}}" selected={{data.isSelected}}>{{data.rolename}}</option>
+                {{/each}}
+                </select>
+            {{/if}}
+        </div>
+    </div>
+    <div class="panel-footer">
+        <button {{action 'confirmUserInfo'}}>确定</button>
+        <button {{action 'cancelUserInfo'}}>取消</button>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+{{#each dataSource as |item|}} {{#if item._isShow}}
+<div class="meau-item  {{if item._active 'active-meau'}}" {{action 'clickMenuItem' item true}} title={{oloc-meau-name item}}>
+	<!--<img src={{if item._active item.imgClickSrc item.imgSrc}} alt={{oloc-meau-name item}}>-->
+	<span class="meau-item-text"><li class="{{item.imgClass}}"></li>{{oloc-meau-name item}}</span>
+	<!--<dialog>{{#if item._hasChild}}
+                <i class="status-icon"></i>
+            {{/if}}</dialog>-->
+
+</div>
+{{#if item._expend}}
+<div class="sub-meau-container">
+	{{#each item.childViewMenus as |subItem index|}} {{#if subItem._isShow}}
+	<div class="sub-meau-item {{if subItem._active 'active-sub-meau'}}" data-toggle="tooltip" href="frameVerticalDropdownD{{index}}" {{action 'clickMenuItem' subItem false (concat 'frameVerticalDropdownD' index) }}>
+		<!--<img src={{if subItem._active subItem.imgClickSrc subItem.imgSrc}} alt={{oloc-meau-name subItem}} style="display: none;">-->
+	<span>{{oloc-meau-name subItem}}</span>
+		<div style="visibility:collapse">
+			{{frame-dropdown-menu-vertical class="default-meau" childViewMenus=subItem.childViewMenus clickMenuItem=(action "clickMenuItem") targetId=(concat "frameVerticalDropdownD" index) }}
+		</div>
+	</div>
+	{{/if}} {{/each}}
+</div>
+{{/if}} {{/if}} {{/each}}

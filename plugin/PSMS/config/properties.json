@@ -1,0 +1,95 @@
+{
+  "processType": [
+    {
+      "id": "3",
+      "name": "HY1",
+      "name2": "HY1",
+      "file": "h5,txt"
+    }
+  ],
+  "flowType": [
+    {
+      "id": "flow",
+      "name": "影像专业处理流程"
+    },
+	{
+	  "id": "ParalleFlow",
+	  "name": "影像并行处理流程"
+	}
+  ],
+  "startKey": [
+
+  ],
+  "fileDir": {
+    "origDir": "/HY1",
+    "resultDir": "/HY1"
+  },
+  "flowStatus": [
+    {
+      "id": "FAILED",
+      "name": "Failed"
+    },
+    {
+      "id": "SUCCESSED",
+      "name": "Successed"
+    },
+    {
+      "id": "FINISHED",
+      "name": "Finished"
+    },
+    {
+      "id": "CONTINUE",
+      "name": "Continue"
+    },
+    {
+      "id": "PAUSED",
+      "name": "Paused"
+    },
+    {
+      "id": "RUNNING",
+      "name": "Running"
+    },
+    {
+      "id": "WAITING",
+      "name": "Waiting"
+    }
+  ],
+  "baseTools": [
+    {
+      "blockId": "state_start",
+      "blockLabel": "开始",
+      "sourceAnchor": "RightMiddle",
+      "imgUrl": "plugin/PSMS/img/flow/left/node1.png",
+      "imgSrc": "plugin/PSMS/img/flow/node1.png",
+      "singleton": true,
+      "flowId":"state_start",
+      "type": "base"
+    },
+    {
+      "blockId": "state_end",
+      "blockLabel": "结束",
+      "targetAnchor": "LeftMiddle",
+      "imgUrl": "plugin/PSMS/img/flow/left/node4.png",
+      "imgSrc": "plugin/PSMS/img/flow/node4.png",
+      "singleton": true,
+      "flowId":"state_end",
+      "type": "base"
+    }
+  ],
+  "productLevel":["L1B","RAWDSM","DSM","DOM"],
+  "finelProductLevel":["DSM","DOM"],
+  "productType":[
+    {
+      "id":"1",
+      "name":"标准单景"
+    },
+    {
+      "id":"2",
+      "name":"标准分幅"
+    },
+    {
+      "id":"3",
+      "name":"镶嵌图"
+    }
+  ]
+}

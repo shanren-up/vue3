@@ -1,0 +1,105 @@
+.panel {
+    margin: 9px 9px;
+    /*background: #f00;*/
+}
+
+.recent {
+    min-height: 10px;
+    margin-left: -4px;
+}
+
+.recentTitle {
+    width: 100%;
+    height: 30px;
+    background: #1179c6;
+}
+
+.recentTitle > span {
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.recentTitle .cancel {
+    float: right;
+    background-color: transparent;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABc0lEQVRIS92UOy9EURSFvyUqv8G71yo8Er/BoyQqDD9ApaCimkLi0SpIhChUKpGgVGs8Wz9AJUtOcmdyM3PvmTMZ0zjtPXd/e6+z1hZdPupyff4hwPYq0Cep2o58tseBJeBW0mXt3yaJbG8Cu0BF0lEKxPYA8Am8AtuSTkoB4YPtFeAYWJd0GIPYHgQ+gHtJ0413Sx85kypMUDqJ7SHgHXiQNFXUSNRFOUjTJLZHMkkKO49KlO/E9hoQZKpDbI8CL7HOkwHZmwRnBbnmgTvgq0zz5DdovGh7DrgAvoFzScspDktOsu0e4CcrOivp6s8AtoeBN+AMuAZOUywcGmg5Qa543S22K8BBCqSVTWs+b7JizMJ56WJBqyW0NEQpYSwE5HZLafFal7m1Upj4omU3EQIEPEqaTHFKbpKdYARJz7Ftug/MSBpLKZ6bZAvYAKqS9mKABaBXUrBk8rHdDywCT5Ju2loVyZSCiy1z0EnxpKB1CvgFCeyaGQmocmUAAAAASUVORK5CYII=);
+    background-size: 16px 16px;
+    background-position: center;
+    margin: 7px 8px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.recentTitle .cancel:hover {
+    cursor: pointer;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABy0lEQVRIS91UvU4bQRic7/ZwQp4Bwk+floKAlGcAUobYuzgEeACqSIQqqSiQAMt365ACSwhEkSpVhASUqWkgJC0PQMHefohEd7Hw3XptQcO1t/vNfLMzQ3jgjx54Ph4hAG9H80iCZyTlWjfycRSNIaRZAD+orPbTu20ScSNaRhB8guEFUmrLB4S1HkRIf2DsOdh+JFX9Wghw+4O1fgeBGhIskpSbLhCu1Z6jv/Qbxh6RVJN3zxY+MutoHiLYcm3CUTSEkrhAYo+poibyiDhdlIHkbML1+giehOew9ojK7cydErUy4Th+j5A2W+VirUcR0pmLuTfAvzfJ5JqBMYd4WrpEkq+59xvcPchxPA1BeyC6QsK7JGXZx2HeSeaVlQAjQ8nf7F/bKVLq4N4AuNEYhsAvGNsE6BsE7SDhjha+JdBxg5bhmc9Z6wUIbPjkxG3T1Oc5VnRZuFW64qClCXWEyCeMuQBZtziGpyyzWinorvay03ocIR3D2BOS6qWPU/7LZVdBokmVymlxm37R67D8iqR64TM82ySOP0DQEsiu0du5z466bryGMSFVq82uAOr1AfTRGwTBT5qV37uqim6Aeq6KXkE6Bq3Xwem9Gzj/0xmItJQ/AAAAAElFTkSuQmCC);
+}
+
+.plotButton {
+    border: 1px solid #7d7d7d;
+    /*background-color: #161616;*/
+    background-color: transparent;
+    background-position: center;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    margin: 6px 4px;
+    padding: 8px;
+    outline: none;
+}
+
+.plotButton:hover {
+    cursor: pointer;
+}
+
+.plotButton:focus, .btnBorder {
+    border: 1px solid #fff !important;
+}
+
+.libContainer {
+    margin-left: 0px;
+    /*max-height: 290px;*/
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.libContainer::-webkit-scrollbar {
+    width: 0px;
+}
+
+.libTitle {
+    height: 30px;
+}
+
+.libTitle > span {
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 8px;
+}
+
+.tabDefault {
+    width : 0;
+    display: none;
+}
+
+.tabList {
+    text-align: center;
+    margin-top: 2px;
+    width: 382px;
+    height: 24px;
+    border: 1px solid #333;
+}
+
+.tabItem {
+    width: 54px;
+    height: 24px;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #fff;
+}

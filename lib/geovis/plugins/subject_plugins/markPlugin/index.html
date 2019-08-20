@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>标注</title>
+</head>
+<body>
+<div id="colorSelect">
+    <ul>
+        <li data-color="#CC0000" >0</li>
+        <li data-color="#0066FF" >0</li>
+        <li data-color="#00FF99" >0</li>
+        <li data-color="#339933" >0</li>
+        <li data-color="#6600CC" >0</li>
+        <li data-color="#993300" >0</li>
+        <li data-color="#FFFFFF" >0</li>
+        <li data-color="#FFFF66" >0</li>
+        <li data-color="#000000" >0</li>
+        <li data-color="#3399FF" >0</li>
+    </ul>
+</div>
+<div class="markPanel">
+	<u class="close"></u>
+  <div class="head">标绘工具</div>
+	<div class="tabs">
+		<div class="tab tool">标注标绘</div><div class="tab layer">标绘图层</div>
+	</div>
+	<div class="tabContent">
+		<div class="toolsPanel actived" id="toolsPanel">
+			<div class="recentTools">
+				<div class="title">最近使用<u class="delete"></u></div>
+				<ul class="tools">
+
+				</ul>
+			</div>
+			<div class="markRepo">
+				<div class="title"><span class="text">基本标绘</span><div class="menu_switch"><u></u></div>
+					<div class="menu_panel">
+						<ul>
+							<li id="basicMarkSelect">基本标绘库</li>
+							<li id="milMarkSelect">军标标绘库</li>
+							<li>三维模型库</li>
+						</ul>
+					</div>
+				</div>
+				<div class="milMark">
+					<span class="enemy">敌方</span>
+					<span class="our">我方</span>
+					<span class="neutral">中立</span>
+					<span class="unknown">未知</span>
+				</div>
+				<ul class="tools">
+
+				</ul>
+			</div>
+			<div class="propPanel">
+				<div class="title">属性修改器</div>
+				<div class="subPanel" >
+					<div class="subTitle">属性</div>
+					<ul id="propModify">
+						<!-- <li class="switch">
+							<span class="prop_label">是否贴地</span>
+							<span class="value checked">null<input type="hidden" name="tiedi" value="yes"></span>
+						</li>
+						<li class="text">
+							<span class="prop_label">高</span>
+							<span class="value"><input type="text" name="height" value="yes"><span class="unit">厘米</span></span>
+						</li>
+						<li class="color">
+							<span class="prop_label">填充色</span>
+							<span class="value"></span>
+						</li>
+						<li class="select">
+							<span class="prop_label">显示模式</span>
+							<span class="value">
+								<select>
+								  <option value ="bulletin">bulletin</option>
+								  <option value ="close_terrain">close_terrain</option>
+								</select>
+							</span>
+						</li> -->
+					</ul>
+				</div>
+				<div class="subPanel">
+					<div class="subTitle">样式</div>
+					<ul id="styleModify">
+					
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="layerPanel" id="layerPanel">
+			<div class="lamenu">
+				<div class="labtn new"><u class="icon"></u></div>
+				<div class="labtn save"><u class="icon"></u></div>
+				<div class="labtn import"><u class="icon"></u></div>
+				<div class="labtn export"><u class="icon"></u></div>
+				<div class="labtn sync"><u class="icon"></u></div>
+				<div class="labtn turn"><u class="icon"></u></div>
+				<div class="laoption"><u class="icon"></u><span>是否接收</span></div>
+			</div>
+			<div class="layerTree ztree" id="layerTree"></div>
+		</div>
+	</div>
+</div>
+<div class="mark_popwindow">
+	<div class="title">保存为</div>
+	<div class="close"></div>
+	<div class="mark_main" id="mark_main">
+
+	</div>
+	<button class="mark_cancel">取消</button><button class="mark_btn">保存</button>
+</div>
+
+</body>
+</html>

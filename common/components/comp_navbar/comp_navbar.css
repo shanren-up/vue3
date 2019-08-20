@@ -1,0 +1,94 @@
+      .comp-navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        z-index: 99;
+      }
+
+      .comp-navbar.has-height {
+        height: 100%;
+      }
+
+      .comp-navbar .nav-btn-container {
+        position: absolute;
+        top: 0;
+        width: 80px;
+        height: 22px;
+      }
+
+      .comp-navbar .nav-toggle-btn {
+        height: 0px;
+        background: rgba(242, 242, 242, 0.1) url("img/arrow.png") center no-repeat;
+        transition: height;
+        transition-duration: .5s;
+      }
+
+      .comp-navbar .nav-btn-container.active .nav-toggle-btn {
+        height: 22px;
+      }
+
+      .comp-navbar .nav-toggle-btn:hover {
+        background-image: url("img/arrow_mouseover.png");
+      }
+
+      .comp-navbar .nav-toggle-btn.open {
+        transform: rotate(180deg);
+        background-color: #2a3540;
+      }
+
+      .comp-navbar .nav-container {
+        display: none;
+        height: auto;
+        width: 80px;
+        top: 0px;
+        background: rgba(2, 13, 20, 0.8);
+        padding: 20px 0;
+      }
+
+      .comp-navbar .nav-item:hover {
+        background-color: rgba(99, 151, 203, 0.9);
+        color: #FFF;
+        width: 200px;
+      }
+
+      .comp-navbar .nav-item:hover .nav-item-text {
+        /* width: 200px; */
+        display: inline-block;
+      }
+
+      .comp-navbar .nav-item {
+        line-height: 60px;
+        /* font-size: 1.3em; */
+        /* padding-left: 1em; */
+        position: relative;
+        cursor: pointer;
+        border-radius: 5px;
+        height: 60px;
+        width: 60px;
+        margin: 15px 0px 15px 10px;
+      }
+
+      .comp-navbar .nav-item-img {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 30px;
+        height: 30px;
+      }
+
+      .comp-navbar .nav-item-text {
+        padding-left: 55px;
+        font-size: 20px;
+        font-weight: bold;
+        vertical-align: middle;
+        display: none;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* text-align: justify; */
+        /* padding-right: 20px; */
+        /* text-align-last: justify; */
+        letter-spacing: 5px;
+      }

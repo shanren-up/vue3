@@ -1,0 +1,11 @@
+.context-menu-list {
+    min-width: 9em;
+    padding: 0;
+    border-width: 0;
+    font-size:12px;
+}
+
+.context-menu-item,
+.context-menu-item:hover {
+    border-radius: .2em;
+}

@@ -1,0 +1,31 @@
+.frame-footer {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 100;
+    background-color: #192028;
+    color: #597288;
+    vertical-align: middle;
+}
+
+.frame-footer > div {
+    display: inline-block;
+    padding-top: 7px;
+}
+
+.frame-footer .left {
+    float: left;
+    padding-left: 15px;
+}
+
+.frame-footer .left input[type='checkbox'] {
+    position: relative;
+    top: 2px;
+}
+
+.frame-footer .right {
+    float: right;
+    padding-right: 15px;
+}

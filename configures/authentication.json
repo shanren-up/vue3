@@ -1,0 +1,11 @@
+[
+	{
+		"name": "functionAuthentication",
+		"authenticationIDLists": [
+			{}, {}, {}, {}
+		]
+	}, {
+		"name": "dataAuthentication",
+		"authenticationIDLists": []
+	}
+]

@@ -1,0 +1,48 @@
+.frame-header-mini {
+    background-color: #1A3655;
+    color: #fff;
+}
+
+.frame-header-mini .user {
+    background-image: url('../../../../../img/frame_header/user_d1.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.frame-header-mini .onlinenum {
+    background-image: url('../../../../../img/frame_header/user_search.png');
+    background-repeat: no-repeat;
+    background-position: left 56%;
+    background-size: 20px;
+}
+
+.frame-header-mini .quit {
+    background-image: url('../../../../../img/frame_header/quit_d1.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.frame-header-mini .logout {
+    background-image: url('../../../../../img/frame_header/u121.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.frame-header-mini .toggle-vertical-meau-btn {
+    color: #6697C4;
+    background-image: url('../../../../../img/frame_header/meau_1.png');
+}
+
+.frame-header-mini .frame-login-date,
+.frame-header-mini .operator-item{
+    line-height: 40px;
+}
+
+.frame-header-mini .frame-header-operator{
+    right: 80px;
+}
+
+.frame-header-mini .frame-user-bg{
+    margin: 0;
+    width: 65px;
+}

@@ -1,0 +1,45 @@
+@import "theme.less";
+
+.global-body {
+    font-family: @g-font-family;
+}
+
+div.fixed {
+    position: fixed;
+    overflow: hidden;
+    z-index: 100;
+}
+
+div.loading {
+    height: 100px;
+    background-color: @g-loading-background-color;//#1#
+    z-index: 100000;
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    width: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: collapse;
+}
+
+* {
+    scrollbar-face-color: @g-ms-scrollbar-face-color;
+    scrollbar-arrow-color: @g-ms-scrollbar-arrow-color;
+    scrollbar-3dlight-color: @g-ms-scrollbar-3dlight-color;
+    scrollbar-highlight-color: @g-ms-scrollbar-highlight-color;
+    scrollbar-shadow-color: @g-ms-scrollbar-shadow-color;
+    scrollbar-darkshadow-color: @g-ms-scrollbar-darkshadow-color;
+    scrollbar-track-color: @g-ms-scrollbar-track-color;
+}
+
+::-webkit-scrollbar {
+    width: @g-webkit-scrollbar-width;
+    height: @g-webkit-scrollbar-height;
+}
+
+::-webkit-resizer {
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}

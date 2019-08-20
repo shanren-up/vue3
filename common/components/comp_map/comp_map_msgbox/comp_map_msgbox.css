@@ -1,0 +1,58 @@
+.bootbox-dialog {
+    width: 480px;
+    height: 160px;
+}
+
+.bootbox-body {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.bootbox-header {
+    min-height: 16.43px;
+    padding: 15px;
+    border-bottom: 0px;
+}
+
+.bootbox-footer {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+    border-top: 0px;
+}
+
+.comp-map-msgbox-img {
+    height: 56px;
+    width: 60px;
+    margin: 20px;
+}
+
+.comp-map-msgbox-span {
+    font-size: 14px;
+    font-family: '微软雅黑 Regular', '微软雅黑';
+    font-weight: 400;
+    text-align: left;
+    vertical-align: middle;
+    display: -moz-inline-box;
+    display: inline-block;
+    width: 254px;
+    word-wrap: break-word;
+}
+
+.comp-map-msgbox-button {
+    width: 120px;
+    height: 35px;
+    font-family: '微软雅黑 Regular', '微软雅黑';
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 0px 19px 0px 5px;
+}
+
+.comp-map-msgbox-button:hover {
+    width: 120px;
+    height: 35px;
+    font-family: '微软雅黑 Regular', '微软雅黑';
+    font-size: 14px;
+    color: #FFFFFF;
+}

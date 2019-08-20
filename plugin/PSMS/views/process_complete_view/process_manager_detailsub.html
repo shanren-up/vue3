@@ -1,0 +1,33 @@
+<div class="process-manager-detail">
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active" {{action 'tabCLick' '2'}}>
+        <a href="#flowChart{{tabId}}" data-toggle="tab">流程图</a>
+        </li>
+        <li role="presentation" {{action 'tabCLick' '1'}}>
+            <a href="#taskInfo{{tabId}}" data-toggle="tab">任务信息</a>
+        </li>
+       <!-- <li role="presentation" {{action 'tabCLick' '3'}}>
+            <a href="#flowLog{{tabId}}" data-toggle="tab">流程日志</a>
+        </li>-->
+    </ul>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="flowChart{{tabId}}">
+            {{jsplumb-figure name='flowChart' isFDFlow=isFDFlow chartHeight=chartHeight  dataSource=dataSource2}}
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="taskInfo{{tabId}}">
+            <div class="info-operator">
+                <span>状态：</span>
+                <select onchange={{action "statusChange"}}>
+                    {{#each statusData as |data|}}
+                        <option value="{{data.id}}">{{data.name}}</option>
+                    {{/each}}
+                </select>
+                <!--<button class="button-geovis" {{action "queryProcessInfo"}}><span class="fa fa-search">查询</span></button>-->
+            </div>
+            {{comp-table name='tabskInfo' tableConfig=tableConfig columns=columns  eventConfig=eventConfig}}
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="flowLog{{tabId}}">
+            {{comp-table name='flowLog' tableConfig=tableConfig1 columns=columns1 eventConfig=eventConfig1}}
+        </div>
+    </div>
+</div>

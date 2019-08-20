@@ -1,0 +1,150 @@
+@charset "utf-8";
+/*****************************************弹******窗**************************************/
+.modal-boco-padding {
+  padding: 0 15px;
+}
+.comp-modal-header,
+.modal-boco-header {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0 15px;
+  height: 40px;
+  background-color: #3d83b6;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  line-height: 40px;
+}
+.comp-modal-header img {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.comp-modal-header img:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.1s linear;
+}
+.comp-modal-header-close {
+  float: right;
+  margin-left: 2px;
+  margin-top: 10px;
+}
+.comp-modal-header-max {
+  float: right;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 10px;
+}
+.comp-modal-header-photo {
+  float: right;
+  margin-right: 2px;
+  margin-top: 10px;
+}
+#modalBody {
+  padding: 0 15px;
+  background: #00264b;
+  color: #FFFFFF;
+}
+.modal-close {
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/close.png");
+  background-repeat: no-repeat;
+  float: right;
+  margin-left: 2px;
+  margin-top: 10px;
+}
+.modal-max {
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/max.png");
+  background-repeat: no-repeat;
+  float: right;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 10px;
+}
+.modal-photo {
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/photo.png");
+  background-repeat: no-repeat;
+  float: right;
+  margin-right: 2px;
+  margin-top: 10px;
+}
+.modal-restore {
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/restore.png");
+  background-repeat: no-repeat;
+  float: right;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 10px;
+}
+/******************************************树******图**************************************/
+.tree-boco-checked {
+  color: #ffffff;
+  background: #60c9ff;
+}
+.tree-boco-unchecked {
+  color: #333333;
+}
+/******************************************分******页**************************************/
+.boco.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #cccccc;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #2d5576;
+}
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  z-index: 3;
+  color: #FFFFFF;
+  background-color: #1296db;
+  border-color: #2d5576;
+}
+.lte-comp-page-rightsbutton {
+  float: right;
+  font-size: 12px;
+  /* vertical-align: middle; */
+  margin-top: 2px;
+  background: #3d83b6;
+  width: 50px;
+  border: 0;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 4px 0;
+}
+.lte-comp-page-rightspan {
+  float: right;
+  line-height: 34px;
+  font-size: 12px;
+  color: #cccccc;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.lte-comp-page-rightinput {
+  float: right;
+  width: 40px;
+  font-size: 12px;
+  margin-top: 4px;
+  background: #00264b;
+  color: #CCCCCC;
+  border: 1px solid #2d5576;
+}
+.lte-comp-page-rightsbutton {
+  float: right;
+  font-size: 12px;
+  /* vertical-align: middle; */
+  margin-top: 2px;
+}

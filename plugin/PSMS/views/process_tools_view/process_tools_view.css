@@ -1,0 +1,48 @@
+.process-tools-view{
+
+padding: 20px;
+}
+.process-tools-view .tools-create-title{font-size: 18px;border-left: 4px solid #069697;padding-left: 10px;}
+.process-tools-view .tools-create-file{
+
+float: left;
+}
+.process-tools-view .tools-search{
+    
+margin-top: 10px;
+}
+.process-tools-view #uploadForm{
+    width: 500px;
+    height: 30px;
+    margin: 10px;
+    float: left;
+}
+.process-tools-view #uploadForm input{
+    height:30px;
+    border: 1px solid #ccc;
+    /* line-height: 30px; */
+    padding: 3px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.process-tools-view  .sub-button{
+    height:30px;
+    background-color:  #069697;
+    border-radius: 5px;
+    border: none !important;
+    width: 80px;
+    color: #fff;
+    font-size: 14px;
+    /* margin: 10px 0 0 10px; */
+}
+.process-tools-view  .tools-search button{
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 25px;
+    border-radius: 3px;
+}
+.process-tools-view  .tools-search td{
+    font-size:14px;
+    padding:0;
+}

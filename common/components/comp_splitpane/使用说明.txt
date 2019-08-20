@@ -1,0 +1,23 @@
+1.comp-splitpane里面只能包含两个元素
+2.splitStyle='horizontal-percent' 上下分，vertical-percent 左右分
+3.showSize 弹出大小
+4.isDefaultExpand='true'  是否默认展开弹出 true展开
+4.引用  'common/components/comp_splitpane/comp_splitpane'
+4.使用用例
+
+     PS：以前老版本的alarmwindow需要外面包含一层，不然高度算不对
+
+        {{#comp-splitpane splitStyle='horizontal-percent' name='toposplit'}}
+        <div style="background-color: yellow">
+        </div>
+        <div style="background-color: rebeccapurple">
+        </div>
+        {{/comp-splitpane}}
+
+
+        {{#comp-splitpane splitStyle='vertical-percent' name='toposplit' isDefaultExpand='true' showSize='230'}}
+        <div style="background-color: yellow">
+        </div>
+        <div style="background-color: rebeccapurple">
+        </div>
+        {{/comp-splitpane}}

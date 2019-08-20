@@ -1,0 +1,49 @@
+
+<div class="fixed frame-login">
+
+    <div class="fixed background background-{{produceId}}">
+        <div class="fixed login-location login-location-{{produceId}}">
+            <table cellpadding="5" border="0" style="font-size: 14px;">
+              <tr>
+                <td>{{ oloc 'frame_login_yhm' }}</td>
+                <td align="left">
+                   {{input value=userName key-press="updateUserName"  }}
+                </td>
+                 <td class="error">{{userNameError}}</td>
+              </tr>
+              <tr>
+                <td>{{ oloc 'frame_login_m' }}</td>
+                <td align="left">
+                   {{input value=passWord key-press="updatePassword" type="password" }}
+                </td>
+                 <td class="error">{{passWordError}}</td>
+              </tr>
+              <tr>
+                <td>{{ oloc 'frame_login_code' }}</td>
+                <td align="left">
+                   <div style="float:left">
+                        <div class='check-code'>
+                        {{input value=checkCode }}
+                        </div>
+                        <div class='verify-code'>
+                        {{frame-code name='verifyCode' }}
+                        </div>
+                   </div>
+                </td>
+                 <td class="error">{{checkCodeError}}</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                    {{#if _isButlersys}}
+                        <div class="btn-login-butlersys" {{action "loginButlersys"}}>{{ oloc 'frame_login_d l' }}</div>
+						<div class="btn-register-butlersys" {{action "registerButlersys"}}>{{ oloc 'frame_login_z c' }}</div>
+                    {{else}}
+                        <div class="btn-login" {{action "login"}}>{{ oloc 'frame_login_d l' }}</div>
+                    {{/if}}
+                </td>
+              </tr>
+            </table>
+
+         </div>
+     </div>
+</div>

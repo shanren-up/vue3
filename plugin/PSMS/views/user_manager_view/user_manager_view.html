@@ -1,0 +1,15 @@
+<div class="system-manager-view">
+    <div class="manager-header">
+        <span>用户信息</span>
+    </div>
+    <div class="manager-content">
+        {{#compare userInfo.roleName "管理员"}}
+        <div class="content-add">
+            <span class="fa fa-plus" {{action 'addUser'}}>新增用户</span>
+        </div>
+        {{/compare}}
+        <div class="content-table">
+            {{comp-table name='sysManagerTable' tableConfig=tableConfig columns=columns dataSource=dataSource  eventConfig=eventConfig}}
+        </div>
+    </div>
+</div>

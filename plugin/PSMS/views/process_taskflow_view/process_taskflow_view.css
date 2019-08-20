@@ -1,0 +1,45 @@
+.process-taskflow-view {
+    height: 100%;
+}
+
+.process-taskflow-view .content {
+    height: 100%;
+    /* display: inline-block; */
+    font-size: 14px;
+    width: 100%;
+    padding: 30px;
+}
+.process-taskflow-view .content .content-flow {
+    height: 130px;
+    width: 100px;
+    position: relative;
+    /* padding: 15px; */
+    /*display: inline-block;*/
+    float:left;
+}
+.process-taskflow-view .content .content-flow:hover{
+    background-color: rgb(204,204,204);
+    opacity: 0.5;
+    border: 1px solid rgb(0,153,153);
+}
+.process-taskflow-view .content .content-flow:hover .del-img{
+    display:block;
+    left:88px;
+    top:-10px;
+}
+.process-taskflow-view .content .content-flow .flow-img {
+    height: 70px;
+    width: 70px;
+    margin: 15px 15px 0 15px;
+}
+
+.process-taskflow-view .content .content-flow label {
+    margin: 10px 15px 0 15px;
+    width: 70px;
+    text-align: center;
+    color: #009999;
+}
+.process-taskflow-view .del-img{
+    position:absolute;
+    display:none;
+}

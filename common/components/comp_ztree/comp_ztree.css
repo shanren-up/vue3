@@ -1,0 +1,5 @@
+.comp-ztree .z-tree-container {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+}

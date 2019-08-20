@@ -1,0 +1,6 @@
+<div class="comp-multi-timepicker-demo absolute" style="width:80%;left:10%;">
+    <button class="btn btn-lg btn-info" {{action 'query'}}>{{ oloc 'comp_multi_timepicker_demo_cxsj' }}</button>
+    <button class="btn btn-lg btn-info" {{action 'set'}}>{{ oloc 'comp_multi_timepicker_demo_szsj' }}</button>
+    {{comp-multi-timepicker name='timepicker' defaultValue=time onChange='valueChange'}}
+    <div class='result absolute' style="top:150px">{{ oloc 'comp_multi_timepicker_demo_dqsjw' }}：{{currentTime}}</div>
+</div>

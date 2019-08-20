@@ -1,0 +1,59 @@
+{
+  "blocks": [
+    {
+      "blockId": "state_start",
+      "imgSrc": "plugin/PSMS/img/flow/node1.png",
+      "blockLabel": "开始",
+      "sourceAnchor": "RightMiddle",
+      "blockX": 113,
+      "blockY": 91,
+      "isStatus":false,
+      "content": "",
+      "flowId": "state_start"
+    },
+    {
+      "blockId": "state_end",
+      "imgSrc": "plugin/PSMS/img/flow/node4.png",
+      "blockLabel": "结束",
+      "targetAnchor": "LeftMiddle",
+      "blockX": 813,
+      "blockY": 91,
+      "isStatus":false,
+      "content": "",
+      "flowId": "state_end"
+    },
+    {
+      "blockId": "state_decide3",
+      "imgSrc": "plugin/PSMS/img/flow/ImageMatch_batch.png",
+      "blockLabel": "结束",
+      "sourceAnchor": "RightMiddle",
+      "targetAnchor": "LeftMiddle",
+      "blockX": 413,
+      "blockY": 91,
+      "isStatus":true,
+      "statImg":"plugin/PSMS/img/flow/state/zhunbei.gif",
+      "content": "",
+      "flowId": "IR7e851da5-dd45-4adc-884f-b1eb8b53ed80"
+    }
+  ],
+  "lines": [
+    {
+      "connectionId": "con_25",
+      "pageSourceId": "state_start",
+      "pageTargetId": "state_decide3",
+      "sourceAnchor": "RightMiddle",
+      "targetAnchor": "LeftMiddle",
+      "sourceText": "",
+      "targetText": ""
+    },
+    {
+      "connectionId": "con_30",
+      "pageSourceId": "state_decide3",
+      "pageTargetId": "state_end",
+      "sourceAnchor": "RightMiddle",
+      "targetAnchor": "LeftMiddle",
+      "sourceText": "",
+      "targetText": ""
+    }
+  ]
+}

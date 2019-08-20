@@ -1,0 +1,41 @@
+.comp-modal .system-update-password-manager-sizecss {
+  background-color: #2e599d;
+}
+
+.frame-user-p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  color: #FFF;
+  margin: 0px;
+  width: 48px;
+  /* height: 20px; */
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.frame-user-tooltip-stacknav {
+  margin-top: -6px;
+  border-left: 1px solid #B7D5F2;
+  border-top: 1px solid #B7D5F2;
+  border-right: 1px solid #B7D5F2;
+  border-radius: 3px;
+  padding: 0px;
+  margin: 0px;
+  width: 188px;
+  background-color: #fff;
+}
+
+.frame-user-tooltip-stacknav>li {
+  border-bottom: 1px solid #B7D5F2;
+  margin-bottom: 0px;
+}
+
+
+/* add mini headeræ—¶æ ·å¼  */
+
+.mini-user .frame-user-img {
+  background-image: url('../../../../img/frame_header/more.png');
+}
+
+.mini-user .frame-user-p {}

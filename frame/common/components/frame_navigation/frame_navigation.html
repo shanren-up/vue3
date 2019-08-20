@@ -1,0 +1,12 @@
+<ul class="nav nav-tabs">
+     {{#each menuItems as |item index|}}
+        {{#if item.visible}}
+            <li data-toggle="tooltip" href="frameDropdown{{index}}" {{action "clickMenuItem" item}}>
+               <a href="#">{{oloc-meau-name item}}</a>
+                 <div style="visibility:collapse">
+                  {{frame-dropdown-menu childViewMenus=item.childViewMenus clickMenuItem=(action "clickMenuItem") targetId=(concat "frameDropdown" index)}} 
+                 </div>
+             </li>
+         {{/if}}
+      {{/each}}
+</ul>

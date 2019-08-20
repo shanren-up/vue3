@@ -1,0 +1,40 @@
+<div class="col-md-12" style="overflow-y: scroll;height:400px;overflow-x: hidden;">
+    <div class="row ">
+        <div class="col-md-2">
+            <div class="list-group">
+                {{#each lessFiles as |item|}}
+                <button type="button" class="list-group-item" {{action 'openLessFile' item.url}}>{{item.name}}</button>
+                {{/each}}
+            </div>
+        </div>
+        <div class="col-md-4">
+            <pre><p><code>{{global_less}}</code></p></pre>
+        </div>
+        <div class="col-md-6">
+            <form class="form-horizontal">
+                {{#each global_keys as |item index|}}
+
+                <div class="form-group frame-style-child" style="margin-bottom:0px">
+                    <label for="iputText" class="col-sm-8">{{item.key}}</label>
+                    <div class="col-sm-3">
+                        <!--  <input type="text" src={{item.key}} class="form-control" placeholder="Text input"  value={{item.value}} style="height: 20px;font-size: 10px;"> -->
+                        <div class={{if item.isChanged "frame-style-input-change" ""}}>{{input type="text" formtarget=item.key value=item.value}}</div>
+                    </div>
+                    <div class="col-sm-1">
+                        {{#if item.isColor}}
+                        <!-- <input type="color" class="form-control" value="#F3F3F3;" style="height: 20px;font-size: 10px;"> -->
+                        {{input type="color" formtarget=item.key value=item.value }} {{/if}}
+                    </div>
+                </div>
+
+                {{/each}}
+                <div class="btn btn-default" {{action "save"}}>{{ oloc 'frame_style_bc' }}</div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="col-md-12" style="overflow-y: scroll;height:200px">
+    <div class="row " style="height:auto">
+        <pre><p><code>{{less_build_log}}</code></p></pre>
+    </div>
+</div>

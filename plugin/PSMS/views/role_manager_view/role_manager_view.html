@@ -1,0 +1,13 @@
+<div class="role-manager-view">
+    <div class="manager-header">
+        <span>角色信息</span>
+    </div>
+    <div class="manager-content">
+        <div class="content-add">
+            <span class="fa fa-plus" {{action 'addRole'}}>新增角色</span>
+        </div>
+        <div class="content-table">
+            {{comp-table name='roleManagerTable' tableConfig=tableConfig columns=columns dataSource=dataSource  eventConfig=eventConfig}}
+        </div>
+    </div>
+</div>

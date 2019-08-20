@@ -1,0 +1,173 @@
+{
+  "interval": 10000,
+  "sexData": [
+    {
+      "id": "man",
+      "name": "男"
+    },{
+      "id": "women",
+      "name": "女"
+    }
+  ],
+  "nodeStatue":[
+    {
+      "id": "Off-line",
+      "name": "Off-line"
+    },{
+      "id": "On-line",
+      "name": "On-line"
+    }
+  ],
+  "nodeType":[
+    {
+      "id": "worker",
+      "name": "worker"
+    },{
+      "id": "master",
+      "name": "master"
+    }
+  ],
+  "timeGranularity": [
+    {
+      "id": "1",
+      "name": "当前状态"
+    },{
+      "id": "2",
+      "name": "1小时"
+    },{
+      "id": "3",
+      "name": "5小时"
+    },{
+      "id": "4",
+      "name": "10小时"
+    },{
+      "id": "5",
+      "name": "24小时"
+    }
+  ],
+  "processData": [
+    {
+      "id": "VRSS2-FD",
+      "name": "格记流程",
+      "active": "active"
+    },{
+      "id": "VRSS2-CA",
+      "name": "编目流程",
+      "active": ""
+    },{
+      "id": "VRSS2-PRODUCT",
+      "name": "生产流程",
+      "active": ""
+    }
+  ],
+  "sensorData": [
+    {
+      "id": "PAN",
+      "name": "PAN"
+    },{
+      "id": "MSS",
+      "name": "MSS"
+    },{
+      "id": "IRC-1",
+      "name": "IRC-1"
+    },{
+      "id": "IRC-2",
+      "name": "IRC-2"
+    }
+  ],
+  "satelliteData": [
+    {
+      "id": "VRSS-2",
+      "name": "VRSS-2"
+    }
+  ],
+  "productLevel": [
+    {
+      "id": "LEVEL1",
+      "name": "LEVEL1"
+    },{
+      "id": "LEVEL2",
+      "name": "LEVEL2"
+    },{
+      "id": "LEVEL3",
+      "name": "LEVEL3"
+    }
+  ],
+  "productFormat": [
+    {
+      "id": "GEOTIFF",
+      "name": "GEOTIFF"
+    },{
+      "id": "IMG",
+      "name": "IMG"
+    }
+  ],
+  "samplingMethod": [
+    {
+      "id": "1",
+      "name": "双线形内插"
+    },{
+      "id": "2",
+      "name": "三次卷积内插"
+    },{
+      "id": "3",
+      "name": "最邻近内插"
+    }
+  ],
+  "flowStatus": [
+    {
+      "id": "FAILED",
+      "name": "Failed"
+    },{
+      "id": "SUCCESSED",
+      "name": "Successed"
+    },{
+      "id": "FINISHED",
+      "name": "Finished"
+    },{
+      "id": "CONTINUE",
+      "name": "Continue"
+    },{
+      "id": "PAUSED",
+      "name": "Paused"
+    },{
+      "id": "RUNNING",
+      "name": "Running"
+    },{
+      "id": "WAITING",
+      "name": "Waiting"
+    }
+  ],
+  "stationData": [
+    {
+      "id": "MIYUN",
+      "name": "MIYUN"
+    },{
+      "id": "SANYA",
+      "name": "SANYA"
+    },{
+      "id": "KASHI",
+      "name": "KASHI"
+    }
+  ],
+  "roleLevelData": [
+    {
+      "id": "1",
+      "name": "流程下发"
+    }
+  ],
+  "role":[
+    {
+      "role":"1",
+      "name":"管理员"
+    },
+    {
+      "role":"2",
+      "name":"普通用户"
+    },
+    {
+      "role":"3",
+      "name":"质检员"
+    }
+  ]
+}

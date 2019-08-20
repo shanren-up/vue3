@@ -1,0 +1,33 @@
+.inputContainer {
+    position: relative;
+}
+
+.inputContainer > input[type=number] {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid rgba(125, 125, 125, 0.3);
+}
+
+.inputContainer > input[type=number]:hover, .inputContainer > input[type=number]:focus {
+    border-bottom: 1px solid #7d7d7d;
+}
+
+.inputContainer > input[type=number]::-webkit-outer-spin-button,
+.inputContainer > input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.inputContainer > span {
+    font-size: 16px;
+    color: #fff;
+    line-height: 20px;
+    /* display: inline; */
+    margin-left: 12px;
+    /* float: left; */
+    position: fixed;
+}

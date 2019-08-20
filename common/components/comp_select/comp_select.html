@@ -1,0 +1,10 @@
+<div class="comp-select">
+    {{#if showDisplayText}}
+    <span class="display-text" title={{displayText}}>{{displayText}}：</span>
+    {{/if}}
+    <select class="value form-control input-sm dropdown-control" multiple={{isMultiple}}>
+        {{#each dataSource as |item|}}
+            <option value="{{item.id}}">{{item.txt}}</option>
+        {{/each}}
+    </select>
+</div>

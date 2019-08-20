@@ -1,0 +1,24 @@
+<div class="system-roleinfo-panel">
+    <div class="panel-content">
+        <div class="info-item">
+            <span>角色名称：</span>
+            {{input type=text value=roleInfo.rolename}}
+        </div>
+        <div class="info-item">
+            <span>角色描述：</span>
+            {{input type=text value=roleInfo.commtents}}
+        </div>
+        <div class="info-item level_">
+            <span>权限选择：</span>
+            <select onchange="{{action 'levelChange'}}">
+                {{#each roleLevelData as |data|}}
+                    <option value="{{data.id}}" selected="{{data.isSelected}}">{{data.value}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <button {{action 'confirmRoleInfo'}}>确定</button>
+        <button {{action 'cancelRoleInfo'}}>取消</button>
+    </div>
+</div>

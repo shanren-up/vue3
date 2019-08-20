@@ -1,0 +1,26 @@
+<div class="frame-version absolute">
+    <div class="title-img {{bgClass}}">
+        <!-- <img src="img/login_version.png" width=100% height=100 alt="{{ oloc 'frame_version_gzglxt' }}"> -->
+    </div>
+    <div class="system-info">
+        <div class="left-info">
+            {{#each systemInfo as |item|}}
+                {{#if item.isVersion}}
+                    <p>{{item.txt}} <span class="histroic-version" {{action "historicVersion"}}>[{{ oloc 'frame_version_lsbb' }}]</span></p>
+                {{else}}
+                    <p>{{item.txt}}</p>
+                {{/if}}
+            {{/each}}
+        </div>
+        <div class="alert">
+            {{alertTxt}}
+        </div>
+    </div>
+    <div class="sub-module">
+        <p>{{ oloc 'frame_version_yazdcp' }}：</p>
+        <div class="module-table">
+            {{comp-table columns=tableConfig.columns dataSource=tableConfig.dataSource
+                 tableConfig=tableConfig.tableConfig eventConfig=tableConfig.eventConfig }}
+        </div>
+    </div>
+</div>

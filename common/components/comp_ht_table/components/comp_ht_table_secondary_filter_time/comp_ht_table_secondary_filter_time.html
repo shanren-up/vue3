@@ -1,0 +1,18 @@
+<div class="comp-ht-table-secondary-filter-time">
+    <div class="time-filter">
+        <span class="time-filter-displaytext">{{ oloc 'comp_ht_table_secondary_filter_time_kssj' }}：</span>
+        <div class="time-filter-value">
+            {{bhz-comp-datetimepicker curDate=startTime stepping=1 dateFormat=dateFormat minView=minView }}</div>
+    </div>
+    <div class="time-filter">
+        <span class="time-filter-displaytext">{{ oloc 'comp_ht_table_secondary_filter_time_jssj' }}：</span>
+        <div class="time-filter-value">
+            {{bhz-comp-datetimepicker curDate=endTime stepping=1 dateFormat=dateFormat minView=minView }}</div>
+    </div>
+    <span class={{if normalTipColor 'text-green'}}>{{tipWord}}</span>
+    <p>
+        <button class="btn btn-xs btn-primary" {{action 'okCommand'}}>{{ oloc 'comp_ht_table_secondary_filter_time_qr' }}</button>
+        <button class="btn btn-xs btn-primary" {{action 'clearCommand'}}>{{ oloc 'comp_ht_table_secondary_filter_time_qc' }}</button>
+        <button class="btn btn-xs btn-primary" {{action 'cancelCommand'}}>{{ oloc 'comp_ht_table_secondary_filter_time_qx' }}</button>
+    </p>
+</div>

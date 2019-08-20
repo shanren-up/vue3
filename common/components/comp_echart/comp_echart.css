@@ -1,0 +1,14 @@
+.echart-main-div {
+    margin: auto;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.echart-component-div {
+    height: 100%;
+    width: 100%;
+}
+.echart-div-maxHeight {
+    height: 100%;
+}

@@ -1,0 +1,29 @@
+.bs-table-container {
+    background-color: #fff;
+}
+
+.bs-table-container table.bs-table thead tr {
+    background-color: #4e9fcb;
+    color: #fff;
+}
+
+.bs-table-container .fixed-table-header {
+    background-color: #bdd8f2;
+}
+
+.bs-table-container table tbody tr:nth-child(2n+1) {
+    background-color: #E2F3FF;
+}
+
+.bs-table-container table tbody tr:nth-child(2n) {
+    background-color: #EFF8FF;;
+}
+
+.bs-table-container table tbody tr:hover {
+    background-color: #F9F9F9;
+}
+/*选中颜色*/
+
+.bs-table-container .fixed-table-container tbody .selected td {
+    background-color: #E8E8E8;
+}

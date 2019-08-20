@@ -1,0 +1,161 @@
+/* 多级菜单的样式设置参考在组件frame-dropdown-menu中设置 */
+
+.frame-vertical-meau {
+  background-color: #293540;
+}
+
+
+/* 设置默认菜单200宽 的背景图样式  */
+
+.frame-vertical-meau .meau-header {
+  background-color: #18222C;
+  background-image: url("../../../../img/logo/wlw_big.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px;
+}
+
+
+/* 设置简版菜单60宽 的背景图样式  */
+
+.frame-vertical-meau .simple-meau-header {
+  background-image: url("../../../../img/logo/wlw_small.png");
+}
+
+
+/* 菜单字体颜色  */
+
+.frame-vertical-meau .meau-container {
+  color: #EEE;
+  top: 100px;
+  z-index: 200;
+}
+
+
+/* 一级菜单背景颜色  */
+
+.frame-vertical-meau .frame-vertical-default .meau-item {
+  font-weight: bold;
+  margin: 10px auto;
+  color: #FFF;
+}
+
+.frame-vertical-default .meau-item .meau-item-text {
+  font-size: 16px;
+  padding-left: 55px;
+}
+
+.frame-vertical-default .meau-item
+/* 一级菜单展开图标颜色  */
+
+.frame-vertical-default .meau-item .status-icon {
+  border-color: #607d8b;
+}
+
+
+/* 二级菜单颜色背景设置  */
+
+.frame-vertical-meau .sub-meau-container {
+  background-color: #293A47;
+}
+
+.frame-vertical-meau .sub-meau-item {}
+
+
+/* 激活二级菜单效果设置 可设置背景色背景图片  */
+
+.frame-vertical-meau .sub-meau-item.active-sub-meau {
+  color: #FFF;
+}
+
+.frame-vertical-meau .frame-vertical-simple .sub-meau-item.active-sub-meau {
+  color: #6697C4;
+}
+
+
+/* 简版菜单 二级菜单包含子菜单设置  可设置背景色背景图片 注意不要与激活菜单效果设置冲突 */
+
+.frame-vertical-simple .sub-meau-item.sub-has-child {}
+
+
+/* 菜单鼠标悬浮效果设置  */
+.frame-vertical-meau .active-meau.meau-item .meau-item-text,
+.frame-vertical-meau .meau-item:hover,
+.frame-vertical-meau .sub-meau-item:hover {
+  color: #00FFF9;
+}
+
+.frame-vertical-meau .frame-vertical-simple .meau-item:hover,
+.frame-vertical-meau .frame-vertical-simple .sub-meau-item:hover {
+  color: #EEE;
+  text-decoration: underline;
+}
+
+
+/* 激活菜单效果设置 */
+
+.frame-vertical-meau .frame-vertical-default  .meau-item.active-meau {
+  color: #00FFF9;
+  background-color: #34404B;
+  background-image: url('../../../../img/wlw/active_meau.png');
+  background-repeat: no-repeat;
+  background-position: 87% 57%;
+}
+
+
+/* 简版菜单一级菜单鼠标悬浮展开后效果  */
+
+.frame-vertical-simple .item-container.hover .meau-item,
+.frame-vertical-simple .item-container:hover .meau-item {
+  background-color: #26c6da;
+  color: white;
+}
+
+
+/* 简版菜单一级菜单鼠标悬浮展开后效果 二级菜单容器样式设置 */
+
+.frame-vertical-simple .sub-meau-container {
+  
+}
+
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: -6px;
+  margin-top: -7px;
+  border-width: 0px 0px 0px 0px;
+  border-right-color: #fff;
+}
+
+.tooltip.right .tooltip-arrow::after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.tooltip.right .tooltip-inner {
+  background-color: transparent;
+}
+
+.frame-dropdown-meau-vertical .frame-dropdown-menu,
+.frame-dropdown-meau-vertical .dropdown-menu {
+  background-color: #293A47;
+  color:white
+}
+
+.frame-dropdown-meau-vertical .frame-dropdown-menu li a{
+  color: white;
+}
+
+.frame-dropdown-meau-vertical .dropdown-menu li a:hover{
+  background-color: #293A47;
+  text-decoration:underline;
+}

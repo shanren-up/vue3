@@ -1,0 +1,45 @@
+[{
+        "key": 1,
+        "name": "aa",
+        "icon": "",
+        "visible": true,
+        "url": "plugin/topo/views/topo_view_zhejiang_trans/queryAlarm.js",
+        "subMenu": [{
+                "key": 1,
+                "name": "aa-子菜单1",
+                "icon": "",
+                "visible": true,
+                "url": "plugin/topo/views/topo_view_zhejiang_trans/queryAlarm1.js"
+            },
+            {
+                "key": 2,
+                "name": "aa-子菜单2",
+                "icon": "",
+                "visible": true,
+                "url": "plugin/topo/views/topo_view_zhejiang_trans/queryAlarm2.js"
+            }
+        ]
+    },
+    {
+        "key": 2,
+        "name": "bb",
+        "icon": "",
+        "visible": true,
+        "url": "plugin/topo/views/topo_view_zhejiang_trans/queryInter.js",
+        "subMenu": [{
+                "key": 1,
+                "name": "bb-子菜单1",
+                "icon": "",
+                "visible": true,
+                "url": "plugin/topo/views/topo_view_zhejiang_trans/queryInter1.js"
+            },
+            {
+                "key": 2,
+                "name": "bb-子菜单2",
+                "icon": "",
+                "visible": true,
+                "url": "plugin/topo/views/topo_view_zhejiang_trans/queryInter2.js"
+            }
+        ]
+    }
+]

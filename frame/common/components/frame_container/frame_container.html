@@ -1,0 +1,35 @@
+<div class="fixed frame-container-boder {{frameBackgroundClass}}">
+    {{comp-loading name='frameloading'}}
+    <div class="frame-container-dropup  {{if _viewTabsStatus 'open'}}">
+        <button class="frame-container-dropup-button dropdown-toggle" type="button" id="dropdownMenu2"
+         aria-haspopup="true" aria-expanded={{if _viewTabsStatus "false" "open"}}>
+            <img src="img/u823.png" />
+        </button>
+        <ul class="frame-container-nav frame-container-nav-tabs dropdown-menu " role="tablist" aria-labelledby="dropdownMenu2">
+            {{#each viewItems as |item index|}}
+            <li role="presentation" id="frame_container_tab{{index}}" {{action "focusView" item}}>
+                <a href="http://" aria-controls="home" role="tab" data-toggle="tab">
+                {{oloc-meau-name item}}
+                <span onclick={{action "delView" item}} class=" glyphicon glyphicon-remove frame-container-close" aria-hidden="true"></span>
+            </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{!-- <acronym title={{if lgScreenShow (oloc 'frame_container_gbtp')  (oloc 'frame_container_dktp')}}>
+        <button class='{{if _viewTabsStatus "hide" "show"}} {{if lgScreenShow "frame-container-lgscreen-open" "frame-container-lgscreen-close"}}' type="button" {{action
+    "lgScreen"}}>
+        </button>
+    </acronym> --}}
+    <acronym title="{{ oloc 'frame_container_fhsyj' }}">
+        <button class="frame-container-back {{if _viewTabsStatus 'hide' 'show'}}" type="button" {{action "backView"}}>
+        </button>
+    </acronym>
+    <div class="tab-content">
+        {{#each viewItems as |item index|}}
+        <div role="tabpanel" class="tab-pane" id="frame_container_tabContent{{index}}">
+            {{ component item.templateName tabIndex = index viewId = item.viewId parameters=item.parameters _menuInfo=item}}
+        </div>
+        {{/each}}
+    </div>
+</div>

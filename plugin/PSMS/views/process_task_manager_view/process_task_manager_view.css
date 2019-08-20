@@ -1,0 +1,104 @@
+.process-task-manager-view-size{
+    width:100%;
+    height:100%;
+}
+
+.tab-pane > .ember-view {
+    height: 100%;
+}
+.process-task-manager-view {
+    height: 100%;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+/*.process-task-manager-view .task-header {*/
+    /*height: 50px;*/
+    /*padding-left: 50px;*/
+    /*line-height: 50px;*/
+    /*color: #666;*/
+    /*border-bottom: 1px #c1c6c6 solid;*/
+/*}*/
+
+.process-task-manager-view .task-header .title {
+    font-size: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.process-task-manager-view .task-header .msg {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.process-task-manager-view .task-content {
+    /* height: 50%; */
+    width: 100%;
+}
+.process-task-manager-view .task-process{
+    height:50%;
+}
+.process-task-manager-view .progress{
+    margin:0;
+    background-color: #c6c8cf;
+}
+.process-task-manager-view button{
+    border:none;
+    cursor: pointer;
+    width: 60px;
+    height: 25px;
+    border-radius: 3px;
+}
+.process-task-manager-view .content-slider{
+    font-size: 18px;
+    border-left: 4px solid #069697;
+    padding-left: 10px;
+    margin:10px 0;
+}
+.process-task-manager-view .task-header{
+    font-size: 18px;
+    border-left: 4px solid #069697;
+    padding-left: 10px;
+    /* margin:10px 0; */
+}
+.process-task-manager-view  .content-add{
+    padding: 5px 10px;
+    color: green;
+    font-size: 14px;
+    cursor: pointer;
+}
+.process-task-manager-view .task-preview{
+    height:100%;
+    width: 100%;
+}
+.process-task-manager-view .progress-color{
+    background-color: rgb(40,143,212) !important;
+}
+.process-task-manager-view .task-return{
+    width:70px;
+    border:none;
+    height:30px;
+    float: right;
+    font-size:14px;
+    margin-right:50px;
+}
+.process-task-manager-view .content-slider .slider-icon{
+    float: right;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.process-task-manager-view  .select-flow{
+    width: 3%;
+    float: left;
+    height: 31px;
+    line-height: 31px;
+}
+.process-task-manager-view  .flow-list{
+    width: 10%;
+    float: left;
+    margin-right: 10px;
+}
+.process-task-manager-view .task-content-param{
+    margin:10px;
+    height: 30px;
+}

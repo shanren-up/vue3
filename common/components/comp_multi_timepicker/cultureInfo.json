@@ -1,0 +1,50 @@
+{
+    "comp_multi_timepicker_demo_dqsjw": {
+        "en": "Current time is",
+        "zh": "当前时间为"
+    },
+    "comp_multi_timepicker_demo_szsj": {
+        "en": "Set the time",
+        "zh": "设置时间"
+    },
+    "comp_multi_timepicker_xszhh": {
+        "en": "Set hh",
+        "zh": "需设置hh"
+    },
+    "comp_multi_timepicker_wcsdyczb": {
+        "en": "The coordinates on the right when done",
+        "zh": "完成时的右侧坐标"
+    },
+    "comp_multi_timepicker_xszhh:mm~hh:mmgsdzfc": {
+        "en": "Set the string of hh: mm: ss ~ hh: mm: ss format",
+        "zh": "需设置hh:mm:ss~hh:mm:ss格式的字符串"
+    },
+    "comp_multi_timepicker_wcsdzczb": {
+        "en": "The coordinates on the left when done",
+        "zh": "完成时的左侧坐标"
+    },
+    "comp_multi_timepicker_dfx": {
+        "en": "Direction",
+        "zh": "的方向"
+    },
+    "comp_multi_timepicker_demo_srsj": {
+        "en": "Enter the time",
+        "zh": "输入时间"
+    },
+    "comp_multi_timepicker_gsdzfc": {
+        "en": "Format string",
+        "zh": "格式的字符串"
+    },
+    "comp_multi_timepicker_jssjxydykssj": {
+        "en": "The end time needs to be greater than the start time",
+        "zh": "结束时间需要大于开始时间"
+    },
+    "comp_multi_timepicker_demo_cxsj": {
+        "en": "Query time",
+        "zh": "查询时间"
+    },
+    "comp_multi_timepicker_fssjhkdxh": {
+        "en": "Sent the sequence number of the event slider",
+        "zh": "发送事件滑块的序号"
+    }
+}

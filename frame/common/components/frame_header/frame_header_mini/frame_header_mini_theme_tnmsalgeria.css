@@ -1,0 +1,35 @@
+.frame-header-mini {
+  background-color: #4990E2;
+  color: #eee;
+  overflow: hidden;
+}
+
+.frame-header-mini .user {
+  background-image: url('../../../../../img/frame_header/user_d1.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.frame-header-mini .onlinenum {
+  background-image: url('../../../../../img/frame_header/user_search.png');
+  background-repeat: no-repeat;
+  background-position: left 55%;
+  background-size: 20px;
+}
+
+.frame-header-mini .quit {
+  background-image: url('../../../../../img/frame_header/quit_d.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.frame-header-mini .logout {
+  background-image: url('../../../../../img/frame_header/quit_d1.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.frame-header-mini .toggle-vertical-meau-btn {
+  color: #6697C4;
+  background-image: url('../../../../../img/frame_header/meau_0.png');
+}

@@ -1,0 +1,30 @@
+.bs-table-container table.bs-table thead tr th .th-inner {
+  white-space: pre-line;
+  font-weight: bold;
+}
+
+.bs-table-container .fixed-table-header .table>thead>tr>th {
+  border-bottom-color: #D7D7D7;
+}
+
+.bs-table-container .bootstrap-table .fixed-table-body .table {
+  border-bottom: 1px solid #D7D7D7;
+}
+
+.bs-table-container .table>tbody>tr>td,
+.bs-table-container .table>tbody>tr>th,
+.bs-table-container .table>tfoot>tr>td,
+.bs-table-container .table>tfoot>tr>th,
+.bs-table-container .table>thead>tr>td,
+.bs-table-container .table>thead>tr>th {
+  border-top: 1px dashed #999;
+}
+.bs-table-container .table>tbody>tr:nth-of-type(odd){
+    border-bottom: 1px dashed #dcdcdc;
+}
+.bs-table-container .table>tbody>tr:nth-of-type(even){
+    border-bottom: 1px dashed #dcdcdc;
+}
+.bs-table-container thead {
+  border-top: 1px solid #D7D7D7;
+}

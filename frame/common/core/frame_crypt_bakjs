@@ -1,0 +1,208 @@
+define(
+    [
+        'configs',
+        'frame/common/core/frame_core_helper',
+        'app_info',
+        'configures/systemMenus'
+    ],
+
+    function (configs, appCoreHelperIns, appInfoIns, systemMenus) {
+
+    "use strict";
+
+    appInfoIns.set('_systemMenus', systemMenus);
+
+    var frameCrypt = Ember.Object.extend({
+            pchDefKey : "!#&<>_|~",
+            Decode : function (strOrgEncoded, strDecoded) {
+                if (!$t.IsValidEncodeString(strOrgEncoded))
+                    return false;
+
+                var allEncoded = this.Str2ByteArray(strOrgEncoded);
+                var encodedKey = $d.array(System.Byte, 16);
+                var strEncoded = $d.array(System.Byte, allEncoded.length - 16);
+                for (var i = 0; i < allEncoded.length; i++) {
+                    if (i < 16) {
+                        encodedKey[i] = allEncoded[i];
+                    } else {
+                        strEncoded[i - 16] = allEncoded[i];
+                    }
+                }
+
+                // 先用缺省密钥解密临时密钥
+                var key = {
+                    value : null
+                };
+                if (this.Decode$1(encodedKey, this.Str2ByteArray(this.pchDefKey), key) != 0) {
+                    return false;
+                }
+                // 用解密后的临时密钥解密真正的字串
+                var str = {
+                    value : null
+                };
+                if (this.Decode$1(strEncoded, key.value, str) != 0) {
+                    // return false;
+                }
+                strDecoded.value = this.ByteArray2Str(str.value);
+                return true;
+            },
+            Decode$1 : function (encoded, key, decoded) {
+                decoded.value = null;
+                System.Diagnostics.Debug.Assert(encoded != null && key != null);
+                if ((encoded.length % 2) != 0) {
+                    return -1; // 加密后的长度是偶数
+                }
+                var nLen = 0;
+                var nKeyLen = 0;
+                var i = 0,
+                j = 0;
+                nLen = encoded.length;
+                nKeyLen = key.length;
+                decoded.value = $d.array(System.Byte, (nLen / 2 | 0));
+                i = 0;
+                j = 0;
+                for (i = 0, j = 0; i < nLen; i += 2) {
+                    var ch = (((($t.Hex2Char((encoded[i] & 0xFFFF)) << 4) & 240) | this.Hex2Char((encoded[i + 1] & 0xFFFF))) & 0xFF);
+                    var chK = key[j % nKeyLen];
+                    ch -= chK;
+                    decoded.value[j] = ch;
+                    j++;
+                }
+                return 0;
+            },
+            GenerateKey : function () {
+                var key = new Array(8);
+                for (var i = 0; i < key.length; i++) {
+                    key[i] = Math.ceil(Math.random(Date.now()) * 255);
+                }
+                return key;
+            },
+            Encode : function (strToEncode, strEncoded) {
+                // 生成临时密钥
+                var tmpKey = this.GenerateKey();
+                // 用缺省的密钥对临时密钥进行加密
+                var keyEncoded = {
+                    value : null
+                };
+                if (this.Encode$1(tmpKey, this.Str2ByteArray(this.pchDefKey), keyEncoded) != 0) {
+                    return false;
+                }
+                // 用临时密钥对原始字符串进行加密
+                var orgStrEncoded = {
+                    value : null
+                };
+                if (this.Encode$1(this.Str2ByteArray(strToEncode), tmpKey, orgStrEncoded) != 0) {
+                    return false;
+                }
+                // 最终加密的字串是：加密后的临时密钥+加密后的字符串
+                strEncoded.value = this.ByteArray2Str(keyEncoded.value) + this.ByteArray2Str(orgStrEncoded.value);
+                return true;
+            },
+            Encode$1 : function (toEncode, key, encoded) {
+
+                var nLen = 0,
+                nKeyLen = 0,
+                i = 0,
+                j = 0;
+
+                nLen = toEncode.length;
+                nKeyLen = key.length;
+
+                encoded.value = new Array(nLen * 2);
+                for (i = 0, j = 0; i < nLen; i++) {
+                    var ch = toEncode[i];
+                    ch += key[i % nKeyLen];
+                    encoded.value[j++] = (this.Byte2Hex(((ch >> 4) & 15)) & 0xFF);
+                    encoded.value[j++] = (this.Byte2Hex((ch & 15)) & 0xFF);
+                }
+
+                return 0;
+            },
+            IsValidEncodeString : function (str) {
+                if (str == null || str.length < 16) {
+                    return false;
+                }
+                var chs = str.ToCharArray();
+                for (var $i = 0, $length = chs.length; $i < $length; $i++) {
+                    var ch = chs[$i];
+                    if (!((ch >= 48 /*'0'*/
+                                 && ch <= 57 /*'9'*/
+                            ) || (ch >= 65 /*'A'*/
+                                 && ch <= 70 /*'F'*/
+                            ))) {
+                        return false;
+                    }
+                }
+                return true;
+            },
+            DecodeAndAutoCheck : function (strToDecode) {
+                if (!$t.IsValidEncodeString(strToDecode)) {
+                    return strToDecode;
+                }
+                var strDecoded = {
+                    value : ""
+                };
+                if (!$t.Decode(strToDecode, strDecoded)) {
+                    return strToDecode;
+                }
+                return strDecoded.value;
+            },
+            Str2ByteArray : function (str) {
+                var pos = 0;
+
+                var len = str.length;
+
+                var hexA = new Array();
+
+                for (var i = 0; i < len; i++) {
+                    var s = str.charCodeAt(i);
+
+                    var v = parseInt(s, 10);
+
+                    hexA.push(v);
+
+                }
+
+                return hexA;
+            },
+            ByteArray2Str : function (bytes) {
+                var str = "";
+
+                for (var i = 0; i < bytes.length; i++) {
+
+                    var tmp = String.fromCharCode(bytes[i]);
+
+                    str += tmp;
+
+                }
+
+                return str;
+            },
+            Hex2Char : function (h) {
+                //			if(!isxdigit(h))
+                //			{
+                //				return 16;
+                //			}
+                if (h < 65 /*'A'*/
+                ) {
+                    h -= 48;
+                } else {
+                    h = ((h + 10 - 65 /*'A'*/
+                        ) & 0xFFFF);
+                }
+                return h;
+            },
+            Byte2Hex : function (k) {
+                if (k > 9) {
+                    k = k - 10 + 65 /*'A'*/
+                ;
+                } else {
+                    k |= 48;
+                }
+                return (k & 0xFFFF);
+            },
+
+        });
+
+    return frameCrypt.create();
+});

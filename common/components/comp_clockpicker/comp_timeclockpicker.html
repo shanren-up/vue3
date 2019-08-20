@@ -1,0 +1,16 @@
+<!--
+<div id='{{timepickerId}}' class="input-group clockpicker" {{action 'timePickerFun'}}>
+    <input type="text" class="form-control" value="{{curTime}}">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-time"></span>
+    </span>
+</div>
+-->
+<div id='{{timepickerId}}' class="input-group clockpicker">
+    <input type="text" class="form-control input-boco-text" id='{{timepickerinputId}}' disabled="disabled" style="height: {{datetimeHeight}}px;font-size: {{fontSize}}px;" value="{{curTime}}">
+    <span class="input-group-btn">
+        <button class="btn btn-default pull-right btn-boco-neg" type="button" style="height: {{datetimeHeight}}px;" {{action 'timePickerFun' on='click'}} disabled={{isDisabled}}>
+            <span class="glyphicon glyphicon-time" style="margin: -8px 2px 0px 2px; top: 50%;"></span> 
+        </button>
+    </span>
+</div>

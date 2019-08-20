@@ -1,0 +1,29 @@
+{{#if isNewAuthentication}}
+    {{#if _isNeedAuthentication}}
+        {{#if session.isAuthenticated}}
+            {{frame-view}}
+        {{else}}
+            {{frame-login-new}}
+        {{/if}}
+    {{else}}
+        {{frame-view loginCheck="loginCheck"}}
+    {{/if}}
+{{else}}
+    {{#if isShowWelcome}}
+        <div class="fixed frame_default_welcome" id="">
+            <div class="fixed frameCanvas" id="frameDefaultWelcome"></div>
+            <div class="welcome_title">
+                <p></p>
+            </div>
+            <div class="welcome_button">
+                <button {{action 'gotoLogin'}}>点击进入</button>
+            </div>
+        </div>
+    {{else}}
+        {{#if authentication}}
+          {{frame-login-new success="success" backToIndex="backToIndex"}}
+        {{else}}
+          {{frame-view loginCheck="loginCheck"}}
+        {{/if}}
+    {{/if}}
+{{/if}}

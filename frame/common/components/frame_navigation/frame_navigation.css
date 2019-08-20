@@ -1,0 +1,7 @@
+.frame-navigation ul {
+    padding: 0px;
+}
+
+.frame-navigation ul>li>a {
+    font-size: 10px;
+}

@@ -1,0 +1,49 @@
+.system-roleinfo-panel-size{
+    width: 800px;
+}
+.system-roleinfo-panel-body{
+    padding: 0 !important;
+}
+.system-roleinfo-panel-header{
+    line-height: 35px;
+    height: 35px;
+    padding: 0px 5px;
+    background-color: #CCC;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+}
+.system-roleinfo-panel .panel-content{
+    padding: 10px;
+}
+.system-roleinfo-panel .panel-content .info-item{
+    display: inline-block;
+    width: 48%;
+    margin: 10px 0;
+}
+.system-roleinfo-panel .panel-content .info-item span{
+    display: inline-block;
+    text-align: right;
+    width: 110px;
+}
+.system-roleinfo-panel .panel-content .info-item input{
+    width: 50%;
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+}
+.system-roleinfo-panel .panel-content .info-item select{
+    width: 50%;
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+}
+.system-roleinfo-panel .panel-content .info-item.level_{
+    width: 100% !important;
+}
+.system-roleinfo-panel .panel-footer{
+    text-align: center;
+}
+.system-roleinfo-panel .panel-footer button{
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+    width: 50px;
+    height: 30px;
+}

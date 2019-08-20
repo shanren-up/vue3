@@ -1,0 +1,29 @@
+ul.frame-search-tooltip-container {
+    margin-top: 0px;
+    padding: 0px;
+    border: 0px solid #B7D5F2;
+    border-radius: 3px;
+    width: 172px;
+    margin-left: 0px;
+}
+
+
+.frame-search-tooltip-container a {
+    height: 23px;
+    background: white;
+}
+
+.frame-search-tooltip-container li {
+    padding: 0px !important;
+    margin: 0px;
+}
+
+.frame-search-tooltip-container a {
+    padding: 0px !important;
+    margin: 0px;
+}
+
+.frame-search-tooltip-container a:focus, a:hover {
+    /* color: #23527c; */
+    cursor: pointer;
+}

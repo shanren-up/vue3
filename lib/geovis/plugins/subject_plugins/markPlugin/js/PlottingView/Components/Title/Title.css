@@ -1,0 +1,77 @@
+.title {
+    height: 32px;
+    width: 100%;
+    background: #272727;
+}
+
+.title > span {
+    font-size: 16px;
+    line-height: 32px;
+    margin-left: 8px;
+    font-family: '微软雅黑';
+}
+
+.hamburg {
+    margin: 0px 12px;
+    border: 1px solid transparent;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAABaklEQVRYR+2Wv0oDQRDGv28vCaKFmBzYCokG8xpWVv4vrFIajfgMdnZWJmIVsFJQsfI9LJSQi/gA4UxhLEJyO+IJioKsgVz+wG47uzPf/GZmGWLEDkdMD6wgU0UsofEklDp5WtLUWYKTUBBTFv22i2gVU85to5D2wh5KlbwjIVYIuILBCwKgRKl8s5C+CwUly94VgI1+Z96LPwrzfjFzHgqaPvPSsY64WkkCdHQvjvpxVwLtBAgeXvcXfTv2JqKWkCVkImCyhz00V3meaOl2XL85Q+upjurGv8Y+eeodQ7AJwDVlEJ1dii97C5XPn7pUuwG5Fl0ws2cht5u7mYtQkFuuZrtazToKCfPTaG60u7xvHcw3htYzf6VlBZkKbgmNKaFDUaHyHIjHIaywH3G3oEHK904NrJJImZBGYReAv3bq+jUg61EE+6/PHzv1TLm+TCIHkSlCBr9Tkw6VvvR3slU79qYSWkJjR+gdgp9qJSl/CccAAAAASUVORK5CYII=);
+    float: right;
+    width: 32px;
+    height: 32px;
+    background-size: 20px;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+.hamburg:hover, .hamburgChecked {
+    cursor: pointer;
+    background-color: #535353;
+}
+
+.menu {
+    display: block;
+    position: relative;
+    left: 156px;
+    width: 210px;
+    border: 1px solid #1179c6;
+    background: #434343;
+    max-height: 297px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+}
+
+.menu::-webkit-scrollbar {
+    width: 0px;
+}
+
+.menuHide {
+    opacity: 0;
+}
+
+.menu > button {
+    outline: none;
+    display: block;
+    width: 100%;
+    height: 29px;
+    background: transparent;
+    font-size: 16px;
+    border: 0px;
+    border-bottom: 1px solid #1179c6;
+    color: #fff;
+    font-family: '微软雅黑';
+}
+
+.menu > button:hover {
+    background: #353535;
+    border-bottom: 1px solid #1072ba;
+    cursor: pointer;
+}
+
+.checkItem {
+    background: #272727 !important;
+    border-bottom: 1px solid #0d67aa !important;
+}

@@ -1,0 +1,111 @@
+.frame-vertical-default.absolute {
+  height: auto;
+}
+
+.frame-vertical-default .meau-item {
+  line-height: 40px;
+  /* margin-top: 1px; */
+  font-size: 16px;
+  padding-left: 15px;
+  position: relative;
+  /* cursor: pointer; */
+  /* border-radius: 5px; */
+  height: 42px;
+  /* top: 1px; */
+  color: #bfc2c9;
+  text-align: center;
+  /* background-color: #009999; */
+}
+
+.frame-vertical-default .meau-item img {
+  position: absolute;
+  top: 10px;
+  width: 20px;
+  /* height: 13px; */
+}
+.frame-vertical-default .meau-item li {
+  margin-right:10px;
+  /* height: 13px; */
+}
+/*
+.meau-type2 .frame-vertical-default .meau-item img {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  width: 12px;
+  height: 12px;
+}
+*/
+
+.frame-vertical-default .meau-item span {
+  /*padding-left: 2em;*/
+  vertical-align: middle;
+  display: inline-block;
+  width: 85%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.frame-vertical-default .meau-item .status-icon {
+  position: absolute;
+  right: 0.9em;
+  top: 40%;
+  position: absolute;
+  width: .58em;
+  height: .55em;
+  border-width: 1px 0 0 1px;
+  border-style: solid;
+  border-color: #607d8b;
+  transform: rotate(135deg) translate(0, -50%);
+}
+
+.frame-vertical-default .meau-item.active-meau .status-icon {
+  transform: rotate(-135deg) translate(0, -50%);
+  top: 27%;
+  right: 0.5em;
+}
+
+.frame-vertical-default .sub-meau-item {
+  /* background-color: rgb(17, 36, 56); */
+  height: 35px;
+  line-height: 35px;
+  /* color: rgba(255, 255, 255, 0.8); */
+  border-top: 1px solid transparent;
+  /* margin-top: 1px; */
+  padding-left: 15px;
+  color: #fff;
+}
+
+.frame-vertical-default .sub-meau-item span {
+  vertical-align: middle;
+  display: inline-block;
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 30px;
+  text-align: left;
+  /*border-top: 1px solid #ccc;*/
+  cursor: pointer;
+}
+.frame-vertical-default .sub-meau-container .sub-meau-item:first-child span{
+  border: none;
+}
+.frame-vertical-default .sub-meau-item img {
+  width: 13px;
+}
+
+@media (max-height:900px) {
+  .frame-vertical-default .sub-meau-item {
+    /* line-height: 30px; */
+    /* height: 30px; */
+  }
+}
+
+.frame-vertical-default .meau-item.active-meau {
+  /* background-image: url(''); */
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}

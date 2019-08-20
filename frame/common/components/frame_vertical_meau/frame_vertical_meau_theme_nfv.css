@@ -1,0 +1,117 @@
+/* 多级菜单的样式设置参考在组件frame-dropdown-menu中设置 */
+.frame-vertical-meau {
+    color: #666666;
+}
+
+/* 设置默认菜单200宽 的背景图样式  无图片 高度修正*/
+.frame-vertical-meau .meau-header {
+    height: 0;
+}
+
+.frame-vertical-default.absolute {
+    top: 0 !important;
+    background-color: #F9F9F9;
+}
+
+/* 设置简版菜单60宽 的背景图样式  */
+.frame-vertical-meau .simple-meau-header {
+    background-image: url("../../../../img/u24.png");
+}
+
+/* 菜单字体颜色  */
+
+.frame-vertical-meau .meau-container {
+    color: #333333;
+    font-family: "微软雅黑 Regular", "微软雅黑";
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 一级菜单背景颜色  */
+
+.frame-vertical-default .meau-item {
+    background-color: #EDEDEE;
+    border-radius: 0 !important;
+    margin-top: 2px !important;
+    font-size: 1em !important;
+}
+
+.frame-vertical-default .meau-item img {
+    top: 30% !important;
+    margin-right: 5px;
+    height: 20px !important;
+    width: 20px !important;
+}
+
+/* 菜单鼠标悬浮效果设置  */
+
+.frame-vertical-meau .meau-item:hover {
+    background-color: #A6CCF7;
+    cursor: pointer;
+}
+
+/* 二级菜单颜色背景设置  */
+
+.frame-vertical-default .sub-meau-item img {
+    top: 30% !important;
+    margin-right: 5px;
+}
+
+.frame-vertical-meau .sub-meau-item:hover {
+    color: #333333;
+    background-color: #EDEDEE;
+}
+
+/* 激活菜单效果设置 */
+
+.frame-vertical-meau .meau-item.active-meau {
+    background-color: #FFFFFF;
+}
+
+.frame-vertical-meau .meau-item .status-icon {
+    transform: rotate(135deg) translate(0, -50%) !important;
+}
+
+.frame-vertical-default .meau-item.active-meau .status-icon {
+    transform: rotate(-135deg) translate(0, -50%) !important;
+    top: 27%;
+}
+
+.frame-header-menu-container a:link, a:visited {
+    color: #ffffff;
+}
+
+/* 简版菜单一级菜单鼠标悬浮展开后效果  */
+
+.frame-vertical-simple .item-container.hover .meau-item {
+    background-color: #26c6da;
+    color: white;
+}
+
+/* 简版菜单一级菜单鼠标悬浮展开后效果 二级菜单容器样式设置 */
+
+.frame-vertical-simple .sub-meau-container {
+    background: #fff;
+}
+
+.frame-dropdown-menu > li > a {
+    color: #666666;
+}
+
+.frame-dropdown-menu > li > a:hover {
+    color: #333333;
+    background-color: #EDEDEE;
+    text-decoration: none;
+}
+
+.frame-header-menu-container a:link, a:visited {
+    color: #ffffff !important;
+}
+
+.frame-menu-item-img {
+    line-height: 25px;
+}
+
+.frame-menu-item-title {
+    line-height: 30px !important;
+}

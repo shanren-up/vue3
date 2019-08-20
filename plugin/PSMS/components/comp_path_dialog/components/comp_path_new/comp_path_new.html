@@ -1,0 +1,14 @@
+<div class="comp-path-new">
+    <div class="form-horizontal comp-path-new-content">
+        <div class="form-group">
+            <label for="newFolder" class="col-sm-4 control-label">文件夹名称：</label>
+            <div class="col-sm-6">
+                {{input id="newFolder" type="text" class="form-control" value=newFolderName }}
+            </div>
+        </div>
+    </div>
+    <div class="dialog-footer">
+        <button {{action 'confirmPath'}}>确定</button>
+        <button {{action 'cancelPath'}}>取消</button>
+    </div>
+</div>

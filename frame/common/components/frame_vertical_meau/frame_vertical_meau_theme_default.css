@@ -1,0 +1,99 @@
+/* 多级菜单的样式设置参考在组件frame-dropdown-menu中设置 */
+
+.frame-vertical-meau {
+  /*background-color: #E2EEFA;*/
+  background-color: rgb(34,34,44);
+}
+
+
+/* 设置默认菜单200宽 的背景图样式  */
+
+.frame-vertical-meau .meau-header {
+  background-color: #E2EEFA;
+  /*background-image: url("../../../../img/logo/imp_default.png");*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+/* 设置简版菜单60宽 的背景图样式  */
+
+.frame-vertical-meau .simple-meau-header {
+  background-image: url("../../../../img/u24.png");
+}
+
+
+/* 菜单字体颜色  */
+
+.frame-vertical-meau .meau-container {
+  color: #607d8b;
+}
+
+
+/* 一级菜单背景颜色  */
+
+.frame-vertical-default .meau-item {}
+
+
+/* 一级菜单展开图标颜色  */
+
+.frame-vertical-default .meau-item .status-icon {
+  border-color: #607d8b;
+}
+
+
+/* 二级菜单颜色背景设置  */
+
+.frame-vertical-meau .sub-meau-item {
+  /*background-color: #FFF;*/
+  background-color: rgb(37,41,50);
+}
+
+
+/* 激活二级菜单效果设置 可设置背景色背景图片  */
+
+.frame-vertical-meau .sub-meau-item.active-sub-meau {
+  background-color: #009999;
+}
+
+
+/* 简版菜单 二级菜单包含子菜单设置  可设置背景色背景图片 注意不要与激活菜单效果设置冲突 */
+
+.frame-vertical-simple .sub-meau-item.sub-has-child {}
+
+
+/* 菜单鼠标悬浮效果设置  */
+
+.frame-vertical-meau .meau-item:hover,
+.frame-vertical-meau .sub-meau-item:hover {
+  color: #26c6da;
+}
+
+
+/* 激活菜单效果设置 */
+
+.frame-vertical-meau .meau-item.active-meau {
+  /*background-color: #26c6da;*/
+  color: white;
+  background-color: rgb(38,50,66);
+}
+
+
+/* 简版菜单一级菜单鼠标悬浮展开后效果  */
+
+.frame-vertical-simple .item-container.hover .meau-item,
+.frame-vertical-simple .item-container:hover .meau-item {
+  background-color: #26c6da;
+  color: white;
+}
+
+
+/* 简版菜单一级菜单鼠标悬浮展开后效果 二级菜单容器样式设置 */
+
+.frame-vertical-simple .sub-meau-container {
+  background-color: #fff;
+}
+
+.frame-vertical-meau-tooltip.right .tooltip-arrow {
+  border-left-color: #CCC;
+}

@@ -1,0 +1,45 @@
+<div class="fixed frame-header-bg">
+    {{#if _isShowVerMeau}}
+        <!--<span class="toggle-vertical-meau-btn"
+        onclick={{action "toggleMeauType"}}></span>-->
+    {{/if}}
+    <div class="fixed frame-header-child-loc1" {{action "vendorImgOpen"}}>
+        <div class="frame-header-bg-img  {{logoClass}}"></div>
+    </div>
+    <div class="fixed frame-header-child-loc1-1">
+        <div data-toggle="tooltip" href="frameSearchInputTooltip" class="frame-header-search" style="visibility:collapse">
+
+            {{input type="text" value=_searchText placeholder="{{ oloc 'frame_header_qsrgjz' }}" enter="query"}}
+
+            <div {{action "query"}}>
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </div>
+            <div style="visibility:collapse">
+                {{frame-search-input searchViewMenuItems=searchViewMenuItems changeWord="changeWord"
+                 targetId="frameSearchInputTooltip" isTyping=isTyping hisSearchWords=hisSearchWords}}
+            </div>
+        </div>
+    </div>
+    {{#if showMeau}}
+        <div class="fixed frame-header-child-loc2">
+            <div class="frame-header-menu-container">
+                <div class="frame-header-menu-scrollcontainer">
+                    <ul class="nav ">
+                        {{#each _menuItems as |item index|}} 
+                            {{#if item.visible}}
+                                <li class="{{if item.isActive " active " " "}}" data-toggle="tooltip" href="menuItemTooltip{{index}}">
+                                    {{frame-menu-item item=item clickMenuItem="clickMenuItem"}}
+                                </li>   
+                            {{/if}}
+                        {{/each}}
+                    </ul>
+                </div>
+                <a class="abtn aleft agrayleft" href="#left">{{ oloc 'frame_header_zy' }}</a>
+                <a class="abtn aright" href="#right">{{ oloc 'frame_header_yy' }}</a>
+            </div>
+        </div>
+    {{/if}}
+    <div class="fixed frame-header-child-loc3">
+        {{frame-user}}
+    </div>
+</div>

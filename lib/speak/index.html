@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Speak:test</title>
+  <script>
+  </script>
+  <script type="text/javascript" src="speak.js"></script>
+  <script type="text/javascript">
+    meSpeak.loadConfig("speak_config.json");
+    meSpeak.loadVoice("voices/zh.json");
+  
+    function loadVoice(id) {
+      var fname="voices/"+id+".json";
+      meSpeak.loadVoice(fname, voiceLoaded);
+    }
+  
+    function voiceLoaded(success, message) {
+      if (success) {
+        
+      }
+      else {
+        
+      }
+    }
+    
+  </script>
+
+<style type="text/css">
+	body {max-width: 1000px; }
+	h3 { margin-top: 2em; }
+	p.codesample
+	{
+		margin-left: 2em;
+		white-space: pre;
+		font-family: monospace;
+	}
+	hr.separator
+	{
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+	blockquote.note
+	{
+		margin-left: 2em;
+		font-size: 90%;
+	}
+	a.noteLink { text-decoration: none; }
+	ul.bottomMargin li { margin-bottom: 0.2em; }
+	dl.history dt
+	{
+		font-weight: normal;
+		font-variant: normal;
+		float: left;
+		vertical-align: top;
+		clear: both;
+	}
+	dl.history dd
+	{
+		vertical-align: top;
+		margin-left: 3.5em;
+		margin-bottom: 0.2em;
+	}
+</style>
+</head>
+<body>
+  <h1>SpeakTest</h1>
+  <form id="speakData" onsubmit="meSpeak.speak(text.value, { amplitude: amplitude.value, wordgap: wordgap.value, pitch: pitch.value, speed: speed.value }); return false">
+    Text: <input type="text" name="text" size=50 value="gao jing fa sheng">
+    Amplitude: <input type="text" name="amplitude" size=5 value="100">
+    Pitch: <input type="text" name="pitch" size=5 value="50">
+    Speed: <input type="text" name="speed" size=5 value="100">
+    Word gap: <input type="text" name="wordgap" size=5 value="0">
+    <input type="submit" value="Go!">
+  </form>
+  <form onsubmit="return false">
+    Voice: <select id="voiceSelect"  onchange="loadVoice(this.options[this.selectedIndex].value);">
+    	<option value="ca">ca - Catalan</option>
+		<option value="cs">cs - Czech</option>
+		<option value="de">de - German</option>
+		<option value="el">el - Greek</option>
+		<option value="en/en">en - English</option>
+		<option value="en/en-n">en-n - English, regional</option>
+		<option value="en/en-rp">en-rp - English, regional</option>
+		<option value="en/en-sc">en-sc - English, Scottish</option>
+		<option value="en/en-us">en-us - English, US</option>
+		<option value="en/en-wm">en-wm - English, regional</option>
+		<option value="eo">eo - Esperanto</option>
+		<option value="es">es - Spanish</option>
+		<option value="es-la">es-la - Spanish, Latin America</option>
+		<option value="fi">fi - Finnish</option>
+		<option value="fr">fr - French</option>
+		<option value="hu">hu - Hungarian</option>
+		<option value="it">it - Italian</option>
+		<option value="kn">kn - Kannada</option>
+		<option value="la">la - Latin</option>
+		<option value="lv">lv - Latvian</option>
+		<option value="nl">nl - Dutch</option>
+		<option value="pl">pl - Polish</option>
+		<option value="pt">pt - Portuguese, Brazil</option>
+		<option value="pt-pt">pt-pt - Portuguese, European</option>
+		<option value="ro">ro - Romanian</option>
+		<option value="sk">sk - Slovak</option>
+		<option value="sv">sv - Swedish</option>
+		<option value="tr">tr - Turkish</option>
+		<option value="zh" selected="selected">zh - Mandarin Chinese (Pinyin)</option>
+		<option value="zh-yue">zh-yue - Cantonese Chinese</option>
+	</select>
+  </form>
+ 
+</body>
+</html>

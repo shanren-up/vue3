@@ -1,0 +1,14 @@
+<div class="node-monitor-view">
+    <div class="cluster-top">
+        <div class="cluster-header">
+            <span>节点实时监控</span>
+            <!--<span>节点数目：{{nodeNum}}</span>-->
+            <!--<span>总的CPU数目：{{totalCPUNum}}</span>-->
+            <!--<span>总处理容量：{{totalHandleNum}}</span>-->
+            <!--<span>可用处理容量：{{canHandleNum}}</span>-->
+        </div>
+        <div class="cluster-content">
+            {{comp-echart-graph name='nodeChart' datasource = nodeList}}
+        </div>
+    </div>
+</div>

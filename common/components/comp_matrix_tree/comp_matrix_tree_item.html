@@ -1,0 +1,34 @@
+<div class="matrix-container {{itemsSource.className}}" style={{matrixParentContainerWidthStyle}}>
+    <div class="matrix-parent {{matrixItemParentStyle}}" style={{matrixParentItemStyle}}>{{itemsSource.text}}</div>
+
+    {{#if itemsSource.hasChild}}
+        {{#each itemsSource.childs as |parentItem|}}
+                {{comp-matrix-tree-item level=level refreshHeight="refreshHeight"
+                    itemClick='itemClick'
+                    itemDoubleClick='itemDoubleClick'
+                    matrixCellHeight=matrixCellHeight
+                    matrixCellWidth=matrixCellWidth
+                    itemsSource=parentItem
+                    matrixWidth=matrixWidth
+                    matrixItemStyle=matrixItemStyle
+                    matrixItemParentStyle=matrixItemParentStyle
+                    matrixCellContainerStyle=matrixCellContainerStyle
+                    toggleOpenStyle=toggleOpenStyle
+                    toggleCloseStyle=toggleCloseStyle
+                    filterAlarmSeverityId=filterAlarmSeverityId
+                }}
+        {{/each}}
+    {{else}}
+    <div  style={{matrixCellContainerWidthStyle}} class={{matrixCellContainerStyle}}>
+		 {{#ember-collection items=itemsSourceChilds buffer=10 cell-layout=(fixed-grid-layout matrixCellWidth matrixCellHeight) as |item index|}}
+            {{#if item.componentName}}
+                {{component item.componentName item=item classNames=(concat 'matrix-child' ' ' matrixItemStyle ' ' item.className) style=matrixCellItemStyle mouseUp=(action "itemClick" item) doubleClick=(action "itemDoubleClick" item) }}
+              {{else}}
+                <div data-toggle="tooltip" title={{item.text}} class="matrix-child {{matrixItemStyle}} {{item.className}}" style={{matrixCellItemStyle}} {{action 'itemClick' item}} doubleClick={{action 'itemDoubleClick' item}}>
+                    {{item.name}}
+                </div>
+              {{/if}}
+		  {{/ember-collection}}
+    </div>
+    {{/if}}
+</div>

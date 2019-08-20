@@ -1,0 +1,32 @@
+.inputContainer {
+    position: relative;
+}
+.inputContainer > input[type='checkbox'] {
+    cursor: pointer;
+    display: none;
+}
+.inputContainer > label {
+    cursor: pointer;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #7d7d7d;
+    background: transparent;
+}
+.inputContainer > input[type='checkbox']:checked+label {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAABmUlEQVQ4T7WUQShmURiGn3ejkJWkbGdPsZKFhaQxjVJspiSyUMokWbA3WWgaWcximrEhs5FsZmIxNSmSbJSdNCtR1NQspBm905nOrTP8lx+/u7ndc7/3eb/vfN854gke26+BRkn9KjXf9gDwKXJXS2oQM3+XJL1SMgPbk8CbBD4vabQkBrangOkEPiMpGPJoA9uzwHgCn5Q0k30/ysD2HDCawMckpT14eAW23wPDCXxQ0sL1qfxXQez+rqStYsbW9hLwKsb+BvolLRfSyvZbYAz4CTRJOsozsV0BfAZexpgLoFvSep4mGHwAhmLADtAq6fK6wHY5sAp0JPAeSV9uqzrboo/AYAzcADolXWVC2zXAGtAc186ALknbd21pZhDeAZCVviipL/anDvgK1EfYKfBC0t5d8P/Oge1K4HvoQxSOAKH8lXBxxbWTmPluMfAbB812NRD68Az4A5wDtRF2CLRL+lEsvOBJtt0AbAJVCeggZp47YblTVOiH7RbgG1AG7APPJR3fJ/MsNveqsD0BtAG9kn49BB40fwGEhYFnZKlitAAAAABJRU5ErkJggg==);
+    background-size: 12px 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 1px solid #7d7d7d;
+}
+.inputContainer > .check_span {
+    font-size: 16px;
+    color: #fff;
+    line-height: 20px;
+    /* display: inline; */
+    margin-left: 12px;
+    /* float: left; */
+    position: fixed;
+}

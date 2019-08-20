@@ -1,0 +1,30 @@
+.tab-pane > .ember-view{
+    height: 100%;
+}
+.system-manager-view{
+    width: 100%;
+    height: 100%;
+}
+.system-manager-view .manager-header{
+       font-size: 18px;
+       border-left: 4px solid #069697;
+       padding-left: 10px;
+       margin-left: 10px;
+       margin-top: 10px;
+}
+.system-manager-view .manager-content{
+    padding: 10px 20px 0 10px;
+}
+.system-manager-view .manager-content .content-add{
+    padding: 5px 10px;
+    color: green;
+    font-size: 14px;
+    cursor: pointer;
+}
+.system-manager-view button{
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 25px;
+    border-radius: 3px;
+}

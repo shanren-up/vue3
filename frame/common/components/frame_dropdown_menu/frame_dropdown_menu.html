@@ -1,0 +1,37 @@
+<ul class="frame-dropdown-menu">
+   {{#each childViewMenus as |item|}}
+        {{#if item.visible}}
+          <li class={{if item.childViewMenus "frame-dropdown-submenu"}}  {{action "clickMenuItem" item}}>
+             <a href="#">{{oloc-meau-name item}}</a>
+             <ul class={{if item.childViewMenus "dropdown-menu pull-right"}}>
+                  {{#each item.childViewMenus as |firstChildItem|}}
+                    {{#if firstChildItem.visible}}
+                      <li class={{if firstChildItem.childViewMenus "frame-dropdown-submenu"}}  {{action "clickMenuItem" firstChildItem}}>
+                         <a href="#">{{oloc-meau-name firstChildItem}}</a>
+                             <ul class={{if firstChildItem.childViewMenus "dropdown-menu pull-right"}}>
+                              {{#each firstChildItem.childViewMenus as | secondChildItem|}}
+                                {{#if secondChildItem.visible}}
+                                  <li class={{if secondChildItem.childViewMenus "frame-dropdown-submenu"}}  {{action "clickMenuItem" secondChildItem}}>
+                                     <a href="#">{{oloc-meau-name secondChildItem}}</a>
+                                          <ul class={{if secondChildItem.childViewMenus "dropdown-menu pull-right"}}>
+                                              {{#each secondChildItem.childViewMenus as | thirdChildItem|}}
+                                                {{#if thirdChildItem.visible}}
+                                                  <li {{action "clickMenuItem" thirdChildItem}}>
+                                                     <a href="#">{{ oloc-meau-name thirdChildItem}}</a>
+                                                   </li>
+                                               {{/if}}
+                                                {{/each}}
+                                            </ul>
+                                   </li>
+                               {{/if}}
+                                {{/each}}
+                            </ul>
+                       </li>
+                   {{/if}}
+                {{/each}}
+             </ul>
+           </li>
+       {{/if}}
+    {{/each}}
+</ul>
+

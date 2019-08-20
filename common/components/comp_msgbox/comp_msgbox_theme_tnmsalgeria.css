@@ -1,0 +1,26 @@
+.comp-msgbox-button {
+    width: 70px;
+    height: 30px;
+    font-family: '微软雅黑 Regular', '微软雅黑';
+    font-size: 14px;
+    /* color: #FFFFFF; */
+    margin: 0px 19px 0px 5px;
+    background-color: #5499E4;
+    border-radius: 5px;
+}
+.comp-msgbox-button:hover{
+    color: white;
+    width: 70px;
+    height: 30px;
+    font-family: '微软雅黑 Regular', '微软雅黑';
+    font-size: 14px;
+    /* color: #FFFFFF; */
+    margin: 0px 19px 0px 5px;
+    background-color: #5499E4;
+    border-radius: 5px;
+}
+
+
+.bootbox-footer.modal-footer .btn+.btn{
+    background-color: #2FBDBD;
+}

@@ -1,0 +1,22 @@
+<div class="process-complete-view">
+    <div class="manager-header">
+        <span>{{headerName}}</span>
+    </div>
+    <div class="manager-content">
+        <div class="content-operator">
+            <span>流程ID：</span>
+            {{input type='text' class="process-id" value=processId }}
+            <button class="button-geovis" {{action "queryProcess"}}><span class="fa fa-search">查询</span></button>
+        </div>
+        <div class="content-table" id="{{tableId}}">
+            {{comp-table name='completeTable' tableConfig=tableConfig columns=columns  eventConfig=eventConfig}}
+        </div>
+        <div class="content-slider">
+            <span class="{{if isShowDetail '' 'hidden'}}">流程信息</span>
+            <span class="slider-icon {{sliderClass}}" {{action 'sliderClick'}}></span>
+        </div>
+        <div class="content-process {{if isShowDetail '' 'hidden'}}">
+            {{process-manager-detailsub curProcess=currentProcess}}
+        </div>
+    </div>
+</div>

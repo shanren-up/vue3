@@ -1,0 +1,86 @@
+<div class="cluster-status-performs">
+    <div class="cluster-top">
+        <div class="cluster-header">
+            <span>{{headerName}}</span>
+            <select onchange={{action 'timeChange'}}>
+            {{#each timeGranularity as |data|}}
+            <option value="{{data.id}}">{{data.name}}</option>
+            {{/each}}
+            </select>
+            <!--<span>节点数目：{{nodeNum}}</span>-->
+            <!--<span>总的CPU数目：{{totalCPUNum}}</span>-->
+            <!--<span>总处理容量：{{totalHandleNum}}</span>-->
+            <!--<span>可用处理容量：{{canHandleNum}}</span>-->
+        </div>
+        <div class="cluster-content">
+            <div class="content-left">
+                    <div id="leftTopChart">
+                        {{#if showCurrent}}
+                            <div class="line-div">
+                                {{comp-echart-line name='memoryChart' datasource = memory}}
+                            </div>
+                            <div class="line-div">
+                                {{comp-echart-line name='cpuChart' datasource = cpu}}
+                            </div>
+                        {{else}}
+                            {{comp-echart-arealine name='memoryCalcChart' datasource = memoryCalc}}
+                        {{/if}}
+                    </div>
+            </div>
+            <div class="content-right">
+                <div id="rightChart">
+                    {{#if showCurrent}}
+                        {{comp-echart-pie name = 'diskChart' datasource = disk}}
+                    {{else}}
+                        {{comp-echart-arealine name='cpuCalcChart' datasource = cpuCalc}}
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cluster-bottom">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active" >
+            <a href="#nodeInfo" data-toggle="tab">节点信息</a>
+            </li>
+            <!--<li role="presentation" >-->
+            <!--<a href="#systemSet" data-toggle="tab">系统设置</a>-->
+            <!--</li>-->
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="nodeInfo">
+                <div class="content-add">
+                    <span class="fa fa-plus" {{action 'addNode'}}>添加节点</span>
+                </div>
+                {{comp-table name='tabskInfo' tableConfig=tableConfig columns=columns dataSource=dataSource  eventConfig=eventConfig}}
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="systemSet">
+                <div class="systemSetContent">
+                    <div class="fieldSet">
+                        <span class="upSet">设备上报周期设置</span>
+                        <span>设备上报周期设置：</span>
+                        {{input type=text value=reportCycle}}
+                        <span>(分钟)</span>
+                        <button {{action 'reportConfirm'}}><span class="fa fa-floppy-o"></span>确定</button>
+                    </div>
+                    <div class="fieldSet">
+                        <span class="upSet">磁盘报警阈值设置</span>
+                        <span>磁盘报警阈值设置：</span>
+                        {{input type=text value=reportCycle}}
+                        <span>%</span>
+                        <button {{action 'reportConfirm'}}><span class="fa fa-floppy-o"></span>确定</button>
+                    </div>
+                    <div class="fieldSet">
+                        <span class="upSet">过期数据删除设置</span>
+                        <span>过期数据删除设置：</span>
+                        {{input type=text value=reportCycle}}
+                        <span>(日)</span>
+                        <span>数据删除时间设置：</span>
+                        {{input type=text value=reportCycle}}
+                        <span>(日)</span>
+                        <button {{action 'reportConfirm'}}><span class="fa fa-floppy-o"></span>确定</button></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

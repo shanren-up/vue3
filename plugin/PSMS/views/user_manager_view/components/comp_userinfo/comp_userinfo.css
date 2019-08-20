@@ -1,0 +1,46 @@
+.comp-userinfo-size{
+    width: 800px;
+}
+.comp-userinfo-body{
+    padding: 0 !important;
+}
+.comp-userinfo-header{
+    line-height: 35px;
+    height: 35px;
+    padding: 0px 5px;
+    background-color: #CCC;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+}
+.comp-userinfo .panel-content{
+    padding: 10px;
+}
+.comp-userinfo .panel-content .info-item{
+    display: inline-block;
+    width: 48%;
+    margin: 10px 0;
+}
+.comp-userinfo .panel-content .info-item span{
+    display: inline-block;
+    text-align: right;
+    width: 30%;
+}
+.comp-userinfo .panel-content .info-item input{
+    width: 50%;
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+}
+.comp-userinfo .panel-content .info-item select{
+    width: 50%;
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+}
+.comp-userinfo .panel-footer{
+    text-align: center;
+}
+.comp-userinfo .panel-footer button{
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+    width: 50px;
+    height: 30px;
+}

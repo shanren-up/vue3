@@ -1,0 +1,211 @@
+.measureW {
+    width: 240px;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position: absolute;
+    top: 400px;
+    right: 20px;
+    border: 1px solid #0c7e9b;
+}
+
+.M_ToolCur {
+    cursor: pointer;
+    user-select: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: rgba(225, 72, 72, 0.5);
+}
+
+.M_ToolCurA {
+    background: rgba(225, 72, 72, 1);
+}
+
+.M_ToolCur img {
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.M_header {
+    height: 40px;
+    width: 240px;
+    display: inline-flex;
+}
+
+.M_title {
+    text-indent: 15px;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    font-family: "微软雅黑";
+    font-size: 18px;
+}
+
+.M_ToolStat {
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+    flex: 1;
+    margin-top: 2px;
+    background-size: 100% 100%;
+}
+
+.M_ToolStatCur {
+    background: url(../img/点击图标.png) no-repeat;
+    background-size: 38px 38px;
+}
+
+.M_ToolStat1 {
+    background: url(../img/距离量测.png) no-repeat;
+}
+
+.M_ToolStat1A {
+    background: url(../img/距离量测选中.png) no-repeat;
+}
+
+.M_ToolStat2 {
+    background: url(../img/面积量测.png) no-repeat;
+}
+
+.M_ToolStat2A {
+    background: url(../img/面积量测选中.png) no-repeat;
+}
+
+.M_ToolStat3 {
+    background: url(../img/角度量测.png) no-repeat;
+}
+
+.M_ToolStat3A {
+    background: url(../img/角度量测选中.png) no-repeat;
+}
+
+.M_tip {
+    font-family: "微软雅黑";
+    text-align: center;
+    height: 80px;
+    line-height: 20px;
+    width: 240px;
+}
+
+.M_tip p {
+    height: 40px;
+    line-height: 40px;
+}
+
+.M_tip p:nth-child(2) {
+    line-height: 20px;
+}
+
+.M_tip i {
+    font-family: "微软雅黑";
+    font-size: 18px;
+    color: #23bae8;
+}
+
+.M_PointList,
+.M_HistoryList {
+    width: 238px;
+    max-height: 240px;
+    border: 1px solid #0e7694;
+}
+
+.M_PointListHead {
+    width: 240px;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+}
+
+.M_PLH_title {
+    font-family: "微软雅黑";
+    font-size: 16px;
+    text-indent: 15px;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.M_HL_title {
+    font-family: "微软雅黑";
+    font-size: 16px;
+    text-indent: 15px;
+    width: 240px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.M_PLH_Sure {
+    user-select: none;
+    cursor: pointer;
+    width: 60px;
+    height: 20px;
+    margin: 5px;
+    line-height: 20px;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    flex: 1;
+    border: 1px solid #0c7e9b;
+}
+
+.M_PLH_Sure:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.M_PointListMain {
+    width: 240px;
+    max-height: 210px;
+    overflow-y: auto;
+}
+
+.M_PointItem {
+    border-bottom: 1px solid #0c7e9b;
+}
+
+.M_PointItem i {
+    display: flex;
+    justify-content: space-around;
+}
+
+.M_PointItem input {
+    background: transparent;
+    width: 140px;
+    /*margin-left: 10px;
+				margin-right: 25px;*/
+    border-bottom: 1px solid #0c7e9b;
+}
+
+.M_PointItem input:nth-of-type(1) {
+    margin-bottom: 5px;
+}
+
+.M_HL_List {
+    overflow: auto;
+    max-height: 200px;
+    padding-bottom: 10px;
+}
+
+.M_HL_List div {
+    height: 30px;
+    line-height: 30px;
+    text-indent: 60px;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    background-position: 30px center;
+}
+
+.M_HL_Area {
+    background: url(../img/矩形.png) no-repeat;
+}
+
+.M_HL_Line {
+    background: url(../img/长度.png) no-repeat;
+}
+
+.M_HL_Ami {
+    background: url(../img/角度.png) no-repeat;
+}

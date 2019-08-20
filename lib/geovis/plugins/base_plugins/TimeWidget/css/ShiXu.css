@@ -1,0 +1,160 @@
+   .ShiXuWrap{
+				position: absolute;
+   				top: 74px;
+   				left: 460px;
+				width: 410px;
+				height: 90px;
+				border: 1px solid #0d748e;
+				font-family: "微软雅黑";
+			}
+			.SXDet{
+				color: rgb(255,255,255);
+				text-indent: 34px;
+				font-family: "微软雅黑";
+				font-size: 12px;
+				height: 20px;
+				line-height: 20px;
+				width: 410px;
+			}
+			.SXBtnList{
+				display: flex;
+				width: 410px;
+				height: 23px;
+				padding: 7px 9px 0 9px;
+			}
+			.SXTime{
+				width: 390px;
+				height: 20px;
+				border-radius: 10px;
+				margin: 5px auto;
+				border:1px solid rgb(57,57,57);
+				background: rgba(57,57,57,0.8);
+			}
+			.SXScaleBtn{
+				cursor: pointer;
+				width: 18px;
+				height: 18px;
+				background: url(../img/放大.png) no-repeat;
+				background-size: 18px 18px;
+			}
+			.SXScaleBtn:hover{
+				background: url(../img/放大hover.png) no-repeat;
+			}
+			.SXScaleBtn:active{
+				background: url(../img/放大选中.png) no-repeat;
+			}
+			.SXReduceBtn{
+				margin-left: 3px;
+				cursor: pointer;
+				width: 18px;
+				height: 18px;
+				background: url(../img/缩小.png) no-repeat;
+				background-size: 18px 18px;
+			}
+			.SXReduceBtn:hover{
+				background: url(../img/缩小hover.png) no-repeat;
+			}
+			.SXReduceBtn:active{
+				background: url(../img/缩小选中.png) no-repeat;
+			}
+			.SXSetBtn{
+				margin-left: 312px;
+				cursor: pointer;
+				width: 18px;
+				height: 18px;
+				background: url(../img/设置.png) no-repeat;
+				background-size: 18px 18px;
+			}
+			.SXSetBtn:hover{
+				background: url(../img/设置hover.png) no-repeat;
+			}.SXSetBtn:active{
+				background: url(../img/设置选中.png) no-repeat;
+			}
+			.SXCloseBtn{
+				margin-left: 3px;
+				cursor: pointer;
+				width: 18px;
+				height: 18px;
+				background: url(../img/删除.png) no-repeat;
+				background-size: 18px 18px;
+			}
+			.SXCloseBtn:hover{
+				background: url(../img/删除hover.png) no-repeat;
+			}
+			.SXCloseBtn:active{
+				background: url(../img/删除选中.png) no-repeat;
+			}
+			.SXNext{
+				cursor: pointer;
+				float: right;
+				width: 6px;
+				height: 8px;
+				margin-top: 6px;
+				margin-right: 6px;
+				background: url(../img/后退.png) no-repeat;
+				background-size: 6px 8px;
+			}
+			.SXNext:hover{
+				width: 12px;
+				height: 12px;
+				background: url(../img/后退选中.png) no-repeat;
+				background-size: 12px 12px;
+				margin-top: 4px;
+				margin-right: 4px;
+			}
+			.SXPre{
+				cursor: pointer;
+				float: left;
+				width: 6px;
+				margin-top: 6px;
+				margin-left: 6px;
+				height: 8px;
+				background: url(../img/前进.png) no-repeat;
+				background-size: 6px 8px;
+			}
+			.SXPre:hover{
+				width: 12px;
+				height: 12px;
+				background: url(../img/前进选中.png) no-repeat;
+				background-size: 12px 12px;
+				margin-top: 4px;
+				margin-right: 4px;
+			}
+			.SXScrollbar{
+				position: relative;
+				width: 356px;
+				height: 6px;
+				margin-top: 6px;
+				margin-left: 16px;
+				border-radius: 3px;
+				border: 1px solid rgb(176,176,176);
+				background: radial-gradient(rgb(17,129,180),rgb(57,57,57));
+			}
+			.SXBar{
+				cursor: pointer;
+				width: 13px;
+				height: 16px;
+				position: absolute;
+				top: -6px;
+				background: url(../img/滑块.png) no-repeat;
+				background-size:13px 16px ;
+			}
+			.SXBar:hover{
+				background: url(../img/滑块选中.png) no-repeat;
+			}
+			.SXStart{
+				position: absolute;
+				top: 12px;
+				left: -12px;
+				font-family: "微软雅黑";
+				font-size: 12px;
+				color: rgb(244,244,244);
+			}
+			.SXEnd{
+				position: absolute;
+				top: 12px;
+				right: -12px;
+				font-family: "微软雅黑";
+				font-size: 12px;
+				color: rgb(244,244,244);
+			}

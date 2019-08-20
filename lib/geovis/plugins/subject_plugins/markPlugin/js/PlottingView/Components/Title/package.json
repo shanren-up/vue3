@@ -1,0 +1,10 @@
+{
+    "name": "Title",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./Title.js",
+    "dependencies": {
+        "react": "^15.5.4",
+        "react-dom": "^15.4.2"
+    }
+}

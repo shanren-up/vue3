@@ -1,0 +1,20 @@
+.frame-remind .modal-header {
+  background-color: #4990E2;
+  border-radius: 5px 5px 0 0;
+  color: #ccc;
+}
+
+.frame-remind .bootbox-body {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.frame-remind .frame-remind-item {
+  text-align: left;
+  text-indent: 2em;
+  white-space: pre-line;
+}
+
+.frame-remind .frame-remind-index {
+  margin-right: 1em;
+}

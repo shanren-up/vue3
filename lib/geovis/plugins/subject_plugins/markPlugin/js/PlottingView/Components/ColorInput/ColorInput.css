@@ -1,0 +1,92 @@
+.inputContainer {
+    position: relative;
+}
+.inputContainer > input[type=color] { display: none; }
+.inputContainer > button {
+    width: 38px;
+    height: 20px;
+    outline: none;
+    padding: 0;
+    border: 1px solid #000;
+    background-color: #000;
+}
+
+.inputContainer > button:hover, .inputContainer > button:focus {
+    cursor: pointer;
+    border: 1px solid #7d7d7d;
+}
+
+::-webkit-color-swatch {
+    height: 21px;
+    position: relative;
+    left: 40px;
+    top: -5px;
+}
+
+.colorPanel {
+    position: absolute;
+    background: white;
+    border: 1px solid #000;
+    width: 181px;
+    height: 58px;
+    z-index: 200;
+    top: -4px;
+    left: 48px;
+}
+
+.colorItem {
+    width: 100%;
+    height: 36px;
+}
+.colorBtn {
+    border: 1px solid #000;
+    margin: 1px 1px;
+    width: 16px;
+    height: 16px;
+    outline: none;
+    cursor: pointer;
+}
+.colorBtn:focus {
+    border: 1px solid gray;
+}
+.cv {
+    display: inline;
+}
+
+.cv > span {
+    font-size: 14px;
+    color: #000;
+    width: 8px;
+    display: inline-block;
+    margin-left: 3px;
+}
+.cv > input[type=number] {
+    width: 30px;
+    height: 14px;
+    font-size: 12px;
+    outline: none;
+}
+.cv > input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.colorWrapper {
+    width: 100%;
+    height: 16px;
+    background-image: -webkit-gradient(linear, 0 0, 100% 0,
+        from(red),
+        color-stop(15%, orange),
+        color-stop(30%, yellow),
+        color-stop(50%, green),
+        color-stop(65%, darkcyan),
+        color-stop(80%, blue),
+        to(purple));
+}
+
+.colorWrapper > button {
+    width: 20px;
+    height: 26px;
+    outline: none;
+    padding: 0;
+    border: 1px solid #000;
+    background-color: transparent;
+}

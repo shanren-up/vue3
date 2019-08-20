@@ -1,0 +1,31 @@
+<div class="comp-path-dialog">
+    <div class="dialog-header">
+        {{input type="text" value=pathValue}}
+        <button {{action 'changeListType'}}>切换视图</button>
+        <button {{action 'backToParent'}}>返回上一级</button>
+        <button {{action 'newFolder'}}>新建</button>
+    </div>
+    <div class="dialog-content">
+        {{#if showList}}
+            {{#each dataSource as |data|}}
+            <div class="path-item-list">
+                <input type="checkbox" class="path-item-list-checkbox" onclick={{action 'selectItem' data}}>
+                <img  {{action 'itemAction' data}} src={{data.src}} />
+                <a href="javascript:;" title="{{data.name}}" {{action 'itemAction' data}}>{{data.name}}</a>
+            </div>
+            {{/each}}
+        {{else}}
+            {{#each dataSource as |data|}}
+            <div class="path-item">
+                <input type="checkbox" class="path-item-checkbox" onclick={{action 'selectItem' data}}>
+                <img  {{action 'itemAction' data}} src={{data.src}} />
+                <a href="javascript:;" title="{{data.name}}" {{action 'itemAction' data}}>{{data.name}}</a>
+            </div>
+            {{/each}}
+        {{/if}}
+    </div>
+    <div class="dialog-footer">
+        <button {{action 'confirmPath'}}>确定</button>
+        <button {{action 'cancelPath'}}>取消</button>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+.process-order-view{
+      padding: 10px 0 0 10px;
+
+}
+.process-order-view .title{
+    font-size: 18px;
+    border-left: 4px solid #069697;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.process-order-view .search{
+    /* margin-top:10px; */
+}
+
+
+.process-order-view .content-add{
+    padding: 5px 10px;
+    color: green;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.process-order-view .start{
+    height: 25px;
+    border:0;
+    width: 60px;
+}
+.process-order-view .param-list div{
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    font-size: 14px;
+}
+.process-order-view .param-list{
+    margin: 0 0 5px 10px;
+    height: 30px;
+}
+.process-order-view .param-list .select-flow{
+    width: 3%;
+    float: left;
+}
+.process-order-view .param-list .flow-list{
+    width: 10%;
+}
+.process-order-view .param-list .export-folder{
+    width: 4%;
+    margin-left: 20px;
+}
+.process-order-view .param-list .folder-value{
+    width: 70%;
+}
+.process-order-view .param-list .folder-input{
+    width:20%;
+}
+.process-order-view .param-list .directory-select{
+    height:30px;
+    width: 50px;
+    margin-left: 10px;
+    border: none;
+}
+.process-order-view button{
+    border-radius: 4px;
+}

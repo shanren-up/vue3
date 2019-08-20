@@ -1,0 +1,41 @@
+<div class="fixed frame-login-new" id="loginNew">
+    <div class="login-component">
+        <div class="login-title">
+            <p>算法测试平台</p>
+        </div>
+        <div class="login-main">
+            <div class="main-left">
+
+            </div>
+            <div class="main-right">
+                <div class="right-title">
+                    用户登录
+                    {{#if showBack}}
+                    <span {{action 'backToIndex'}}>{{backTitle}}</span>
+                    {{/if}}
+                </div>
+                <div class="img-input username">
+                    <img src="img/login/username.png" alt="">
+                    {{input type=text placeholder="用户名" id="loginUser" value=userName}}
+                </div>
+                <div class="img-input password">
+                    <img src="img/login/password.png" alt="">
+                    <input type="password" placeholder="密码" id="loginPass">
+                </div>
+                {{#if isShowCode}}
+                <div class="img-input code">
+                    <img src="img/login/code.png" alt="">
+                    {{input placeholder="验证码" id="loginCode" value=checkCode }}
+                    {{frame-code name='verifyCode' }}
+                </div>
+                {{/if}}
+                <div class="yes_login">
+                    <button {{action 'confirmLogin'}}>登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+                </div>
+            </div>
+        </div>
+        <div class="login-footer">
+
+        </div>
+    </div>
+</div>

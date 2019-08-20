@@ -1,0 +1,43 @@
+.bs-table-container {
+  background-color: #fff;
+}
+
+
+/* 加载动画时背景颜色 */
+
+.bs-table-container .fixed-table-loading {}
+
+.bs-table-container table.bs-table thead tr {
+  background-color: #bdd8f2;
+  color: #0E73AF;
+}
+
+.bs-table-container .fixed-table-header {
+  background-color: #bdd8f2;
+}
+.bs-table-container table tbody tr{
+  border: 1px solid #ddd;
+}
+
+.bs-table-container table tbody tr td{
+  border-right: 1px solid #ddd !important;
+}
+
+.bs-table-container table tbody tr:nth-child(2n+1) {
+  background-color: #FEFEFE;
+}
+
+.bs-table-container table tbody tr:nth-child(2n) {
+  background-color: #F5F5F5;
+}
+
+.bs-table-container table tbody tr:hover {
+  background-color: #EFEFEF;
+}
+
+
+/*选中颜色*/
+
+.bs-table-container .fixed-table-container tbody .selected td {
+  background-color: #E8E8E8;
+}

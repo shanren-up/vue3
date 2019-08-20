@@ -1,0 +1,56 @@
+<div class="comp-cluster-nodeinfo">
+    <div class="panel-content">
+        <div class="info-item">
+            <span>节点名称：</span>
+            {{#if isEdit}}
+                <input disabled type=text value="{{nodeInfo.nodename}}">
+            {{else}}
+                {{input  type=text value=nodeInfo.nodename}}
+            {{/if}}
+        </div>
+        <div class="info-item">
+            <span>节点IP：</span>
+            {{#if isEdit}}
+                <input disabled type=text value="{{nodeInfo.nodeip}}">
+            {{else}}
+                {{input  type=text value=nodeInfo.nodeip}}
+            {{/if}}
+        </div>
+        <div class="info-item">
+            <span>节点端口：</span>
+            {{#if isEdit}}
+            <input   disabled type=number value="{{nodeInfo.nodeport}}">
+            {{else}}
+            {{input  type=number value=nodeInfo.nodeport}}
+            {{/if}}
+        </div>
+        <div class="info-item">
+            <span>节点总处理能力：</span>
+            {{#if isEdit}}
+            <input id = "nodetotalused" disabled type=number value="{{nodeInfo.nodetotalused}}">
+            {{else}}
+            <input id = "nodetotalused"  type=number value="{{nodeInfo.nodetotalused}}">
+            {{/if}}
+        </div>
+        <div class="info-item">
+            <span>节点类型：</span>
+            {{#if isEdit}}
+            <select disabled>
+                {{#each nodeTypeData as |data|}}
+                <option value="{{data.id}}" selected={{data.isSelected}}>{{data.name}}</option>
+                {{/each}}
+            </select>
+            {{else}}
+            <select onchange={{action 'typeChange' data.name  }}>
+                {{#each nodeTypeData as |data|}}
+                <option value="{{data.id}}" selected={{data.isSelected}}>{{data.name}}</option>
+                {{/each}}
+            </select>
+            {{/if}}
+        </div>
+    </div>
+    <div class="panel-footer">
+        <button {{action 'confirmNodeInfo'}}>确定</button>
+        <button {{action 'cancelNodeInfo'}}>取消</button>
+    </div>
+</div>

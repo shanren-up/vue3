@@ -1,0 +1,79 @@
+.comp-file-list{
+    padding: 10px;
+    height: 100%;
+}
+.comp-file-list .dialog-header > input{
+    height: 30px;
+    width: 200px;
+    border-radius: 3px;
+    border: 1px solid #b2b2b2;
+    padding-left: 10px;
+}
+.comp-file-list .dialog-header > button{
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+    min-width: 50px;
+    width: 80px;
+    height: 30px;
+    /* float: right; */
+    /* margin-right: 10px; */
+    float: right;
+}
+.comp-file-list .dialog-content{
+    height: 785px;
+    overflow: auto;
+    margin-top: 10px;
+    min-height: 770px;
+    /* padding-bottom: 20px; */
+    position: relative;
+}
+.comp-file-list .dialog-content .path-item{
+    display: inline-block;
+    padding: 15px 20px;
+}
+.comp-file-list .dialog-content .path-item-list{
+    padding: 5px 20px;
+    height: 20px;
+    margin-bottom: 5px;
+    /* width: 500px; */
+    white-space: nowrap;
+    /* display: inline-block; */
+}
+.comp-file-list .dialog-content .path-item-list img{
+    width: 20px;
+    height: 20px;
+    /* float:left; */
+    margin-right: 5px;
+    display: inline;
+}
+.comp-file-list .dialog-content .path-item-list a{
+    display: inline;
+    /* text-align: left; */
+    /* max-width:  700px; */
+    /* overflow:hidden; */
+    /* word-break: break-all; */
+    /* white-space: normal; */
+    /* text-overflow:ellipsis; */
+    /* float: left; */
+    height: 20px;
+    /* word-wrap: break-word; */
+}
+.comp-file-list .dialog-content .path-item a{
+    display: block;
+    text-align: center;
+    max-width:  100px;
+    overflow:hidden;
+    word-break:keep-all;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.comp-file-list .dialog-footer{
+    text-align: center;
+}
+.comp-file-list .dialog-footer > button{
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+    min-width: 50px;
+    height: 30px;
+    margin-right: 10px;
+}

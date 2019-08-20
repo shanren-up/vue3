@@ -1,0 +1,56 @@
+.frame-header-bg {
+  background: #E2EEFA;
+  border-bottom: 5px solid #BED9F3;
+}
+
+.frame-header-bg-img-bhz {
+  width: 500px;
+  /*background-image: url("../../../../img/logo/bhz_default.png");*/
+  background-repeat: no-repeat;
+}
+
+.frame-header-bg-img-jzxn {
+  /*background-image: url("../../../../img/logo/jzxn_default.png");*/
+}
+
+.frame-header-bg-img-btj {
+  /*background-image: url("../../../../img/logo/btj_default.png");*/
+}
+
+.frame-header-bg-img-imp {
+  /*background-image: url("../../../../img/logo/imp_default.png");*/
+}
+
+.frame-header-bg-img-jxcpm {
+  /*background-image: url("../../../../img/logo/jxcpm_default.png");*/
+}
+
+.frame-header-bg-img-ltjk {
+  /*background-image: url("../../../../img/logo/ltjk_default.png");*/
+  background-size: contain;
+}
+
+.frame-header-bg-img-butlersys {
+  /*background-image: url("../../../../img/logo/butlersys_default.png");*/
+  background-size: contain;
+}
+
+.frame-header-child-loc2 li.active .frame-menu-item-bg,
+.frame-header-child-loc2 li.active .frame-menu-item-bg:focus,
+.frame-header-child-loc2 li.active .frame-menu-item-bg:hover {
+  background: #97C1EC;
+}
+
+.frame-header-search input,
+.frame-header-search span {
+  border: 1px solid lightblue;
+}
+
+.frame-header-search span {
+  border-left: none;
+}
+
+.frame-header-bg .toggle-vertical-meau-btn {
+  color: #6697C4;
+  background-image: url('../../../../img/frame_header/meau_1.png');
+}

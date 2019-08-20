@@ -1,0 +1,55 @@
+<div class="process-task-manager-view">
+    <div class="task-header">
+        <span>任务管理</span>
+        {{#if flowData}}
+        <span class="msg">{{processType}}</span>
+        <span class="msg">/</span>
+        <span class="msg">{{flowType}}</span>
+        {{/if}}
+        {{#if showProcessManage }}
+            <button class="btn-info task-return" {{action 'goBack'}}>返回</button>
+        {{/if}}
+        {{#if showPriview}}
+            <button class="btn-info task-return" {{action 'goBack'}}>返回</button>
+        {{/if}}
+    </div>
+    {{#if showHome}}
+    <div class="task-content">
+        <div class="task-content-param">
+            <div class="select-flow">模板:</div>
+            <div class="flow-list">
+                <select  class="form-control" onchange={{action 'flowSelectChange'}} >
+                <option  value="-1" >
+                    所有模板
+                </option>
+                {{#each flows as |flow|}}
+                <option  value="{{flow.id}}" >
+                    {{flow.flowname}}
+                </option>
+                {{/each}}
+                </select>
+            </div>
+            {{#if flowData}}
+            <div class="content-add">
+                <span class="fa fa-plus" {{action 'createTask'}}>创建任务</span>
+            </div>
+            {{/if}}
+        </div>
+        {{comp-table name='taskTable' tableConfig=tableConfig dataSource=taskData columns=columns  eventConfig=eventConfig}}
+    </div>
+
+    <div class="content-slider">
+        <span >流程信息</span>
+        <span class="slider-icon {{sliderClass}}" {{action 'sliderClick'}}></span>
+    </div>
+    <div class="task-process">
+        {{comp-process-detail name='detailView' curProcess=currentProcess showMsg = false showStart=false}}
+    </div>
+    {{/if}}
+    {{#if showProcessManage }}
+        {{process-manager-view classNames="task-process-manager" previewAction = "showPreview" sourceTask = currentProcess}}
+    {{/if}}
+    {{#if showPriview }}
+        {{process-task-preview classNames="task-preview" subTask = selectTask sourceTask = currentProcess}}
+    {{/if}}
+</div>

@@ -1,0 +1,34 @@
+<div style="width: 100%;">
+
+    <ul class="boco pagination lte-comp-page-unselected" style="float: left;margin-top: 0px;">
+        <li data-toggle="tooltip" data-placement="bottom" title="首页" {{action 'firstClick'}} class="page-boco-firstbtn">
+            <span class="lte-comp-page-span ">首页</span>
+        </li>
+        <li data-toggle="tooltip" data-placement="bottom" title="上一页" {{action 'previousClick'}}>
+            <span class="lte-comp-page-span">&laquo;</span>
+        </li>
+        {{#each columnlist as |col|}}
+        <li {{action 'clickNum' col.num}}>
+            <a style={{if col.selected "background: #1296db; color: white" ""}}>{{col.num}}</a>
+        </li>
+        {{/each}}
+        <li data-toggle="tooltip" data-placement="bottom" title="下一页" {{action 'nextClick'}}>
+            <span class="lte-comp-page-span">&raquo;</span>
+        </li>
+        <li data-toggle="tooltip" data-placement="bottom" title="尾页" {{action 'lastClick'}} class="page-boco-lastbtn">
+            <span class="lte-comp-page-span">尾页</span>
+        </li>
+    </ul>
+
+    <div class="lte-comp-page-right">
+        <button type="button" class="lte-comp-page-rightsbutton" {{action 'gotoClick'}}>跳转</button>
+        <span class="lte-comp-page-rightspan">
+/ {{maxnum}}
+    </span>
+        <input id="myInputId" text="text" class="lte-comp-page-rightinput" value="{{checkednum}}" />
+
+        <span class="lte-comp-page-rightspan">跳转到：</span>
+        <span class="lte-comp-page-rightspan">总条数：{{allCountStr}}条，每页{{lineNum}}条</span>
+
+    </div>
+</div>

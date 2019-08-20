@@ -1,0 +1,29 @@
+.comp-modal {}
+
+.comp-modal .comp-modal-header{
+  background-color: #2C0B40;
+}
+.comp-modal #modalBody{
+  background: #242448;
+}
+.comp-modal-container {
+  font-family: '微软雅黑 Regular', '微软雅黑';
+}
+
+.comp-modal-body input,
+.comp-modal-body textarea {
+  color: #D8D8D8;
+  background-color: rgba(17, 34, 66, 0.9);
+  border: 1px solid #86D1FF;
+}
+
+.comp-modal-body input.multiselect-search {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+}
+
+.comp-modal-footer {
+  color: #ffffff;
+  background-color: rgba(17, 34, 66, 0.9);
+}

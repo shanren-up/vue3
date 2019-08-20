@@ -1,0 +1,46 @@
+{
+    "frame_version_yazdcp": {
+        "en": "Installed products",
+        "zh": "已安装的产品"
+    },
+    "frame_version_jg": {
+        "en": "WARNING",
+        "zh": "警告"
+    },
+    "frame_version_dqbb": {
+        "en": "Current version",
+        "zh": "当前版本"
+    },
+    "frame_version_lsbb": {
+        "en": "Historic version",
+        "zh": "历史版本"
+    },
+    "frame_version_ylkjbb": {
+        "en": "Dependent Framework Version",
+        "zh": "依赖框架版本"
+    },
+    "frame_version_gxrz": {
+        "en": "ReleaseNote",
+        "zh": "更新日志"
+    },
+    "frame_version_gzglxt": {
+        "en": "Fault management system",
+        "zh": "故障管理系统"
+    },
+    "frame_version_fbrq": {
+        "en": "Release Date",
+        "zh": "发布日期"
+    },
+    "frame_version_mc": {
+        "en": "Name",
+        "zh": "名称"
+    },
+    "frame_version_bb": {
+        "en": "version",
+        "zh": "版本"
+    },
+    "frame_version_fwbb": {
+        "en": " service version",
+        "zh": "服务版本"
+    }
+}

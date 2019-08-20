@@ -1,0 +1,57 @@
+.frame-vertical-meau {
+  background-color: #0F141A;
+}
+
+.frame-vertical-meau .meau-header {
+  background-color: rgb(24,31,39);;
+}
+
+.frame-vertical-meau .meau-container {
+  color: #7892A9;
+  width: 200px;
+}
+
+.frame-vertical-default .meau-item {
+  background-color: #131A20;
+}
+
+
+/* 一级菜单展开图标颜色  */
+
+.frame-vertical-default .meau-item .status-icon {
+  border-color: #FFF;
+}
+
+.frame-vertical-meau .sub-meau-item {
+  background-color: #01F1418;
+}
+
+.frame-vertical-meau .sub-meau-item:hover ,
+.frame-vertical-meau .active-sub-meau{
+  /* color: #3189E2; */
+  background-color: #3189E2;
+  color: #FFF;
+}
+
+.frame-vertical-meau .sub-meau-item:hover span,
+.frame-vertical-meau .active-sub-meau span{
+  border:none;
+}
+
+.frame-vertical-meau .meau-item.active-meau {
+  /* background-color: #3189E2; */
+  /* color: #FFF; */
+}
+
+.frame-vertical-simple .item-container.hover .meau-item {
+  background-color: #26c6da;
+  color: #FFF;
+}
+
+.frame-vertical-simple .sub-meau-container {
+  background: #454775;
+}
+
+.frame-vertical-meau-tooltip.right .tooltip-arrow {
+  border-left-color: #CCC;
+}

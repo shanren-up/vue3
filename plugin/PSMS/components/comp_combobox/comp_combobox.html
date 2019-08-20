@@ -1,0 +1,6 @@
+<div class="comp-combobox">
+    <input type="text" value={{workDir}} id="comboboxInput{{idName}}"/>
+    <div class="combobox-content" id="comboboxContent{{idName}}" style="display: {{if isShow 'block' 'none'}};">
+        {{comp-ztree name="comboboxTree" config=config dataSource=dataSource}}
+    </div>
+</div>

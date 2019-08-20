@@ -1,0 +1,46 @@
+<div class="comp-order-task">
+    <div class="panel-content">
+        <div class="info-item">
+            <span>输入产品级别：</span>
+            <select onchange={{action 'productLevelChange'}}>
+                {{#each productLevels as |data|}}
+                <option value="{{data}}" selected={{data.isSelected}}>{{data}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="info-item">
+            <span>输出产品级别：</span>
+            <select onchange={{action 'finalProductLevelChange'}}>
+                {{#each finalProductLevels as |data|}}
+                <option value="{{data}}" selected={{data.isSelected}}>{{data}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="info-item">
+            <span>产品类型：</span>
+            <select onchange={{action 'productTypeChange'}}>
+                {{#each productTypes as |data|}}
+                <option value="{{data.id}}" selected={{data.isSelected}}>{{data.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="info-item">
+            <span>优先级：</span>
+            <input type="number" step="1" min="1" max="10000" id="priority" value={{result.priority}}>
+        </div>
+        <div class="info-item">
+            <span>输入数据路径：</span>
+            <input class="info-item-url" type="text" value={{result.tifPath}}>
+            <button class="info-item-btn" {{action 'selectFolder' 'orginal'}}>...</button>
+        </div>
+        <div class="info-item">
+            <span>输出数据路径：</span>
+            <input class="info-item-url" type="text" value={{result.outputPath}}>
+            <button class="info-item-btn" {{action 'selectFolder' 'result'}}>...</button>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <button {{action 'confirmUserInfo'}}>确定</button>
+        <button {{action 'cancelUserInfo'}}>取消</button>
+    </div>
+</div>

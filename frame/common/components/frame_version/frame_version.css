@@ -1,0 +1,75 @@
+.frame-version-size {
+  width: 800px;
+  height: 550px;
+}
+
+.frame-version-modal-header {
+  padding: 10px;
+}
+
+.frame-version-modal-body {}
+
+.frame-version-releasenote-size {
+  width: 800px;
+  height: 550px;
+}
+
+.frame-version-releasenote-modal-header {
+  padding: 10px;
+}
+
+.frame-version-releasenote-modal-body {
+  padding: 10px;
+  max-height: 600px;
+  overflow: auto;
+}
+
+.frame-version {
+  padding: 10px;
+}
+
+.frame-version .title-img {
+  height: 100px;
+  margin: 0 auto;
+  background-size: 100% 100%;
+}
+
+.frame-version .system-info {}
+
+.frame-version .system-info::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.frame-version .left-info {
+  width: 100%;
+  float: left;
+}
+
+.frame-version .left-info p{
+  display:inline-block;
+  width: 49%;
+}
+
+.frame-version .histroic-version {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.frame-version .alert {
+  width: 100%;
+  float: right;
+  padding: 0;
+}
+
+.frame-version .sub-module {}
+
+.frame-version .module-table {}
+
+.frame-version .module-table td,
+.frame-version .module-table th {
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

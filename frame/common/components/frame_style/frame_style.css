@@ -1,0 +1,12 @@
+.frame-style-child input {
+    font-size: 12px;
+}
+
+.frame-style-child label {
+    font-size: 12px;
+	height: 20px;
+}
+
+.frame-style-input-change input {
+    background-color: red;
+}

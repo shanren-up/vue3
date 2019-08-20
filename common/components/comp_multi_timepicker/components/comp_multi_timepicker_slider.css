@@ -1,0 +1,68 @@
+.comp-multi-timepicker-slider {
+  position: absolute;
+  background: linear-gradient(to right, #337ab7, #498B12);
+  height: 100%;
+  width: 2em;
+  min-width: 10px;
+  max-width: 100%;
+  cursor: move;
+}
+
+.comp-multi-timepicker-slider .left-border.has-color {
+  background-color: #337ab7;
+}
+
+.comp-multi-timepicker-slider .right-border.has-color {
+  background-color: #498B12;
+}
+
+.comp-multi-timepicker-slider .left-border,
+.comp-multi-timepicker-slider .right-border {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  margin-left: -2.5px;
+  cursor: ew-resize;
+}
+
+.comp-multi-timepicker-slider .right-border {
+  left: 100%;
+}
+
+.comp-multi-timepicker-slider .popover-content {
+  white-space: nowrap;
+}
+
+.comp-multi-timepicker-slider:hover .my-popover.top {
+  display: block;
+  margin-left: -60px;
+  left: 50%;
+}
+
+.comp-multi-timepicker-slider .popover.top {
+  top: -42px;
+  left: -30px;
+  /*display: block;*/
+  /* width: 80px; */
+}
+
+.comp-multi-timepicker-slider .popover.top .arrow {
+  left: 50%;
+}
+
+.comp-multi-timepicker-slider .popover.left,
+.comp-multi-timepicker-slider .popover.right {
+  top: -8.5px;
+  left: -68px;
+  display: block;
+}
+
+.comp-multi-timepicker-slider .popover.right {
+  left: 0;
+}
+
+.comp-multi-timepicker-slider .popover.left .arrow,
+.comp-multi-timepicker-slider .popover.right .arrow {
+  top: 50%;
+}

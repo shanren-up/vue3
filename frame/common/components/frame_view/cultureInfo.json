@@ -1,0 +1,34 @@
+{
+    "frame_view_zyzyverticalMeauskyqh": {
+        "en": "Only when there is verticalMeau can switch",
+        "zh": "只有在有verticalMeau时可以切换"
+    },
+    "frame_view_qrzx": {
+        "en": "Confirm cancellation",
+        "zh": "确认注销"
+    },
+    "frame_view_qrtc": {
+        "en": "Confirm exit",
+        "zh": "确认退出"
+    },
+    "frame_download_tool_download": {
+        "en": "Download",
+        "zh": "下载"
+    },
+    "frame_download_tool_name": {
+        "en": "Name",
+        "zh": "名称"
+    },
+    "frame_download_tool_index": {
+        "en": "Index",
+        "zh": "序号"
+    },
+    "frame_download_tool_action": {
+        "en": "Action",
+        "zh": "操作"
+    },
+    "frame_download_tool_description": {
+        "en": "description",
+        "zh": "描述"
+    }
+}

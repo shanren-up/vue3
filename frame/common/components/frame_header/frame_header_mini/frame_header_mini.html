@@ -1,0 +1,29 @@
+
+<div class="frame-login-date">
+    <img class="frame-header-logo" src="plugin/PSMS/img/flow/logo3.png">
+    <span class="frame-header-title"> 算法测试平台</span>
+</div>
+    <ul class="nav nav-tabs frame-header-nav">
+        {{#each menuItems as |item index|}}
+        {{#if item.visible}}
+        <li data-toggle="tooltip" class="{{if item.isActive "active" " "}}"  {{action "clickMenuItem" item}}>
+        <a><li class="{{item.imgClass}}"></li>{{item.name}}</a>
+        </li>
+        {{/if}}
+        {{/each}}
+    </ul>
+<div class="frame-header-operator {{if _hasMoreMeau '' 'position-right'}}">
+
+    <!--<div class="operator-item {{item.type}}">-->
+    <!--&lt;!&ndash; <span>欢迎回来！</span>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="javascript:;"><span class="fa fa-user">管理员用户</span></a>&ndash;&gt;-->
+    <!--</div>-->
+    <!--<button {{action 'modifyPassWord'}}>修改密码</button>-->
+    <!--<button {{action 'setFlow'}}><span class="fa fa-cog">设置</span></button>-->
+    <!--<img class="frame-header-user-img glyphicon glyphicon-user" src="img/user.png"/>-->
+    <!--<span class="frame-header-user-img glyphicon glyphicon-user"></span>-->
+
+    <!--<span class="frame-header-item " {{action 'openDms'}}> <li style="margin-right:5px" class="glyphicon glyphicon-list"></li>数管</span>-->
+    <span class="frame-header-item "> <li style="margin-right:5px" class="glyphicon glyphicon-user"></li>{{userName}}</span>
+    <button {{action 'quitSystem'}}><span  class="frame-header-sign-out fa fa-sign-out">退出</span></button>
+</div>

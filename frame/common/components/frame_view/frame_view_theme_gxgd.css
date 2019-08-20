@@ -1,0 +1,9 @@
+.frame-view-child-loc3 {
+    color: rgba(255, 255, 255, 0.9);
+    top: 40px !important;
+}
+
+.simple-meau .frame-view-child-vertical-meau {
+    bottom: 36px;
+    transition-delay: .01s;
+}

@@ -1,0 +1,63 @@
+jstree修改记录：
+右键菜单配置数据结构增加contextmenutag：
+contextmenuOptions : {
+    "items" : {
+        "新建" : {
+            "label" : "新建",
+            "icon" : false,
+            "contextmenutag" : "root",
+            "action" : function (data) {
+                var inst = $.jstree.reference(data.reference);
+                var obj = inst.get_node(data.reference);
+                //todo handler event
+                alert('新建');
+                //this.sendAction('OnAddTreeNodeContextMenuClick',obj);
+            },
+            "submenu" : {}
+        },
+        "删除" : {
+            "label" : "删除",
+            "icon" : false,
+            "contextmenutag" : "children",
+            "action" : function (data) {
+                var inst = $.jstree.reference(data.reference);
+                var obj = inst.get_node(data.reference);
+                //todo handler event
+                alert('删除');
+                //this.sendAction('OnDeleteTreeNodeContextMenuClick',obj);
+            },
+            "submenu" : {}
+        },
+        "编辑" : {
+            "label" : "编辑",
+            "icon" : false,
+            "contextmenutag" : "root",
+            "action" : function (data) {
+                var inst = $.jstree.reference(data.reference);
+                var obj = inst.get_node(data.reference);
+                //todo handler event
+                alert('编辑');
+                //this.sendAction('OnEditTreeNodeContextMenuClick',obj);
+            },
+            "submenu" : {}
+        }
+    }
+},
+赋值树节点的时候也要增加对应的属性 如：
+var datasource = [];
+for (var i = 0; i < 100; i++) {
+    var item = {};
+    item.id = i;
+    item.text = 'Root' + i;
+    item.contextmenutag = 'root';
+    item.children = [];
+    for (var x = 9900; x < 10000; x++) {
+        var children = {};
+        children.id = x;
+        children.text = 'children' + x;
+        children.contextmenutag = 'children';
+        item.children.pushObject(children);
+    }
+    datasource.pushObject(item);
+}
+this.set('datasource', datasource);

@@ -1,0 +1,32 @@
+.frame-menu-item-bg {
+  background: transparent;
+}
+.frame-menu-item-title {
+  color: #B1DCD5;
+}
+
+.frame-menu-item-bg {
+    width: 80px;
+    height: 51px;
+    padding: 0px;
+    border-radius: 0px;
+    margin: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+.frame-menu-item-title {
+    float: left;
+    width: 40px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 14px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.frame-menu-item-img > img {
+    width: 28px;
+    height: 28px;
+}

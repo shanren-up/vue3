@@ -1,0 +1,18 @@
+.frame-historic-version-size {
+  width: 800px;
+  height: 550px;
+}
+
+.frame-historic-version-header {
+  padding: 10px;
+}
+
+.frame-historic-version-body {
+  padding: 10px;
+  max-height: 600px;
+  overflow: auto;
+}
+
+.frame-historic-version th {
+  text-align: center;
+}

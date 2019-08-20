@@ -1,0 +1,18 @@
+{
+    "comp_select_wxz": {
+        "en": "No choice",
+        "zh": "无选择"
+    },
+    "comp_select_cx": {
+        "en": "Inquire",
+        "zh": "查询"
+    },
+    "comp_select_xz": {
+        "en": "Selected",
+        "zh": "选中"
+    },
+    "comp_select_qb": {
+        "en": "All",
+        "zh": "全部"
+    }
+}

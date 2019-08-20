@@ -1,0 +1,253 @@
+{
+    "tab":[
+        {
+            "color":"#00f",
+            "text":"点标",
+            "tabID":"tab_0",
+            "data": [
+                {
+                    "id": "100",
+                    "creator": "GV.MilItemPoint",
+                    "description": "陆军",
+                    "image": "./mark/militaryMarkConfig/00100.png"
+                },
+                {
+                    "id": "200",
+                    "creator": "GV.MilItemPoint",
+                    "description": "海军",
+                    "image": "./mark/militaryMarkConfig/00200.png"
+                },
+                {
+                    "id": "900",
+                    "creator": "GV.MilItemPoint",
+                    "description": "陆军航空兵",
+                    "image": "./mark/militaryMarkConfig/00900.png"
+                },
+                {
+                    "id": "1000",
+                    "creator": "GV.MilItemPoint",
+                    "description": "侦察兵",
+                    "image": "./mark/militaryMarkConfig/01000.png"
+                },
+                {
+                    "id": "1100",
+                    "creator": "GV.MilItemPoint",
+                    "description": "海军航空兵",
+                    "image": "./mark/militaryMarkConfig/01100.png"
+                },
+                {
+                    "id": "1200",
+                    "creator": "GV.MilItemPoint",
+                    "description": "海军陆战队",
+                    "image": "./mark/militaryMarkConfig/01200.png"
+                },
+                {
+                    "id": "1300",
+                    "creator": "GV.MilItemPoint",
+                    "description": "空降兵",
+                    "image": "./mark/militaryMarkConfig/01300.png"
+                },
+                {
+                    "id": "1400",
+                    "creator": "GV.MilItemPoint",
+                    "description": "特种兵",
+                    "image": "./mark/militaryMarkConfig/01400.png"
+                },
+                {
+                    "id": "1500",
+                    "creator": "GV.MilItemPoint",
+                    "description": "电子对抗兵",
+                    "image": "./mark/militaryMarkConfig/01500.png"
+                },
+                {
+                    "id": "2200",
+                    "creator": "GV.MilItemPoint",
+                    "description": "测绘导航",
+                    "image": "./mark/militaryMarkConfig/02200.png"
+                },
+                {
+                    "id": "2300",
+                    "creator": "GV.MilItemPoint",
+                    "description": "气象水文",
+                    "image": "./mark/militaryMarkConfig/02300.png"
+                },
+                {
+                    "id": "2400",
+                    "creator": "GV.MilItemPoint",
+                    "description": "心理战兵",
+                    "image": "./mark/militaryMarkConfig/02400.png"
+                },
+                {
+                    "id": "2803",
+                    "creator": "GV.MilItemPoint",
+                    "description": "前进指挥所",
+                    "image": "./mark/militaryMarkConfig/02803.png"
+                },
+                {
+                    "id": "4400",
+                    "creator": "GV.MilItemPoint",
+                    "description": "高射炮",
+                    "image": "./mark/militaryMarkConfig/04400.png"
+                },
+                {
+                    "id": "4401",
+                    "creator": "GV.MilItemPoint",
+                    "description": "自行高射炮",
+                    "image": "./mark/militaryMarkConfig/04401.png"
+                },
+                {
+                    "id": "24900",
+                    "creator": "GV.MilItemPoint",
+                    "description": "地面风矢标",
+                    "image": "./mark/militaryMarkConfig/24900.png"
+                },
+                {
+                    "id": "28500",
+                    "creator": "GV.MilItemPoint",
+                    "description": "穿插部(分)队",
+                    "image": "./mark/militaryMarkConfig/28500.png"
+                },
+                {
+                    "id": "38003",
+                    "creator": "GV.MilItemPoint",
+                    "description": "地下核导弹待机库",
+                    "image": "./mark/militaryMarkConfig/38003.png"
+                },
+                {
+                    "id": "38302",
+                    "creator": "GV.MilItemPoint",
+                    "description": "监控站",
+                    "image": "./mark/militaryMarkConfig/38302.png"
+                },
+                {
+                    "id": "38300",
+                    "creator": "GV.MilItemPoint",
+                    "description": "弹道测量站",
+                    "image": "./mark/militaryMarkConfig/38300.png"
+                }
+            ]
+        },
+        {
+            "color": "#f00",
+            "text": "线标",
+            "tabID": "tab_1",
+            "data": [
+                {
+                    "id": "25000",
+                    "creator": "GV.MilItemLine",
+                    "description": "战役突击方向",
+                    "image": "./mark/militaryMarkConfig/25000.png"
+                },
+                {
+                    "id": "25200",
+                    "creator": "GV.MilItemLine",
+                    "description": "进攻方向",
+                    "image": "./mark/militaryMarkConfig/1025200.png"
+                },
+                {
+                    "id": "25203",
+                    "creator": "GV.MilItemLine",
+                    "description": "钳击",
+                    "image": "./mark/militaryMarkConfig/1025203.png"
+                },
+                {
+                    "id": "25204",
+                    "creator": "GV.MilItemLine",
+                    "description": "卷击",
+                    "image": "./mark/militaryMarkConfig/25204.png"
+                },
+                {
+                    "id": "25208",
+                    "creator": "GV.MilItemLine",
+                    "description": "分队攻击、搜索、驱赶行动3",
+                    "image": "./mark/militaryMarkConfig/25208.png"
+                },
+                {
+                    "id": "28400",
+                    "creator": "GV.MilItemLine",
+                    "description": "燃烧武器突击区",
+                    "image": "./mark/militaryMarkConfig/28400.png"
+                },
+                {
+                    "id": "23600",
+                    "creator": "GV.MilItemLine",
+                    "description": "防空兵群阵地",
+                    "image": "./mark/militaryMarkConfig/1023600.png"
+                },
+                {
+                    "id": "25201",
+                    "creator": "GV.MilItemLine",
+                    "description": "不标示突破地段的作战行动",
+                    "image": "./mark/militaryMarkConfig/25201.png"
+                },
+                {
+                    "id": "25205",
+                    "creator": "GV.MilItemLine",
+                    "description": "多箭头",
+                    "image": "./mark/militaryMarkConfig/25205.png"
+                },
+                {
+                    "id": "26900",
+                    "creator": "GV.MilItemLine",
+                    "description": "电子对抗兵群阵地",
+                    "image": "./mark/militaryMarkConfig/1026900.png"
+                },
+                {
+                    "id": "41000",
+                    "creator": "GV.MilItemLine",
+                    "description": "装备、物资征用(集)区",
+                    "image": "./mark/militaryMarkConfig/41000.png"
+                },
+                {
+                    "libid": "49",
+                    "id": "00002",
+                    "creator": "GV.MilItemLine",
+                    "description": "",
+                    "image": "./mark/militaryMarkConfig/GM4900002.png"
+                },
+                {
+                    "libid": "49",
+                    "id": "00005",
+                    "creator": "GV.MilItemLine",
+                    "description": "",
+                    "image": "./mark/militaryMarkConfig/GM4900005.png"
+                },
+                {
+                    "libid":"49",
+                    "id": "00902",
+                    "creator": "GV.MilItemLine",
+                    "description": "",
+                    "image": "./mark/militaryMarkConfig/GM4900902.png"
+                },
+                {
+                    "libid":"49",
+                    "id": "00003",
+                    "creator": "GV.MilItemLine",
+                    "description": "",
+                    "image": "./mark/militaryMarkConfig/GM4900003.png"
+                },
+                {
+                    "libid":"49",
+                    "id": "00901",
+                    "creator": "GV.MilItemLine",
+                    "description": "",
+                    "image": "./mark/militaryMarkConfig/GM4900901.png"
+                }
+            ]
+        },
+        {
+            "color": "#f00",
+            "text": "扩展",
+            "tabID": "tab_2",
+            "data": [
+                {
+                    "id": "other",
+                    "creator": "GV.MilItemOther",
+                    "description": "",
+                    "image": "./mark/militaryMarkConfig/other.png"
+                }
+            ]
+        }
+
+    ]
+}

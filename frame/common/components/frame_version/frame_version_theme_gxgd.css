@@ -1,0 +1,16 @@
+.comp-modal .frame-version-size {
+  color: white;
+}
+
+.frame-version .frame-header-bg-img-rtv {
+  background: url(../../../../img/rtv/rtv-logo.png) no-repeat center;
+}
+
+.frame-version .table-hover>tbody>tr:hover {
+  /* color: #2e599d; */
+  /* background-color: #f5f5f5; */
+}
+
+.frame-version .table-hover>tbody>tr .release-note {
+  color: white;
+}

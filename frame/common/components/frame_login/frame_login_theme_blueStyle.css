@@ -1,0 +1,64 @@
+.frame-login{
+
+}
+
+.frame-login .background-bhz{
+    background-image: url('../../../../img/login/bhz_zhanshi.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color : white;
+}
+
+.frame-login .background-butlersys {
+	background-image: url('../../../../img/login/butlersys_default.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.frame-login .background-ltjk{
+    background-image: url('../../../../img/login/ltjk_default.jpg');
+    background-size: 300%;
+    background-repeat: no-repeat;
+    /* transform: scale(2.5,0.5); */
+    background-position: 50%  50%;
+    color: black;
+}
+
+.frame-login .background-jzxn{
+    background-image: url('../../../../img/login/jzxn_default.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* transform: scale(2.5,0.5); */
+    /* background-position: 50%  50%; */
+    color: #F7EDED;
+}
+
+.frame-login .background-imp{
+    background-image: url('../../../../img/login/imp_default.jpg');
+    background-size: 300%;
+    background-repeat: no-repeat;
+    /* transform: scale(2.5,0.5); */
+    background-position: 50%  50%;
+    color: black;
+}
+
+.background-jzxn .btn-login{
+    background-color: #154879;
+
+}
+
+.background-bhz .btn-login{
+
+    background-color: #115798;
+
+}
+
+.background-ltjk .btn-login{
+    background-color: #D1D8DA;
+
+}
+
+.background-imp .btn-login{
+    background-color: #dde2ea;
+}

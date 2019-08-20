@@ -1,0 +1,107 @@
+.bs-table-container table.bs-table.table thead tr {
+  background-color: #236FAB;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+/* 加载动画时背景颜色 */
+
+.bs-table-container .fixed-table-loading {
+  background-color: #1F497A
+}
+
+.bs-table-container .fixed-table-header {
+  background-color: #236FAB;
+}
+
+.bs-table-container table tbody {
+  color: #FFF;
+}
+
+.bs-table-container .bootstrap-table .table:not(.table-condensed),
+.bs-table-container .bootstrap-table .table:not(.table-condensed)>tbody>tr>td,
+.bs-table-container .bootstrap-table .table:not(.table-condensed)>tbody>tr>th,
+.bs-table-container .bootstrap-table .table:not(.table-condensed)>tfoot>tr>td,
+.bs-table-container .bootstrap-table .table:not(.table-condensed)>tfoot>tr>th,
+.bs-table-container .bootstrap-table .table:not(.table-condensed)>thead>tr>td {
+  padding: 5px;
+}
+
+.bs-table-container table tbody tr:nth-child(2n+1) {
+  background-color: rgba(7, 46, 79, 0.3);
+}
+
+.bs-table-container table tbody tr:nth-child(2n) {
+  background-color: rgba(4, 26, 43, 0.3);
+}
+
+.bs-table-container table tbody tr:hover,
+.bs-table-container .fixed-table-container tbody .selected td {
+  background-color: #1E5F93;
+}
+
+.bs-table-container .table>tbody>tr>td,
+.bs-table-container .table>tbody>tr>th,
+.bs-table-container .table>tfoot>tr>td,
+.bs-table-container .table>tfoot>tr>th,
+.bs-table-container .table>thead>tr>td,
+.bs-table-container .table>thead>tr>th {
+  border-top: 1px dashed rgba(255, 255, 255, 0.15);
+}
+
+.bs-table-container thead {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.bs-table-container .bootstrap-table .table>thead>tr>th,
+.bs-table-container .bootstrap-table .table {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.bs-table-container table tbody td.has-text-padding {
+  padding-left: 8px;
+}
+
+.fixed-table-pagination .pagination>li>a {
+  height: 30px;
+  /* width: 30px; */
+  padding: 6px 11px;
+  margin: 0px 5px;
+  font-size: 12px;
+  color: #333333;
+  border-radius: 0px !important;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.fixed-table-pagination .pagination-detail {
+  color: white;
+}
+
+.fixed-table-pagination .pagination>li:first-child>a,
+.fixed-table-pagination .pagination>li:last-child>a {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #CCC;
+}
+
+.fixed-table-pagination .pagination>.active>a,
+.fixed-table-pagination .pagination>.active>a:focus,
+.fixed-table-pagination .pagination>.active>a:hover,
+.fixed-table-pagination .pagination>.active>span,
+.fixed-table-pagination .pagination>.active>span:focus,
+.fixed-table-pagination .pagination>.active>span:hover {
+  color: white;
+  background-color: #1296DB;
+}
+
+.fixed-table-pagination .pagination-detail .dropdown-toggle,
+.fixed-table-pagination .pagination-detail .dropdown-toggle:hover,
+.fixed-table-pagination .pagination-detail .open .dropdown-toggle {
+  padding: 6.5px 2.5px;
+  background-color: #1296DB;
+  border-color: rgba(45, 85, 118, 0.3);
+  color: #FFF;
+}

@@ -1,0 +1,140 @@
+/**
+* lib/jQuery-contextMenu/dist/jquery.contextMenu.js 源码做过修改，需要更新插件的时候，记得替换
+* 此封装插件comp_contextmenu，可以随意改
+*/
+
+1. 模版说明（按照配置文件模版.json配置菜单）
+[{
+        "key": "queryAlarm",  //惟一标识同一层上，如果不需要用到key，可以省略此标识,执行类中如果有KEY，执行类中返回值是 key，如果无key，就返回guid 
+        "name": "aa", //标签名字
+        "icon": "", //图标类名
+        "visible": true,//是否显示
+        "url": "plugin/topo/views/topo_view_zhejiang_trans/queryAlarm.js",//映射的执行类，如果有子菜单，可以省略
+        "subMenu": [{
+                "key": "queryAlarm1",
+                "name": "aa-子菜单1",
+                "icon": "",
+                "visible": true,
+                "url": "plugin/topo/views/topo_view_zhejiang_trans/queryAlarm1.js"
+            },
+            {
+                "key": "queryAlarm2",
+                "name": "aa-子菜单2",
+                "icon": "",
+                "visible": true,
+                "url": "plugin/topo/views/topo_view_zhejiang_trans/queryAlarm2.js"
+            }
+        ]
+    }
+]
+2. 手动添加菜单，传入对象，调用接口addExtendMenu
+
+    ①增加原生对象 
+            this.menuControl.addExtendMenu({
+                        key:'queryAlarm', //手动添加，如果不涉及到覆盖模版中的菜单，请去掉。如果需要覆盖模版的右键，请设置为和模版一样的key值，并在loadMenuCompleted完成后执行
+                        name: 'aa',
+                        callback:function(){ console.log('点击执行')}, //有子菜单，可以忽略
+                        items: {
+                            "key随意写，同一层不要重复": {
+                               callback:function(){ console.log('test')},
+                                name: '查看aa'
+                            },
+                            "key1随意写，同一层不要重复": {
+                                callback:function(){ console.log('test')},
+                                name: '查看aa'
+                            }
+                        }
+                    });
+   ②增加模版类型(注意：1.传入的是对象，不是数组 2. 两个参数，第二个参数是true)
+
+
+                    this.menuControl.addExtendMenu({
+                    "key": "queryAlarm", //手动添加，如果不涉及到覆盖模版中的菜单，请去掉。如果需要覆盖模版的右键，请设置为和模版一样的key值，并在loadMenuCompleted完成后执行
+                    "name": "查看aa", //标签名字
+                    "icon": "", //图标类名
+                    "visible": true, //是否显示
+                    "url": "plugin/topo/views/topo_view_test/topo_view_test_rightMenu/queryAlarm.js", //映射的执行类，如果有子菜单，可以省略
+                    "subMenu": [{
+                            "key": 1,
+                            "name": "aa-子菜单1",
+                            "icon": "",
+                            "visible": true,
+                            "url": "plugin/topo/views/topo_view_test/topo_view_test_rightMenu/queryAlarm1.js"
+                        },
+                        {
+                            "key": 2,
+                            "name": "aa-子菜单2",
+                            "icon": "",
+                            "visible": true,
+                            "url": "plugin/topo/views/topo_view_test/topo_view_test_rightMenu/queryAlarm2.js"
+                        }
+                    ]
+                }, true);
+
+3. icon 说明
+
+   自己项目中 定义类，如下
+
+   .context-menu-icon-good:before {
+		content: url(123.png);
+	}
+
+   模版写法：
+  "icon": "context-menu-icon-good"
+
+4.执行映射类模版（可以以此类为基类，做基础）
+
+define(function() {
+    "use strict";
+    return Ember.Object.extend({
+        command: function(key, options) {
+            console.log(key+'未重写command');
+        },
+        //是否显示 默认true ：显示
+        visible: function(key, options) {
+            return true;
+        },
+         //是否可用 默认false：可用
+        disabled: function(key, options) {
+            return false;
+        }
+    });
+});
+
+
+5. 调用右键控件
+   ①引入  'comp_contextmenu'
+   ②实例化     
+                
+                //配置模版路径
+            init: function() {
+                this._super();
+                this.menuControl = contextMenu.create();
+                //最好放到init中，其中映射的执行类，加载异步
+                //createMenu 参数为地址，或着requrie请求回来的对象
+                this.menuControl.createMenu("json!plugin/topo/views/topo_view_test/topo_view_test_rightMenu/test.json");
+            },
+                
+  
+           willInsertElement: function() {
+                //@param 可以传入DOM的ID 或着CLASS（Class前加.，ID前加#），也可以传入EMBER 对象
+                this.menuControl.bindDom(this.topoView);
+
+                //注册事件，在哪注册也可以，在打开整个menu之前执行此方法，也可以不注册事件，默认打开
+                this.menuControl.beforeOpenMenu=function(opt){   
+                       //可以进行一些打开前的传参 或着 判断之类                   
+                       return true;//展示菜单
+                       return false;//不展示菜单
+                }
+                this.menuControl.loadMenuCompleted=function(){
+                    //这个标识加载模版（createMenu） 完成了。
+                    //如果涉及到覆盖模版的菜单，可以在这手动调用 this.menuControl.addExtendMenu进行覆盖模版菜单
+                    //如果只是增加菜单，无需覆盖的话， this.menuControl.addExtendMenu方法不需要放到此完成事件中
+                }
+            },
+
+            // 设置传递参数   ----执行类中，通过options.getParam() 获取
+            this.menuControl.setParam('oh no!');
+
+            // 设置所属控件   ----执行类中，通过options.getOwerControl()获取，与setParam类似，只是业务上的区分
+            this.menuControl.setOwerControl(dataTable);

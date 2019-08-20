@@ -1,0 +1,124 @@
+ <div style="height: 400px;width: 400px"> 
+{{ember-table
+   rowHeight=26
+  hasFooter=false
+  columns=tableColumns
+  content=tableContent
+}}
+ </div>
+
+define(
+    [
+        'app',
+        'configs',
+        'text!./bhz_over_view.html',
+        'css!./bhz_over_view.css',
+        'css!../../style/bhz_global.css',
+        'ember_table',
+    ],
+    function (app, configs, template) {
+
+    "use strict";
+
+    app.BhzOverViewComponent = Ember.Component.extend({
+            layout : Ember.ExtendHelper.compileEx(template),
+            init : function () {
+                this._super();
+            },
+            randomNumber : function (mrandomSeed) {
+                var seed = (9301 + 49297) % 233280;
+                var rnd = seed / 233280;
+                return rnd;
+            },
+
+            randomDate : function (start, end) {
+                var random = this.randomNumber(6);
+                return new Date(start.getTime() + random * (end.getTime() - start.getTime()));
+            },
+            colors : [{
+                    data : 'status',
+                    title : '状态标识'
+                }, {
+                    data : 'professional',
+                    title : '专业'
+                }, {
+                    data : 'ne_type',
+                    title : '网元类型'
+                }, {
+                    data : 'ne_name',
+                    title : '网元名称'
+                }, {
+                    data : 'object_type',
+                    title : '告警对象类型'
+                }, {
+                    data : 'object_name',
+                    title : '告警对象名称'
+                }, {
+                    data : 'object_status',
+                    title : '告警对象状态'
+                }, {
+                    data : 'alarm_level',
+                    title : '告警级别'
+                }, {
+                    data : 'alarm_title',
+                    title : '告警标题'
+                }
+            ],
+            colNum : 1,
+            rowNum : 35,
+            tableColumns : Ember.computed(function () {
+
+                var indexColumn = Ember.Table.ColumnDefinition.create({
+                        savedWidth : 150,
+                        textAlign : 'text-align-left',
+                        headerCellName : 'key',
+                        contentPath : 'key'
+                    });
+
+                var dateColumn = Ember.Table.ColumnDefinition.create({
+                        savedWidth : 150,
+                        textAlign : 'text-align-left',
+                        headerCellName : 'Date',
+                        getCellContent : function (row) {
+                            return row.get('date').toDateString();
+                        }
+                    });
+
+                var columns = this.colors.map(function (color, index) {
+                        return Ember.Table.ColumnDefinition.create({
+                            color : color,
+                            headerCellName : color.title,
+                            contentPath : color.data
+                        });
+                    });
+                columns.unshift(indexColumn, dateColumn);
+                return columns;
+
+            }),
+
+            tableContent : Ember.computed(function () {
+                var self = this;
+                var content = [];
+                for (var i = 0; i < self.rowNum; i++) {
+                    content.pushObject(Ember.Object.create({
+                            init : function () {
+                                this.key = i;
+
+                                this.date = self.randomDate(new Date(2000, 1, 5), new Date(2012, 2, 2));
+                                for (var t = 0; t < self.colors.length; t++) {
+                                    this[self.colors[t].data] = self.randomNumber(100);
+                                }
+                            }
+                        }));
+                }
+                return content;
+            }),
+            didInsertElement : function () {},
+            willDestroyElement : function () {},
+            templateName : "overview"
+        });
+
+    var alarmMode = Ember.Object.extend();
+
+    return alarmMode;
+});

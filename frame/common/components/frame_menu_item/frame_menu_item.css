@@ -1,0 +1,41 @@
+.frame-menu-item-bg {
+  width: 80px;
+  height: 40px;
+  padding: 0px;
+  /* border-radius: 5px; */
+  /* margin: 5px; */
+  float: left;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.frame-menu-item-title {
+  float: left;
+  width: 40px;
+  height: 38px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.frame-menu-item-img {
+  float: left;
+  width: 35px;
+  height: 38px;
+  padding: 7px;
+}
+
+.frame-menu-item-img img {
+  width: 24px;
+  height: 24px;
+}
+
+.frame-dropdown-meau-header-tootip {}
+
+.frame-dropdown-meau-header .frame-dropdown-menu {
+  top: -2px;
+  left: -46px;
+  min-width: 110px;
+}

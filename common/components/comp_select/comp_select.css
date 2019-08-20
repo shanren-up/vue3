@@ -1,0 +1,18 @@
+.comp-select .search-btn {
+    text-align: left;
+}
+
+.comp-select div .caret {
+    position: absolute;
+    top: 13px;
+    right: 5px;
+}
+
+.comp-select .dropdown-menu > .active > a,
+.comp-select .dropdown-menu > .active > a:focus,
+.comp-select .dropdown-menu > .active > a:hover {
+    text-decoration: none;
+    color: #000;
+    outline: 0;
+    background-color: transparent;
+}

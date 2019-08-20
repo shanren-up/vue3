@@ -1,0 +1,131 @@
+@import (once) "../../../../style/theme.less";
+.frame-header-bg {
+    width: 100%;
+    padding: 5px;
+    min-height: 63px;
+}
+.frame-header-bg-img {
+    width: 223px;
+    height: 43px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.frame-header-search  input{
+    float : left;
+    width: 200px;
+    height: 32px;
+    outline:none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left:8px;
+}
+.frame-header-search  span{
+    float : left;
+    padding: 8px;
+    margin-top:-1px;
+
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.frame-header-bg1 {
+    background: #BED9F3;
+    padding-bottom: 4px;
+    min-height: 60px;
+}
+
+.frame-header-child-loc1 {
+    min-width: 368px;
+}
+
+.frame-header-child-loc1-1 {
+    min-width: 152px;
+    left: 39%;
+}
+
+.frame-header-child-loc2 {
+    width: 280px;
+    right: 8%;
+}
+
+.frame-header-child-loc2 > ul {
+    float: right;
+    &> li {
+        float: left;
+        width: 85px;
+        margin: 0px;
+        &> a {
+            padding: 0px;
+        }
+    }
+}
+
+.frame-header-child-loc2 li.active .frame-menu-item-title{
+    &,&:hover, &:focus {
+        font-weight: 700;
+        font-size: 14px;
+        color: @color_white;
+        text-decoration: none;}
+}
+
+.frame-header-child-loc3 {
+    width: 8%;
+    right: 0%;
+}
+
+.frame-header-menu-container a:link,a:visited{color:@font_gray3; text-decoration:none;}
+.frame-header-menu-container a:hover{color:@font_black;}
+
+.frame-header-menu-container a.abtn{
+	position:absolute;
+	top: 0px;
+	display:block;
+	height: 54px;
+	width:6px;
+	overflow:hidden;
+	text-indent:-20000px;
+	background: url(../../../../img/arrow3.gif) 0px center no-repeat;
+}
+.frame-header-menu-container a.aleft{
+	left: 0px;
+}
+.frame-header-menu-container a.agrayleft{
+	cursor:default;
+	background-position:-12px center;
+}
+.frame-header-menu-container a.aright{
+	right: 0px;
+	background-position:-6px center;
+}
+.frame-header-menu-container a.agrayright{
+	cursor:default;
+	background-position:-18px center;
+}
+
+.frame-header-menu-container {
+    width: 280px;
+    position: relative;
+    li{
+        float : left;
+    }
+    .frame-header-menu-scrollcontainer{
+        width: 268px;
+        height: 63px;
+        overflow:hidden;
+        position:relative;
+        left: 6px;
+        ul{
+            position:absolute;
+            padding-left: 0px;
+            width: 20000px;
+        }
+    }
+}
+
+.frame-header-search{
+    float:left;
+    margin-top: 8px;
+    div{
+        float : left;
+    }
+}

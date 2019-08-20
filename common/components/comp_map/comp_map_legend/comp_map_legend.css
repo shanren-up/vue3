@@ -1,0 +1,104 @@
+.map-legend {
+    position: absolute;
+    width: 160px;
+    padding-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 20;
+}
+
+.map-legend-show-station {
+    width: 175px;
+    padding-left: 0;
+    padding-top: 2px;
+}
+
+.map-legend-non-station {
+    padding-left: 10px;
+}
+
+.map-legend span {
+    display: inline-block;
+}
+
+.map-legend ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.map-legend ul:first-child {
+    margin-right: 20px;
+}
+
+.map-legend li {
+    list-style: none;
+}
+
+.map-legend-show-station ul:last-child li {
+    line-height: 39px;
+}
+
+.map-legend-non-station ul li {
+    line-height: 26px;
+}
+
+.map-legend ul span:first-child {
+    margin-right: 5px;
+}
+
+.map-legend-show-station ul:first-child span:first-child {
+    width: 35px;
+    height: 35px;
+}
+
+.map-legend-non-station ul span:first-child,
+.map-legend-show-station ul:last-child span:first-child {
+    width: 10px;
+    height: 10px;
+}
+
+.map-legend-non-station ul:first-child span:first-child {
+    border-radius: 5px;
+}
+
+.map-legend-show-station ul:first-child span:last-child {
+    vertical-align: 10px;
+}
+
+.map-legend-show-station ul:first-child li:nth-child(1) span:first-child {
+    background: url(../../../../img/resources/gis/site2g/0.png) no-repeat 0px 0px/contain;
+}
+
+.map-legend-show-station ul:first-child li:nth-child(2) span:first-child {
+    background: url(../../../../img/resources/gis/site3g/0.png) no-repeat 0px 0px/contain;
+}
+
+.map-legend-show-station ul:first-child li:nth-child(3) span:first-child {
+    background: url(../../../../img/resources/gis/site4g/0.png) no-repeat 0px 0px/contain;
+}
+
+.map-legend-non-station ul:first-child li:nth-child(1) span:first-child {
+    background: #46D2CF;
+}
+
+.map-legend-non-station ul:first-child li:nth-child(2) span:first-child {
+    background: #DC7CE7;
+}
+
+.map-legend-non-station ul:first-child li:nth-child(3) span:first-child {
+    background: #4ED800;
+}
+
+.map-legend ul:last-child li:nth-child(1) span:first-child {
+    background: #f00;
+}
+
+.map-legend ul:last-child li:nth-child(2) span:first-child {
+    background: #FFA500;
+}
+
+.map-legend ul:last-child li:nth-child(3) span:first-child {
+    background: #FFFF00;
+}

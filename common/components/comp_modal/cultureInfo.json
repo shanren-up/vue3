@@ -1,0 +1,22 @@
+{
+    "comp_modal_jt": {
+        "en": "Screenshot",
+        "zh": "截图"
+    },
+    "comp_modal_zdh": {
+        "en": "Max",
+        "zh": "最大化"
+    },
+    "comp_modal_xxxx": {
+        "en": "details",
+        "zh": "详细信息"
+    },
+    "comp_modal_hy": {
+        "en": "reduction",
+        "zh": "还原"
+    },
+    "comp_modal_gb": {
+        "en": "Close",
+        "zh": "关闭"
+    }
+}

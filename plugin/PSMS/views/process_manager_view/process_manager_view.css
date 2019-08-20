@@ -1,0 +1,95 @@
+.tab-pane > .ember-view{
+    height: 100%;
+}
+.process-manager-view{
+    width: 100%;
+    height: 100%;
+    /*color: #ccc;*/
+    padding: 0 25px 20px 20px;
+}
+.process-manager-view .content-operator{
+    margin-bottom:10px;
+}
+.process-manager-view .manager-header{
+        font-size: 18px;
+    border-left: 4px solid #069697;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+.process-manager-view .manager-content{
+    padding: 10px 0 0 0;
+    height: calc(100% - 70px);
+}
+.process-manager-view .manager-content .content-operator .start-time .input-append,
+.process-manager-view .manager-content .content-operator .end-time .input-append{
+    width: 170px !important;
+}
+.process-manager-view .manager-content .content-operator .start-time .input-append button,
+.process-manager-view .manager-content .content-operator .end-time .input-append button{
+    min-width: 30px !important;
+}
+.process-manager-view .manager-content .content-operator >div{
+    display: inline-block;
+}
+.process-manager-view .manager-content .content-operator input[type='radio']{
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+.process-manager-view .manager-content .content-operator input.process-id{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 120px;
+}
+.process-manager-view .manager-content .content-operator select{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 120px;
+}
+.process-manager-view .manager-content .content-operator button{
+/*     border: 1px solid #ccc;
+    border-radius: 3px;
+    min-width: 50px;
+    background-color: #fff;
+    color: #000; */
+}
+.process-manager-view .manager-content .content-table table tbody td button{
+    /* border: 1px solid #ccc; */
+    /* border-radius: 3px; */
+    /* min-width: 50px; */
+    /* background-color: #fff; */
+    /* color: #000; */
+}
+.process-manager-view .manager-content .content-table table tbody td button:disabled{
+    color: #CCCCCC;
+}
+.process-manager-view .manager-content .content-slider{
+     font-size: 18px;
+    border-left: 4px solid #069697;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+.process-manager-view .manager-content .content-slider .slider-icon{
+    float: right;
+    margin-right: 20px;
+    font-size: 20px;
+}
+ .comp-flow-param-size{
+    width: 900px;
+}
+.comp-flow-param-header{
+    line-height: 35px;
+    height: 35px;
+    padding: 0px 5px;
+    background-color: #CCC;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+}
+.comp-flow-param-body{
+    padding: 10px !important;
+    height: 800px;
+    overflow-x: hidden;
+}
+.comp-flow-param-body .comp-flow-param{
+    height: 780px;
+    position: relative;
+}

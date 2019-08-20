@@ -1,0 +1,16 @@
+<div class="process-taskflow-view">
+        {{#if showFlow}}
+            <div class="content">
+                {{#each flowData as |item index| }}
+                    <div class="content-flow" ondblclick={{ action "openTask" item}}>
+                        <img class="flow-img" src="plugin/PSMS/img/flow/FlowIcon/CustomProcess.png"/>
+                        <br>
+                        <label>{{item.flowname}}</label>
+                        <img class="del-img" {{action "deleteFlow" item.id}} src="plugin/PSMS/img/flow/close2.png"  />
+                    </div>
+                {{/each}}
+            </div>
+        {{else}}
+            {{process-task-manager-view flowData = selectflow}}
+        {{/if}}
+</div>

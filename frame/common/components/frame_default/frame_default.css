@@ -1,0 +1,40 @@
+.frame_default_welcome{
+    text-align: center;
+    /*background: url(../../../../img/login/main.jpg);*/
+    background: url(../../../../plugin/PSMS/img/flow/background-show.jpg);
+    height: 100%;
+    width: 100%;
+}
+.frame_default_welcome .frameCanvas{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.frame_default_welcome .welcome_title{
+    margin-top: 12%;
+}
+.frame_default_welcome .welcome_title p{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-family: STHeiti;
+}
+.frame_default_welcome .welcome_button{
+    margin-top: 530px;
+}
+.frame_default_welcome .welcome_button button{
+    background-color:rgb(40,143,212);
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 25px;
+    border: none;
+    border-width: 0;
+    outline: none;
+    letter-spacing: 5px;
+}
+.frame_default_welcome .welcome_button button:hover{
+
+}

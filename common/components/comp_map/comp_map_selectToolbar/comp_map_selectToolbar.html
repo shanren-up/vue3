@@ -1,0 +1,13 @@
+﻿<div class="map-selectToolbar ">
+    <button type="button" class="button-toggle {{if leftSide " button-toggle-leftSide "}}">{{ oloc 'comp_map_selectToolbar_qx' }}</button>
+    <div class="box">
+        <ul>
+            {{#each items as |item|}}
+            <li style="cursor: hand" {{action item.action}} tooltip={{item.item.tooltip}}>
+                <img src="{{item.image}}" title="{{item.tooltip}}"><span>{{item.name}}</span>
+            </li>
+            {{/each}}
+        </ul>
+        <button class="button-complete" {{action 'drawCompleted'}}>{{ oloc 'comp_map_selectToolbar_wc' }}</button>
+    </div>
+</div>

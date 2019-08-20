@@ -1,0 +1,14 @@
+<div>
+    <p>
+        <button class="btn btn-lg btn-info" {{action 'execute'}}>执行</button>
+        输入方法名称{{input value=methodName }}
+        输入参数以英文逗号分隔{{input value=args }}
+    </p>
+    <div style={{height5}}>
+    {{comp-treeview  data=dataSource name='tree'
+     checkNode='checkNode' plugins='checkbox' 
+     checkboxOptions=checkboxConfig }}
+    </div>
+    <p>执行结果</p>
+    <div class='result'>{{output}}</div>
+</div>

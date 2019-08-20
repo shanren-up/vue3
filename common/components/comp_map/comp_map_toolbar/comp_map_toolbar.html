@@ -1,0 +1,9 @@
+﻿<div class="map_tool">
+    <ul>
+        {{#each items as |item index|}}
+        <li class="normal" style="cursor: hand" {{action item.action}} {{action 'itemHover' index on='mouseEnter' }} {{action 'itemHoverLeave' index on='mouseLeave' }} tooltip={{item.item.tooltip}}>
+            <img src="{{item.image}}" title="{{item.tooltip}}">
+        </li>
+        {{/each}}
+    </ul>
+</div>

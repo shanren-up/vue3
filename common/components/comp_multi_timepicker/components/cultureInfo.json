@@ -1,0 +1,90 @@
+{
+    "comp_multi_timpicker_edit_jssj": {
+        "en": "End Time",
+        "zh": "结束时间"
+    },
+    "comp_multi_timepicker_slider_model_xsrhh": {
+        "en": "hours is reuired",
+        "zh": "需输入hh"
+    },
+    "comp_multi_timpicker_edit_kssj": {
+        "en": "Start Time",
+        "zh": "开始时间"
+    },
+    "comp_multi_timpicker_edit_xsxysrzzsh0": {
+        "en": "You need to enter a positive integer or 0 for hours",
+        "zh": "小时需要输入正整数或0"
+    },
+    "comp_multi_timpicker_edit_qsr0-59dzs": {
+        "en": "Please enter an integer from 0-59",
+        "zh": "请输入0-59的整数"
+    },
+    "comp_multi_timpicker_edit_dzs": {
+        "en": "integer",
+        "zh": "的整数"
+    },
+    "comp_multi_timpicker_edit_cfw": {
+        "en": "mintues out of range",
+        "zh": "分钟超范围"
+    },
+    "comp_multi_timpicker_edit_kssjxxyjssj": {
+        "en": "The start time must be less than the end time",
+        "zh": "开始时间需小于结束时间"
+    },
+    "comp_multi_timpicker_edit_cfw，qsr0-59dzs": {
+        "en": "out of range,Please enter an integer from 0-59",
+        "zh": "超范围，请输入0-59的整数"
+    },
+    "comp_multi_timpicker_edit_xysrzzsh0": {
+        "en": "You need to enter a positive integer or 0",
+        "zh": "需要输入正整数或0"
+    },
+    "comp_multi_timpicker_edit_fz": {
+        "en": "minutes",
+        "zh": "分钟"
+    },
+    "comp_multi_timpicker_edit_mz": {
+        "en": "seconds",
+        "zh": "秒钟"
+    },
+    "comp_multi_timepicker_slider_xgsj": {
+        "en": "Change Time",
+        "zh": "修改时间"
+    },
+    "comp_multi_timpicker_edit_xscfw，qsr0-24dzs": {
+        "en": "Hours out of range,Please enter an integer from 0-24",
+        "zh": "小时超范围，请输入0-24的整数"
+    },
+    "comp_multi_timpicker_edit_ds": {
+        "en": "timing",
+        "zh": "定时"
+    },
+    "comp_multi_timpicker_edit_qsr0": {
+        "en": "Please enter 0",
+        "zh": "请输入0"
+    },
+    "comp_multi_timpicker_edit_qx": {
+        "en": "cancel",
+        "zh": "取消"
+    },
+    "comp_multi_timepicker_slider_model_gsdzfc": {
+        "en": "in hh:mm format",
+        "zh": "格式的字符串"
+    },
+    "comp_multi_timpicker_edit_bc": {
+        "en": "save",
+        "zh": "保存"
+    },
+    "comp_multi_timpicker_edit_qsr0-24dzs": {
+        "en": "Please enter an integer from 0-24",
+        "zh": "请输入0-24的整数"
+    },
+    "comp_multi_timepicker_slider_model_xsrhh:mmgsdzfc": {
+        "en": "Enter a string in hh:mm:ss format",
+        "zh": "需输入hh:mm:ss格式的字符串"
+    },
+    "comp_multi_timpicker_edit_xscfw": {
+        "en": "minutes out of range",
+        "zh": "小时超范围"
+    }
+}

@@ -1,0 +1,80 @@
+define(
+    [
+        'app',
+        'text!./comp_XXX.html',
+        'css!./comp_XXX.css',
+        '../../../common/components/comp_msgbox/comp_msgbox', //引用提示框组件
+    ],
+
+    function(app, template, comp_msgbox) {
+
+        "use strict";
+
+        app.BhzCompXXXComponent = Ember.Component.extend({
+            layout: Ember.ExtendHelper.compileEx(template),
+            templateName: 'comp-XXX',
+            init: function() {
+                this._super();
+            },
+            actions: {            
+                //1.弹出“成功”提示
+                showSuccess: function() {
+                    var msgbox = comp_msgbox.create();
+                    msgbox.showSuccess(
+                        "……操作成功！",
+                        function (result) {
+                            //回调，处理后续逻辑
+                        }
+                    );                    
+                },
+                //2.弹出“失败”提示
+                showError: function() {
+                    var msgbox = comp_msgbox.create();
+                    msgbox.showFailure(
+                        "……操作失败！",
+                        function (result) {
+                            if (result) {
+                                //点击"重试"按钮
+                            } else {
+                                //点击"取消"按钮
+                            }
+                        }
+                    );  
+                },
+                //2.弹出“错误”提示
+                showError: function() {
+                    var msgbox = comp_msgbox.create();
+                    msgbox.showError(
+                        "……输入错误！",
+                        function (result) {
+                            //处理点击“确认”后逻辑
+                        }
+                    );  
+                },
+                //3.弹出“警告”提示
+                showAlert: function() {
+                    var msgbox = comp_msgbox.create();
+                    msgbox.showAlert(
+                        "……不能为空！",
+                        function (result) {
+                            //处理点击“确认”后逻辑
+                        }
+                    );  
+                },
+                //4.弹出“确认”提示
+                showConfirm: function() {
+                    var msgbox = comp_msgbox.create();
+                    msgbox.showConfirm(
+                        "如果……将会导致……确认执行操作吗？",
+                        function (result) {
+                            if (result) {
+                                //点击"确认"按钮
+                            } else {
+                                //点击"取消"按钮
+                            }
+                        }
+                    );  
+                }
+            }
+        });
+    });

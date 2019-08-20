@@ -1,0 +1,20 @@
+<div class="fixed frame-view-container {{if isDefaultMeau '' 'simple-meau'}} {{_meauType}} {{verticalMeauEmptyClassName}}">
+	<div class="fixed frame-view-child-loc1">
+		{{component headerComponentName name="frameHeader" _isShowVerMeau=_isShowVerMeau clickMenuItem=(action "clickMenuItem") appInfoIns=appInfoIns toggleMeauType='toggleMeauType' }}
+	</div>
+	{{#if _isShowNav}}
+	<div class="fixed frame-view-child-loc2">
+		{{component 'frame-navigation' menuItems=menuItems clickMenuItem=(action "clickNavigation")}}
+	</div>
+	{{/if}} {{#if _isShowVerMeau}}
+	<div class="fixed frame-view-child-vertical-meau " style={{verticalMeauTopStyle}}>
+		{{frame-vertical-meau name="verticalMeau" menuItems=menuItems isDefaultMenu=isDefaultMeau clickMenuItem="clickNavigation" }}
+	</div>
+	{{/if}}
+	<div class="fixed frame-view-child-loc3 {{if _isShowVerMeau 'has-vertical-meau'}}" style={{containerTopStyle}}>
+		{{component 'frame-container' name='frameContainer' loginCheck="loginCheck" showViewChange="showViewChange" }}
+	</div>
+</div>
+<div>
+	{{component 'frame-footer'}}
+</div>

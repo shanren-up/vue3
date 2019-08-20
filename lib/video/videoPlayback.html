@@ -1,0 +1,134 @@
+<HTML>
+
+<HEAD>
+    <meta http-equiv=X-UA-Compatible content=IE=EmulateIE8>
+    <TITLE>多视频控件demo</TITLE>
+    <script language="javascript" type="text/javascript">
+        //var a1 = new ActiveXObject("TESTOCX1.testOCX1Ctrl.1");
+
+        function getVideoObj() {
+            var name = "BOCO_VIDEOPLAY";
+            if (window.document[name]) {
+                return window.document[name];
+            }
+            if (navigator.appName.indexOf("Microsoft Internet") === -1) {
+                if (document.embeds && document.embeds[name])
+                    return document.embeds[name];
+            } else {
+                return document.getElementById(name);
+            }
+        }
+
+        function play(ip, port, user, psw, cameraIndex) {
+            var ocx = getVideoObj();
+            var cameraIndexNew = parseInt(cameraIndex, 10) - 1;
+            try {
+                ocx.BOCO_RealPlay(ip, port, user, psw, cameraIndexNew.toString());
+            } catch (e) {
+            }
+        }
+
+        function stop() {
+            var ocx = getVideoObj();
+            try {
+                ocx.BOCO_StopRealPlay();
+            } catch (e) {
+            }
+        }
+
+        function opensound() {
+            var ocx = getVideoObj();
+            try {
+                ocx.BOCO_OpenSound();
+            } catch (e) {
+            }
+        }
+
+        function closesound() {
+            var ocx = getVideoObj();
+            try {
+                ocx.BOCO_CloseSound();
+            } catch (e) {
+            }
+        }
+
+        function startvoice() {
+            var ocx = getVideoObj();
+            try {
+                ocx.BOCO_StartVoiceCom();
+            } catch (e) {
+            }
+        }
+
+        function stoppvoice() {
+            var ocx = getVideoObj();
+            try {
+                ocx.BOCO_StopVoiceCom();
+            } catch (e) {
+            }
+        }
+
+        function getRecordFile(ip, port, user, psw, cameraIndex,jsonCmd){
+            var ocx = getVideoObj();
+            try {
+                ocx.BOCO_GetRecordFile(ip, port, user, psw, cameraIndex,jsonCmd);
+            } catch (e) {
+            }
+        }
+
+        //获取历史录像文件结果返回
+        function OnBOCO_GetRecordFileCompleted(strServerIP,lChannelId,lResult,strResult){
+            window.parent.getRecordFileCompleted(strServerIP,lChannelId,lResult,strResult);
+        }
+
+        function startPlaybackByFile(fileName){
+            var ocx = getVideoObj();
+            try {
+                ocx.BOCO_StartPlaybackByFile(fileName);
+            } catch (e) {
+            }
+        }
+
+        function playbackCtrl(ctrlType,ctrlCode){
+            var ocx = getVideoObj();
+            try {
+                ocx.BOCOL_PlaybackCtrl(ctrlType,ctrlCode);
+            } catch (e) {
+            }
+        }
+
+        function startPlaybackByTime(ip, port, user, psw, cameraIndex,jsonCmd) {
+            var ocx = getVideoObj();
+            try {
+                cameraIndex = parseInt(cameraIndex, 10) - 1;
+                ocx.BOCO_StartPlaybackByTime(ip, port, user, psw, cameraIndex, jsonCmd);
+            } catch (e) {
+            }
+        }
+
+        function stopStream() {
+            var ocx = getVideoObj();
+            try {
+                ocx.BOCO_StopCutStreamPlay();
+            } catch (e) {
+            }
+        }
+    </script>
+
+    <SCRIPT type="text/javascript" FOR="BOCO_VIDEOPLAY"
+            EVENT="OnBOCO_GetRecordFileEvent(strServerIP,lChannelId,lResult,strResult)" >
+        OnBOCO_GetRecordFileCompleted(strServerIP,lChannelId,lResult,strResult);
+    </SCRIPT>
+</HEAD>
+
+<BODY style="margin:0;background: #000 url(../../plugin/performanceMonitor/img/guangxi_radiotv_network_view/program_overview/videoDefault.jpg) no-repeat;background-size:100% 100%;">
+<OBJECT ID="BOCO_VIDEOPLAY" WIDTH='100%' HEIGHT='100%' CLASSID="CLSID:FC370DB5-CC88-4C42-AF3A-F2FBAAFC1083"
+        CODEBASE="/BOCO_PLAYOCX.cab">
+    <PARAM NAME="_Version" VALUE="65536"/>
+    <PARAM NAME="_ExtentX" VALUE="2646"/>
+    <PARAM NAME="_ExtentY" VALUE="1323"/>
+    <PARAM NAME="_StockProps" VALUE="0"/>
+</OBJECT>
+</BODY>
+
+</HTML>

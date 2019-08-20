@@ -1,0 +1,24 @@
+.lte-comp-page-unselected{
+   -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.lte-comp-page-span{
+    cursor: pointer;
+}
+
+.lte-comp-page-right{
+    float: right;
+    height: 34px;
+    vertical-align: middle;
+    /* position: absolute; */
+    right: 0px;
+}
+
+
+
+
+

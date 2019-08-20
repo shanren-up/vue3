@@ -1,0 +1,5 @@
+<div>
+    <button class="btn btn-lg btn-info" {{action 'query'}}>查询所选列表</button>
+    {{comp-table columns=columns dataSource=dataSource tableConfig=tableConfig eventConfig=eventConfig clickCellResult='clickCellResult' exeucteResult='exeucteResult'}}
+    <div class='result'>{{output}}</div>
+</div>

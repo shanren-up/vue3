@@ -1,0 +1,18 @@
+<div class="comp-ht-table-secondary-filter-container-sort">
+    <button type="button" id="asc-button" class="btn btn-primary btn-xs" {{action "ascCommand" }}>{{ oloc 'comp_ht_table_secondary_filter_container_sx' }}</button>
+    <button type="button" id="desc-button" class="btn btn-primary btn-xs" {{action "descCommand" }}>{{ oloc 'comp_ht_table_secondary_filter_container_jx' }}</button>
+</div>
+{{input type="text" value=searchText size="20" key-up='updateSearchText'
+    class="comp-ht-table-secondary-filter-container-search" placeholder="{{ oloc 'comp_ht_table_secondary_filter_container_qsrmc' }}"}}
+<ul class="comp-ht-table-secondary-filter-container-list-group">
+    {{#each filterItems as |filterItem index|}}
+         <li class="comp-ht-table-secondary-filter-container-list-group-item">
+             {{input type="checkbox" checked=filterItem.isChecked}} {{filterItem.text}}
+         </li>
+    {{/each}}
+</ul>
+<div class="comp-ht-table-secondary-filter-container-footer">
+    <button type="button" class="btn btn-primary btn-xs ok-button" {{action "okCommand" }}>{{ oloc 'comp_ht_table_secondary_filter_container_qr' }}</button>
+    <button type="button" class="btn btn-primary btn-xs clear-button" {{action "clearCommand" }}>{{ oloc 'comp_ht_table_secondary_filter_container_qc' }}</button>
+    <button type="button" class="btn btn-primary btn-xs cancel-button" {{action "cancelCommand" }}>{{ oloc 'comp_ht_table_secondary_filter_container_gb' }}</button>
+</div>

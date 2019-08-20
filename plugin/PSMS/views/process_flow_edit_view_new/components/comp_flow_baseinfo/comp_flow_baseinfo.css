@@ -1,0 +1,44 @@
+.comp-flow-baseinfo{
+    font-size:14px;
+}
+.comp-flow-baseinfo-size{
+    width: 450px;
+    height: 500px;
+}
+.comp-flow-baseinfo-body{
+    /* padding: 0 !important; */
+}
+.comp-flow-baseinfo-header{
+    line-height: 35px;
+    height: 35px;
+    padding: 0px 5px;
+    background-color: #CCC;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+}
+
+.comp-flow-baseinfo .foot-btn{
+    height:50px;
+    padding-left: 200px;
+}
+.comp-flow-baseinfo .foot-btn button{
+    border:none;
+    width:70px;
+    height:30px;
+    margin-left:20px;
+}
+.comp-flow-baseinfo select{
+    font-size: 14px !important;
+    width: 100%;
+    height: 31px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.comp-flow-baseinfo textarea{
+    font-size: 14px !important;
+    width: 100%;
+    height: 80px;
+}
+.comp-flow-baseinfo .form-group{
+    margin-top: 20px;
+}

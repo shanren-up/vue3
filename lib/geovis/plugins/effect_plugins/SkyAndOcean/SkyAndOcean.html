@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>SkyAndOcean</title>
+	</head>
+	<body>
+		 <div class="skyAndOcean-container">
+			<div class="title-container">
+				<span class="title-icon"></span>
+				<h4 class="title">特效插件</h4>
+				<span id='close_widget' class="close"></span>
+			</div>
+			<div class="config-container">
+				<div class="sky-container">
+					<h5 class="little-title">天空大气特效配置</h5>
+					<div class="effect-switch">
+						<span class="config-title">特效开关：</span>
+						<a id="sky_switch" class="switch" data="false"></a>
+					</div>
+					<div class="effect-switch">
+						<span class="config-title">光照开关：</span>
+						<a id="lighting_switch" class="switch" data="false"></a>
+					</div>
+					<div class="lighting-config">
+						<span class="config-title">时间配置：</span>
+						<div class="date">
+							<div >
+								<input id="date_year" class="date-input" type="Number"></input><span class="date-title">年</span>
+								<input id="date_month" class="date-input" type="Number"></input><span class="date-title">月</span>
+								<input id="date_day" class="date-input" type="Number"></input><span class="date-title">日</span>
+							</div>
+							<div class="hour">
+								<span class="date-title">小时:</span>
+								<span class="mark">0</span>
+								<input id="hour_input" class="hour-input" type="range"></input>
+								<span class="mark">24</span>
+							</div>
+						</div>
+					</div>
+					<div class="effect-switch">
+						<span  class="config-title">云显隐：</span>
+						<a id="cloud_switch" class="switch" data="false"></a>
+					</div>
+					<div class="cloud-type">
+						<span class="config-title">云类型：</span>
+						<select id='cloud_type_select' class="cloud-type-select">
+							<option value='0'>卷积云</option>
+							<option value='1'>毛卷云</option>
+							<option value='2'>层云</option>
+							<!-- <option value='3'>中积云</option> -->
+							<option value='4' selected="selected">浓积云</option>
+							<!-- <option value='5'>浓积云（使用高辨率文理）</option> -->
+							<option value='6'>积雨云</option>
+							<!-- <option value='7'>层积云</option> -->
+							<!-- <option value='8'>层积云粒子</option> -->
+							<option value='9'>高积云</option>
+							<option value='10'>沙尘</option>
+						</select>
+					</div>
+					<div class="cloud-height">
+						<span class="config-title">云高度：</span>
+						<span class="mark" style="float: right;">米</span>
+						<input id='cloud_height' class="cloud-input" type="Number" value=2000></height>
+					</div>
+				</div>
+				<div class="ocean-container">
+					<h5 class="little-title">海洋特效配置</h5>
+					<div class="effect-switch">
+						<span class="config-title">特效开关：</span>
+						<a id='ocean_switch' class="switch" data="false"></a>
+					</div>
+					<div class="wave-size effect-switch">
+						<span class="config-title">浪花大小：</span>
+						<span class="mark">小</span>
+						<input id='wave_size_input' class="wave-size-input" type="range" value=100></input>
+						<span class="mark">大</span>
+					</div>
+				</div>
+				<div class="wind-container">
+					<h5 class="little-title">风特效配置</h5>
+					<div class="wind-direction">
+						<span class="config-title">风向：</span>
+						<span class="mark" style="float: right;">度</span>
+						<input id="wind_direction" class="input" value= 0 type="Number"></input>
+					</div>
+					<div class="wind-level">
+						<span class="config-title">风等级：</span>
+						<span class="mark" style="float: right;">级</span>
+						<input id="wind_level" class="input" value= 3 type="Number"></input>
+					</div>
+				</div>
+			</div>
+			
+		 </div>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+.frame-user-p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  color: white;
+  margin: 0px;
+  width: 48px;
+  /* height: 20px; */
+  text-align: center;
+  overflow-wrap: break-word;
+  white-space: nowrap;
+}
+
+.frame-user-tooltip-stacknav {
+  margin-top: -6px;
+  border: 1px solid #027373;
+  border-radius: 3px;
+  padding: 0px;
+  margin: 0px;
+  width: 188px;
+  background-color: #4990E2;
+}
+
+.frame-user-tooltip-stacknav>li {
+  border-bottom: 1px solid #34B1B1;
+  margin-bottom: 0px;
+}
+
+.frame-user-img {
+  float: left;
+  width: 23px;
+  height: 40px;
+  padding: 8px 0px;
+  margin-top: 10px;
+  background-image: url('../../../../img/frame_header/user_tnms.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.frame-user-tooltip-stacknav>li>a {
+  margin: 0px;
+  padding: 4px 15px;
+  border-radius: 0;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.frame-user-tooltip-stacknav>li>a:hover {
+  color: #333;
+}

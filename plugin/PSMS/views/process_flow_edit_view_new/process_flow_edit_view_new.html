@@ -1,0 +1,74 @@
+<div class="process-flow-edit-view-new">
+    <div class="west">
+        <ul class="nav nav-tabs">
+            <li class="active west-head">
+                <a href="#modules" data-toggle="tab">
+                    流程定制
+                </a>
+            </li>
+            <li class="west-head"><a href="#flows" data-toggle="tab">流程编辑</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="modules">
+                <div class="modules-title" data-toggle="collapse"
+                        data-target="#baseTool">
+                    基础工具
+                </div>
+                <div id="baseTool" class="collapse in">
+                        {{#each baseToolData as |item| }}
+                            <div class="modules-item" draggable="true" ondragstart={{action 'ondragstart' item}}>
+                            <img class="modules-item-img" src="{{item.imgUrl}}"/>{{item.blockLabel}}
+                            </div>
+                        {{/each}}
+                </div>
+                <div  class="modules-title" data-toggle="collapse"
+                        data-target="#actionTool">
+                    处理工具
+                </div>
+                <div id="actionTool" class="collapse in toola">
+                    <div  class="modules-title-s" data-toggle="collapse"
+                            data-target="#actionModules">
+                        2A产品算法
+                    </div>
+                    <div id="#actionModules" class="collapse in modules">
+                        {{#each actionModulesData as |item| }}
+                        <div class="modules-item" draggable="true"  ondragstart={{action 'ondragstart' item}}>
+                            <img class="modules-item-img" src="{{item.imgSrc}}"/>{{item.modulename}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="flows">
+                {{#each hisFlows as |item| }}
+                    <div class="flow-item" >
+                        <div {{action 'showFlowChart' item}}  class="flow-item-title">{{item.flowname}}</div><img class="flow-item-del" {{action 'deleteFlow' item}}   src="plugin/PSMS/img/deleteFlow.png"/>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+
+    <div class="east">
+        <div class="head">
+            <div class="head-title">
+                <img src="plugin/PSMS/img/lcbjq.png" />流程编辑器
+            </div>
+            <button type="button" class="head-new btn btn-info" {{action 'newFlow'}}>新建</button>
+            <button type="button" class="head-save btn btn-info" {{action 'saveFlow'}}>保存</button>
+            <button type="button" class="head-align btn btn-info" {{action 'alignFlow'}}>对齐</button>
+            {{#if baseInfo}}
+                <span>模板名称:{{baseInfo.name}}</span>
+            {{/if}}
+        </div>
+        <div class="body">
+            <div class="left">
+                {{jsplumb-figure name='flowChartView' setParam='setParam' dbClickLine='dbClickLine' deleteBlock='deleteBlock' chartHeight=845 showDel=true draggable=true showSelect=true dataSource=flowUIData}}
+            </div>
+            <div class="right">
+                <div class="right-title">参数设置</div>
+                {{ comp-flow-param  name='paramView' }}
+            </div>
+        </div>
+    </div>
+</div>

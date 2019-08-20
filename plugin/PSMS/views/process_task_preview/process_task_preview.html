@@ -1,0 +1,54 @@
+<div class="process-task-preview" ondragover = {{action 'allowDrop'}} ondrop={{action 'ondrop'}}>
+    {{comp-file-list classNames="file-list" previewFile = 'previewFile' pathValue = path}}
+    <div class="task-preview-content">
+        <div class="task-preview-header">
+           <img src="plugin/PSMS/img/dinwei.png"/> <span class="process-task-preview-type" {{action 'toggleType'}}>{{showType}}</span>
+        </div>
+        <div class="task-preview-body">
+            <ul class="nav nav-tabs" role="tablist">
+                <!--<li role="presentation" class="active"><a href="#preview" aria-controls="home" role="tab" data-toggle="tab">预览</a></li>-->
+                <!--<li role="presentation"><a href="#log" aria-controls="profile" role="tab" data-toggle="tab">日志</a></li>-->
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="preview">
+                    {{#if showXml}}
+                        <textarea id="previewArea"></textarea>
+                    {{/if}}
+                    {{#if showImg}}
+                        <img id="previewImg" src="{{previewImgSrc}}"/>
+                        {{#if showLegend}}
+                            <div class="legend-preview">
+                                <!--<div class="legend-title">图例</div>-->
+                                <div class="legend-item"><div class="legend-cor legend-cor-1"></div><div class="legend-preview-text">非掩膜区域</div></div>
+                                <div class="legend-item"><div class="legend-cor legend-cor-2"></div><div class="legend-preview-text">阴影区域</div></div>
+                                <div class="legend-item"><div class="legend-cor legend-cor-3"></div><div class="legend-preview-text">叠掩区域</div></div>
+                                <div class="legend-item"><div class="legend-cor legend-cor-4"></div><div class="legend-preview-text">低相干区域</div></div>
+                                <div class="legend-item"><div class="legend-cor legend-cor-5"></div><div class="legend-preview-text">水域</div></div>
+                            </div>
+                        {{/if}}
+                    {{/if}}
+                    {{#if showTiff}}
+                        <div id="previewTiff" style="width:{{tiffWidth}}px;height:{{tiffHeight}}px"></div>
+                    {{/if}}
+                </div>
+                <div role="tabpanel" class="tab-pane" id="log">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {{#if showCompare}}
+    <div class="compare-img-bg" >
+        {{#each compareImgs as |item index|}}
+        <div class="compare-img-content" style="top:{{item.clientY}}px;left:{{item.clientX}}px">
+            <div class="compare-img-header" draggable="true" ondragstart={{action 'ondragstart' index}}>
+            <div class="compare-title" title="{{item.name}}">{{item.name}}</div>
+            <img class="compare-close" {{action "closeCompareItem" index}}  src="img/close.png" />
+        </div>
+        <img class="compare-img-body" draggable="true" ondragstart={{action 'ondragstart' index}} src="{{item.compareImgSrc}}"  />
+        </div>
+    {{/each}}
+    </div>
+    {{/if}}
+
+</div>

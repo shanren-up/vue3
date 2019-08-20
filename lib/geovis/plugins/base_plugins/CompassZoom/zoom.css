@@ -1,0 +1,35 @@
+.geovis-earth-control {
+  display: grid;
+  grid-auto-flow: row;
+  align-items: center;
+  grid-row-gap: gapWidth;
+  position: relative; 
+  right: size;
+  top: 48px;
+  z-index: 999;
+  float: right;
+}
+#geovis-earth-mode {
+  border: none;
+  position: relative; 
+  top: 48px;
+  display: grid;
+  grid-column-gap: gapWidth;
+  grid-auto-flow: column; 
+  display: none;
+}
+#to2D{
+  float:right;
+}
+#to3D{
+  float:right;
+}
+#toMap2D{
+  float:right;
+}
+#拓扑{
+  float:right;
+}
+#时间轴{
+  float:right;
+}

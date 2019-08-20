@@ -1,0 +1,148 @@
+{
+    "data": [
+        {
+            "id": "label",
+            "creator": "GV.Label",
+            "description": "文字",
+            "image": "./mark/basicMarkConfig/text.png"
+        },
+        {
+            "id": "place",
+            "creator": "GV.Place",
+            "description": "标记",
+            "image": "./mark/basicMarkConfig/pin.svg"
+        },
+        {
+            "id": "imageoverlay",
+            "creator": "GV.ImageOverLay",
+            "description": "图片",
+            "image": "./mark/basicMarkConfig/image.png"
+        },
+        {
+            "id": "model",
+            "creator": "GV.Model",
+            "description": "模型",
+            "image": "./mark/basicMarkConfig/model.png"
+        },
+        {
+            "id": "circle",
+            "creator": "GV.Circle",
+            "description": "圆",
+            "image": "./mark/basicMarkConfig/circle.png"
+        },
+        {
+            "id": "cylinder",
+            "creator": "GV.Cylinder",
+            "description": "圆柱",
+            "image": "./mark/basicMarkConfig/cylinder.png"
+        },
+        {
+            "id": "sector",
+            "creator": "GV.Sector",
+            "description": "扇形",
+            "image": "./mark/basicMarkConfig/sector.png"
+        },
+        {
+            "id": "semicylinder",
+            "creator": "GV.Semicylinder",
+            "description": "半圆柱",
+            "image": "./mark/basicMarkConfig/semicylinder.png"
+        },
+        {
+            "id": "ellipse",
+            "creator": "GV.Ellipse",
+            "description": "椭圆",
+            "image": "./mark/basicMarkConfig/ellipse.png"
+        },
+        {
+            "id": "ellipsoid",
+            "creator": "GV.Ellipsoid",
+            "description": "椭球",
+            "image": "./mark/basicMarkConfig/ellipsoid.png"
+        },
+        {
+            "id": "sphere",
+            "creator": "GV.Sphere",
+            "description": "球体",
+            "image": "./mark/basicMarkConfig/sphere.png"
+        },
+        {
+            "id": "cone",
+            "creator": "GV.Cone",
+            "description": "圆锥",
+            "image": "./mark/basicMarkConfig/cone.png"
+        },
+        {
+            "id": "polygon",
+            "creator": "GV.Polygon",
+            "description": "多边形",
+            "image": "./mark/basicMarkConfig/polygon.png"
+        },
+        {
+            "id": "polyline",
+            "creator": "GV.Polyline",
+            "description": "线段",
+            "image": "./mark/basicMarkConfig/polyline.png"
+        },
+        {
+            "id": "cube",
+            "creator": "GV.Cube",
+            "description": "长方体",
+            "image": "./mark/basicMarkConfig/cube.png"
+        },
+        {
+            "id": "icon",
+            "creator": "GV.Icon",
+            "description": "点图标",
+            "image": "./mark/basicMarkConfig/icon.png"
+        },
+        {
+            "id": "spline",
+            "creator": "GV.Spline",
+            "description": "样条曲线",
+            "image": "./mark/basicMarkConfig/spline.png"
+        },
+        {
+            "id": "fireeffect",
+            "creator": "GV.FireEffect",
+            "description": "火特效",
+            "image": "./mark/basicMarkConfig/fireeffect.png"
+        },
+        {
+            "id": "smokeeffect",
+            "creator": "GV.SmokeEffect",
+            "description": "烟特效",
+            "image": "./mark/basicMarkConfig/smokeeffect.png"
+        },
+        {
+            "id": "raineffect",
+            "creator": "GV.RainEffect",
+            "description": "雨特效",
+            "image": "./mark/basicMarkConfig/raineffect.png"
+        },
+        {
+            "id": "pointeffect",
+            "creator": "GV.PointEffect",
+            "description": "点特效",
+            "image": "./mark/basicMarkConfig/pointeffect.png"
+        },
+        {
+            "id": "geomesh",
+            "creator": "GV.GeoMesh",
+            "description": "自定义几何体对象(支持地理坐标系)",
+            "image": "./mark/basicMarkConfig/geomesh.png"
+        },
+        {
+            "id": "localmesh",
+            "creator": "GV.LocalMesh",
+            "description": "自定义几何体对象(支持笛卡尔坐标系)",
+            "image": "./mark/basicMarkConfig/localmesh.png"
+        },
+        {
+            "id": "pointcloud",
+            "creator": "GV.PointCloud",
+            "description": "点云",
+            "image": "./mark/basicMarkConfig/pointCloud.png"
+        }
+    ]
+}

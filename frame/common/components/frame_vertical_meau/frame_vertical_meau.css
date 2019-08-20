@@ -1,0 +1,84 @@
+.frame-vertical-meau {
+  text-align: center;
+  min-width: 5em;
+  z-index: 999;
+}
+
+.frame-vertical-meau .meau-header {
+  height: 50px;
+  white-space: nowrap;
+  position: relative;
+  z-index: 10;
+}
+
+.frame-vertical-meau .meau-container {
+  top: 50px;
+  height: auto;
+  bottom: 0;
+}
+
+.frame-view-container.meau-type2 .meau-container.absolute{
+  top: 0;
+}
+
+.frame-view-container.meau-type2 .meau-header{
+  height:0;
+}
+/*
+.frame-view-container.meau-type3 .meau-container.absolute {
+  top: 40px;
+}
+
+.frame-view-container.meau-type3 .simple-meau-header.meau-header {
+  height: 40px;
+}
+
+.frame-vertical-meau .simple-meau-header {
+  height: 60px;
+}
+
+.frame-view-container.meau-type3 .meau-container {
+  top: 100px;
+}
+*/
+.frame-vertical-meau .sub-meau-container{
+  position:relative;
+  /* left: 10px; */
+  /* top:-1px; */
+}
+
+.frame-vertical-meau .meau-title {
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+.frame-vertical-meau .meau-title .big-title {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.frame-vertical-meau .meau-container {
+  text-align: left;
+}
+
+.frame-dropdown-meau-vertical.default-meau .frame-dropdown-menu {
+  top: -14px;
+  left: -3px;
+}
+
+.frame-dropdown-meau-vertical .frame-dropdown-menu {
+  top: -15px;
+  left: -4px;
+}
+
+.frame-vertical-meau-tooltip.right .tooltip-arrow {
+  left: -14px;
+  border-width: 5px 0px 5px 5px;
+  border-left-color: #CCC;
+}
+
+.frame-vertical-meau-tooltip.right.default-meau .tooltip-arrow {
+  left: -11px;
+  margin-top: -2px;
+}

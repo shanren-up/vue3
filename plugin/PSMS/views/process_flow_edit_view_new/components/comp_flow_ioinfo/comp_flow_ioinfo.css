@@ -1,0 +1,83 @@
+.comp-flow-ioinfo{
+    font-size:14px;
+    height: 500px;
+}
+.comp-flow-ioinfo .param-box{
+    width:47%;
+    float: left;
+    height: 100%;
+}
+.comp-flow-ioinfo .param-arrow{
+    width:6%;
+    background: url("./../../../../img/arrow.png") no-repeat  10px 40px;
+    height: 100%;
+    float: left;
+}
+.comp-flow-ioinfo  .param-body{
+    height:calc(100% - 50px);
+    padding-top: 50px;
+}
+.comp-flow-ioinfo .param-foot{
+    height:50px;
+    padding-left: 1000px;
+}
+.comp-flow-ioinfo .param-td1{
+    width:150px;
+}
+.comp-flow-ioinfo .param-td2{
+    width:300px;
+}
+.comp-flow-ioinfo .param-td3{
+    width: 100px;
+}
+.comp-flow-ioinfo .param-td4{
+    width: 100px;
+}
+.comp-flow-ioinfo table {
+    border-collapse:collapse;
+}
+
+.comp-flow-ioinfo table tr:first-child{
+    font-weight: 600;
+}
+.comp-flow-ioinfo table td{
+     border:#ccc solid 1px;
+     padding:5px 0 5px 15px;
+ }
+.comp-flow-ioinfo button{
+    border:none;
+    width:70px;
+    height:30px;
+}
+.comp-flow-ioinfo .param-foot button{
+     margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.comp-flow-ioinfo-size{
+    width: 1400px;
+    height: 500px;
+}
+.comp-flow-ioinfo-body{
+    /* padding: 0 !important; */
+    height: 100%;
+}
+.comp-flow-ioinfo-header{
+    line-height: 35px;
+    height: 35px;
+    padding: 0px 5px;
+    background-color: #CCC;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+}

@@ -1,0 +1,8 @@
+.frame-download-tool a {
+  color: #FFF;
+}
+
+.frame-download-tool a:hover,
+.frame-download-tool a:focus {
+  text-decoration: underline;
+}

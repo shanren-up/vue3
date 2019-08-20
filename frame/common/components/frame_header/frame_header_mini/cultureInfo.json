@@ -1,0 +1,42 @@
+{
+    "frame_header_mini_dlsz": {
+        "en": "Login Duration",
+        "zh": "登录时长"
+    },
+    "frame_header_mini_tc": {
+        "en": "Exit",
+        "zh": "退出"
+    },
+    "frame_header_mini_gly": {
+        "en": "administrator",
+        "zh": "管理员"
+    },
+    "frame_header_mini_zx": {
+        "en": "Sign out",
+        "zh": "注销"
+    },
+    "frame_header_mini_dlsz：": {
+        "en": "Login Duration:",
+        "zh": "登录时长："
+    },
+    "frame_header_mini_xs": {
+        "en": "hours",
+        "zh": "小时"
+    },
+    "frame_header_mini_nh": {
+        "en": "Hello",
+        "zh": "你好"
+    },
+    "frame_header_mini_t": {
+        "en": "day",
+        "zh": "天"
+    },
+    "frame_header_mini_fz": {
+        "en": "minutes",
+        "zh": "分钟"
+    },
+    "frame_header_mini_zxyh": {
+        "en": "online users",
+        "zh": "在线用户"
+    }
+}

@@ -1,0 +1,14 @@
+
+  <ul class='nav nav-tabs nav-stacked frame-search-tooltip-container'>
+    {{#if isTyping}}
+       {{#each hisSearchWords as |hisWord|}}
+         <li {{action "changeWord" hisWord}}><a><span>{{hisWord}}</span></a></li>
+       {{/each}}
+    {{else}}
+     {{#each searchViewMenuItems as |item|}}
+       {{#each item.searchResult as |searchItem|}}
+        <li {{action "showView" item.menu searchItem.parameters}}><a><span>{{searchItem.content}}</span></a></li>
+      {{/each}}
+    {{/each}}
+    {{/if}}
+  </ul>

@@ -1,0 +1,11 @@
+::-webkit-scrollbar { width: 0; }
+.gv-markplugin-container{
+    position: absolute;
+    height: 792px;
+    color: #fff;
+    padding: 0px;
+    top: 0;
+    width: 412px;
+    right: 58px;
+    overflow-y: auto;
+}

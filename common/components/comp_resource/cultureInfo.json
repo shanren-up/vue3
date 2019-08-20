@@ -1,0 +1,38 @@
+{
+    "comp_resource_modal_wfdyzyck": {
+        "en": "wufadiaoyongziyuanchakan",
+        "zh": "无法调用资源查看"
+    },
+    "comp_resource_modal_wfdyzyck/xgym。": {
+        "en": "wufadiaoyongziyuanchakan/xiugaiyemian。",
+        "zh": "无法调用资源查看/修改页面。"
+    },
+    "comp_resource_modal_xgym。": {
+        "en": "xiugaiyemian。",
+        "zh": "修改页面。"
+    },
+    "comp_resource_modal_cs": {
+        "en": "test",
+        "zh": "测试"
+    },
+    "comp_resource_modal_csyc": {
+        "en": "canshuyoucuo",
+        "zh": "参数有错"
+    },
+    "comp_resource_modal_xgym": {
+        "en": "xiugaiyemian",
+        "zh": "修改页面"
+    },
+    "comp_resource_modal_csyc！wfdyzyck/xgym。": {
+        "en": "canshuyoucuo！wufadiaoyongziyuanchakan/xiugaiyemian。",
+        "zh": "参数有错！无法调用资源查看/修改页面。"
+    },
+    "comp_resource_modal_xgcc": {
+        "en": "xiugaichuancan",
+        "zh": "修改传参"
+    },
+    "comp_resource_modal_ckcc": {
+        "en": "chakanchuancan",
+        "zh": "查看传参"
+    }
+}

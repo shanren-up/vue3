@@ -1,0 +1,123 @@
+{
+  //卫星类型
+  "processType": [
+    {
+      "id": "1",//识别id，自定义
+      "name": "TH2卫星",//卫星名
+      "name2": "TH2",//别名
+      "file": "cos,meta.xml"//卫星初始输入文件类型
+    }
+  ],
+  //模板类型
+  "flowType": [
+    {
+      "id": "flow",//识别id，自定义
+      "name": "影像专业处理流程"//名称
+    }
+  ],
+  //模板初始输入数据类型
+  "startKey": [
+    {
+      "title": "主影像",
+      "type":"url",
+      "name": "masterimg",
+      "sourceId":""
+    },
+    {
+      "title": "主影像XML",
+      "type":"url",
+      "name": "masterxml",
+      "sourceId":""
+    },
+    {
+      "title": "辅影像",
+      "type":"url",
+      "name": "slaveimg",
+      "sourceId":""
+    },
+    {
+      "title": "辅影像XML",
+      "type":"url",
+      "name": "slavexml",
+      "sourceId":""
+    }
+  ],
+  //任务创建文件夹配置
+  "fileDir": {
+    "origDir": "E:\\IPS\\upload", //输入文件夹
+    "resultDir": "E:\\IPS\\upload" //输出文件夹
+  },
+  //模板状态类型
+  "flowStatus": [
+    {
+      "id": "FAILED",
+      "name": "Failed"
+    },
+    {
+      "id": "SUCCESSED",
+      "name": "Successed"
+    },
+    {
+      "id": "FINISHED",
+      "name": "Finished"
+    },
+    {
+      "id": "CONTINUE",
+      "name": "Continue"
+    },
+    {
+      "id": "PAUSED",
+      "name": "Paused"
+    },
+    {
+      "id": "RUNNING",
+      "name": "Running"
+    },
+    {
+      "id": "WAITING",
+      "name": "Waiting"
+    }
+  ],
+  //模板基础工具配置
+  "baseTools": [
+    {
+      "blockId": "state_start",
+      "blockLabel": "开始",
+      "sourceAnchor": "RightMiddle",
+      "imgUrl": "plugin/PSMS/img/flow/left/node1.png",
+      "imgSrc": "plugin/PSMS/img/flow/node1.png",
+      "singleton": true,
+      "flowId":"state_start",
+      "type": "base"
+    },
+    {
+      "blockId": "state_end",
+      "blockLabel": "结束",
+      "targetAnchor": "LeftMiddle",
+      "imgUrl": "plugin/PSMS/img/flow/left/node4.png",
+      "imgSrc": "plugin/PSMS/img/flow/node4.png",
+      "singleton": true,
+      "flowId":"state_end",
+      "type": "base"
+    }
+  ],
+  //外发任务--初始产品级别
+  "productLevel":["L1B","RAWDSM","DSM","DOM"],
+  //外发任务--生成产品级别
+  "finelProductLevel":["DSM","DOM"],
+  //外发任务--产品类型
+  "productType":[
+    {
+      "id":"1",
+      "name":"标准单景"
+    },
+    {
+      "id":"2",
+      "name":"标准分幅"
+    },
+    {
+      "id":"3",
+      "name":"镶嵌图"
+    }
+  ]
+}

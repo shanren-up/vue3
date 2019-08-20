@@ -1,0 +1,26 @@
+{
+    "frame_user_yhdlcg": {
+        "en": "User login is successful",
+        "zh": "用户登录成功"
+    },
+    "frame_remind_sd": {
+        "en": "Received",
+        "zh": "收到"
+    },
+    "frame_remind_tx": {
+        "en": "reminder",
+        "zh": "条提醒"
+    },
+    "frame_remind_txs": {
+        "en": "reminders",
+        "zh": "条提醒"
+    },
+    "frame_remind_qnt": {
+        "en": "Here are the first {0}",
+        "zh": "下面是前{0}条"
+    },
+    "frame_remind_adapter_wdl": {
+        "en": "Is not logged in now",
+        "zh": "现在未登录"
+    }
+}

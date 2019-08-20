@@ -1,0 +1,10 @@
+<div class="meau-header {{if isDefaultMenu 'default-meau-header' 'simple-meau-header'}}">
+    <!--<img src="img/logo/logo.png" />-->
+</div>
+<div class="meau-container absolute" onmousewheel={{action "onScroll"}} onmouseenter={{action "onEnter"}} onmouseleave={{action "onLeave"}}>
+    {{#if isDefaultMenu}}
+        {{frame-vertical-default dataSource=dataSource clickMenuItem="clickMenuItem"}}
+    {{else}}
+        {{frame-vertical-simple dataSource=dataSource clickMenuItem="clickMenuItem"}}
+    {{/if}}
+</div>

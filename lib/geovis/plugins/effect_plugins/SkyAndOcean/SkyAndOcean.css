@@ -1,0 +1,212 @@
+.skyAndOcean-container {
+	position: absolute;
+	top: 70px;
+	left: 60px;
+	width: 220px;
+	height: 560px;
+	border: 1px solid #0c7e9b;
+	background-color: rgba(16, 16, 16, 0.3);
+	color: #ffffff;
+}
+
+.skyAndOcean-container .title-container {
+	margin-bottom: 14px;
+	padding: 10px 0px;
+	/* background-color: rgba(16, 16, 16, 0.5); */
+}
+
+
+
+.skyAndOcean-container .sky-container,.ocean-container {
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+	border-bottom: #0c7e9b dashed 1px;
+}
+
+.skyAndOcean-container .title-icon {
+	float: left; 
+	margin-right: 6px;
+	width: 8px;
+	height: 20px;
+	background-color: #22b9e8;
+}
+
+.skyAndOcean-container .title {
+	display: inline-block;
+	margin: 0;
+	line-height: 18px;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.skyAndOcean-container .title-container .close {
+	float: right;
+	margin-right: 16px;
+	padding: 2px;
+	border: 1px solid #cccccc;
+	background: url(./image/closeX.png) no-repeat;
+	background-size:100% 100%; 
+	background-origin: content-box;
+	width: 16px;
+	height: 16px;
+}
+
+.skyAndOcean-container .title-container .close:hover {
+	border: 1px solid #22b9e8;
+}
+
+.skyAndOcean-container .config-container {
+	margin: 8px 18px 0 10px;
+}
+
+.skyAndOcean-container .little-title {
+	margin: 0px 0px 12px 0px;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.skyAndOcean-container .effect-switch {
+	margin-top: 12px;
+	padding: 0px 8px;
+	line-height: 18px;
+}
+
+.skyAndOcean-container .config-title {
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.skyAndOcean-container .switch {
+	background: url(./image/close.png) no-repeat;
+	float: right;
+	width: 40px;
+	height: 18px;
+}
+
+.skyAndOcean-container .lighting-config {
+	padding: 0px 8px;
+	margin-top: 12px;
+}
+
+.skyAndOcean-container .date {
+	margin-top: 12px;
+	padding: 4px 4px;
+	border: #0c7e9b dashed 1px;
+}
+
+.skyAndOcean-container .date-title {
+	margin-right: 2px;
+	font-size: 10px;
+	color: #1485b8;
+}
+
+.skyAndOcean-container .date-input {
+	width: 32px;
+	margin-right: 4px;
+	border: 1px solid #174c5d;
+	background-color: #434343;
+	color: #ffffff;
+	text-align: center;
+	font-size: 12px;
+}
+
+.skyAndOcean-container .date-input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+	-webkit-appearance: none !important;
+}
+
+.skyAndOcean-container .hour {
+	margin-top: 8px;
+}
+
+.skyAndOcean-container .hour-input {
+	width: 95px;
+	height: 3px;
+	background: #cccccc;
+	-webkit-appearance: none;
+}
+
+.skyAndOcean-container .hour-input::-webkit-slider-thumb {    
+	-webkit-appearance: none;  
+	height:16px; 
+	width: 16px;    
+	background: #1485b8;  
+	border-radius: 50%;   
+}
+
+.skyAndOcean-container .cloud-type, .cloud-height {
+	margin-top: 12px;
+	padding: 0px 8px;
+	line-height: 18px;
+	font-size: 14px;
+}
+
+.skyAndOcean-container .cloud-type-select {
+	float: right;
+	width: 80px;
+	margin-right: 23px;
+	border: 1px solid #174c5d;
+	background-color: #434343;
+	color: #ffffff;
+}
+
+.skyAndOcean-container .cloud-input {
+	float: right;
+	width: 80px;
+	margin: 0px 10px 0px 6px; 
+	border: 1px solid #174c5d;
+	background-color: #434343;
+	color: #ffffff;
+}
+
+.skyAndOcean-container .wave-size-input {
+	width: 63px;
+	height: 3px;
+	background: #cccccc;
+	-webkit-appearance: none;
+}
+
+.skyAndOcean-container .wave-size-input::-webkit-slider-thumb {    
+	-webkit-appearance: none;  
+	height:16px; 
+	width: 16px;    
+	background: #1485b8;  
+	border-radius: 50%;   
+}
+
+.skyAndOcean-container .mark {
+	font-size: 10px;
+	color: #1485b8;
+}
+
+.skyAndOcean-container .wind-direction {
+	margin-top: 12px;
+	padding: 0px 8px;
+	line-height: 18px;
+}
+
+.skyAndOcean-container .wind-direction input {
+	float: right;
+	width: 80px;
+	margin: 0px 10px 0px 6px; 
+	border: 1px solid #174c5d;
+	background-color: #434343;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.skyAndOcean-container .wind-level {
+	margin-top: 12px;
+	padding: 0px 8px;
+	line-height: 18px;
+}
+
+.skyAndOcean-container .wind-level input {
+	float: right;
+	width: 80px;
+	margin: 0px 10px 0px 6px; 
+	border: 1px solid #174c5d;
+	background-color: #434343;
+	color: #ffffff;
+	font-size: 14px;
+}
+

@@ -1,0 +1,62 @@
+.galleryAlbum {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.galleryAlbum .aleft {
+    margin-left: 5px;
+}
+
+.galleryAlbum .aright {
+    margin-right: 5px;
+}
+
+.abtn {
+    display: block;
+    width: 40px;
+    overflow: hidden;
+    height: 90px;
+}
+
+.aleft {
+    background: url(../../../img/u996.png) 0px center no-repeat;
+    background-size: 80%;
+    background-position: center;
+    float: left;
+}
+
+.aright {
+    background: url(../../../img/u998.png) 0px center no-repeat;
+    float: right;
+    background-size: 80%;
+    background-position: center;
+}
+
+.scrollobj {
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    width: 80%;
+    position: relative;
+    margin-left: 10px;
+}
+
+.gallery-ul-control {
+    position: relative;
+    height: 100%;
+    padding-left: 0;
+    margin-bottom: 0;
+    width: 100%;
+    list-style: none;
+}
+
+.gallery-ul-control>li {
+    display: block;
+    float: left;
+    height: 80%;
+    margin: 5px;
+    background: #ddd;
+}
+

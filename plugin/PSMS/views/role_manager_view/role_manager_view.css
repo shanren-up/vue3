@@ -1,0 +1,21 @@
+.tab-pane > .ember-view{
+    height: 100%;
+}
+.role-manager-view{
+    width: 100%;
+    height: 100%;
+}
+.role-manager-view .manager-header{
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: rgb(233,238,244);
+}
+.role-manager-view .manager-content{
+    padding: 10px 20px 0 20px;
+}
+.role-manager-view .manager-content .content-add{
+    padding: 5px 10px;
+    color: green;
+    font-size: 14px;
+    cursor: pointer;
+}

@@ -1,0 +1,58 @@
+.comp-timelinepicker-box {
+    background: rgba(253, 253, 253, 0.8);
+    border-radius: 10px;
+    width: 925px;
+    height: 60px;
+    padding: 26px 0 0 0;
+}
+
+.comp-timelinepicker, .comp-timelinepicker .theme-green .back-bar {
+    border-radius: 2px;
+    height: 6px;
+}
+
+.comp-timelinepicker .slider-container {
+    margin-top: 6px;
+    width: 100%;
+}
+
+.comp-timelinepicker .theme-green .back-bar {
+    width: 101%;
+    left: 6px;
+}
+
+.comp-timelinepicker .theme-green .back-bar .pointer {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.comp-timelinepicker .theme-green .back-bar .selected-bar {
+    display: none;
+}
+
+.comp-timelinepicker .slider-container .back-bar .pointer-label {
+    display: none
+}
+
+.comp-timelinepicker .slider-container .scale {
+    top: -6px;
+}
+
+.comp-timelinepicker .slider-container .scale span {
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    border: none;
+    top: -2px;
+}
+
+.comp-timelinepicker .slider-container .scale ins {
+    color: #14439f;
+    width: 30px;
+    text-align: center;
+    top: -20px;
+    left: 5px;
+    font-weight: 600;
+}

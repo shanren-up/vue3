@@ -1,0 +1,70 @@
+{
+    "frame_user_tooltip_grda": {
+        "en": "Account Info",
+        "zh": "个人档案"
+    },
+    "frame_user_grda": {
+        "en": "Account Info",
+        "zh": "个人档案"
+    },
+    "frame_user_xgmm": {
+        "en": "Change Password",
+        "zh": "修改密码"
+    },
+    "frame_user_tooltip_wytc": {
+        "en": "Suggest",
+        "zh": "我要吐槽"
+    },
+    "frame_user_xz": {
+        "en": "Add",
+        "zh": "新增"
+    },
+    "frame_user_sjxt": {
+        "en": "Mobile phone system",
+        "zh": "手机系统"
+    },
+    "frame_user_zx": {
+        "en": "Cancellation",
+        "zh": "注销"
+    },
+    "frame_user_xtbb": {
+        "en": "System version",
+        "zh": "系统版本"
+    },
+    "frame_user_xzxt": {
+        "en": "Add system",
+        "zh": "新增系统"
+    },
+    "frame_user_tc": {
+        "en": "Exit",
+        "zh": "退出"
+    },
+    "frame_user_gd": {
+        "en": "More",
+        "zh": "更多"
+    },
+    "frame_user_tooltip_sjxt": {
+        "en": "Mobile phone system",
+        "zh": "手机系统"
+    },
+    "frame_user_nh": {
+        "en": "Hello",
+        "zh": "您好"
+    },
+    "frame_user_tooltip_xtbz": {
+        "en": "System help",
+        "zh": "系统帮助"
+    },
+    "frame_user_online_user": {
+        "en": "online users",
+        "zh": "在线用户"
+    },
+    "frame_user_bzwd": {
+        "en": "Help document",
+        "zh": "帮助文档"
+    },
+    "frame_user_title": {
+        "en": "title",
+        "zh": "标题"
+    }
+}

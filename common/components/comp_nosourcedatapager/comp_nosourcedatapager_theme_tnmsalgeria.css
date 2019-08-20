@@ -1,0 +1,28 @@
+.comp-nosourcedatapager .pagination>li>a {
+  height: 20px;
+  /* width: 20px; */
+  padding: 1px 5px;
+  margin: 0px 5px;
+  font-size: 12px;
+  color: #333333;
+  border-radius: 0px !important;
+}
+
+.comp-nosourcedatapager .pagination>.active>a,
+.comp-nosourcedatapager .pagination>.active>a:focus,
+.comp-nosourcedatapager .pagination>.active>a:hover,
+.comp-nosourcedatapager .pagination>.active>span,
+.comp-nosourcedatapager .pagination>.active>span:focus,
+.comp-nosourcedatapager .pagination>.active>span:hover {
+  color: white;
+  background-color: #2d89ce;
+}
+
+.comp-nosourcedatapager>.pull-right.pagination {
+  position: relative;
+  top: 8px;
+}
+
+.comp-nosourcedatapager .pagination-detail .dropdown-toggle {
+  padding: 3px;
+}

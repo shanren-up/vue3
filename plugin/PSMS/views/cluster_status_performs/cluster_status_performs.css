@@ -1,0 +1,103 @@
+.tab-pane .ember-view{
+    height: 100%;
+}
+
+.cluster-status-performs{
+    /* padding: 5px; */
+    height: 100%;
+    padding: 10px;
+}
+.cluster-status-performs .cluster-top{
+    height: calc(100% - 370px);
+}
+.cluster-status-performs .cluster-top .cluster-header{
+      font-size: 18px;
+    border-left: 4px solid #069697;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+.cluster-status-performs .cluster-top .cluster-header span{
+    margin: 0 20px;
+    font-size:16px;
+}
+.cluster-status-performs .cluster-top .cluster-header select{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 120px;
+    font-size: 14px;
+}
+.cluster-status-performs .cluster-top .cluster-content{
+    height: calc(100% - 60px);
+}
+.cluster-status-performs .cluster-top .cluster-content >div{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+#leftTopChart{
+    margin: 50px 25px;
+    height: calc(100% - 100px);
+}
+#leftTopChart .line-div{
+    /* width:100%; */
+    height:50%;
+}
+#rightChart{
+    margin: 50px 25px;
+    height: calc(100% - 100px);
+}
+.cluster-status-performs .cluster-bottom .systemSetContent{
+    padding: 50px 200px;
+    min-height: 330px;
+}
+.cluster-status-performs .cluster-bottom .systemSetContent .fieldSet{
+    border: 2px solid #888890;
+    height: 50px;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.cluster-status-performs .cluster-bottom .systemSetContent .fieldSet span.upSet{
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: #f6f6f6;
+}
+.cluster-status-performs .cluster-bottom .systemSetContent .fieldSet input{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 150px;
+}
+.cluster-status-performs .cluster-bottom .systemSetContent .fieldSet button{
+    border: 1px solid #7b7a7a;
+    border-radius: 3px;
+    min-width: 50px;
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+}
+.cluster-status-performs .cluster-bottom .systemSetContent .fieldSet button span{
+    color: #216cb5;
+}
+.cluster-status-performs .cluster-bottom ul{
+    padding-left: 0;
+}
+.cluster-status-performs .cluster-bottom ul li a{
+    color: #555;
+}
+.cluster-status-performs  .content-add{
+    padding: 5px 10px;
+    color: green;
+    font-size: 14px;
+    cursor: pointer;
+}
+.cluster-status-performs  .cluster-button{
+        border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 25px;
+    border-radius: 3px;
+}

@@ -1,0 +1,8 @@
+.frame-navigation {
+    background: #4e3977;
+}
+
+.frame-navigation ul>li>a {
+    font-size: 10px;
+    color: #ffffff;
+}

@@ -1,0 +1,11 @@
+.system-home-view{
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.home-title{
+    position:absolute;
+    font-size: 60px;
+    left: 41%;
+    top: 55%;
+}

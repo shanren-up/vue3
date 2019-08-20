@@ -1,0 +1,49 @@
+.frame-vertical-meau {
+  background-color: #1A3655;
+}
+
+.frame-vertical-meau .meau-header {
+  /*background-color: #E2EEFA;*/
+}
+
+.frame-vertical-meau .meau-container {
+  color: #FFF;
+}
+
+.frame-vertical-default .meau-item {
+  background-color: #193253;
+}
+
+
+/* 一级菜单展开图标颜色  */
+
+.frame-vertical-default .meau-item .status-icon {
+  border-color: #FFF;
+}
+
+.frame-vertical-meau .sub-meau-item {
+  background-color: #454775
+}
+
+.frame-vertical-meau .meau-item:hover,
+.frame-vertical-meau .sub-meau-item:hover {
+  color: #26c6da;
+}
+
+.frame-vertical-meau .meau-item.active-meau {
+  background-color: #26c6da;
+  color: #FFF;
+}
+
+.frame-vertical-simple .item-container.hover .meau-item {
+  background-color: #26c6da;
+  color: #FFF;
+}
+
+.frame-vertical-simple .sub-meau-container {
+  background: #454775;
+}
+
+.frame-vertical-meau-tooltip.right .tooltip-arrow {
+  border-left-color: #CCC;
+}

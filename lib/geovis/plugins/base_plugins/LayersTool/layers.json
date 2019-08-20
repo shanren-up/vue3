@@ -1,0 +1,98 @@
+{
+    "layers": [
+        {
+            "id" :"testImg",
+            "source": {
+                "driver": "tms",
+                "url": "http://192.168.44.51:9090/geowebcache/service/tms/1.0.0/H_IMG@EPSG%3A4326_IMG@jpeg/"
+            },
+            "type": "image",
+            "img": "/dist/plugins/base_plugins/LayersTool/img6.png",
+            "name": "全球影像"
+        },
+        {
+            "id" :"beijing",
+            "source": {
+                "driver": "tms",
+                "url": "http://192.168.44.51:9090/geowebcache/service/wms",
+                "format": "jpeg",
+                "layers": "H_IMG",
+                "tileSize": 512,
+                "srs": "EPSG:4326"
+            },
+            "type": "image",
+            "img": "/dist/plugins/base_plugins/LayersTool/img6.png",
+            "name": "WMS测试"
+        },
+        {
+            "id": "model_layer",
+            "type": "vector",
+            "img": "/dist/plugins/base_plugins/LayersTool/img6.png",
+            "source":{
+                "driver": "ogr",
+                "url": "D:/osgSource/osgearth-osgearth-2.8/data/world.shp"
+            },
+            "name":"本地矢量",
+            "layout": {
+                "level": [
+                    {"name": "far", "style": "small", "min_range": 1e7, "max_range": 1e10},
+                    {"name": "near", "style": "large", "max_range": 1e7}
+                ]
+            },
+            "styles": {
+                "small": {
+                    "fill":              "#ffeeee00",
+                    "stroke":            "#fffc00",
+                    "stroke-width":      "3px",
+                    "altitude-clamping":  "terrain-drape"
+                },
+                "large": {
+                    "fill":              "#ffeeee1f",
+                    "stroke":            "#ff00fc",
+                    "stroke-width":      "3px",
+                    "altitude-clamping":  "terrain-drape"
+                }
+            }
+        },
+        {
+            "id": "simple_model",
+            "type": "vector",
+            "img": "/dist/plugins/base_plugins/LayersTool/img6.png",
+            "source":{
+                "driver": "ogr",
+                "url": "D:/osgSource/osgearth-osgearth-2.8/data/world.shp"
+            },
+            "name":"简单矢量",
+            "styles": {
+                "default": {
+                    "stroke":            "#88ccff",
+                    "stroke-width":      "2px",
+                    "altitude-clamping":  "terrain-drape"
+                }
+            }
+        }
+    ],
+    "baselayers": [
+        {
+            "id" :"worldtif",
+            "source": [{
+                "driver": "gdal",
+                "url": "./world.tif"
+            }],
+            "type": "base_image",
+            "img": "/dist/plugins/base_plugins/LayersTool/img6.png",
+            "name": "TIF影像"
+        },
+        {
+            "id" :"cesiumImg",
+            "source": [{
+                "driver": "tms",
+                "url": "http://127.0.0.1:3000/examples/data/tms/tilemapresource.xml",
+                "format": "jpg"
+            }],
+            "type": "base_image",
+            "img": "/dist/plugins/base_plugins/LayersTool/img6.png",
+            "name": "CESIUM"
+        }
+    ]
+}

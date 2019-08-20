@@ -1,0 +1,25 @@
+.default-style {
+overflow-y: auto;
+}
+
+.default-style>thead>tr {
+    text-align: center;
+    font-weight: bold;
+}
+
+.default-style>tbody>tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.dataTable{
+    font-size:10px;
+}
+
+.default-style>thead>tr{
+    color: #0E73AF;
+}
+.default-style>thead{
+    background: #BED9F3;
+}

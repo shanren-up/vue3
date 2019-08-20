@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>New React App</title>
+    <style type="text/css">
+    body {
+        width:100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        background: url(./assets/bg.png);
+        background-position: right top;
+    }
+    #container {
+        padding: 20px;
+        min-width: 404px;
+        min-height: 928px;
+        position: absolute;
+        top: 0;
+        left: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <button id="add" style="position: absolute; left: 500px; top: 100px; width: 200px; height: 200px;">点我加载</button>
+    <button id="renew" style="position: absolute; left: 500px; top: 500px; width: 200px; height: 200px;">点我更新</button>
+    <!--<script src="./dist/GVML.js"></script>-->
+    <script src="./build/PlotPanel.js"></script>
+    <script type="text/javascript">
+        var plotTool = new PlotPanel.PlottingView('container', {
+            library: [
+                {id: 'basic_mark', name: '基本标绘库', json: './mark/basicMarkConfig/basic_mark.json'},
+                {id: 'military_mark', name: '军事标绘库', json: './mark/militaryMarkConfig/mil_mark.json'},
+                {id: '0_mark', name: '标绘库'},
+                {id: '1_mark', name: '标绘库'},
+                {id: '2_mark', name: '标绘库'},
+                {id: 'model_mark', name: '三维模型库'}
+            ]
+        });
+        plotTool.propFunc = function(prop, value) {
+            console.log(prop+' : '+value);
+        };
+        plotTool.render();
+
+        const add_btn = document.getElementById('add');
+        add_btn.onclick = function() {
+            if (plotTool.getMark()) {
+                console.log(plotTool.getMark().config.id, plotTool.getMark().className);
+                console.log(plotTool.getMark());
+            }
+        }
+
+        const renew_btn = document.getElementById('renew');
+        renew_btn.onclick = function() {
+            plotTool.renewPropPanel({
+                className: 'GV.JBPoint',
+                properties: {
+                    color: '#ffff0099',
+                    style: {'text-fill': '#ff00ff'}
+                }
+            });
+        }
+
+    //  var layerTool = new PluginDOM.LayersManagerView({
+    //    container: 'container',
+    //    url: './dist/plugins/layers.json',
+    //    layers: {
+    //      images:[
+    //          {id:'layer_01', name:'局部影像0', type: 'image'},
+    //          {id:'layer_04', name:'局部高程3', type: 'terrain'},
+    //          {id:'layer_05', name:'局部影像4', type: 'image'},
+    //          {id:'layer_06', name:'局部影像5', type: 'image'},
+    //          {id:'layer_07', name:'局部影像6', type: 'image'},
+    //          {id:'layer_08', name:'矢量图层7', type: 'model'},
+    //          {id:'layer_09', name:'局部影像8', type: 'image'},
+    //          {id:'layer_10', name:'局部影像9', type: 'image'},
+    //      ],
+    //      baseImage: {id:'base_image_uuid', name:'基础图层', type: 'base_image'},
+    //    },
+    //    onAddClick: (item) => { console.log(item); },
+    //    onSort: (id, from, to) => { console.log(id, from, to); },
+    //    onDeleteClick: (id) => { alert('deleted: ' + id); },
+    //  });
+    //  layerTool.render();
+    </script>
+</body>
+
+</html>

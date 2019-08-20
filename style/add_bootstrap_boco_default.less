@@ -1,0 +1,191 @@
+@charset "utf-8";
+//弹性布局整理（公用算法）
+//nowrap（默认）：不换行。wrap：换行，第一行在上方。wrap-reverse：换行，第一行在下方。
+//justify-content: flex-start | flex-end | center | space-between | space-around;
+//align-items:flex-start | flex-end | center | baseline | stretch;
+//@row 布局方向row | row-reverse | column | column-reverse;
+//@nowrap 是否换行nowrap | wrap | wrap-reverse;
+//@main 主轴对齐flex-start | flex-end | center | space-between | space-around;
+//@corss 交叉轴对齐 flex-start | flex-end | center | baseline | stretch;
+//@many 多根轴线的对齐方式flex-start | flex-end | center | space-between | space-around | stretch;
+.display_flex(@row:row, @nowrap:nowrap, @main:flex-start, @corss:flex-start, @many:flex-start) {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: @row @nowrap;
+    justify-content: @main;
+    align-items: @corss;
+    align-content: @many;
+}
+//@grow flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。
+//@shrink flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小
+//@basis flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）
+.flex_item(@grow:0, @shrink:0, @basis:auto) {
+    flex: @grow @shrink @basis;
+}
+//auto | flex-start | flex-end | center | baseline | stretch;
+.align-self(@item:auto) {
+    align-self: @item;
+}
+
+/*****************************************弹******窗**************************************/
+@modal-header-bg: #488fe1; //眉头背景色
+@modai-c1: #FFF; //文字颜色
+@c2: #598e3; //选中文字颜色
+@modal-header-height: 40px; //弹窗题头高
+@model-header-size: 14px; //弹窗题头字号
+.modal-boco-padding {
+    //模态框左右内边距
+    padding: 0 15px;
+}
+
+.comp-modal-header,
+.modal-boco-header {
+    font-size: @model-header-size;
+    color: @modai-c1;
+    font-weight: bold;
+    .modal-boco-padding;
+    height: @modal-header-height;
+    background-color: @modal-header-bg;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    line-height: 40px;
+}
+
+.comp-modal-header img {
+    opacity: 0.6;
+    cursor: pointer;
+}
+.comp-modal-header img:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+
+.comp-modal-header-close {
+    float: right;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+
+.comp-modal-header-max {
+    float: right;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 10px;
+}
+
+.comp-modal-header-photo {
+    float: right;
+    margin-right: 2px;
+    margin-top: 10px;
+}
+#modalBody {
+    .modal-boco-padding;
+    background: #FFFFFF;
+}
+
+.modal-close {
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/close.png");
+    background-repeat: no-repeat;
+    float: right;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+.modal-max {
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/max.png");
+    background-repeat: no-repeat;
+    float: right;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 10px;
+}
+
+.modal-restore {
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/restore.png");
+  background-repeat: no-repeat;
+  float: right;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 10px;
+}
+
+.modal-photo {
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/photo.png");
+    background-repeat: no-repeat;
+    float: right;
+    margin-right: 2px;
+    margin-top: 10px;
+}
+/******************************************树******图**************************************/
+@tree-checked-color: #FFFFFF;
+@tree-unchecked-color: #333333;
+@tree-checked-bg: #60C9FF;
+.tree-boco-checked {
+    color: @tree-checked-color;
+    background: @tree-checked-bg;
+}
+.tree-boco-unchecked {
+    color: @tree-unchecked-color;
+}
+
+/******************************************分******页**************************************/
+
+@page-button-radius: 5px;
+@page-terminal-width: 40px;
+@page-height: 28px;
+@page-width: 28px;
+@page-unchecked-color: #333333;
+@page-checked-color: #FFFFFF;
+@page-checked-bg: #4990e2;
+.boco.pagination > li > a,
+.pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: @page-unchecked-color;
+    text-decoration: none;
+     background-color: transparent;
+    border: 1px solid #dcdcdc;
+}
+.lte-comp-page-rightsbutton {
+    float: right;
+    font-size: 12px;
+    /* vertical-align: middle; */
+    margin-top: 2px;
+    background: #488fe1;
+    width: 50px;
+    border: 0;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 4px 0;
+}
+.lte-comp-page-rightspan {
+    float: right;
+    line-height: 34px;
+    font-size: 12px;
+    color: #333333;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.lte-comp-page-rightinput {
+    float: right;
+    width: 40px;
+    font-size: 12px;
+    margin-top: 4px;
+}
+.lte-comp-page-rightsbutton {
+    float: right;
+    font-size: 12px;
+    /* vertical-align: middle; */
+    margin-top: 2px;
+}

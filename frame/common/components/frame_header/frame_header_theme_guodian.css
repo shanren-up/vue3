@@ -1,0 +1,37 @@
+.frame-header-bg {
+  background: #027373;
+  border-bottom: 5px solid #027373;
+}
+.frame-header-bg-img-bhz {
+  width: 500px;
+  background-image: url(../../../../img/logo/bhz_default.png);
+  background-repeat: no-repeat;
+}
+
+.frame-header-bg-img-jzxn {
+  background-image: url(../../../../img/logo/jzxn_default.png);
+}
+
+.frame-header-bg-img-btj {
+  background-image: url(../../../../img/logo/btj_default.png);
+}
+
+.frame-header-bg-img-gdm {
+  background-image: url(../../../../img/logo/gdm_guodian.png);
+  width: 520px;
+  height: 57px;
+  background-size: 100%;
+}
+
+.frame-header-child-loc2 li.active .frame-menu-item-bg,
+.frame-header-child-loc2 li.active .frame-menu-item-bg:hover,
+.frame-header-child-loc2 li.active .frame-menu-item-bg:focus {
+  border-bottom: 3px solid #02A4A8;
+}
+.frame-header-search input,
+.frame-header-search span {
+  border: 1px solid lightblue;
+}
+.frame-header-search span {
+  border-left: none;
+}

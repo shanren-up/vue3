@@ -1,0 +1,120 @@
+.frame-user-bg {
+  width: 88px;
+  height: 42px;
+  padding: 0px;
+  border-radius: 5px;
+  margin: 4px;
+  float: right;
+  cursor: pointer;
+  /* margin-top: 9px; */
+  position: relative;
+}
+
+.frame-user-img {
+  float: left;
+  width: 23px;
+  height: 40px;
+  padding: 8px 0px;
+  margin-top: 10px;
+  background-image: url('../../../../img/user1.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.frame-user-title {
+  float: left;
+  width: 48px;
+  height: 42px;
+  line-height: 20px;
+  padding: 5px;
+  position: relative;
+  top: -3px;
+}
+
+.frame-user-title.has-no-user{
+  top: 5px;
+}
+
+.frame-user-tootip-a {
+  height: 30px;
+}
+
+.frame-user-tooltip-stacknav {
+  /* margin-top: -6px; */
+  /* border-radius: 3px; */
+  /* padding: 0px; */
+  /* margin: 0px; */
+  /* width: 188px; */
+}
+
+.frame-user-tooltip-stacknav>li>a {
+  margin: 0px;
+  padding: 4px 15px;
+  border-radius: 0;
+  color: #000000;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.frame-user-tooltip-stacknav>li>a>img {
+  width: 160px;
+  height: 160px;
+  clear: both;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: -3px;
+}
+
+.frame-user-tooltip-stacknav>li>a>span {
+  height: 100%;
+  line-height: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.frame-user-tooltip-stacknav>li.active>a,
+.frame-user-tooltip-stacknav>li.active>a:focus,
+.frame-user-tooltip-stacknav>li.active>a:hover {
+  height: 100%;
+  color: #FF6600;
+  background-color: transparent;
+  border: 0px;
+  border-bottom-color: transparent;
+}
+
+
+/* add mini headeræ—¶æ ·å¼  */
+
+.mini-user {
+  margin: 5px 0 0 0;
+  height: 38px;
+}
+
+.mini-user .frame-user-img {
+  /* background-image: url('../../../../img/frame_header/more.png'); */
+  padding: 0;
+  background-position: left center;
+  margin: 0;
+}
+
+.mini-user .frame-user-p {
+  line-height: 40px;
+  padding-left: 2px;
+}
+
+.system-update-password-manager-sizecss {
+  width: 500px;
+  height: 385px;
+}
+
+.system-onlineuser-sizecss {
+  width: 800px;
+  height: 650px;
+}
+
+.system-update-password-manager-sizecss .system-update-password-manager-bodycss {}
+
+.system-update-password-manager-sizecss .system-update-password-manager-view-form {
+  margin-top: 20px;
+}
