@@ -254,10 +254,7 @@ define(
                         return;
                     }
                     var selectFiles = this.fileInfoView._$table.bootstrapTable.apply(this.fileInfoView._$table, ['getSelections']);
-                    if (selectFiles.length < 1) {
-                        this.messageBox.showError('请选择原始数据文件！');
-                        return;
-                    }
+                     
                     var filenames = '';
                     var subtaskcount = 0;
                     selectFiles.forEach(function (item) {
@@ -272,6 +269,12 @@ define(
                         }
                         //}
                     });
+					if (selectFiles.length < 1) {
+					    //this.messageBox.showError('请选择原始数据文件！');
+						filenames = this.orignalUrl
+						subtaskcount++;
+					    //return;
+					} 
                     var param = {
                         taskname: this.taskName,
                         taskdesc: this.taskDes,
