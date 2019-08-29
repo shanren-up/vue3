@@ -14,6 +14,7 @@ define(
             layout: Ember.ExtendHelper.compileEx(template),
             templateName: 'process-task-preview',
             showXml:true,
+			showJson: false,
             sourceTask:undefined,
             subTask:undefined,
             tiffWidth:0,
@@ -94,6 +95,7 @@ define(
                  */
                 previewFile:function(type,url){
                     if(type === 'xml'){
+					    this.set('showJson',false);
                         this.set('showXml',true);
                         this.set('showImg',false);
                         this.set('showTiff',false);
@@ -114,6 +116,7 @@ define(
                         });
                     }
                     if(type === 'img'){
+					    this.set('showJson',false);
                         this.set('showImg',true);
                         this.set('showXml',false);
                         this.set('showTiff',false);
@@ -136,7 +139,52 @@ define(
 
                         }
                     }
+					if(type === 'txt'){
+					    this.set('showJson',false);
+					    this.set('showXml',true);
+					    this.set('showImg',false);
+					    this.set('showTiff',false);
+					    this.set('showType','预览模式');
+					    this.set('showCompare',false);
+					    $.ajax({
+					        url:'http://'+configs.locators.VRSSRestful['fileHost']+url,
+					        type: 'get',
+					        timeout: 100000,
+					        cache:false,
+					        error: function(xml){
+					            alert('加载txt文档出错');
+					        },
+					        success: function(xml){
+					            $("#previewArea").empty();
+					            $("#previewArea").html(xml);
+					        }
+					    });
+					}
+					if(type === 'json'){
+					    this.set('showJson',true);
+					    this.set('showXml',false);
+					    this.set('showImg',false);
+					    this.set('showTiff',false);
+					    this.set('showType','预览模式');
+					    this.set('showCompare',false);
+					    $.ajax({
+					        url:'http://'+configs.locators.VRSSRestful['fileHost']+url,
+					        type: 'get',
+					        timeout: 100000,
+					        cache:false,
+					        error: function(json){
+					            alert('加载json文档出错');
+					        },
+					        success: function(json){
+								/* var obj  = JSON.parse(json);
+								str = JSON.stringify(obj , null, 4); */
+					            $("#previewPre").empty();
+					            $("#previewPre").html(JSON.stringify(json,null, 4));
+					        }
+					    });
+					}
                     if(type === 'tif'){
+					    this.set('showJson',false);
                         this.set('showTiff',true);
                         this.set('showImg',false);
                         this.set('showXml',false);

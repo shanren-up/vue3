@@ -114,7 +114,7 @@ define(
                 };
                 this.dataAdaptor.getRestfulData(param, 'updateTools', function(result){
                     if(result.code === 0){
-                        this.messageBox.showAlert('修改成功！');
+                        this.messageBox.showSuccess('修改成功！');
                         this._queryData();
                     }else{
                         this.messageBox.showAlert(result.message);
@@ -154,15 +154,16 @@ define(
              * @private
              */
             _handleTrashTool:function(row){
+				let _self = this
                 var param = {
                     id : row.id
                 };
                 this.dataAdaptor.getRestfulData(param, 'deleteTools', function(result){
-                    if(result.code === 0){
-                        this.messageBox.showAlert('删除成功！');
-                        this._queryData();
+                    if(result.code === 1){
+                        _self.messageBox.showSuccess('删除成功！');
+                        _self._queryData();
                     }else{
-                        this.messageBox.showAlert(result.message);
+                        _self.messageBox.showAlert(result.message);
                     }
                 }.bind(this));
             },
@@ -178,7 +179,7 @@ define(
 			    };
 			    this.dataAdaptor.getRestfulData(param, 'deleteModleMuch', function(result){
 			        if(result.code === 0){
-			            this.messageBox.showAlert('删除成功！');
+			            this.messageBox.showSuccess('删除成功！');
 			            _self._queryData();
 			        }else{
 			            this.messageBox.showAlert(result.message);
@@ -258,7 +259,7 @@ define(
                         success: function (returndata) {
 							if(returndata.status){
 								self.childs['frameloading'].stop();
-								self.messageBox.showAlert('上传成功！');
+								self.messageBox.showSuccess('上传成功！');
 								self._queryData();
 							}else{
 								self.childs['frameloading'].stop();
@@ -285,7 +286,7 @@ define(
 				    };
 				    this.dataAdaptor.getRestfulData(param, 'deleteModleMuch', function(result){
 				        if(result.code === 1){
-				            _self.messageBox.showAlert('删除成功！');
+				            _self.messageBox.showSuccess('删除成功！');
 				            _self._queryData();
 							_self.idList = [];
 				        }else{

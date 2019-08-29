@@ -150,3 +150,12 @@
     /* bottom:0; */
     z-index:1000;
 }
+.process-task-preview  pre{
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0 0 0;
+    background-color: rgb(244,244,244);
+}

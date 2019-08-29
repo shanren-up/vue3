@@ -14,6 +14,9 @@
                     {{#if showXml}}
                         <textarea id="previewArea"></textarea>
                     {{/if}}
+					{{#if showJson}}
+					    <pre id="previewPre"></pre>
+					{{/if}}
                     {{#if showImg}}
                         <img id="previewImg" src="{{previewImgSrc}}"/>
                         {{#if showLegend}}

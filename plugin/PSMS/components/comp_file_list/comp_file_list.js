@@ -177,6 +177,15 @@ define(
                     if (data && data.nameStr && data.nameStr.indexOf('.tif') !== -1) {
                         this.sendAction('previewFile', 'tif', data.nameStr.split(proConfig.fileDir.resultDir)[1]);
                     }
+					if (data && data.nameStr && data.nameStr.indexOf('.json') !== -1) {
+					    this.sendAction('previewFile', 'json', data.nameStr.split(proConfig.fileDir.resultDir)[1]);
+					}
+					if (data && data.nameStr && data.nameStr.indexOf('.txt') !== -1) {
+					    this.sendAction('previewFile', 'txt', data.nameStr.split(proConfig.fileDir.resultDir)[1]);
+					}
+					if (data && data.nameStr && data.nameStr.indexOf('.png') !== -1) {
+					    this.sendAction('previewFile', 'img', data.nameStr.split(proConfig.fileDir.resultDir)[1]);
+					}
                 },
                 confirmPath: function () {
                     Ember.set(this.parameters, 'path', this.pathValue);
