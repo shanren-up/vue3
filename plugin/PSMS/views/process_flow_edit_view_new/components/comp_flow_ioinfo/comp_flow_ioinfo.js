@@ -73,7 +73,7 @@ define(
                         //this.sourceId = '';
                     }else{
                         this.sourceData = [];
-						this.sourceData = [].concat(proConfig.startKey);
+	        this.sourceData = [].concat(proConfig.startKey);
                         var sourceFlowId = this.blocks.findBy('blockId',this.conn.sourceId).flowId;
                         this.modules.forEach(function (item) {
                             var source = item.Userproperty.OutputParameter.OutPutFilePath;

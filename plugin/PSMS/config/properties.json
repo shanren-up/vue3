@@ -18,7 +18,12 @@
 	}
   ],
   "startKey": [
-
+{
+  "title": "L1B级输入影像",
+  "type":"url",
+  "name": "masterimg",
+  "sourceId":""
+}
   ],
   "fileDir": {
     "origDir": "/HY1",

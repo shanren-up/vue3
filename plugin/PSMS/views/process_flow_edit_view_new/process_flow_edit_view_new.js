@@ -321,7 +321,6 @@ define(
                         blocks: this.blocks,
                         lines: this.lines,
                         ioDataArr:this.ioDataArr
-						
                     }
                 };
                 //有currentFlowId是编辑流程，没有是新建流程

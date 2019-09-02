@@ -39,15 +39,6 @@
     text-align: center;
     color: #009999;
 }
-.process-taskflow-view  pre{
-    height: 100%;
-    width: 100%;
-    overflow: scroll;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px 0 0 0;
-    background-color: rgb(244,244,244);
-}
 .process-taskflow-view .del-img{
     position:absolute;
     display:none;

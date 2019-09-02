@@ -254,7 +254,7 @@ define(
                         radius: 3,
                         strokeWidth: 2
                     },
-                    maxConnections: 1,
+                    maxConnections: -1,
                     isSource: true,
                     isTarget: true,
                     connector: ["Flowchart", {stub: [5, 5], gap: 10, cornerRadius: 5, alwaysRespectStubs: true}],
@@ -294,7 +294,6 @@ define(
                 newBlock.blockX = ev.offsetX;
                 newBlock.blockY = ev.offsetY;
                 newBlock.imgSrc = module.imgSrc;
-                newBlock.name = module.modulename;
                 newBlock.sourceAnchor = 'RightMiddle';
                 newBlock.targetAnchor = 'LeftMiddle';
                 if (module && module.type === 'base') {
