@@ -179,10 +179,58 @@ define(
                     var module = this.paramView.flowModules.findBy('flow_id', block.flowId);
                     this.modules.push(module);
                 }
+				
                 if (fromLine && this.blocks.findBy('blockId', fromLine.pageTargetId)) {
                     this._createWorkflow(this.blocks.findBy('blockId', fromLine.pageTargetId));
                 }
             },
+			/**创建并行流程
+			 * @param {Object} block
+			 */
+			_createAddWorkflow: function (block) {
+				var fromLine = this.lines.findBy('pageSourceId', block.blockId);
+				var toLine = this.lines.findBy('pageTargetId', block.blockId);
+				var flow = {};
+				if (fromLine && this.blocks.findBy('blockId', fromLine.pageTargetId)) {
+				    flow.next_id = this.blocks.findBy('blockId', fromLine.pageTargetId).flowId;
+				}
+				if (toLine && this.blocks.findBy('blockId', toLine.pageSourceId)) {
+				    flow.pre_id = this.blocks.findBy('blockId', toLine.pageSourceId).flowId;
+				}
+				flow.flow_id = block.flowId;
+				this.workflow.push(flow);
+				if (block.blockId !== 'state_start' && block.blockId !== 'state_end') {
+				    var module = this.paramView.flowModules.findBy('flow_id', block.flowId);
+				    this.modules.push(module);
+				}
+				let $this = this
+				this.lines.forEach(function(item,index){
+					var fromLine = $this.lines.findBy('pageSourceId', block.blockId);
+					var toLine = $this.lines.findBy('pageTargetId', block.blockId);
+				   if(toLine && toLine.pageSourceId == item.pageSourceId && item.pageTargetId !== toLine.pageTargetId){
+						if(item.pageSourceId !== 'state_start' && item.pageSourceId !== 'state_end') {
+							 var module = $this.paramView.flowModules.findBy('flow_id', $this.blocks.findBy('blockId', item.pageTargetId).flowId);
+							 if(module && !$this.modules.findBy('flow_id',module.flowId)){
+								 $this.modules.push(module);
+							 }
+							 var fromLineTwo = $this.lines.findBy('pageSourceId', item.pageSourceId);
+							 var toLineTwo = $this.lines.findBy('pageTargetId', item.pageTargetId);
+							 var flow = {};
+							 if (fromLineTwo && $this.blocks.findBy('blockId', fromLineTwo.pageTargetId)) {
+							     flow.next_id = $this.blocks.findBy('blockId', fromLineTwo.pageTargetId).flowId;
+							 }
+							 if (toLineTwo && $this.blocks.findBy('blockId', toLineTwo.pageSourceId)) {
+							     flow.pre_id = $this.blocks.findBy('blockId', toLineTwo.pageSourceId).flowId;
+							 }
+							 flow.flow_id = block.flowId;
+							 $this.workflow.push(flow);
+						}  
+				   }				  
+				});
+				if (fromLine && this.blocks.findBy('blockId', fromLine.pageTargetId)) {
+				    this._createAddWorkflow(this.blocks.findBy('blockId', fromLine.pageTargetId));
+				}				
+			},
             _getIoData:function(line){
                 var ioData = undefined;
                 if(line === undefined){
@@ -298,7 +346,7 @@ define(
                 this.blocks = this.flowChartView.getData().blocks;
                 this.lines = this.flowChartView.getData().lines;
                 var startBlock = this.blocks.findBy('blockId', 'state_start');
-                this._createWorkflow(startBlock);
+                this._createAddWorkflow(startBlock);
                 this._createIOMap();
                 this._replaceModuleParamStr();
                 var flow = {
