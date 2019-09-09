@@ -188,30 +188,24 @@ define(
 			 * @param {Object} block
 			 */
 			_createAddWorkflow: function (block) {
-				var fromLine = this.lines.findBy('pageSourceId', block.blockId);
-				var toLine = this.lines.findBy('pageTargetId', block.blockId);
-				var flow = {};
-				if (fromLine && this.blocks.findBy('blockId', fromLine.pageTargetId)) {
-				    flow.next_id = this.blocks.findBy('blockId', fromLine.pageTargetId).flowId;
-				}
-				if (toLine && this.blocks.findBy('blockId', toLine.pageSourceId)) {
-				    flow.pre_id = this.blocks.findBy('blockId', toLine.pageSourceId).flowId;
-				}
-				flow.flow_id = block.flowId;
-				this.workflow.push(flow);
-				if (block.blockId !== 'state_start' && block.blockId !== 'state_end') {
-				    var module = this.paramView.flowModules.findBy('flow_id', block.flowId);
-				    this.modules.push(module);
-				}
 				let $this = this
+				var moduelArray = new Array();
 				this.lines.forEach(function(item,index){
 					var fromLine = $this.lines.findBy('pageSourceId', block.blockId);
 					var toLine = $this.lines.findBy('pageTargetId', block.blockId);
-				   if(toLine && toLine.pageSourceId == item.pageSourceId && item.pageTargetId !== toLine.pageTargetId){
+				   // if(toLine && toLine.pageSourceId == item.pageSourceId && item.pageTargetId !== toLine.pageTargetId){
+					   var pageSourceIdSIZE = 0;
+					   for(var i=0; i<$this.lines.length; i++){
+						   if($this.lines[i].pageSourceId == item.pageSourceId){
+							 pageSourceIdSIZE++;  
+						   }
+					   }
+					   if(toLine && toLine.pageSourceId == item.pageSourceId && pageSourceIdSIZE > 1){
 						if(item.pageSourceId !== 'state_start' && item.pageSourceId !== 'state_end') {
 							 var module = $this.paramView.flowModules.findBy('flow_id', $this.blocks.findBy('blockId', item.pageTargetId).flowId);
 							 if(module && !$this.modules.findBy('flow_id',module.flowId)){
-								 $this.modules.push(module);
+								 //$this.modules.push(module);
+								 moduelArray.push(module)
 							 }
 							 var fromLineTwo = $this.lines.findBy('pageSourceId', item.pageSourceId);
 							 var toLineTwo = $this.lines.findBy('pageTargetId', item.pageTargetId);
@@ -227,6 +221,26 @@ define(
 						}  
 				   }				  
 				});
+				if(moduelArray.length != 0){
+					$this.modules.push(moduelArray);
+				}
+				var fromLine = this.lines.findBy('pageSourceId', block.blockId);
+				var toLine = this.lines.findBy('pageTargetId', block.blockId);
+				var flow = {};
+				if (fromLine && this.blocks.findBy('blockId', fromLine.pageTargetId)) {
+				    flow.next_id = this.blocks.findBy('blockId', fromLine.pageTargetId).flowId;
+				}
+				if (toLine && this.blocks.findBy('blockId', toLine.pageSourceId)) {
+				    flow.pre_id = this.blocks.findBy('blockId', toLine.pageSourceId).flowId;
+				}
+				flow.flow_id = block.flowId;
+				this.workflow.push(flow);
+				if (block.blockId !== 'state_start' && block.blockId !== 'state_end') {
+				    var module = this.paramView.flowModules.findBy('flow_id', block.flowId);
+					if(module && !$this.modules.findBy('flow_id',module.flowId)){
+							 this.modules.push(module);
+					}
+				}
 				if (fromLine && this.blocks.findBy('blockId', fromLine.pageTargetId)) {
 				    this._createAddWorkflow(this.blocks.findBy('blockId', fromLine.pageTargetId));
 				}				
@@ -310,30 +324,59 @@ define(
              */
             _replaceModuleParamStr: function () {
                 this.modules.forEach(function (item) {
-                    item.Systemproperty.SystemConfiguration.forEach(function (sysItem) {
-                        if (sysItem.type === 'int') {
-                            // sysItem.value = parseInt( sysItem.value);
-                            Ember.set(sysItem, 'value', parseInt(sysItem.value));
-                        }
-                        if (sysItem.type === 'float') {
-                            // sysItem.value = parseFloat( sysItem.value);
-                            Ember.set(sysItem, 'value', parseFloat(sysItem.value));
-                        }
-                    });
-                    item.Userproperty.InputParameter.Configuration.forEach(function (userItem) {
-                        if (userItem.type === 'int') {
-                            // userItem.value = parseInt( userItem.value);
-                            Ember.set(userItem, 'value', parseInt(userItem.value));
-                        }
-                        if (userItem.type === 'float') {
-                            //userItem.value = parseFloat( userItem.value);
-                            Ember.set(userItem, 'value', parseFloat(userItem.value));
-                        }
-                        if (userItem.type === 'select') {
-                            //userItem.value = parseFloat( userItem.value);
-                            Ember.set(userItem, 'value', parseInt(userItem.value));
-                        }
-                    });
+					try{
+						item.Systemproperty.SystemConfiguration.forEach(function (sysItem) {
+						    if (sysItem.type === 'int') {
+						        // sysItem.value = parseInt( sysItem.value);
+						        Ember.set(sysItem, 'value', parseInt(sysItem.value));
+						    }
+						    if (sysItem.type === 'float') {
+						        // sysItem.value = parseFloat( sysItem.value);
+						        Ember.set(sysItem, 'value', parseFloat(sysItem.value));
+						    }
+						});
+						item.Userproperty.InputParameter.Configuration.forEach(function (userItem) {
+						    if (userItem.type === 'int') {
+						        // userItem.value = parseInt( userItem.value);
+						        Ember.set(userItem, 'value', parseInt(userItem.value));
+						    }
+						    if (userItem.type === 'float') {
+						        //userItem.value = parseFloat( userItem.value);
+						        Ember.set(userItem, 'value', parseFloat(userItem.value));
+						    }
+						    if (userItem.type === 'select') {
+						        //userItem.value = parseFloat( userItem.value);
+						        Ember.set(userItem, 'value', parseInt(userItem.value));
+						    }
+						});
+					}catch(e){
+						item.forEach(function (itemx) {
+							itemx.Systemproperty.SystemConfiguration.forEach(function (sysItem) {
+							    if (sysItem.type === 'int') {
+							        // sysItem.value = parseInt( sysItem.value);
+							        Ember.set(sysItem, 'value', parseInt(sysItem.value));
+							    }
+							    if (sysItem.type === 'float') {
+							        // sysItem.value = parseFloat( sysItem.value);
+							        Ember.set(sysItem, 'value', parseFloat(sysItem.value));
+							    }
+							});
+							itemx.Userproperty.InputParameter.Configuration.forEach(function (userItem) {
+							    if (userItem.type === 'int') {
+							        // userItem.value = parseInt( userItem.value);
+							        Ember.set(userItem, 'value', parseInt(userItem.value));
+							    }
+							    if (userItem.type === 'float') {
+							        //userItem.value = parseFloat( userItem.value);
+							        Ember.set(userItem, 'value', parseFloat(userItem.value));
+							    }
+							    if (userItem.type === 'select') {
+							        //userItem.value = parseFloat( userItem.value);
+							        Ember.set(userItem, 'value', parseInt(userItem.value));
+							    }
+							});
+						})
+					}
                 }.bind(this));
             },
             /**
