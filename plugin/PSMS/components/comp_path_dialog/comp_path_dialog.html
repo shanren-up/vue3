@@ -11,6 +11,9 @@
             <div class="path-item-list">
                 <input type="checkbox" class="path-item-list-checkbox" onclick={{action 'selectItem' data}}>
                 <img  {{action 'itemAction' data}} src={{data.src}} />
+				{{#handle-events}}
+				<span >从我身上飘过或者点我都会触发事件~</span>
+				{{/handle-events}}
                 <a href="javascript:;" title="{{data.name}}" {{action 'itemAction' data}}>{{data.name}}</a>
             </div>
             {{/each}}

@@ -188,30 +188,59 @@ define(
              */
             _replaceModuleParamStr:function(){
                 this.flowContent.modules.forEach(function (item) {
-                    item.Systemproperty.SystemConfiguration.forEach(function(sysItem){
-                        if(sysItem.type === 'int'  ){
-                            // sysItem.value = parseInt( sysItem.value);
-                            Ember.set(sysItem,'value',parseInt( sysItem.value) );
-                        }
-                        if(sysItem.type === 'float'){
-                            // sysItem.value = parseFloat( sysItem.value);
-                            Ember.set(sysItem,'value',parseFloat( sysItem.value) );
-                        }
-                    });
-                    item.Userproperty.InputParameter.Configuration.forEach(function(userItem){
-                        if(userItem.type === 'int'  ){
-                            // userItem.value = parseInt( userItem.value);
-                            Ember.set(userItem,'value',parseInt( userItem.value) );
-                        }
-                        if(userItem.type === 'float'){
-                            //userItem.value = parseFloat( userItem.value);
-                            Ember.set(userItem,'value',parseFloat( userItem.value) );
-                        }
-                        if(userItem.type === 'select'){
-                            //userItem.value = parseFloat( userItem.value);
-                            Ember.set(userItem,'value',parseInt( userItem.value) );
-                        }
-                    });
+					 try{
+						item.Systemproperty.SystemConfiguration.forEach(function(sysItem){
+						    if(sysItem.type === 'int'  ){
+						        // sysItem.value = parseInt( sysItem.value);
+						        Ember.set(sysItem,'value',parseInt( sysItem.value) );
+						    }
+						    if(sysItem.type === 'float'){
+						        // sysItem.value = parseFloat( sysItem.value);
+						        Ember.set(sysItem,'value',parseFloat( sysItem.value) );
+						    }
+						});
+						item.Userproperty.InputParameter.Configuration.forEach(function(userItem){
+						    if(userItem.type === 'int'  ){
+						        // userItem.value = parseInt( userItem.value);
+						        Ember.set(userItem,'value',parseInt( userItem.value) );
+						    }
+						    if(userItem.type === 'float'){
+						        //userItem.value = parseFloat( userItem.value);
+						        Ember.set(userItem,'value',parseFloat( userItem.value) );
+						    }
+						    if(userItem.type === 'select'){
+						        //userItem.value = parseFloat( userItem.value);
+						        Ember.set(userItem,'value',parseInt( userItem.value) );
+						    }
+						});
+					}catch(e){
+						item.forEach(function (itemx) {
+							itemx.Systemproperty.SystemConfiguration.forEach(function(sysItem){
+							    if(sysItem.type === 'int'  ){
+							        // sysItem.value = parseInt( sysItem.value);
+							        Ember.set(sysItem,'value',parseInt( sysItem.value) );
+							    }
+							    if(sysItem.type === 'float'){
+							        // sysItem.value = parseFloat( sysItem.value);
+							        Ember.set(sysItem,'value',parseFloat( sysItem.value) );
+							    }
+							});
+							itemx.Userproperty.InputParameter.Configuration.forEach(function(userItem){
+							    if(userItem.type === 'int'  ){
+							        // userItem.value = parseInt( userItem.value);
+							        Ember.set(userItem,'value',parseInt( userItem.value) );
+							    }
+							    if(userItem.type === 'float'){
+							        //userItem.value = parseFloat( userItem.value);
+							        Ember.set(userItem,'value',parseFloat( userItem.value) );
+							    }
+							    if(userItem.type === 'select'){
+							        //userItem.value = parseFloat( userItem.value);
+							        Ember.set(userItem,'value',parseInt( userItem.value) );
+							    }
+							});
+						});
+                    }
                 }.bind(this));
             },
             actions: {

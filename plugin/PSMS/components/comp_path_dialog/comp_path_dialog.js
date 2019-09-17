@@ -6,6 +6,7 @@ define(
         'common/components/comp_msgbox/comp_msgbox',
         'comp_modal',
         './components/comp_path_new/comp_path_new',
+		'./components/comp_path_txt/comp_path_txt',
         'css!./comp_path_dialog.css'
     ],
     function (app, template, dataService, msgBox,modal) {
@@ -28,6 +29,7 @@ define(
             //选择的目录
             selectData:undefined,
             type:undefined,
+			showTxt:false,
             init: function () {
                 this._super();
                 this.selectData =Ember.A();
@@ -51,7 +53,6 @@ define(
                     this.dataAdaptor= null;
                 }
             },
-
             /**
              * 查询结果处理
              * @param result
@@ -65,7 +66,7 @@ define(
                 result.forEach(function(item, index){
                     nodes.push({
                         "name": item,
-                        "nameStr": this.pathValue + '/' + item ,
+                        "nameStr": this.pathValue + '/' + item,
                         "parentId": this.pathValue,
                         "src": item.indexOf('.') === -1 ? this.folderPath : this.filePath
                     });
@@ -89,6 +90,15 @@ define(
                     }
                 }.bind(this));
             },
+			/**
+			 * editTXT文件
+			 */
+			editTXT:function (dirStr) {
+			    var param = {
+			        filePath:dirStr
+			    };
+			    this._openWindow('编辑文件','comp-path-txt',param);
+			},
             //判断文件夹还是文件
             _handleFileType: function(fileName){
                 var fileType = ['.xml', '.RAW', '.raw', '.data', '.DATA', '.XML'];
@@ -103,6 +113,20 @@ define(
                 }
                 return false;
             },
+			//判断是一个txt文件
+			_handleFileTypeIsTXT: function(fileName){
+			    var fileType = ['.txt'];
+			    var index = fileName.lastIndexOf('.');
+			    if(index > -1){
+			        var str = fileName.substring(index);
+			        for(var i =0;i<fileType.length;i++){
+			            if(fileType[i] == str){
+			                return true;
+			            }
+			        }
+			    }
+			    return false;
+			},
             _openWindow: function (title, componentName, data) {
                 var _self = this;
                 modal.popup({
@@ -123,6 +147,11 @@ define(
                     confirm: function () {
                         _self._initPathData(_self.pathValue);
                     },
+					// confirm: function () {
+					//     if (this.parameters) {
+					//         Ember.set(_self.flowModules[_self.folderIndex].Userproperty.InputParameter.Configuration[_self.paraIndex],'value',this.parameters.data );
+					//     }
+					// },
                     close: function () { //获取传递参数
                     }
                 });
@@ -144,9 +173,19 @@ define(
                  */
                 itemAction: function(data){
                     if(data && data.nameStr){
-                        this.set('pathValue', data.nameStr);
-                        this._initPathData(data.nameStr);
+						//判断是否是一个txt文件
+						//获取服务器数据
+						//展示并且修改txt文件
+						//保存txt文件将数据流返回到后台
+						 if(this._handleFileTypeIsTXT(data.nameStr)){
+							this.set('pathValue', data.nameStr);
+							this.editTXT(data.nameStr);
+						}else{
+							this.set('pathValue', data.nameStr);
+							this._initPathData(data.nameStr);
+						} 						
                     }
+					
                 },
                 /**
                  * 确认按钮事件
