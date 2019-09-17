@@ -101,6 +101,8 @@ define(
             "fileConfig":"dealfile/findPathFile",
             "pathCheck":"dealfile/checkDir",
             "createFolder":"dealfile/creatDir",
+			"downloadFile":"dealfile/downloadFile",
+			"saveFile":"dealfile/saveFile",
             //文件上传
             "fileUpload":"dealfile/upload",
 

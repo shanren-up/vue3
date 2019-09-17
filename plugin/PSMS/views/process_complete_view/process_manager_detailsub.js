@@ -146,7 +146,7 @@ define(
                             formatter: function(value, row, index){
                                 if(row.state.toLowerCase() == 'failed'){
                                     return '<span style="color: red;">'+ value + '</span>';
-                                }else if(row.state.toLowerCase() == 'successed'){
+                                }else if(row.state.toLowerCase() == 'success'){
                                     return '<span style="color: green;">'+ value + '</span>';
                                 }else if(row.state.toLowerCase() == 'finished'){
                                     return '<span style="color: green;">'+ value +'</span>';
@@ -179,7 +179,7 @@ define(
             _getStateImg: function(status){
                 if(status.toLowerCase() == 'failed'){
                     return this.statImgUrl + 'close.png';
-                }else if(status.toLowerCase() == 'successed'){
+                }else if(status.toLowerCase() == 'success'){
                     return this.statImgUrl + 'wanchen.png';
                 }else if(status.toLowerCase() == 'finished'){
                     return this.statImgUrl + 'wanchen.png';

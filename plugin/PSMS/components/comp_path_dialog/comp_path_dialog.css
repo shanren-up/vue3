@@ -109,3 +109,18 @@
     margin-top: 8px;
     margin-right: 5px;
 }
+.comp-path-dialog .rollback-img{
+	position:absolute;
+	display:none;
+}
+.comp-path-dialog :hover .rollback-img{
+	
+	width: 80px;
+	height: 100px;
+	top: 65px;
+	left: 50px;
+    display:block;
+    left:-10px;
+    top:-10px;
+    /*background-color: grey;*/
+}

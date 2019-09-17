@@ -36,7 +36,7 @@ define(
             //模块状态图标
             imgObj: {
                 FAILED: 'plugin/PSMS/img/flow/state/cuowu.png',
-                SUCCESSED: 'plugin/PSMS/img/flow/state/wanchen.png',
+                SUCCESS: 'plugin/PSMS/img/flow/state/wanchen.png',
                 FINISHED: 'plugin/PSMS/img/flow/state/wanchen.png',
                 PAUSED: 'plugin/PSMS/img/flow/state/pause.png',
                 RUNNING: 'plugin/PSMS/img/flow/state/yunxin.gif',
@@ -118,7 +118,7 @@ define(
                             formatter: function (value, row, index) {
                                 if (row.state.toLowerCase() === 'failed') {
                                     return '<span style="color: red;">' + value + '</span>';
-                                } else if (row.state.toLowerCase() === 'successed') {
+                                } else if (row.state.toLowerCase() === 'success') {
                                     return '<span style="color: green;">' + value + '</span>';
                                 } else if (row.state.toLowerCase() === 'finished') {
                                     return '<span style="color: green;">' + value + '</span>';
@@ -158,7 +158,7 @@ define(
             _getStateImg: function (status) {
                 if (status.toLowerCase() == 'failed') {
                     return this.statImgUrl + 'close.png';
-                } else if (status.toLowerCase() == 'successed') {
+                } else if (status.toLowerCase() == 'success') {
                     return this.statImgUrl + 'wanchen.png';
                 } else if (status.toLowerCase() == 'finished') {
                     return this.statImgUrl + 'wanchen.png';

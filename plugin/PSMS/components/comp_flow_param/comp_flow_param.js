@@ -50,7 +50,18 @@ define(
              */
             _initData: function() {
                 if(this.paramData){
-                    this.set('flowModules',this.paramData.modules);
+					let module = [];
+					this.paramData.modules.forEach(function (item) {
+						if(item.length>1){
+							item.forEach(function (itemx){
+								module.pushObject(itemx);
+							});
+						}else{
+							module.pushObject(item);
+						}
+                    }.bind(this));
+                    //this.set('flowModules',this.paramData.modules);
+					this.set('flowModules',module);
                 }
             },
             /**

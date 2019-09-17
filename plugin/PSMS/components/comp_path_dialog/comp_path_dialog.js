@@ -172,21 +172,34 @@ define(
                  * @param data
                  */
                 itemAction: function(data){
-                    if(data && data.nameStr){
-						//判断是否是一个txt文件
-						//获取服务器数据
-						//展示并且修改txt文件
-						//保存txt文件将数据流返回到后台
-						 if(this._handleFileTypeIsTXT(data.nameStr)){
-							this.set('pathValue', data.nameStr);
-							this.editTXT(data.nameStr);
-						}else{
-							this.set('pathValue', data.nameStr);
-							this._initPathData(data.nameStr);
-						} 						
+                    if(data && data.nameStr){					
+						this.set('pathValue', data.nameStr);
+						this._initPathData(data.nameStr);											
                     }
-					
                 },
+				/**
+				 * 编辑txt文件事件
+				 */
+				editAction: function(){
+					//判断是否是一个txt文件
+					//获取服务器数据
+					//展示并且修改txt文件
+					//保存txt文件将数据流返回到后台
+					if(this.selectData.length>1){
+					    this.messageBox.showAlert('编辑文件夹只能是单选，请重新选择！');
+					    return;
+					}
+					if(this.selectData.length<1){
+					    this.messageBox.showAlert('请选择文件夹！');
+					    return;
+					}				
+					 if(this.selectData && this.selectData[0].nameStr){
+						if(this._handleFileTypeIsTXT(this.selectData[0].nameStr)){
+							this.set('pathValue', this.selectData[0].nameStr);
+							this.editTXT(this.selectData[0].nameStr);
+						}									
+					} 
+				},
                 /**
                  * 确认按钮事件
                  */

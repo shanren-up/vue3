@@ -119,8 +119,8 @@
       "id": "FAILED",
       "name": "Failed"
     },{
-      "id": "SUCCESSED",
-      "name": "Successed"
+      "id": "SUCCESS",
+      "name": "Success"
     },{
       "id": "FINISHED",
       "name": "Finished"

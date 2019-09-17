@@ -1,6 +1,7 @@
 <div class="comp-path-dialog">
     <div class="dialog-header">
         {{input type="text" value=pathValue}}
+		<button {{action 'editAction'}}>编辑</button>
         <button {{action 'changeListType'}}>切换视图</button>
         <button {{action 'backToParent'}}>返回上一级</button>
         <button {{action 'newFolder'}}>新建</button>
@@ -11,10 +12,7 @@
             <div class="path-item-list">
                 <input type="checkbox" class="path-item-list-checkbox" onclick={{action 'selectItem' data}}>
                 <img  {{action 'itemAction' data}} src={{data.src}} />
-				{{#handle-events}}
-				<span >从我身上飘过或者点我都会触发事件~</span>
-				{{/handle-events}}
-                <a href="javascript:;" title="{{data.name}}" {{action 'itemAction' data}}>{{data.name}}</a>
+                <a href="javascript:;" title="{{data.name}}" {{action 'itemAction' data}}>{{data.name}}</a>				
             </div>
             {{/each}}
         {{else}}
@@ -22,13 +20,15 @@
             <div class="path-item">
                 <input type="checkbox" class="path-item-checkbox" onclick={{action 'selectItem' data}}>
                 <img  {{action 'itemAction' data}} src={{data.src}} />
-                <a href="javascript:;" title="{{data.name}}" {{action 'itemAction' data}}>{{data.name}}</a>
+                <a href="javascript:;" title="{{data.name}}" {{action 'itemAction' data}}>{{data.name}}</a>			
             </div>
             {{/each}}
         {{/if}}
     </div>
+	
     <div class="dialog-footer">
         <button {{action 'confirmPath'}}>确定</button>
         <button {{action 'cancelPath'}}>取消</button>
     </div>
+	
 </div>

@@ -140,7 +140,7 @@ define(
                             formatter: function (value, row, index) {
                                 if (row.state.toLowerCase() === 'failed') {
                                     return '<span style="color: red;">' + value + '</span>';
-                                } else if (row.state.toLowerCase() === 'successed') {
+                                } else if (row.state.toLowerCase() === 'success') {
                                     return '<span style="color: green;">' + value + '</span>';
                                 } else if (row.state.toLowerCase() === 'finished') {
                                     return '<span style="color: green;">' + value + '</span>';
