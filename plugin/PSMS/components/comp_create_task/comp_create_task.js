@@ -294,7 +294,7 @@ define(
                         if (filenames === '') {
                             filenames = item.filePath+'/'+item.fileName;
                         } else {
-                            filenames += ',' +  item.filePath+'/'+name;
+                            filenames += ',' +  item.filePath+'/'+ item.fileName;
                         }
                         //}
                     });

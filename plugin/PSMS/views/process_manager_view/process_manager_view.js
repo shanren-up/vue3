@@ -365,25 +365,25 @@ define(
                             }.bind(this));
                         } else if (_event.target.className.indexOf('dele')>-1) {
                             this.messageBox.showConfirm('确认删除？',function (data) {
-                                // if(data){
-                                //     var hasRunning = false;
-                                //     result.forEach(function (item) {
-                                //         if(item.state === 'RUNNING'){
-                                //             hasRunning = true;
-                                //         }
-                                //     });
-                                //     //删除
-                                //     if(!hasRunning){
-                                //         this._handleDelTask(row);
-                                //     }else{
-                                //         this.messageBox.showAlert('存在正在运行的模块，无法删除！');
-                                //     }
-                                // }
-                                if(row.state === 'RUNNING'){
-                                    this.messageBox.showAlert('存在正在运行的模块，无法删除！');
-                                }else{
-                                    this._handleDelTask(row);
+                                if(data){
+                                    var hasRunning = false;
+                                    result.forEach(function (item) {
+                                        if(item.state === 'RUNNING'){
+                                            hasRunning = true;
+                                        }
+                                    });
+                                    //删除
+                                    if(!hasRunning){
+                                        this._handleDelTask(row);
+                                    }else{
+                                        this.messageBox.showAlert('存在正在运行的模块，无法删除！');
+                                    }
                                 }
+                                // if(row.state === 'RUNNING'){
+                                //     this.messageBox.showAlert('存在正在运行的模块，无法删除！');
+                                // }else{
+                                //     this._handleDelTask(row);
+                                // }
                             }.bind(this));
                         }
                     } else {
