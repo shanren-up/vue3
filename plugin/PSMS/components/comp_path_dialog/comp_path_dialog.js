@@ -115,7 +115,7 @@ define(
             },
 			//判断是一个txt文件
 			_handleFileTypeIsTXT: function(fileName){
-			    var fileType = ['.txt'];
+			    var fileType = ['.txt','.par'];
 			    var index = fileName.lastIndexOf('.');
 			    if(index > -1){
 			        var str = fileName.substring(index);

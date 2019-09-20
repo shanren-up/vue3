@@ -475,8 +475,21 @@ define(
              */
             _showFlowChart: function (item) {
                 var content = JSON.parse(item.content);
+				
+				let module = [];
+				content.modules.forEach(function (item) {
+					if(item.length>1){
+						item.forEach(function (itemx){
+							module.pushObject(itemx);
+						});
+					}else{
+						module.pushObject(item);
+					}
+				}.bind(this));
+				
+				
                 this.set('currentFlowId', item.id);
-                this.paramView.set('flowModules', content.modules);
+                this.paramView.set('flowModules', module);
                 var baseInfo = {};
                 baseInfo.owner = content.owner;
                 baseInfo.processType = content.subkey;
@@ -484,6 +497,7 @@ define(
                 baseInfo.desc = content.desc;
                 this.ioMap = content.IOMap;
                 this.modules = content.modules;
+				//this.modules = module;
                 this.workflow = content.workflow;
                 this.set('baseInfo', baseInfo);
                 var param = {flowid: item.id};
