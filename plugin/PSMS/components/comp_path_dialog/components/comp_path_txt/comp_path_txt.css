@@ -1,0 +1,38 @@
+.comp-path-txt{
+    width: 1000px;
+}
+.comp-path-txt-size{
+    height:280px;
+    width: 1000px;
+}
+.comp-path-txt-body{
+    padding: 0 !important;
+}
+.comp-path-txt-header{
+    line-height: 35px;
+    height: 35px;
+    padding: 0px 5px;
+    background-color: #CCC;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+}
+.comp-path-txt .dialog-footer{
+    text-align: center;
+}
+.comp-path-txt .dialog-footer > button{
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+    min-width: 50px;
+    height: 30px;
+    margin-right: 10px;
+}
+.comp-path-txt .comp-path-txt-content{
+    margin: 8px 0 8px 0;
+    padding:8px 8px;
+}
+.comp-path-txt textarea{
+    font-size: 14px !important;
+    width: 100%;
+    height: 730px;
+	padding:4px 4px;
+}
